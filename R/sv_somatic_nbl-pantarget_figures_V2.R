@@ -8,39 +8,33 @@ require(devtools)
  library(gplots)
 library(data.table)
 library(tidyr)
-
+library(vioplot)
 library(ComplexHeatmap)
 library(cgdsr)
 
+setwd("~/Box Sync/git/NB_structural_variants/")
 
-#source_url('https://github.research.chop.edu/raw/lopezgarcg/sources/master/my_stat_functions.r')
-#source_url('https://github.research.chop.edu/raw/lopezgarcg/sources/master/heatmap3.R')
-#source_url('https://github.research.chop.edu/raw/lopezgarcg/sources/master/vioplot2.r')
-#source_url('https://github.research.chop.edu/raw/lopezgarcg/sources/master/my_gsea.r')
-#source_url('https://github.research.chop.edu/raw/lopezgarcg/sources/master/my_survival.r')
-#load(url("https://github.research.chop.edu/lopezgarcg/GSEA/blob/master/msigdb5.2/msigdb5.2.rda?raw=true"),verbose=T)
-
-source('~/Box Sync/My_CHOP/git/sources/my_stat_functions.r')
-source('~/Box Sync/My_CHOP/git/sources/heatmap3.R')
-source('~/Box Sync/My_CHOP/git/sources/vioplot2.r')
-source('~/Box Sync/My_CHOP/git/sources/my_gsea.r')
-source('~/Box Sync/My_CHOP/git/sources/my_survival.r')
-load('~/Box Sync/My_CHOP/git/GSEA/msigdb5.2/msigdb5.2.rda',verbose=T)
+source('R/my_stat_functions.r')
+source('R/heatmap3.R')
+#source('~/Box Sync/My_CHOP/git/sources/vioplot2.r')
+#source('~/Box Sync/My_CHOP/git/sources/my_gsea.r')
+#source('~/Box Sync/My_CHOP/git/sources/my_survival.r')
+#load('~/Box Sync/My_CHOP/git/GSEA/msigdb5.2/msigdb5.2.rda',verbose=T)
 
 
 #
-source('~/Box Sync/My_CHOP/git/SV_project/sv_somatic_nbl-pantarget_functions_V2.r')
+source('R/sv_somatic_nbl-pantarget_functions_V2.r')
 
 # clinical combined COG + TARGET
-load("~/Box Sync/My_CHOP/rdata/clinical_COG_20181129_plus_TARGET_20180331_plus_SCA_20180619_pheno.rda",verbose=T)
+load("data/clinical_COG_20181129_plus_TARGET_20180331_plus_SCA_20180619_pheno.rda",verbose=T)
 hr_unknown <- intersect(names(which(risk=="high")),names(which(mycna=="unknown")))
 
 
 # load gene/exon info data
-load("~/Box Sync/My_CHOP/rdata/ucsc_hg19_refseq_genes_exon_df_Oct31_2018.rda",verbose=T)
+load("data/ucsc_hg19_refseq_genes_exon_df_Oct31_2018.rda",verbose=T)
 
 # load SNP data
-load("~/Box Sync/My_CHOP/CNV/snv_files_SNP_081318.rda",verbose=T)
+load("data/cnv_segmentation_SNP_081318.rda",verbose=T)
 snp_samples <- setdiff(unique(segment_snp$Sample),nonconsent)
 HR_MNA_snp <- intersect(names(which(mycna == "amp")),snp_samples)
 HR_NA_snp <- setdiff(intersect(names(which(risk == "high")),snp_samples),HR_MNA_snp)
@@ -49,42 +43,24 @@ LOW_snp <- intersect(lowrisk,snp_samples)
 LOWINT_snp <- c(INT_snp,LOW_snp)
 HR_UNK_snp <- intersect(hr_unknown,snp_samples) # no need
 
-## load CGI data copy number and SV  collapsed data by type of SVs
-#load("~/Box Sync/My_CHOP/CNV/snv_files_CGI_081318.rda",verbose=T)
-#load("~/Box Sync/My_CHOP/data/SV_nbl/V2_sv_analysis/SV_analysis_Sep20_18.rda",verbose=T)
-load("~/Box Sync/My_CHOP/SV_paper_V2/rdata/SV_analysis_Oct31_18.rda",verbose=T)
-#load("~/Box Sync/My_CHOP/SV_paper_V2/rdata/BP_analysis_Nov5_18.rda",verbose=T)
-load("~/Box Sync/My_CHOP/SV_paper_V2/rdata/BP_analysis_Nov15_19.rda",verbose=T)
-
-a<- sort(2*2^results_CN$gene_CN["MYCN",])
-barplot(a+50,col=mycna_col[names(a)])
-
-nbl_svdat <- results_NBL$sv_df[,c(1,3,4,5,7,8,9,28)]
-nbl_svdat[which(unlist(lapply(apply(nbl_svdat[,c(2,5)],1,unique),length)) == 2),"Type"] <- "TRA"
-nbl_svdat[grep("inversion",nbl_svdat$Type),"Type"] <- "INV"
-nbl_svdat[grep("distal-duplication",nbl_svdat$Type),"Type"] <- "INS"
-nbl_svdat[grep("duplication",nbl_svdat$Type),"Type"] <- "DUP"
-nbl_svdat[grep("deletion",nbl_svdat$Type),"Type"] <- "DEL"
-nbl_svdat[grep("complex",nbl_svdat$Type),"Type"] <- "BND"
-rownames(nbl_svdat) <- NULL
-nbl_svdat[,"TARGET.USI"] <-  substr(nbl_svdat[,"TARGET.USI"],11,16)
-nbl_segdat <- segment_cgi
-save(nbl_svdat,nbl_segdat, file="~/Box Sync/git/svcnvplus/data/nbl_target_wgs.rda")
+## load SV data : filtered variants and segmentation breakpoint analyses 
+load("data/SV_analysis_Oct31_18.rda",verbose=T)
+load("data/BP_analysis_Nov15_19.rda",verbose=T)
 
 #write.table(clinical[substr(as.character(unique(results_NBL$sv_df$TARGET.USI)),11,16),],row.names=F,quote=F,sep="\t",file="/")
-validated_junctions <- read.delim("~/Box Sync/My_CHOP/SV_paper_V2/validation_junction_list.txt",header=F,as.is=T)$V1
-results_NBL$sv_df[validated_junctions,]
+#validated_junctions <- read.delim("~/Box Sync/My_CHOP/SV_paper_V2/validation_junction_list.txt",header=F,as.is=T)$V1
+#results_NBL$sv_df[validated_junctions,]
 
 # load dbgap metadata for coverage data
-sraRunTab_wgs <- read.delim("~/Box Sync/My_CHOP/data/TARGET_CGI/SraRunTable_wgs_alltumors.txt",sep = "\t",as.is=TRUE)
+sraRunTab_wgs <- read.delim("data/SraRunTable_wgs_alltumors.txt",sep = "\t",as.is=TRUE)
 sraRunTab_cgi <- sraRunTab_wgs[which(sraRunTab_wgs$Platform_s == "COMPLETE_GENOMICS"),]
 tumor_libsize <- sraRunTab_cgi$MBases_l[grep("TARGET-30-[A-Z][A-Z][A-Z][A-Z][A-Z][A-Z]-01",sraRunTab_cgi$Sample_Name_s)]
 names(tumor_libsize)<- substr(grep("TARGET-30-[A-Z][A-Z][A-Z][A-Z][A-Z][A-Z]-01",sraRunTab_cgi$Sample_Name_s,value=T),0,16)
 blood_libsize <- sraRunTab_cgi$MBases_l[grep("TARGET-30-[A-Z][A-Z][A-Z][A-Z][A-Z][A-Z]-10",sraRunTab_cgi$Sample_Name_s)]
 names(blood_libsize)<- substr(grep("TARGET-30-[A-Z][A-Z][A-Z][A-Z][A-Z][A-Z]-10",sraRunTab_cgi$Sample_Name_s,value=T),0,16)
 ll<-list(tumor=tumor_libsize/3234.83,blood=blood_libsize/3234.83)
-boxplot(ll,las=1,col=c("grey30","grey90"),names=c("Tumor","Blood"),ylab="Average depth")
-vioplot2(ll,las=1,border=c("black","black"),col=c("grey30","grey90"),names=c("Tumor","Blood"),ylab="Average depth")
+# supplementary Figure S1a
+vioplot(ll,las=1,border=c("black","black"),col=c("grey30","grey90"),names=c("Tumor","Blood"),ylab="Average depth")
 
 # defoine all cgi samples and groups
 cgi_samples <- setdiff(substr(intersect(names(blood_libsize),names(tumor_libsize)),11,16),nonconsent)
@@ -96,7 +72,7 @@ LOWINT <- c(INT,LOW)
 
 
 # load expression data for eQTL analysis
-load(paste("~/Box Sync/My_CHOP/rdata/TARGET_RNA/kallisto_nbltpm_refseq_hg19_171.rda",sep=""),verbose=TRUE)
+load("data/kallisto_nbltpm_refseq_hg19_171.rda",verbose=TRUE)
 sraRunTab_rna_nbl <- sraRunTab_rna[grep("TARGET-30-[A-Z][A-Z][A-Z][A-Z][A-Z][A-Z]-01",sraRunTab_rna$Sample_Name_s),]
 srr <- sraRunTab_rna_nbl$Run_s[which(sraRunTab_rna_nbl$Center_Name_s == "NCI-KHAN")]
 usi <- sraRunTab_rna_nbl$Sample_Name_s[which(sraRunTab_rna_nbl$Center_Name_s == "NCI-KHAN")]
@@ -105,12 +81,11 @@ colnames(r_expmat) <- substr(usi,11,16)
 r_expmat<-r_expmat[,setdiff(colnames(r_expmat),nonconsent)]
 rna_samples <- colnames(r_expmat)
 
-
 # load human Exon array data for eQTL
-idlist <- read.delim("~/Box Sync/My_CHOP/data/TARGET_HUEX/usi_2targetID.txt",header=FALSE,as.is=TRUE)
+idlist <- read.delim("data/usi_2targetID.txt",header=FALSE,as.is=TRUE)
 convertid <- idlist$V1
 names(convertid) <- idlist$V2
-load("~/Box Sync/My_CHOP/rdata/TARGET_RNA/ln_mexp.rda",verbose=TRUE)
+load("data/ln_mexp.rda",verbose=TRUE)
 colnames(l_expmat) <- substr(convertid[colnames(l_expmat)],11,16)
 l_expmat<-l_expmat[,setdiff(colnames(l_expmat),nonconsent)]
 huex_samples <-  unname(colnames(l_expmat))
@@ -118,8 +93,6 @@ huex_samples <-  unname(colnames(l_expmat))
 ## Figure 1a clinical and copy number table
 ## combine datasets for clinical data table 
 all_samples <- unique(c(rna_samples,huex_samples,snp_samples,cgi_samples))
-
-
 
 wgs<-rna<-snp<-huex<-meth <- rep("white",length(all_samples))
 names(wgs) <- names(rna) <- names(huex) <- names(snp) <- names(meth) <- all_samples
@@ -175,21 +148,22 @@ rownames(SCA_col2) <- rownames(SCA_col)
 SCA_col2[]<- "lightgrey" 
 SCA_col2[,intersect(colnames(SCA_col),final_order) ] <- SCA_col[,intersect(colnames(SCA_col),final_order) ] 
 
-png("~/Box Sync/My_CHOP/SV_paper_V2/Figures/Figure1/fig1a_sample/heat_data_10_17_18.png",height=500,width=1000)
+png("Figures/Figure1/fig1a_sample/heat_data_10_17_18.png",height=500,width=1000)
 heatmap.3(fakemat[,final_order], ColSideColors = t(Data_col[,final_order]),Colv=FALSE,Rowv=FALSE,lhei=c(0.5,1))
 dev.off()
 
-png("~/Box Sync/My_CHOP/SV_paper_V2/Figures/Figure1/fig1a_sample/heat_sca_10_17_18.png",height=600,width=1000)
+png("Figures/Figure1/fig1a_sample/heat_sca_10_17_18.png",height=600,width=1000)
 heatmap.3(fakemat[,final_order], ColSideColors = t(SCA_col2[,final_order]),Colv=FALSE,Rowv=FALSE,lhei=c(0.5,1))
 dev.off()
 
-png("~/Box Sync/My_CHOP/SV_paper_V2/Figures/Figure1/fig1a_sample/heat_clinical_10_17_18.png",height=600,width=1000)
+png("Figures/Figure1/fig1a_sample/heat_clinical_10_17_18.png",height=600,width=1000)
 heatmap.3(fakemat[,final_order], ColSideColors = t(Pheno2[,final_order]),Colv=FALSE,Rowv=FALSE,lhei=c(0.5,1))
 dev.off()
 
 order_cgi<-1:length(cgi_samples)
 names(order_cgi) <- final_order[which(final_order %in% segment_cgi$Sample)]
-write.table(segment_cgi[order(order_cgi[segment_cgi$Sample]),],row.names=F,quote=F,sep="\t",file="~/Box Sync/My_CHOP/SV_paper_V2/Figures/Figure1/copyNumber/segment_cgi_igvordered.seg")
+write.table(segment_cgi[order(order_cgi[segment_cgi$Sample]),],row.names=F,quote=F,sep="\t",
+            file="~/Box Sync/My_CHOP/SV_paper_V2/Figures/Figure1/copyNumber/segment_cgi_igvordered.seg")
 
 cgi_attributes <- cbind(names(order_cgi),group[names(order_cgi)],mycna[names(order_cgi)],stage[names(order_cgi)],gender[names(order_cgi)],order_cgi)
 colnames(cgi_attributes) <- c("TRACK_ID","group","mycna","stage","gender","order")
@@ -356,7 +330,6 @@ barplot(svBarPlorData,las=2,cex.names=0.7,col=svTypeCols[rownames(svBarPlorData)
 par(family = "Arial",lwd = 1)
 abline(h=seq(0,3500,50),lty=3,lwd=0.7,col="grey")
 legend("topright",rev(rownames(svBarPlorData)),fill=rev(svTypeCols[rownames(svBarPlorData)]),bty="n",cex=1.3,ncol=2)
-#legend("topleft",c("","","","","",""),fill=rev(svTypeCols[rownames(svBarPlorData)]),bty="n",cex=1.3,ncol=2)
 
 
 #################################################
@@ -428,7 +401,7 @@ for(type in types){
 	abline(v=c(-1.3,0,1.3),lty=c(3,1,3))
 }
 write.table(do.call(cbind,results),sep="\t",file=)
-write.table(do.call(cbind,results),sep="\t",file="~/Box Sync/My_CHOP/SV_paper_V2/Figures/Figure1/suppl_1/sv_difference_byChrbyType_pvalues.txt")
+#write.table(do.call(cbind,results),sep="\t",file="~/Box Sync/My_CHOP/SV_paper_V2/Figures/Figure1/suppl_1/sv_difference_byChrbyType_pvalues.txt")
 
 a<-b<-c<-d<-e<-f<-g<-h<-i<-j<-k<-l<-wtab<-wtcd<-wtef<-wtgh<-wtij<-wtkl<-list()
 for(chr in paste("chr",c(1:22,"X"),sep="")){ 
@@ -491,13 +464,8 @@ beeswearm(ll)
 wilcox.test(ll$HRNA,ll$HRMNA)
 
 sv_df_complex_mna <- sv_df[intersect(which(sv_df$Type == "complex"),which(sv_df$TARGET.USI %in% HR_MNA)),]
-sort(table(sv_df_complex_mna$RightChr))
-sort(table(sv_df_complex_mna$LeftChr))
 
 sv_df_complex_na <- sv_df[intersect(which(sv_df$Type == "complex"),which(sv_df$TARGET.USI %in% HR_NA)),]
-sort(table(sv_df_complex_na$RightChr))
-sort(table(sv_df_complex_na$LeftChr))
-
 
 a <- sv_df[unique(c(which(sv_df$LeftChr == "chrM"),which(sv_df$RightChr == "chrM"))),"TARGET.USI"]
 a_na <- table(a)[HR_NA]
@@ -607,7 +575,7 @@ res_6let <- lapply(res,function(x) unique(substr(x,11,16)))
  barplot(sort(unlist(lapply(res,length))),horiz=T,las=1)
 gene_pair<-do.call(rbind,strsplit(names(res),"_"))
 amplicon_translocations <- cbind(gene_pair,unlist(lapply(res_6let,paste,collapse=" ")), genes_tab[gene_pair[,2],])
-write.table(amplicon_translocations,sep="\t",quote=F,row.names=F,file="~/Box Sync/My_CHOP/SV_paper_V2/data_sheets/amplicon_complex_and_interchromosomal.txt")
+#write.table(amplicon_translocations,sep="\t",quote=F,row.names=F,file="~/Box Sync/My_CHOP/SV_paper_V2/data_sheets/amplicon_complex_and_interchromosomal.txt")
 
 res2<-list()
 for(i in setdiff(names(j_summary),chr2.24_genes)){
@@ -635,18 +603,6 @@ l_expmat["TERT",intersect(setdiff(res$chr5,sv_summary$TERT),colnames(l_expmat))]
 r_expmat["TERT",intersect(intersect(res$chr5,sv_summary$TERT),colnames(r_expmat))]
 l_expmat["TERT",intersect(intersect(res$chr5,sv_summary$TERT),colnames(l_expmat))]
 
-### compare with st jude
-pancan <- read.delim("~/Box Sync/Diskin_LAB/1_MANUSCRIPTS/Conkrite_SV/pan-TARGET paper/published/heatmap_pancancer.tsv",sep="\t",as.is=T,check.names=F,row.names=1)
-pancan_nbl <- pancan[,grep("diagnosis",grep("NBL",colnames(pancan),value=T),value=T)]
-colnames(pancan_nbl)<-gsub("0;;NBL_diagnosis_","TARGET-30-",colnames(pancan_nbl))
-pan_summary <- sapply(rownames(pancan_nbl), function(i) colnames(pancan_nbl)[grep("SV",pancan_nbl[i,])] )
-
-
-
-
-##########################################
-gwasgenes <- read.delim("~/Box Sync/My_CHOP/GWAS/genelist_germline_enrichment_table1.txt",as.is=T,header=F)$V1
-genHits <-names(na.omit(sort(unlist(lapply(sv_summary,length)),decreasin=T)[gwasgenes]))
 
 ### Plot and write tables with all SVs ###
 
