@@ -1,0 +1,176 @@
+Category	ID	Name	Source	p-value	q-value Bonferroni	q-value FDR B&H	q-value FDR B&Y	Hit Count in Query List	Hit Count in Genome	Hit in Query List
+GO: Molecular Function	GO:0015293	symporter activity	 	2.769E-4	4.486E-2	4.215E-2	2.389E-1	3	143	SLC6A18,SLC25A3,SLC12A7
+GO: Molecular Function	GO:0017113	dihydropyrimidine dehydrogenase (NADP+) activity	 	9.118E-4	1.477E-1	4.215E-2	2.389E-1	1	1	DPYD
+GO: Molecular Function	GO:0003721	telomerase RNA reverse transcriptase activity	 	9.118E-4	1.477E-1	4.215E-2	2.389E-1	1	1	TERT
+GO: Molecular Function	GO:0015291	secondary active transmembrane transporter activity	 	1.191E-3	1.930E-1	4.215E-2	2.389E-1	3	236	SLC6A18,SLC25A3,SLC12A7
+GO: Molecular Function	GO:0002061	pyrimidine nucleobase binding	 	1.821E-3	2.950E-1	4.215E-2	2.389E-1	1	2	DPYD
+GO: Molecular Function	GO:0003968	RNA-directed 5'-3' RNA polymerase activity	 	1.821E-3	2.950E-1	4.215E-2	2.389E-1	1	2	TERT
+GO: Molecular Function	GO:0002058	uracil binding	 	1.821E-3	2.950E-1	4.215E-2	2.389E-1	1	2	DPYD
+GO: Molecular Function	GO:0008509	anion transmembrane transporter activity	 	2.300E-3	3.726E-1	4.657E-2	2.640E-1	3	297	SLC6A18,SLC25A3,SLC12A7
+GO: Cellular Component	GO:1990572	TERT-RMRP complex	 	9.452E-4	5.293E-2	2.643E-2	1.219E-1	1	1	TERT
+GO: Cellular Component	GO:0000333	telomerase catalytic core complex	 	1.888E-3	1.057E-1	2.643E-2	1.219E-1	1	2	TERT
+GO: Cellular Component	GO:0031379	RNA-directed RNA polymerase complex	 	1.888E-3	1.057E-1	2.643E-2	1.219E-1	1	2	TERT
+GO: Cellular Component	GO:0071920	cleavage body	 	1.888E-3	1.057E-1	2.643E-2	1.219E-1	1	2	DDX1
+GO: Cellular Component	GO:0070939	Dsl1/NZR complex	 	2.830E-3	1.585E-1	3.170E-2	1.462E-1	1	3	NBAS
+GO: Cellular Component	GO:0016604	nuclear body	 	4.554E-3	2.551E-1	4.251E-2	1.960E-1	3	364	ZFHX3,TERT,DDX1
+Pathway	545270	uracil degradation	BioSystems: BIOCYC	2.408E-3	1.445E-1	3.740E-2	1.750E-1	1	3	DPYD
+Pathway	605866	Pyrimidine degradation, uracil => beta-alanine, thymine => 3-aminoisobutanoate	BioSystems: KEGG	2.408E-3	1.445E-1	3.740E-2	1.750E-1	1	3	DPYD
+Pathway	545364	thymine degradation	BioSystems: BIOCYC	2.408E-3	1.445E-1	3.740E-2	1.750E-1	1	3	DPYD
+Pathway	1269908	Transport of inorganic cations/anions and amino acids/oligopeptides	BioSystems: REACTOME	3.148E-3	1.889E-1	3.740E-2	1.750E-1	2	107	SLC6A18,SLC12A7
+Pathway	PW:0000167	pantothenate and CoA biosynthetic	Pathway Ontology	3.209E-3	1.926E-1	3.740E-2	1.750E-1	1	4	DPYD
+Pathway	782398	pyrimidine ribonucleosides degradation	BioSystems: BIOCYC	4.811E-3	2.886E-1	3.740E-2	1.750E-1	1	6	DPYD
+Pathway	SMP00007	Beta-Alanine Metabolism	SMPDB	5.610E-3	3.366E-1	3.740E-2	1.750E-1	1	7	DPYD
+Pathway	1269912	Cation-coupled Chloride cotransporters	BioSystems: REACTOME	5.610E-3	3.366E-1	3.740E-2	1.750E-1	1	7	SLC12A7
+Pathway	1269858	Telomere Extension By Telomerase	BioSystems: REACTOME	5.610E-3	3.366E-1	3.740E-2	1.750E-1	1	7	TERT
+Pathway	P02771	Pyrimidine Metabolism	PantherDB	8.006E-3	4.804E-1	4.800E-2	2.246E-1	1	10	DPYD
+Pathway	1270141	Pyrimidine catabolism	BioSystems: REACTOME	9.600E-3	5.760E-1	4.800E-2	2.246E-1	1	12	DPYD
+Pathway	PW:0000032	pyrimidine metabolic	Pathway Ontology	9.600E-3	5.760E-1	4.800E-2	2.246E-1	1	12	DPYD
+Disease	C0280216	stage, neuroblastoma	DisGeNET BeFree	1.915E-6	1.643E-3	1.643E-3	1.205E-2	3	24	MYCN,TERT,DDX1
+Disease	C0221725	Obstruction of bronchus	DisGeNET BeFree	6.207E-6	5.326E-3	2.663E-3	1.953E-2	2	4	CLPTM1L,TERT
+Disease	C0007117	Basal cell carcinoma	DisGeNET Curated	2.053E-5	1.761E-2	5.872E-3	4.305E-2	3	52	MYCN,CLPTM1L,TERT
+Disease	C0795839	Chromosome 10, monosomy 10q	DisGeNET BeFree	1.079E-4	9.257E-2	1.609E-2	1.180E-1	2	15	MYCN,TERT
+Disease	C0686377	CNS metastases	DisGeNET BeFree	1.753E-4	1.504E-1	1.609E-2	1.180E-1	2	19	MYCN,TERT
+Disease	C0424688	Small head	DisGeNET Curated	5.289E-4	4.538E-1	1.609E-2	1.180E-1	4	375	MYCN,AUTS2,DPYD,TERT
+Disease	C1306710	Facial asymmetry	DisGeNET Curated	5.366E-4	4.604E-1	1.609E-2	1.180E-1	2	33	MYCN,NBAS
+Disease	C0040588	Tracheoesophageal Fistula	DisGeNET Curated	6.751E-4	5.793E-1	1.609E-2	1.180E-1	2	37	MYCN,TERT
+Disease	C0423112	Short palpebral fissure	DisGeNET Curated	7.122E-4	6.111E-1	1.609E-2	1.180E-1	2	38	MYCN,AUTS2
+Disease	C0346429	Multiple malignancy	DisGeNET BeFree	7.406E-4	6.355E-1	1.609E-2	1.180E-1	3	174	MYCN,CLPTM1L,TERT
+Disease	C0700095	Central neuroblastoma	DisGeNET BeFree	8.084E-4	6.936E-1	1.609E-2	1.180E-1	7	1631	MYCN,NBAS,ZFHX3,PTPRD,TERT,MYCNOS,DDX1
+Disease	C0242621	Isochromosomes	DisGeNET BeFree	8.292E-4	7.115E-1	1.609E-2	1.180E-1	2	41	MYCN,TERT
+Disease	C0027766	Nervous System Neoplasms	DisGeNET Curated	9.548E-4	8.193E-1	1.609E-2	1.180E-1	2	44	MYCN,TERT
+Disease	C0027819	Neuroblastoma	DisGeNET Curated	9.985E-4	8.567E-1	1.609E-2	1.180E-1	7	1689	MYCN,NBAS,ZFHX3,PTPRD,TERT,MYCNOS,DDX1
+Disease	C0023448	Lymphoid leukemia	DisGeNET Curated	1.030E-3	8.840E-1	1.609E-2	1.180E-1	3	195	MYCN,CLPTM1L,TERT
+Disease	20090730:Gudbjartsson	Atrial fibrillation	GWAS	1.050E-3	9.010E-1	1.609E-2	1.180E-1	1	1	ZFHX3
+Disease	C0302874	depressive personality	DisGeNET BeFree	1.050E-3	9.010E-1	1.609E-2	1.180E-1	1	1	DPYD
+Disease	C0279982	childhood synovial sarcoma	DisGeNET BeFree	1.050E-3	9.010E-1	1.609E-2	1.180E-1	1	1	MYCN
+Disease	cv:CN188274	Mental retardation, autosomal dominant 26	Clinical Variations	1.050E-3	9.010E-1	1.609E-2	1.180E-1	1	1	AUTS2
+Disease	OMIN:274270	DIHYDROPYRIMIDINE DEHYDROGENASE DEFICIENCY	OMIM	1.050E-3	9.010E-1	1.609E-2	1.180E-1	1	1	DPYD
+Disease	20081125:Mushiroda	Idiopathic pulmonary fibrosis	GWAS	1.050E-3	9.010E-1	1.609E-2	1.180E-1	1	1	TERT
+Disease	C4023050	Abnormal mitochondrial shape	DisGeNET Curated	1.050E-3	9.010E-1	1.609E-2	1.180E-1	1	1	SLC25A3
+Disease	C0796548	Metastatic tumors of the Ewing's family	DisGeNET BeFree	1.050E-3	9.010E-1	1.609E-2	1.180E-1	1	1	PTPRD
+Disease	C4021982	Abnormal eating behavior	DisGeNET Curated	1.050E-3	9.010E-1	1.609E-2	1.180E-1	1	1	DPYD
+Disease	C1835845	Mitochondrial Phosphate Carrier Deficiency	DisGeNET Curated	1.050E-3	9.010E-1	1.609E-2	1.180E-1	1	1	SLC25A3
+Disease	C3151443	DYSKERATOSIS CONGENITA, AUTOSOMAL DOMINANT 2	DisGeNET Curated	1.050E-3	9.010E-1	1.609E-2	1.180E-1	1	1	TERT
+Disease	C1336257	Stage 3 Neuroblastoma	DisGeNET BeFree	1.050E-3	9.010E-1	1.609E-2	1.180E-1	1	1	MYCN
+Disease	cv:CN077983	Fluorouracil response	Clinical Variations	1.050E-3	9.010E-1	1.609E-2	1.180E-1	1	1	DPYD
+Disease	C4021893	Nonprogressive visual loss	DisGeNET Curated	1.050E-3	9.010E-1	1.609E-2	1.180E-1	1	1	NBAS
+Disease	cv:C1835845	Mitochondrial phosphate carrier deficiency	Clinical Variations	1.050E-3	9.010E-1	1.609E-2	1.180E-1	1	1	SLC25A3
+Disease	cv:CN184090	Fluoropyrimidine response	Clinical Variations	1.050E-3	9.010E-1	1.609E-2	1.180E-1	1	1	DPYD
+Disease	C0040250	Tinea Capitis	DisGeNET BeFree	1.050E-3	9.010E-1	1.609E-2	1.180E-1	1	1	TERT
+Disease	C4024201	Low-output congestive heart failure	DisGeNET Curated	1.050E-3	9.010E-1	1.609E-2	1.180E-1	1	1	SLC25A3
+Disease	cv:C2720286	Dihydropyrimidine dehydrogenase deficiency	Clinical Variations	1.050E-3	9.010E-1	1.609E-2	1.180E-1	1	1	DPYD
+Disease	cv:CN130951	PULMONARY FIBROSIS AND/OR BONE MARROW FAILURE, TELOMERE-RELATED, 1	Clinical Variations	1.050E-3	9.010E-1	1.609E-2	1.180E-1	1	1	TERT
+Disease	C1517444	Ganglioneuroblastoma, Intermixed	DisGeNET BeFree	1.050E-3	9.010E-1	1.609E-2	1.180E-1	1	1	MYCN
+Disease	C3809651	INFANTILE LIVER FAILURE SYNDROME 2	DisGeNET Curated	1.050E-3	9.010E-1	1.609E-2	1.180E-1	1	1	NBAS
+Disease	OMIN:610773	MITOCHONDRIAL PHOSPHATE CARRIER DEFICIENCY	OMIM	1.050E-3	9.010E-1	1.609E-2	1.180E-1	1	1	SLC25A3
+Disease	C4014435	MENTAL RETARDATION, AUTOSOMAL DOMINANT 26	DisGeNET Curated	1.050E-3	9.010E-1	1.609E-2	1.180E-1	1	1	AUTS2
+Disease	C0034139	Purine-Pyrimidine Metabolism, Inborn Errors	DisGeNET Curated	1.050E-3	9.010E-1	1.609E-2	1.180E-1	1	1	DPYD
+Disease	OMIN:602585	MICROCEPHALY AND DIGITAL ABNORMALITIES WITH NORMAL INTELLIGENCE	OMIM	1.050E-3	9.010E-1	1.609E-2	1.180E-1	1	1	MYCN
+Disease	cv:C3151443	Dyskeratosis congenita, autosomal dominant, 2	Clinical Variations	1.050E-3	9.010E-1	1.609E-2	1.180E-1	1	1	TERT
+Disease	C3553696	Decreased visual acuity, nonprogressive	DisGeNET Curated	1.050E-3	9.010E-1	1.609E-2	1.180E-1	1	1	NBAS
+Disease	C0037020	Shyness	DisGeNET Curated	1.050E-3	9.010E-1	1.609E-2	1.180E-1	1	1	DPYD
+Disease	cv:C1852514	Tegafur response	Clinical Variations	1.050E-3	9.010E-1	1.609E-2	1.180E-1	1	1	DPYD
+Disease	C0334605	Meningothelial meningioma	DisGeNET BeFree	1.050E-3	9.010E-1	1.609E-2	1.180E-1	1	1	TERT
+Disease	cv:C0796068	Feingold syndrome 1	Clinical Variations	1.050E-3	9.010E-1	1.609E-2	1.180E-1	1	1	MYCN
+Disease	cv:CN168272	Cutaneous malignant melanoma 9	Clinical Variations	1.050E-3	9.010E-1	1.609E-2	1.180E-1	1	1	TERT
+Disease	20081125:Schormair	Restless legs syndrome	GWAS	1.050E-3	9.010E-1	1.609E-2	1.180E-1	1	1	PTPRD
+Disease	C0278586	Metastatic Ewing's Sarcoma	DisGeNET BeFree	1.050E-3	9.010E-1	1.609E-2	1.180E-1	1	1	PTPRD
+Disease	C1333148	Conjunctival intraepithelial neoplasia	DisGeNET BeFree	1.050E-3	9.010E-1	1.609E-2	1.180E-1	1	1	TERT
+Disease	C3541319	SHORT STATURE, OPTIC NERVE ATROPHY, AND PELGER-HUET ANOMALY	DisGeNET Curated	1.050E-3	9.010E-1	1.609E-2	1.180E-1	1	1	NBAS
+Disease	C1857624	COLLAGENOSIS, FAMILIAL REACTIVE PERFORATING	DisGeNET BeFree	1.050E-3	9.010E-1	1.609E-2	1.180E-1	1	1	TERT
+Disease	cv:CN077963	Capecitabine response	Clinical Variations	1.050E-3	9.010E-1	1.609E-2	1.180E-1	1	1	DPYD
+Disease	C3553617	PULMONARY FIBROSIS AND/OR BONE MARROW FAILURE, TELOMERE-RELATED, 1	DisGeNET Curated	1.050E-3	9.010E-1	1.609E-2	1.180E-1	1	1	TERT
+Disease	cv:CN143710	Short stature, optic nerve atrophy, and pelger-huet anomaly	Clinical Variations	1.050E-3	9.010E-1	1.609E-2	1.180E-1	1	1	NBAS
+Disease	C1334953	Neuroblastic Tumor	DisGeNET BeFree	1.183E-3	1.000E0	1.781E-2	1.306E-1	2	49	MYCN,TERT
+Disease	C4025790	Specific learning disability	DisGeNET Curated	1.281E-3	1.000E0	1.896E-2	1.390E-1	2	51	MYCN,TERT
+Disease	C0334590	Anaplastic Oligodendroglioma	DisGeNET Curated	1.332E-3	1.000E0	1.937E-2	1.420E-1	2	52	DPYD,TERT
+Disease	C0008626	Congenital chromosomal disease	DisGeNET Curated	1.536E-3	1.000E0	2.197E-2	1.611E-1	4	499	SLC25A3,MYCN,PTPRD,TERT
+Disease	C0158646	Cleft palate with cleft lip	DisGeNET Curated	1.598E-3	1.000E0	2.238E-2	1.641E-1	2	57	CLPTM1L,TERT
+Disease	C0023903	Liver neoplasms	DisGeNET Curated	1.617E-3	1.000E0	2.238E-2	1.641E-1	6	1318	MYCN,DPYD,ZFHX3,LINGO2,TERT,MACROD2
+Disease	C1704216	Basaloid carcinoma	DisGeNET BeFree	2.097E-3	1.000E0	2.465E-2	1.807E-1	1	2	TERT
+Disease	C1857483	Decreased palmar creases	DisGeNET Curated	2.097E-3	1.000E0	2.465E-2	1.807E-1	1	2	AUTS2
+Disease	C1848657	Long ears	DisGeNET Curated	2.097E-3	1.000E0	2.465E-2	1.807E-1	1	2	DPYD
+Disease	C1332345	Atypical Adenomatous Lung Hyperplasia	DisGeNET BeFree	2.097E-3	1.000E0	2.465E-2	1.807E-1	1	2	TERT
+Disease	C0278502	recurrent gastric cancer	DisGeNET BeFree	2.097E-3	1.000E0	2.465E-2	1.807E-1	1	2	DPYD
+Disease	20081209:McKay	Lung cancer	GWAS	2.097E-3	1.000E0	2.465E-2	1.807E-1	1	2	TERT
+Disease	20090121:Burgner	Kawasaki disease	GWAS	2.097E-3	1.000E0	2.465E-2	1.807E-1	1	2	ZFHX3
+Disease	C4025582	Reduced dihydropyrimidine dehydrogenase activity	DisGeNET Curated	2.097E-3	1.000E0	2.465E-2	1.807E-1	1	2	DPYD
+Disease	C0796068	Oculodigitoesophagoduodenal syndrome	DisGeNET Curated	2.097E-3	1.000E0	2.465E-2	1.807E-1	1	2	MYCN
+Disease	C3272425	Gastric Schwannoma	DisGeNET BeFree	2.097E-3	1.000E0	2.465E-2	1.807E-1	1	2	TERT
+Disease	C0238425	Hemoglobin SS disease with crisis	DisGeNET BeFree	2.097E-3	1.000E0	2.465E-2	1.807E-1	1	2	TERT
+Disease	C0685938	Malignant neoplasm of gastrointestinal tract	DisGeNET BeFree	2.224E-3	1.000E0	2.579E-2	1.891E-1	3	255	CLPTM1L,DPYD,TERT
+Disease	C0007113	Rectal Carcinoma	DisGeNET BeFree	2.350E-3	1.000E0	2.689E-2	1.972E-1	3	260	CLPTM1L,DPYD,TERT
+Disease	C0423109	Upward slant of palpebral fissure	DisGeNET Curated	2.748E-3	1.000E0	2.840E-2	2.082E-1	2	75	MYCN,DPYD
+Disease	C0031511	Pheochromocytoma	DisGeNET Curated	2.989E-3	1.000E0	2.840E-2	2.082E-1	3	283	SLC25A3,MYCN,TERT
+Disease	C3811653	Experimental Organism Basal Cell Carcinoma	DisGeNET BeFree	3.079E-3	1.000E0	2.840E-2	2.082E-1	3	286	MYCN,CLPTM1L,TERT
+Disease	C4023042	Abnormality of the mitochondrion	DisGeNET Curated	3.144E-3	1.000E0	2.840E-2	2.082E-1	1	3	SLC25A3
+Disease	C3502105	Dyskeratosis Congenita, Autosomal Recessive	DisGeNET Curated	3.144E-3	1.000E0	2.840E-2	2.082E-1	1	3	TERT
+Disease	cv:C1851970	Dyskeratosis congenita autosomal dominant	Clinical Variations	3.144E-3	1.000E0	2.840E-2	2.082E-1	1	3	TERT
+Disease	C1959620	Dihydropyrimidine Dehydrogenase Deficiency	DisGeNET Curated	3.144E-3	1.000E0	2.840E-2	2.082E-1	1	3	DPYD
+Disease	cv:C0002874	Aplastic anemia	Clinical Variations	3.144E-3	1.000E0	2.840E-2	2.082E-1	1	3	TERT
+Disease	C1859455	Small anterior fontanelle	DisGeNET Curated	3.144E-3	1.000E0	2.840E-2	2.082E-1	1	3	MYCN
+Disease	C4280498	Hypertrophy of nasal tip	DisGeNET Curated	3.144E-3	1.000E0	2.840E-2	2.082E-1	1	3	AUTS2
+Disease	C1856118	Prominent nasal tip	DisGeNET Curated	3.144E-3	1.000E0	2.840E-2	2.082E-1	1	3	AUTS2
+Disease	C4280500	Bulbous tip of nose	DisGeNET Curated	3.144E-3	1.000E0	2.840E-2	2.082E-1	1	3	AUTS2
+Disease	OMIN:127550	DYSKERATOSIS CONGENITA, AUTOSOMAL DOMINANT	OMIM	3.144E-3	1.000E0	2.840E-2	2.082E-1	1	3	TERT
+Disease	C4280499	Hyperplasia of nasal tip	DisGeNET Curated	3.144E-3	1.000E0	2.840E-2	2.082E-1	1	3	AUTS2
+Disease	C4024981	Localized neuroblastoma	DisGeNET BeFree	3.144E-3	1.000E0	2.840E-2	2.082E-1	1	3	MYCN
+Disease	20081125:Wang	Lung cancer	GWAS	3.144E-3	1.000E0	2.840E-2	2.082E-1	1	3	CLPTM1L
+Disease	C1300818	Necrotic tumor	DisGeNET BeFree	3.144E-3	1.000E0	2.840E-2	2.082E-1	1	3	TERT
+Disease	C3273033	Well Differentiated Hepatocellular Carcinoma	DisGeNET BeFree	3.144E-3	1.000E0	2.840E-2	2.082E-1	1	3	TERT
+Disease	C1517445	Ganglioneuroblastoma, Nodular	DisGeNET BeFree	3.144E-3	1.000E0	2.840E-2	2.082E-1	1	3	MYCN
+Disease	C1851970	DYSKERATOSIS CONGENITA, AUTOSOMAL DOMINANT	DisGeNET Curated	3.144E-3	1.000E0	2.840E-2	2.082E-1	1	3	TERT
+Disease	C0270814	Spastic syndrome	DisGeNET BeFree	3.197E-3	1.000E0	2.857E-2	2.095E-1	2	81	MYCN,DDX1
+Disease	C0302592	Cervix carcinoma	DisGeNET BeFree	3.243E-3	1.000E0	2.868E-2	2.103E-1	5	1023	MYCN,CLPTM1L,DPYD,ZFHX3,TERT
+Disease	C1336708	Testicular Germ Cell Tumor	DisGeNET Curated	3.595E-3	1.000E0	3.147E-2	2.308E-1	2	86	MYCN,TERT
+Disease	C0026826	Muscle Hypertonia	DisGeNET Curated	3.760E-3	1.000E0	3.181E-2	2.333E-1	2	88	DPYD,TERT
+Disease	C4020876	Dull intelligence	DisGeNET Curated	3.998E-3	1.000E0	3.181E-2	2.333E-1	4	649	MYCN,AUTS2,DPYD,TERT
+Disease	C0423903	Low intelligence	DisGeNET Curated	3.998E-3	1.000E0	3.181E-2	2.333E-1	4	649	MYCN,AUTS2,DPYD,TERT
+Disease	C1843367	Poor school performance	DisGeNET Curated	3.998E-3	1.000E0	3.181E-2	2.333E-1	4	649	MYCN,AUTS2,DPYD,TERT
+Disease	C0917816	Mental deficiency	DisGeNET Curated	4.043E-3	1.000E0	3.181E-2	2.333E-1	4	651	MYCN,AUTS2,DPYD,TERT
+Disease	C1148551	X-Linked Dyskeratosis Congenita	DisGeNET Curated	4.190E-3	1.000E0	3.181E-2	2.333E-1	1	4	TERT
+Disease	20090804:Benjamin	Atrial fibrillation	GWAS	4.190E-3	1.000E0	3.181E-2	2.333E-1	1	4	ZFHX3
+Disease	C1266186	Retinoblastoma, spontaneously regressed	DisGeNET BeFree	4.190E-3	1.000E0	3.181E-2	2.333E-1	1	4	MYCN
+Disease	C0149955	Annular pancreas	DisGeNET Curated	4.190E-3	1.000E0	3.181E-2	2.333E-1	1	4	MYCN
+Disease	C0278719	Extraocular retinoblastoma	DisGeNET BeFree	4.190E-3	1.000E0	3.181E-2	2.333E-1	1	4	MYCN
+Disease	C0346396	Retinoma	DisGeNET BeFree	4.190E-3	1.000E0	3.181E-2	2.333E-1	1	4	MYCN
+Disease	C1834034	Absent/hypoplastic middle phalanx of 5th finger	DisGeNET Curated	4.190E-3	1.000E0	3.181E-2	2.333E-1	1	4	MYCN
+Disease	C1862144	Hypoplastic/aplastic middle phalanx (2nd finger)	DisGeNET Curated	4.190E-3	1.000E0	3.181E-2	2.333E-1	1	4	MYCN
+Disease	C0279765	Endometrial Clear Cell Adenocarcinoma	DisGeNET BeFree	4.190E-3	1.000E0	3.181E-2	2.333E-1	1	4	TERT
+Disease	C1512260	grade I meningioma	DisGeNET BeFree	4.190E-3	1.000E0	3.181E-2	2.333E-1	1	4	TERT
+Disease	C0007873	Uterine Cervical Neoplasm	DisGeNET Curated	4.367E-3	1.000E0	3.263E-2	2.392E-1	2	95	CLPTM1L,TERT
+Disease	C0278701	Gastric Adenocarcinoma	DisGeNET BeFree	4.373E-3	1.000E0	3.263E-2	2.392E-1	3	324	NBAS,DPYD,PTPRD
+Disease	C0009404	Colorectal Neoplasms	DisGeNET Curated	4.849E-3	1.000E0	3.587E-2	2.630E-1	4	685	SLC25A3,DPYD,PTPRD,TERT
+Disease	C1263846	Attention deficit hyperactivity disorder	DisGeNET Curated	5.128E-3	1.000E0	3.652E-2	2.678E-1	3	343	MYCN,AUTS2,PTPRD
+Disease	C0346360	Malignant melanoma of conjunctiva	DisGeNET BeFree	5.235E-3	1.000E0	3.652E-2	2.678E-1	1	5	TERT
+Disease	C0010314	Cri-du-Chat Syndrome	DisGeNET Curated	5.235E-3	1.000E0	3.652E-2	2.678E-1	1	5	TERT
+Disease	C0241577	Catecholamines urine increased	DisGeNET Curated	5.235E-3	1.000E0	3.652E-2	2.678E-1	1	5	MYCN
+Disease	cv:C1800706	Idiopathic fibrosing alveolitis, chronic form	Clinical Variations	5.235E-3	1.000E0	3.652E-2	2.678E-1	1	5	TERT
+Disease	C0268654	Iminoglycinuria	DisGeNET Curated	5.235E-3	1.000E0	3.652E-2	2.678E-1	1	5	SLC6A18
+Disease	C4023400	Generalized hypopigmentation of hair	DisGeNET Curated	5.235E-3	1.000E0	3.652E-2	2.678E-1	1	5	TERT
+Disease	C0553580	Ewings sarcoma	DisGeNET Curated	5.511E-3	1.000E0	3.813E-2	2.796E-1	3	352	MYCN,PTPRD,TERT
+Disease	C0231246	Failure to gain weight	DisGeNET Curated	6.187E-3	1.000E0	4.144E-2	3.039E-1	3	367	SLC25A3,DPYD,TERT
+Disease	C0206719	Central Neurocytoma	DisGeNET BeFree	6.279E-3	1.000E0	4.144E-2	3.039E-1	1	6	MYCN
+Disease	OMIN:609135	APLASTIC ANEMIA	OMIM	6.279E-3	1.000E0	4.144E-2	3.039E-1	1	6	TERT
+Disease	C1851972	Reticulate hyperpigmentation	DisGeNET Curated	6.279E-3	1.000E0	4.144E-2	3.039E-1	1	6	TERT
+Disease	C0266174	Duodenal atresia	DisGeNET Curated	6.279E-3	1.000E0	4.144E-2	3.039E-1	1	6	MYCN
+Disease	20090712:Shete	Glioma	GWAS	6.279E-3	1.000E0	4.144E-2	3.039E-1	1	6	TERT
+Disease	C0524528	Pervasive Development Disorder	DisGeNET BeFree	6.440E-3	1.000E0	4.218E-2	3.093E-1	2	116	DPYD,MACROD2
+Disease	C0236969	Substance-Related Disorders	DisGeNET Curated	6.548E-3	1.000E0	4.256E-2	3.121E-1	2	117	DDX1,MACROD2
+Disease	C2315100	Pediatric failure to thrive	DisGeNET Curated	6.962E-3	1.000E0	4.303E-2	3.155E-1	3	383	SLC25A3,DPYD,TERT
+Disease	C1856659	Polysplenia	DisGeNET Curated	7.322E-3	1.000E0	4.303E-2	3.155E-1	1	7	MYCN
+Disease	C2749515	Collapsing glomerulopathy	DisGeNET BeFree	7.322E-3	1.000E0	4.303E-2	3.155E-1	1	7	TERT
+Disease	C0677984	Locally Advanced Malignant Neoplasm	DisGeNET BeFree	7.322E-3	1.000E0	4.303E-2	3.155E-1	1	7	DPYD
+Disease	C0085662	Macrocytosis	DisGeNET BeFree	7.322E-3	1.000E0	4.303E-2	3.155E-1	1	7	TERT
+Disease	C0393626	Opsoclonus-Myoclonus Syndrome	DisGeNET Curated	7.322E-3	1.000E0	4.303E-2	3.155E-1	1	7	MYCN
+Disease	OMIN:178500	PULMONARY FIBROSIS, IDIOPATHIC	OMIM	7.322E-3	1.000E0	4.303E-2	3.155E-1	1	7	TERT
+Disease	C0150993	Pitting of nails	DisGeNET Curated	7.322E-3	1.000E0	4.303E-2	3.155E-1	1	7	TERT
+Disease	C0266631	Accessory spleen	DisGeNET Curated	7.322E-3	1.000E0	4.303E-2	3.155E-1	1	7	MYCN
+Disease	C1860247	Prominent glabella	DisGeNET Curated	7.322E-3	1.000E0	4.303E-2	3.155E-1	1	7	NBAS
+Disease	C0279068	childhood solid tumor	DisGeNET BeFree	7.322E-3	1.000E0	4.303E-2	3.155E-1	1	7	MYCN
+Disease	C3896673	Familial Nonmedullary Thyroid Gland Carcinoma	DisGeNET BeFree	7.322E-3	1.000E0	4.303E-2	3.155E-1	1	7	TERT
+Disease	C2986691	Inherited Bone Marrow Failure Syndrome	DisGeNET BeFree	7.322E-3	1.000E0	4.303E-2	3.155E-1	1	7	TERT
+Disease	C0348890	Aplastic anemia, idiopathic	DisGeNET Curated	7.322E-3	1.000E0	4.303E-2	3.155E-1	1	7	TERT
+Disease	C0086648	MPS III B	DisGeNET Curated	8.364E-3	1.000E0	4.849E-2	3.555E-1	1	8	NBAS
+Disease	C0750151	Vaso-Occlusive Crisis	DisGeNET BeFree	8.364E-3	1.000E0	4.849E-2	3.555E-1	1	8	TERT
+Disease	C0940937	precancerous lesions	DisGeNET BeFree	8.510E-3	1.000E0	4.900E-2	3.593E-1	2	134	MYCN,TERT

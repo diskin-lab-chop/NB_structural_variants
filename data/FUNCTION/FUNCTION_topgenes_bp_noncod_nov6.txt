@@ -1,0 +1,78 @@
+Category	ID	Name	Source	p-value	q-value Bonferroni	q-value FDR B&H	q-value FDR B&Y	Hit Count in Query List	Hit Count in Genome	Hit in Query List
+GO: Molecular Function	GO:0042974	retinoic acid receptor binding	 	2.309E-9	4.410E-7	4.410E-7	2.572E-6	6	51	PRAMEF10,PRAMEF12,PRAMEF4,PRAMEF1,PRAMEF2,PRAMEF6
+GO: Molecular Function	GO:0035257	nuclear hormone receptor binding	 	1.076E-7	2.054E-5	1.027E-5	5.991E-5	7	161	PRAMEF10,PRAMEF12,PRAMEF4,PRAMEF1,PRAMEF2,ZNHIT3,PRAMEF6
+GO: Molecular Function	GO:0051427	hormone receptor binding	 	2.576E-7	4.920E-5	1.640E-5	9.565E-5	7	183	PRAMEF10,PRAMEF12,PRAMEF4,PRAMEF1,PRAMEF2,ZNHIT3,PRAMEF6
+GO: Molecular Function	GO:0008134	transcription factor binding	 	6.800E-5	1.299E-2	3.247E-3	1.894E-2	8	584	PRAMEF10,PRAMEF12,PRAMEF4,PRAMEF1,PRAMEF2,TERT,ZNHIT3,PRAMEF6
+GO: Molecular Function	GO:0015293	symporter activity	 	3.860E-4	7.372E-2	1.474E-2	8.599E-2	4	143	SLC6A18,SLC25A3,SLC6A19,SLC12A7
+GO: Molecular Function	GO:0005328	neurotransmitter:sodium symporter activity	 	9.473E-4	1.809E-1	3.015E-2	1.759E-1	2	19	SLC6A18,SLC6A19
+GO: Molecular Function	GO:0005326	neurotransmitter transporter activity	 	1.647E-3	3.145E-1	4.055E-2	2.365E-1	2	25	SLC6A18,SLC6A19
+GO: Molecular Function	GO:0015294	solute:cation symporter activity	 	1.698E-3	3.244E-1	4.055E-2	2.365E-1	3	98	SLC6A18,SLC6A19,SLC12A7
+GO: Molecular Function	GO:0003721	telomerase RNA reverse transcriptase activity	 	2.417E-3	4.617E-1	4.726E-2	2.756E-1	1	1	TERT
+GO: Molecular Function	GO:0015291	secondary active transmembrane transporter activity	 	2.474E-3	4.726E-1	4.726E-2	2.756E-1	4	236	SLC6A18,SLC25A3,SLC6A19,SLC12A7
+GO: Biological Process	GO:0048387	negative regulation of retinoic acid receptor signaling pathway	 	9.631E-11	9.871E-8	9.871E-8	7.414E-7	6	29	PRAMEF10,PRAMEF12,PRAMEF4,PRAMEF1,PRAMEF2,PRAMEF6
+GO: Biological Process	GO:0048385	regulation of retinoic acid receptor signaling pathway	 	3.896E-10	3.993E-7	1.997E-7	1.500E-6	6	36	PRAMEF10,PRAMEF12,PRAMEF4,PRAMEF1,PRAMEF2,PRAMEF6
+GO: Biological Process	GO:0048384	retinoic acid receptor signaling pathway	 	3.948E-9	4.046E-6	1.349E-6	1.013E-5	6	52	PRAMEF10,PRAMEF12,PRAMEF4,PRAMEF1,PRAMEF2,PRAMEF6
+GO: Biological Process	GO:0045596	negative regulation of cell differentiation	 	8.779E-6	8.998E-3	2.250E-3	1.689E-2	10	694	MYCN,PRAMEF10,CCL3,PRAMEF12,PRAMEF4,PRAMEF1,PRAMEF2,TERT,GFAP,PRAMEF6
+GO: Biological Process	GO:0051093	negative regulation of developmental process	 	9.208E-5	9.438E-2	1.660E-2	1.247E-1	10	914	MYCN,PRAMEF10,CCL3,PRAMEF12,PRAMEF4,PRAMEF1,PRAMEF2,TERT,GFAP,PRAMEF6
+GO: Biological Process	GO:0008284	positive regulation of cell proliferation	 	1.008E-4	1.033E-1	1.660E-2	1.247E-1	10	924	MYCN,PRAMEF10,MYCNOS,PRAMEF12,PRAMEF4,PRAMEF1,PRAMEF2,TERT,GFAP,PRAMEF6
+GO: Biological Process	GO:0030522	intracellular receptor signaling pathway	 	1.134E-4	1.162E-1	1.660E-2	1.247E-1	6	299	PRAMEF10,PRAMEF12,PRAMEF4,PRAMEF1,PRAMEF2,PRAMEF6
+Transcription Factor Binding Site	V$ER_Q6	V$ER_Q6	 	2.247E-4	3.146E-2	3.146E-2	1.738E-1	4	224	SLC25A3,PRG1,PIGW,GFAP
+Disease	C0280216	stage, neuroblastoma	DisGeNET BeFree	2.519E-5	2.952E-2	1.978E-2	1.512E-1	3	24	MYCN,TERT,DDX1
+Disease	C0221725	Obstruction of bronchus	DisGeNET BeFree	3.376E-5	3.957E-2	1.978E-2	1.512E-1	2	4	CLPTM1L,TERT
+Disease	C0268654	Iminoglycinuria	DisGeNET Curated	5.618E-5	6.584E-2	2.195E-2	1.678E-1	2	5	SLC6A18,SLC6A19
+Disease	C0334582	Fibrillary Astrocytoma	DisGeNET Curated	2.010E-4	2.356E-1	4.792E-2	3.663E-1	2	9	TERT,GFAP
+Disease	C4025790	Specific learning disability	DisGeNET Curated	2.478E-4	2.904E-1	4.792E-2	3.663E-1	3	51	MYCN,SDCCAG8,TERT
+Disease	C0007117	Basal cell carcinoma	DisGeNET Curated	2.625E-4	3.077E-1	4.792E-2	3.663E-1	3	52	MYCN,CLPTM1L,TERT
+Disease	C2986658	Diffuse Intrinsic Pontine Glioma	DisGeNET BeFree	5.043E-4	5.910E-1	4.792E-2	3.663E-1	2	14	MYCN,GFAP
+Disease	C0543541	HYPERGLYCINURIA (disorder)	DisGeNET Curated	5.043E-4	5.910E-1	4.792E-2	3.663E-1	2	14	SLC6A18,SLC6A19
+Disease	C0795839	Chromosome 10, monosomy 10q	DisGeNET BeFree	5.810E-4	6.809E-1	4.792E-2	3.663E-1	2	15	MYCN,TERT
+Disease	C0334581	Gemistocytic astrocytoma	DisGeNET Curated	7.502E-4	8.793E-1	4.792E-2	3.663E-1	2	17	TERT,GFAP
+Disease	C0686377	CNS metastases	DisGeNET BeFree	9.405E-4	1.000E0	4.792E-2	3.663E-1	2	19	MYCN,TERT
+Disease	C0014850	Esophageal Atresia	DisGeNET Curated	2.199E-3	1.000E0	4.792E-2	3.663E-1	2	29	MYCN,EFTUD2
+Disease	C0558356	Malignant melanoma of eye	DisGeNET BeFree	2.353E-3	1.000E0	4.792E-2	3.663E-1	2	30	CD177,TERT
+Disease	cv:C1969621	Deafness, autosomal recessive 63	Clinical Variations	2.412E-3	1.000E0	4.792E-2	3.663E-1	1	1	LRTOMT
+Disease	C0279982	childhood synovial sarcoma	DisGeNET BeFree	2.412E-3	1.000E0	4.792E-2	3.663E-1	1	1	MYCN
+Disease	OMIN:613615	SENIOR-LOKEN SYNDROME 7; SLSN7	OMIM	2.412E-3	1.000E0	4.792E-2	3.663E-1	1	1	SDCCAG8
+Disease	cv:C1864652	Growth and mental retardation, mandibulofacial dysostosis, microcephaly, and cleft palate	Clinical Variations	2.412E-3	1.000E0	4.792E-2	3.663E-1	1	1	EFTUD2
+Disease	20081125:Mushiroda	Idiopathic pulmonary fibrosis	GWAS	2.412E-3	1.000E0	4.792E-2	3.663E-1	1	1	TERT
+Disease	C4023050	Abnormal mitochondrial shape	DisGeNET Curated	2.412E-3	1.000E0	4.792E-2	3.663E-1	1	1	SLC25A3
+Disease	cv:CN128721	Ciliary dyskinesia, primary, 17	Clinical Variations	2.412E-3	1.000E0	4.792E-2	3.663E-1	1	1	CCDC103
+Disease	C1835845	Mitochondrial Phosphate Carrier Deficiency	DisGeNET Curated	2.412E-3	1.000E0	4.792E-2	3.663E-1	1	1	SLC25A3
+Disease	C3151443	DYSKERATOSIS CONGENITA, AUTOSOMAL DOMINANT 2	DisGeNET Curated	2.412E-3	1.000E0	4.792E-2	3.663E-1	1	1	TERT
+Disease	cv:CN120370	Bardet-Biedl syndrome 16	Clinical Variations	2.412E-3	1.000E0	4.792E-2	3.663E-1	1	1	SDCCAG8
+Disease	C1336257	Stage 3 Neuroblastoma	DisGeNET BeFree	2.412E-3	1.000E0	4.792E-2	3.663E-1	1	1	MYCN
+Disease	C4021893	Nonprogressive visual loss	DisGeNET Curated	2.412E-3	1.000E0	4.792E-2	3.663E-1	1	1	NBAS
+Disease	cv:C1835845	Mitochondrial phosphate carrier deficiency	Clinical Variations	2.412E-3	1.000E0	4.792E-2	3.663E-1	1	1	SLC25A3
+Disease	cv:C0018609	Neutral 1 amino acid transport defect	Clinical Variations	2.412E-3	1.000E0	4.792E-2	3.663E-1	1	1	SLC6A19
+Disease	C1969621	DEAFNESS, AUTOSOMAL RECESSIVE 63	DisGeNET Curated	2.412E-3	1.000E0	4.792E-2	3.663E-1	1	1	LRTOMT
+Disease	C0040250	Tinea Capitis	DisGeNET BeFree	2.412E-3	1.000E0	4.792E-2	3.663E-1	1	1	TERT
+Disease	cv:CN219569	Hyperphosphatasia with mental retardation syndrome 5	Clinical Variations	2.412E-3	1.000E0	4.792E-2	3.663E-1	1	1	PIGW
+Disease	C4024201	Low-output congestive heart failure	DisGeNET Curated	2.412E-3	1.000E0	4.792E-2	3.663E-1	1	1	SLC25A3
+Disease	cv:CN130951	PULMONARY FIBROSIS AND/OR BONE MARROW FAILURE, TELOMERE-RELATED, 1	Clinical Variations	2.412E-3	1.000E0	4.792E-2	3.663E-1	1	1	TERT
+Disease	C1517444	Ganglioneuroblastoma, Intermixed	DisGeNET BeFree	2.412E-3	1.000E0	4.792E-2	3.663E-1	1	1	MYCN
+Disease	C3809651	INFANTILE LIVER FAILURE SYNDROME 2	DisGeNET Curated	2.412E-3	1.000E0	4.792E-2	3.663E-1	1	1	NBAS
+Disease	OMIN:612109	OCULOAURICULAR SYNDROME	OMIM	2.412E-3	1.000E0	4.792E-2	3.663E-1	1	1	HMX1
+Disease	OMIN:610773	MITOCHONDRIAL PHOSPHATE CARRIER DEFICIENCY	OMIM	2.412E-3	1.000E0	4.792E-2	3.663E-1	1	1	SLC25A3
+Disease	cv:C3150877	Senior-Loken syndrome 7	Clinical Variations	2.412E-3	1.000E0	4.792E-2	3.663E-1	1	1	SDCCAG8
+Disease	OMIN:234500	HARTNUP DISORDER	OMIM	2.412E-3	1.000E0	4.792E-2	3.663E-1	1	1	SLC6A19
+Disease	OMIN:602585	MICROCEPHALY AND DIGITAL ABNORMALITIES WITH NORMAL INTELLIGENCE	OMIM	2.412E-3	1.000E0	4.792E-2	3.663E-1	1	1	MYCN
+Disease	C2677500	Oculoauricular Syndrome	DisGeNET Curated	2.412E-3	1.000E0	4.792E-2	3.663E-1	1	1	HMX1
+Disease	cv:C3151443	Dyskeratosis congenita, autosomal dominant, 2	Clinical Variations	2.412E-3	1.000E0	4.792E-2	3.663E-1	1	1	TERT
+Disease	C3553696	Decreased visual acuity, nonprogressive	DisGeNET Curated	2.412E-3	1.000E0	4.792E-2	3.663E-1	1	1	NBAS
+Disease	C3542550	CILIARY DYSKINESIA, PRIMARY, 17	DisGeNET Curated	2.412E-3	1.000E0	4.792E-2	3.663E-1	1	1	CCDC103
+Disease	C4014958	HYPERPHOSPHATASIA WITH MENTAL RETARDATION SYNDROME 5	DisGeNET Curated	2.412E-3	1.000E0	4.792E-2	3.663E-1	1	1	PIGW
+Disease	C0334605	Meningothelial meningioma	DisGeNET BeFree	2.412E-3	1.000E0	4.792E-2	3.663E-1	1	1	TERT
+Disease	cv:C0796068	Feingold syndrome 1	Clinical Variations	2.412E-3	1.000E0	4.792E-2	3.663E-1	1	1	MYCN
+Disease	cv:C1864871	17q21.31 microdeletion syndrome	Clinical Variations	2.412E-3	1.000E0	4.792E-2	3.663E-1	1	1	KANSL1
+Disease	OMIN:610443	CHROMOSOME 17q21.31 DELETION SYNDROME	OMIM	2.412E-3	1.000E0	4.792E-2	3.663E-1	1	1	KANSL1
+Disease	cv:CN168272	Cutaneous malignant melanoma 9	Clinical Variations	2.412E-3	1.000E0	4.792E-2	3.663E-1	1	1	TERT
+Disease	C1864871	Chromosome 17q21.31 Deletion Syndrome	DisGeNET Curated	2.412E-3	1.000E0	4.792E-2	3.663E-1	1	1	KANSL1
+Disease	C1333148	Conjunctival intraepithelial neoplasia	DisGeNET BeFree	2.412E-3	1.000E0	4.792E-2	3.663E-1	1	1	TERT
+Disease	C3541319	SHORT STATURE, OPTIC NERVE ATROPHY, AND PELGER-HUET ANOMALY	DisGeNET Curated	2.412E-3	1.000E0	4.792E-2	3.663E-1	1	1	NBAS
+Disease	OMIN:611451	DEAFNESS, AUTOSOMAL RECESSIVE 63; DFNB63	OMIM	2.412E-3	1.000E0	4.792E-2	3.663E-1	1	1	LRTOMT
+Disease	cv:C2677500	Oculoauricular syndrome	Clinical Variations	2.412E-3	1.000E0	4.792E-2	3.663E-1	1	1	HMX1
+Disease	C1857624	COLLAGENOSIS, FAMILIAL REACTIVE PERFORATING	DisGeNET BeFree	2.412E-3	1.000E0	4.792E-2	3.663E-1	1	1	TERT
+Disease	C4023439	Absent tragus	DisGeNET Curated	2.412E-3	1.000E0	4.792E-2	3.663E-1	1	1	EFTUD2
+Disease	cv:C0270726	Alexander's disease	Clinical Variations	2.412E-3	1.000E0	4.792E-2	3.663E-1	1	1	GFAP
+Disease	C3553617	PULMONARY FIBROSIS AND/OR BONE MARROW FAILURE, TELOMERE-RELATED, 1	DisGeNET Curated	2.412E-3	1.000E0	4.792E-2	3.663E-1	1	1	TERT
+Disease	cv:CN143710	Short stature, optic nerve atrophy, and pelger-huet anomaly	Clinical Variations	2.412E-3	1.000E0	4.792E-2	3.663E-1	1	1	NBAS

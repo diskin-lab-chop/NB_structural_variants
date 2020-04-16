@@ -1,3 +1,8 @@
+## Code FUNCTIONS :
+# "Somatic structural variation targets neurodevelopmental genes and identifies SHANK2 as a tumor suppressor in neuroblastoma"
+# Author: Gonzalo Lopez, PhD
+# email: gonzalo.lopezgarcia@mssm.edu
+# Date edited: Apr 16th, 2020
 
 
 

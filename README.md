@@ -21,13 +21,14 @@ Zalman Vaksman<sup>1,3,4</sup>, Lance M. Farra<sup>1,3</sup>, Eric Hyson<sup>1,3
 This repository contains all code and processed data necessary to reproduce analysis and figures in the above cited manuscript.
 
 ## R code :
-### R/sv_somatic_nbl-pantarget_analysis_V2.R
-Structural variant analysis applied to all [TARGET](https://ocg.cancer.gov/programs/target) WGS cancer datasets; The code implements variant filtering (common variant and artifact removal) and variant annotations (gene-level recurrent alterations)
-### R/sv_somatic_nbl-segment_data_V2.r
+### R/01-nbl_somatic_SV_FUNCTIONS.R
+Contain required functions used by the main scripts 02, 03 & 04
+### R/02-nbl_somatic_SJBP_analysis.R
+Structural variant analysis applied to all [TARGET](https://ocg.cancer.gov/programs/target) WGS cancer datasets; The code implements variant filtering (common variant and artifact removal) and variant annotations (gene-level recurrent alterations) from SJ-BP (sequence junction based variants)
+### R/03-nbl_somatic_CNBP_RDBP_analyses.R
 Analysis of CNV breakpoints across [TARGET](https://ocg.cancer.gov/programs/target) WGS cancer datasets and SNP array neuroblastoma datasets; The code implements identification of breakpoints and annotation of recurrently altered genes (amplifications, deletions, etc)
-### R/sv_somatic_nbl-pantarget_figures_V2.R
+### R/04-nbl_somatic_SV_FIGURES.R
 Uses the output from SV and CNV analyses to generate additional analyses and figures from manuscript.
-### R/sv_somatic_nbl-segment_data_V2.r, R/my_stat_functions.r and R/heatmap3.R 
-Contain required functions used by the main scripts
-
+###  R/my_stat_functions.r, R/my_survival.R and R/heatmap3.R 
+Additional functions for statistics and heatmap plotting
 

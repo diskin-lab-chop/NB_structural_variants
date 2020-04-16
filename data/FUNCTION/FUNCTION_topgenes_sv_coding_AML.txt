@@ -1,0 +1,714 @@
+Category	ID	Name	Source	p-value	q-value Bonferroni	q-value FDR B&H	q-value FDR B&Y	Hit Count in Query List	Hit Count in Genome	Hit in Query List
+GO: Molecular Function	GO:0003682	chromatin binding	 	3.279E-11	7.476E-9	7.476E-9	4.492E-8	13	629	NUP98,NSD1,KMT2A,MLLT3,FOXP1,CTBP2,FUS,THRB,MLLT10,RUNX1,ERG,CBFA2T3,KDM5A
+GO: Molecular Function	GO:0001067	regulatory region nucleic acid binding	 	1.467E-7	3.346E-5	1.673E-5	1.005E-4	12	1036	MYC,WT1,NSD1,ETV6,KMT2A,FOXP1,THRB,RUNX1,ERG,KDM5A,GLIS2,MBNL1
+GO: Molecular Function	GO:0003712	transcription coregulator activity	 	8.606E-7	1.962E-4	6.541E-5	3.930E-4	9	597	NUP98,NSD1,CTBP2,FUS,THRB,RUNX1T1,CBFA2T3,CBFB,KDM5A
+GO: Molecular Function	GO:0044212	transcription regulatory region DNA binding	 	1.259E-6	2.870E-4	7.175E-5	4.312E-4	11	1031	MYC,WT1,NSD1,ETV6,KMT2A,FOXP1,THRB,RUNX1,ERG,KDM5A,GLIS2
+GO: Molecular Function	GO:0043565	sequence-specific DNA binding	 	5.460E-6	1.245E-3	2.490E-4	1.496E-3	11	1199	MYC,WT1,NSD1,ETV6,KMT2A,FOXP1,THRB,RUNX1,ERG,CBFB,GLIS2
+GO: Molecular Function	GO:0003690	double-stranded DNA binding	 	1.158E-5	2.640E-3	4.313E-4	2.592E-3	10	1048	MYC,WT1,NSD1,ETV6,KMT2A,FOXP1,THRB,RUNX1,ERG,GLIS2
+GO: Molecular Function	GO:0000981	DNA-binding transcription factor activity, RNA polymerase II-specific	 	1.564E-5	3.565E-3	4.313E-4	2.592E-3	12	1614	MYC,WT1,ETV6,KMT2A,MLLT3,FOXP1,THRB,RUNX1,ERG,CBFB,KDM5A,GLIS2
+GO: Molecular Function	GO:0000977	RNA polymerase II regulatory region sequence-specific DNA binding	 	1.581E-5	3.604E-3	4.313E-4	2.592E-3	9	853	MYC,NSD1,ETV6,KMT2A,FOXP1,THRB,RUNX1,ERG,GLIS2
+GO: Molecular Function	GO:0001012	RNA polymerase II regulatory region DNA binding	 	1.703E-5	3.882E-3	4.313E-4	2.592E-3	9	861	MYC,NSD1,ETV6,KMT2A,FOXP1,THRB,RUNX1,ERG,GLIS2
+GO: Molecular Function	GO:0000976	transcription regulatory region sequence-specific DNA binding	 	2.378E-5	5.422E-3	5.422E-4	3.258E-3	9	898	MYC,NSD1,ETV6,KMT2A,FOXP1,THRB,RUNX1,ERG,GLIS2
+GO: Molecular Function	GO:0003713	transcription coactivator activity	 	3.067E-5	6.993E-3	6.357E-4	3.820E-3	6	340	NUP98,CTBP2,FUS,THRB,CBFB,KDM5A
+GO: Molecular Function	GO:0042974	retinoic acid receptor binding	 	3.467E-5	7.905E-3	6.392E-4	3.841E-3	3	35	NSD1,CTBP2,FUS
+GO: Molecular Function	GO:1990837	sequence-specific double-stranded DNA binding	 	3.645E-5	8.310E-3	6.392E-4	3.841E-3	9	948	MYC,NSD1,ETV6,KMT2A,FOXP1,THRB,RUNX1,ERG,GLIS2
+GO: Molecular Function	GO:0140297	DNA-binding transcription factor binding	 	7.163E-5	1.633E-2	1.167E-3	7.009E-3	6	396	MYC,NSD1,FOXP1,CTBP2,FUS,RUNX1
+GO: Molecular Function	GO:0003714	transcription corepressor activity	 	9.389E-5	2.141E-2	1.427E-3	8.576E-3	5	256	NSD1,CTBP2,THRB,RUNX1T1,CBFA2T3
+GO: Molecular Function	GO:0001228	DNA-binding transcription activator activity, RNA polymerase II-specific	 	2.120E-4	4.834E-2	2.876E-3	1.728E-2	6	483	MYC,WT1,ETV6,RUNX1,ERG,GLIS2
+GO: Molecular Function	GO:0001216	DNA-binding transcription activator activity	 	2.144E-4	4.888E-2	2.876E-3	1.728E-2	6	484	MYC,WT1,ETV6,RUNX1,ERG,GLIS2
+GO: Molecular Function	GO:0035257	nuclear hormone receptor binding	 	2.717E-4	6.195E-2	3.442E-3	2.068E-2	4	174	NSD1,FOXP1,CTBP2,FUS
+GO: Molecular Function	GO:0008134	transcription factor binding	 	3.440E-4	7.844E-2	4.128E-3	2.481E-2	7	750	MYC,NSD1,FOXP1,CTBP2,FUS,THRB,RUNX1
+GO: Molecular Function	GO:0042393	histone binding	 	4.874E-4	1.111E-1	5.344E-3	3.211E-2	4	203	KMT2A,MLLT3,MLLT10,KDM5A
+GO: Molecular Function	GO:0051427	hormone receptor binding	 	5.245E-4	1.196E-1	5.344E-3	3.211E-2	4	207	NSD1,FOXP1,CTBP2,FUS
+GO: Molecular Function	GO:0070577	lysine-acetylated histone binding	 	5.390E-4	1.229E-1	5.344E-3	3.211E-2	2	19	KMT2A,MLLT3
+GO: Molecular Function	GO:0140033	acetylation-dependent protein binding	 	5.390E-4	1.229E-1	5.344E-3	3.211E-2	2	19	KMT2A,MLLT3
+GO: Molecular Function	GO:0000978	RNA polymerase II proximal promoter sequence-specific DNA binding	 	5.631E-4	1.284E-1	5.350E-3	3.215E-2	6	580	MYC,NSD1,ETV6,FOXP1,RUNX1,ERG
+GO: Molecular Function	GO:0000987	proximal promoter sequence-specific DNA binding	 	6.384E-4	1.456E-1	5.822E-3	3.498E-2	6	594	MYC,NSD1,ETV6,FOXP1,RUNX1,ERG
+GO: Molecular Function	GO:0035258	steroid hormone receptor binding	 	8.608E-4	1.963E-1	7.305E-3	4.389E-2	3	103	NSD1,FOXP1,FUS
+GO: Molecular Function	GO:0046965	retinoid X receptor binding	 	8.651E-4	1.972E-1	7.305E-3	4.389E-2	2	24	NSD1,FUS
+GO: Molecular Function	GO:0004619	phosphoglycerate mutase activity	 	1.505E-3	3.431E-1	1.104E-2	6.637E-2	3	125	NUP98,MYC,CBFA2T3
+GO: Molecular Function	GO:0004618	phosphoglycerate kinase activity	 	1.505E-3	3.431E-1	1.104E-2	6.637E-2	3	125	NUP98,MYC,CBFA2T3
+GO: Molecular Function	GO:0004634	phosphopyruvate hydratase activity	 	1.505E-3	3.431E-1	1.104E-2	6.637E-2	3	125	NUP98,MYC,CBFA2T3
+GO: Molecular Function	GO:0043891	glyceraldehyde-3-phosphate dehydrogenase (NAD(P)+) (phosphorylating) activity	 	1.505E-3	3.431E-1	1.104E-2	6.637E-2	3	125	NUP98,MYC,CBFA2T3
+GO: Molecular Function	GO:0016774	phosphotransferase activity, carboxyl group as acceptor	 	1.575E-3	3.591E-1	1.104E-2	6.637E-2	3	127	NUP98,MYC,CBFA2T3
+GO: Molecular Function	GO:0046966	thyroid hormone receptor binding	 	1.638E-3	3.735E-1	1.104E-2	6.637E-2	2	33	NSD1,FUS
+GO: Molecular Function	GO:0016922	nuclear receptor binding	 	1.647E-3	3.755E-1	1.104E-2	6.637E-2	3	129	NSD1,FOXP1,FUS
+GO: Molecular Function	GO:0016868	intramolecular transferase activity, phosphotransferases	 	1.721E-3	3.924E-1	1.121E-2	6.737E-2	3	131	NUP98,MYC,CBFA2T3
+GO: Molecular Function	GO:0016866	intramolecular transferase activity	 	2.344E-3	5.345E-1	1.455E-2	8.743E-2	3	146	NUP98,MYC,CBFA2T3
+GO: Molecular Function	GO:0061629	RNA polymerase II-specific DNA-binding transcription factor binding	 	2.361E-3	5.383E-1	1.455E-2	8.743E-2	4	311	NSD1,FOXP1,CTBP2,FUS
+GO: Molecular Function	GO:0140030	modification-dependent protein binding	 	2.484E-3	5.663E-1	1.490E-2	8.954E-2	3	149	KMT2A,MLLT3,KDM5A
+GO: Molecular Function	GO:0016620	oxidoreductase activity, acting on the aldehyde or oxo group of donors, NAD or NADP as acceptor	 	3.092E-3	7.049E-1	1.759E-2	1.057E-1	3	161	NUP98,MYC,CBFA2T3
+GO: Molecular Function	GO:0018024	histone-lysine N-methyltransferase activity	 	3.164E-3	7.213E-1	1.759E-2	1.057E-1	2	46	NSD1,KMT2A
+GO: Molecular Function	GO:0050681	androgen receptor binding	 	3.164E-3	7.213E-1	1.759E-2	1.057E-1	2	46	NSD1,FOXP1
+GO: Molecular Function	GO:0016903	oxidoreductase activity, acting on the aldehyde or oxo group of donors	 	3.603E-3	8.215E-1	1.956E-2	1.175E-1	3	170	NUP98,MYC,CBFA2T3
+GO: Molecular Function	GO:0030331	estrogen receptor binding	 	4.179E-3	9.527E-1	2.216E-2	1.331E-1	2	53	NSD1,FUS
+GO: Molecular Function	GO:1990841	promoter-specific chromatin binding	 	4.335E-3	9.883E-1	2.246E-2	1.350E-1	2	54	NUP98,RUNX1
+GO: Molecular Function	GO:0016836	hydro-lyase activity	 	4.634E-3	1.000E0	2.348E-2	1.411E-1	3	186	NUP98,MYC,CBFA2T3
+GO: Molecular Function	GO:0042054	histone methyltransferase activity	 	5.153E-3	1.000E0	2.554E-2	1.535E-1	2	59	NSD1,KMT2A
+GO: Molecular Function	GO:0044729	hemi-methylated DNA-binding	 	5.447E-3	1.000E0	2.642E-2	1.588E-1	1	3	WT1
+GO: Molecular Function	GO:0016279	protein-lysine N-methyltransferase activity	 	5.676E-3	1.000E0	2.696E-2	1.620E-1	2	62	NSD1,KMT2A
+GO: Molecular Function	GO:0016278	lysine N-methyltransferase activity	 	5.855E-3	1.000E0	2.713E-2	1.630E-1	2	63	NSD1,KMT2A
+GO: Molecular Function	GO:0019213	deacetylase activity	 	6.037E-3	1.000E0	2.713E-2	1.630E-1	2	64	KDM5A,MACROD2
+GO: Molecular Function	GO:0016835	carbon-oxygen lyase activity	 	6.069E-3	1.000E0	2.713E-2	1.630E-1	3	205	NUP98,MYC,CBFA2T3
+GO: Molecular Function	GO:0050051	leukotriene-B4 20-monooxygenase activity	 	7.256E-3	1.000E0	3.064E-2	1.841E-1	1	4	CYP4F12
+GO: Molecular Function	GO:0034648	histone demethylase activity (H3-dimethyl-K4 specific)	 	7.256E-3	1.000E0	3.064E-2	1.841E-1	1	4	KDM5A
+GO: Molecular Function	GO:0018685	alkane 1-monooxygenase activity	 	7.256E-3	1.000E0	3.064E-2	1.841E-1	1	4	CYP4F12
+GO: Molecular Function	GO:0042802	identical protein binding	 	7.906E-3	1.000E0	3.243E-2	1.948E-1	9	1995	KMT2A,FOXP1,FLNC,FUS,THRB,RUNX1,RUNX1T1,NDE1,PRKRA
+GO: Molecular Function	GO:0016491	oxidoreductase activity	 	7.964E-3	1.000E0	3.243E-2	1.948E-1	6	983	NUP98,MYC,CTBP2,CYP4F12,CBFA2T3,KDM5A
+GO: Molecular Function	GO:0070491	repressing transcription factor binding	 	8.207E-3	1.000E0	3.283E-2	1.973E-1	2	75	MYC,RUNX1
+GO: Molecular Function	GO:0003725	double-stranded RNA binding	 	8.851E-3	1.000E0	3.333E-2	2.003E-1	2	78	MBNL1,PRKRA
+GO: Molecular Function	GO:0010385	double-stranded methylated DNA binding	 	9.063E-3	1.000E0	3.333E-2	2.003E-1	1	5	WT1
+GO: Molecular Function	GO:0071074	eukaryotic initiation factor eIF2 binding	 	9.063E-3	1.000E0	3.333E-2	2.003E-1	1	5	MYC
+GO: Molecular Function	GO:0042799	histone methyltransferase activity (H4-K20 specific)	 	9.063E-3	1.000E0	3.333E-2	2.003E-1	1	5	NSD1
+GO: Molecular Function	GO:0045322	unmethylated CpG binding	 	9.063E-3	1.000E0	3.333E-2	2.003E-1	1	5	KMT2A
+GO: Molecular Function	GO:0042803	protein homodimerization activity	 	9.389E-3	1.000E0	3.398E-2	2.042E-1	6	1018	KMT2A,FOXP1,THRB,RUNX1,RUNX1T1,PRKRA
+GO: Molecular Function	GO:0001069	regulatory region RNA binding	 	1.087E-2	1.000E0	3.754E-2	2.255E-1	1	6	MBNL1
+GO: Molecular Function	GO:0034647	histone demethylase activity (H3-trimethyl-K4 specific)	 	1.087E-2	1.000E0	3.754E-2	2.255E-1	1	6	KDM5A
+GO: Molecular Function	GO:0070883	pre-miRNA binding	 	1.087E-2	1.000E0	3.754E-2	2.255E-1	1	6	PRKRA
+GO: Molecular Function	GO:0008276	protein methyltransferase activity	 	1.165E-2	1.000E0	3.963E-2	2.381E-1	2	90	NSD1,KMT2A
+GO: Molecular Function	GO:0005004	GPI-linked ephrin receptor activity	 	1.267E-2	1.000E0	4.125E-2	2.479E-1	1	7	EPHA3
+GO: Molecular Function	GO:0070324	thyroid hormone binding	 	1.267E-2	1.000E0	4.125E-2	2.479E-1	1	7	THRB
+GO: Molecular Function	GO:0098882	structural constituent of presynaptic active zone	 	1.267E-2	1.000E0	4.125E-2	2.479E-1	1	7	CTBP2
+GO: Molecular Function	GO:0008170	N-methyltransferase activity	 	1.370E-2	1.000E0	4.398E-2	2.643E-1	2	98	NSD1,KMT2A
+GO: Molecular Function	GO:0046975	histone methyltransferase activity (H3-K36 specific)	 	1.446E-2	1.000E0	4.517E-2	2.714E-1	1	8	NSD1
+GO: Molecular Function	GO:0030274	LIM domain binding	 	1.446E-2	1.000E0	4.517E-2	2.714E-1	1	8	AFDN
+GO: Molecular Function	GO:0046914	transition metal ion binding	 	1.483E-2	1.000E0	4.568E-2	2.745E-1	6	1124	WT1,NSD1,KMT2A,CYP4F12,THRB,KDM5A
+GO: Molecular Function	GO:0016853	isomerase activity	 	1.611E-2	1.000E0	4.752E-2	2.855E-1	3	294	NUP98,MYC,CBFA2T3
+GO: Molecular Function	GO:0016713	oxidoreductase activity, acting on paired donors, with incorporation or reduction of molecular oxygen, reduced iron-sulfur protein as one donor, and incorporation of one atom of oxygen	 	1.626E-2	1.000E0	4.752E-2	2.855E-1	1	9	CYP4F12
+GO: Molecular Function	GO:0004017	adenylate kinase activity	 	1.626E-2	1.000E0	4.752E-2	2.855E-1	1	9	AK5
+GO: Molecular Function	GO:0099181	structural constituent of presynapse	 	1.626E-2	1.000E0	4.752E-2	2.855E-1	1	9	CTBP2
+GO: Biological Process	GO:1903508	positive regulation of nucleic acid-templated transcription	 	5.689E-12	1.095E-8	5.529E-9	4.501E-8	19	1736	NUP98,MYC,WT1,NSD1,ETV6,KMT2A,MLLT3,FOXP1,CTBP2,FANK1,FUS,THRB,MLLT10,RUNX1,ERG,CBFB,KDM5A,ELL,GLIS2
+GO: Biological Process	GO:1902680	positive regulation of RNA biosynthetic process	 	5.748E-12	1.106E-8	5.529E-9	4.501E-8	19	1737	NUP98,MYC,WT1,NSD1,ETV6,KMT2A,MLLT3,FOXP1,CTBP2,FANK1,FUS,THRB,MLLT10,RUNX1,ERG,CBFB,KDM5A,ELL,GLIS2
+GO: Biological Process	GO:0051254	positive regulation of RNA metabolic process	 	1.428E-11	2.747E-8	9.158E-9	7.454E-8	19	1829	NUP98,MYC,WT1,NSD1,ETV6,KMT2A,MLLT3,FOXP1,CTBP2,FANK1,FUS,THRB,MLLT10,RUNX1,ERG,CBFB,KDM5A,ELL,GLIS2
+GO: Biological Process	GO:0045893	positive regulation of transcription, DNA-templated	 	3.281E-10	6.312E-7	1.578E-7	1.284E-6	17	1647	MYC,WT1,NSD1,ETV6,KMT2A,MLLT3,FOXP1,CTBP2,FANK1,THRB,MLLT10,RUNX1,ERG,CBFB,KDM5A,ELL,GLIS2
+GO: Biological Process	GO:0045944	positive regulation of transcription by RNA polymerase II	 	1.403E-7	2.699E-4	3.938E-5	3.205E-4	13	1315	MYC,WT1,ETV6,KMT2A,FOXP1,CTBP2,THRB,MLLT10,RUNX1,ERG,CBFB,ELL,GLIS2
+GO: Biological Process	GO:0045892	negative regulation of transcription, DNA-templated	 	1.416E-7	2.723E-4	3.938E-5	3.205E-4	13	1316	MYC,WT1,NSD1,ETV6,FOXP1,CTBP2,THRB,RUNX1,RUNX1T1,CBFA2T3,CBFB,KDM5A,GLIS2
+GO: Biological Process	GO:0045934	negative regulation of nucleobase-containing compound metabolic process	 	1.433E-7	2.756E-4	3.938E-5	3.205E-4	14	1573	MYC,WT1,NSD1,ETV6,KMT2A,FOXP1,CTBP2,THRB,RUNX1,RUNX1T1,CBFA2T3,CBFB,KDM5A,GLIS2
+GO: Biological Process	GO:1903507	negative regulation of nucleic acid-templated transcription	 	2.258E-7	4.345E-4	4.910E-5	3.997E-4	13	1370	MYC,WT1,NSD1,ETV6,FOXP1,CTBP2,THRB,RUNX1,RUNX1T1,CBFA2T3,CBFB,KDM5A,GLIS2
+GO: Biological Process	GO:1902679	negative regulation of RNA biosynthetic process	 	2.297E-7	4.419E-4	4.910E-5	3.997E-4	13	1372	MYC,WT1,NSD1,ETV6,FOXP1,CTBP2,THRB,RUNX1,RUNX1T1,CBFA2T3,CBFB,KDM5A,GLIS2
+GO: Biological Process	GO:0000122	negative regulation of transcription by RNA polymerase II	 	2.910E-7	5.598E-4	5.598E-5	4.557E-4	11	931	MYC,WT1,NSD1,ETV6,FOXP1,THRB,RUNX1,CBFA2T3,CBFB,KDM5A,GLIS2
+GO: Biological Process	GO:0051253	negative regulation of RNA metabolic process	 	4.970E-7	9.562E-4	8.693E-5	7.076E-4	13	1467	MYC,WT1,NSD1,ETV6,FOXP1,CTBP2,THRB,RUNX1,RUNX1T1,CBFA2T3,CBFB,KDM5A,GLIS2
+GO: Biological Process	GO:2000113	negative regulation of cellular macromolecule biosynthetic process	 	1.384E-6	2.663E-3	2.219E-4	1.806E-3	13	1605	MYC,WT1,NSD1,ETV6,FOXP1,CTBP2,THRB,RUNX1,RUNX1T1,CBFA2T3,CBFB,KDM5A,GLIS2
+GO: Biological Process	GO:0010558	negative regulation of macromolecule biosynthetic process	 	2.643E-6	5.085E-3	3.912E-4	3.184E-3	13	1700	MYC,WT1,NSD1,ETV6,FOXP1,CTBP2,THRB,RUNX1,RUNX1T1,CBFA2T3,CBFB,KDM5A,GLIS2
+GO: Biological Process	GO:0031327	negative regulation of cellular biosynthetic process	 	3.917E-6	7.536E-3	5.383E-4	4.382E-3	13	1761	MYC,WT1,NSD1,ETV6,FOXP1,CTBP2,THRB,RUNX1,RUNX1T1,CBFA2T3,CBFB,KDM5A,GLIS2
+GO: Biological Process	GO:0009890	negative regulation of biosynthetic process	 	4.904E-6	9.435E-3	6.290E-4	5.120E-3	13	1797	MYC,WT1,NSD1,ETV6,FOXP1,CTBP2,THRB,RUNX1,RUNX1T1,CBFA2T3,CBFB,KDM5A,GLIS2
+GO: Biological Process	GO:0060216	definitive hemopoiesis	 	1.215E-5	2.338E-2	1.461E-3	1.190E-2	3	26	KMT2A,RUNX1,CBFB
+GO: Biological Process	GO:0050855	regulation of B cell receptor signaling pathway	 	1.702E-5	3.274E-2	1.778E-3	1.447E-2	3	29	FOXP1,RUNX1,CBFB
+GO: Biological Process	GO:0043378	positive regulation of CD8-positive, alpha-beta T cell differentiation	 	1.756E-5	3.378E-2	1.778E-3	1.447E-2	2	4	RUNX1,CBFB
+GO: Biological Process	GO:1905643	positive regulation of DNA methylation	 	1.756E-5	3.378E-2	1.778E-3	1.447E-2	2	4	MYC,WT1
+GO: Biological Process	GO:0044030	regulation of DNA methylation	 	3.887E-5	7.479E-2	3.740E-3	3.044E-2	3	38	MYC,WT1,KMT2A
+GO: Biological Process	GO:0043376	regulation of CD8-positive, alpha-beta T cell differentiation	 	4.380E-5	8.426E-2	4.012E-3	3.266E-2	2	6	RUNX1,CBFB
+GO: Biological Process	GO:2001025	positive regulation of response to drug	 	6.929E-5	1.333E-1	6.059E-3	4.932E-2	3	46	KMT2A,FOXP1,RUNX1
+GO: Biological Process	GO:0034329	cell junction assembly	 	7.300E-5	1.405E-1	6.107E-3	4.971E-2	5	254	AFDN,FLNC,RUNX1,CBFB,EPHA3
+GO: Biological Process	GO:2001187	positive regulation of CD8-positive, alpha-beta T cell activation	 	8.157E-5	1.569E-1	6.427E-3	5.231E-2	2	8	RUNX1,CBFB
+GO: Biological Process	GO:0046031	ADP metabolic process	 	8.351E-5	1.607E-1	6.427E-3	5.231E-2	4	134	NUP98,MYC,CBFA2T3,AK5
+GO: Biological Process	GO:0006165	nucleoside diphosphate phosphorylation	 	1.134E-4	2.181E-1	8.075E-3	6.573E-2	4	145	NUP98,MYC,CBFA2T3,AK5
+GO: Biological Process	GO:0046939	nucleotide phosphorylation	 	1.195E-4	2.299E-1	8.075E-3	6.573E-2	4	147	NUP98,MYC,CBFA2T3,AK5
+GO: Biological Process	GO:0045637	regulation of myeloid cell differentiation	 	1.214E-4	2.336E-1	8.075E-3	6.573E-2	5	283	MYC,KMT2A,FOXP1,RUNX1,CBFB
+GO: Biological Process	GO:0009179	purine ribonucleoside diphosphate metabolic process	 	1.259E-4	2.422E-1	8.075E-3	6.573E-2	4	149	NUP98,MYC,CBFA2T3,AK5
+GO: Biological Process	GO:0009135	purine nucleoside diphosphate metabolic process	 	1.259E-4	2.422E-1	8.075E-3	6.573E-2	4	149	NUP98,MYC,CBFA2T3,AK5
+GO: Biological Process	GO:0009185	ribonucleoside diphosphate metabolic process	 	1.430E-4	2.751E-1	8.715E-3	7.094E-2	4	154	NUP98,MYC,CBFA2T3,AK5
+GO: Biological Process	GO:0030522	intracellular receptor signaling pathway	 	1.474E-4	2.836E-1	8.715E-3	7.094E-2	5	295	FOXP1,CTBP2,THRB,RUNX1,CBFB
+GO: Biological Process	GO:0030099	myeloid cell differentiation	 	1.495E-4	2.876E-1	8.715E-3	7.094E-2	6	474	MYC,KMT2A,FOXP1,RUNX1,CBFA2T3,CBFB
+GO: Biological Process	GO:0072203	cell proliferation involved in metanephros development	 	1.597E-4	3.073E-1	9.038E-3	7.356E-2	2	11	MYC,WT1
+GO: Biological Process	GO:0070830	bicellular tight junction assembly	 	1.694E-4	3.259E-1	9.310E-3	7.578E-2	3	62	AFDN,RUNX1,CBFB
+GO: Biological Process	GO:0120192	tight junction assembly	 	1.776E-4	3.418E-1	9.493E-3	7.727E-2	3	63	AFDN,RUNX1,CBFB
+GO: Biological Process	GO:0034330	cell junction organization	 	1.829E-4	3.520E-1	9.513E-3	7.743E-2	5	309	AFDN,FLNC,RUNX1,CBFB,EPHA3
+GO: Biological Process	GO:0009132	nucleoside diphosphate metabolic process	 	2.185E-4	4.205E-1	1.099E-2	8.948E-2	4	172	NUP98,MYC,CBFA2T3,AK5
+GO: Biological Process	GO:0120193	tight junction organization	 	2.228E-4	4.287E-1	1.099E-2	8.948E-2	3	68	AFDN,RUNX1,CBFB
+GO: Biological Process	GO:0009790	embryo development	 	2.323E-4	4.470E-1	1.117E-2	9.095E-2	9	1263	MYC,WT1,NSD1,KMT2A,FOXP1,RUNX1,ELL,MBNL1,PRKRA
+GO: Biological Process	GO:0050854	regulation of antigen receptor-mediated signaling pathway	 	2.428E-4	4.672E-1	1.128E-2	9.185E-2	3	70	FOXP1,RUNX1,CBFB
+GO: Biological Process	GO:0072216	positive regulation of metanephros development	 	2.634E-4	5.067E-1	1.128E-2	9.185E-2	2	14	MYC,WT1
+GO: Biological Process	GO:1905941	positive regulation of gonad development	 	2.634E-4	5.067E-1	1.128E-2	9.185E-2	2	14	WT1,RUNX1
+GO: Biological Process	GO:2001040	positive regulation of cellular response to drug	 	2.634E-4	5.067E-1	1.128E-2	9.185E-2	2	14	KMT2A,FOXP1
+GO: Biological Process	GO:0043297	apical junction assembly	 	2.639E-4	5.078E-1	1.128E-2	9.185E-2	3	72	AFDN,RUNX1,CBFB
+GO: Biological Process	GO:1902036	regulation of hematopoietic stem cell differentiation	 	2.749E-4	5.289E-1	1.150E-2	9.359E-2	3	73	KMT2A,RUNX1,CBFB
+GO: Biological Process	GO:0072075	metanephric mesenchyme development	 	3.036E-4	5.841E-1	1.217E-2	9.904E-2	2	15	MYC,WT1
+GO: Biological Process	GO:2000194	regulation of female gonad development	 	3.036E-4	5.841E-1	1.217E-2	9.904E-2	2	15	WT1,RUNX1
+GO: Biological Process	GO:0043401	steroid hormone mediated signaling pathway	 	3.389E-4	6.521E-1	1.331E-2	1.083E-1	4	193	FOXP1,THRB,RUNX1,CBFB
+GO: Biological Process	GO:0043374	CD8-positive, alpha-beta T cell differentiation	 	3.466E-4	6.668E-1	1.334E-2	1.085E-1	2	16	RUNX1,CBFB
+GO: Biological Process	GO:0045652	regulation of megakaryocyte differentiation	 	3.736E-4	7.187E-1	1.409E-2	1.147E-1	3	81	KMT2A,RUNX1,CBFB
+GO: Biological Process	GO:0097152	mesenchymal cell apoptotic process	 	3.923E-4	7.549E-1	1.424E-2	1.159E-1	2	17	WT1,ETV6
+GO: Biological Process	GO:2001185	regulation of CD8-positive, alpha-beta T cell activation	 	3.923E-4	7.549E-1	1.424E-2	1.159E-1	2	17	RUNX1,CBFB
+GO: Biological Process	GO:0060218	hematopoietic stem cell differentiation	 	4.157E-4	7.998E-1	1.454E-2	1.184E-1	3	84	KMT2A,RUNX1,CBFB
+GO: Biological Process	GO:0006110	regulation of glycolytic process	 	4.157E-4	7.998E-1	1.454E-2	1.184E-1	3	84	NUP98,MYC,CBFA2T3
+GO: Biological Process	GO:1901722	regulation of cell proliferation involved in kidney development	 	4.409E-4	8.483E-1	1.503E-2	1.224E-1	2	18	MYC,WT1
+GO: Biological Process	GO:0033143	regulation of intracellular steroid hormone receptor signaling pathway	 	4.454E-4	8.570E-1	1.503E-2	1.224E-1	3	86	FOXP1,RUNX1,CBFB
+GO: Biological Process	GO:0060538	skeletal muscle organ development	 	4.581E-4	8.813E-1	1.520E-2	1.237E-1	4	209	MYC,WT1,FOXP1,MBNL1
+GO: Biological Process	GO:0043367	CD4-positive, alpha-beta T cell differentiation	 	4.765E-4	9.167E-1	1.554E-2	1.265E-1	3	88	FOXP1,RUNX1,CBFB
+GO: Biological Process	GO:0072074	kidney mesenchyme development	 	4.922E-4	9.471E-1	1.578E-2	1.285E-1	2	19	MYC,WT1
+GO: Biological Process	GO:1901532	regulation of hematopoietic progenitor cell differentiation	 	5.256E-4	1.000E0	1.658E-2	1.349E-1	3	91	KMT2A,RUNX1,CBFB
+GO: Biological Process	GO:1901888	regulation of cell junction assembly	 	5.601E-4	1.000E0	1.738E-2	1.415E-1	3	93	RUNX1,CBFB,EPHA3
+GO: Biological Process	GO:0008285	negative regulation of cell population proliferation	 	5.907E-4	1.000E0	1.758E-2	1.431E-1	7	859	MYC,WT1,KMT2A,CTBP2,RUNX1,CBFA2T3,PRKRA
+GO: Biological Process	GO:0045596	negative regulation of cell differentiation	 	5.948E-4	1.000E0	1.758E-2	1.431E-1	7	860	MYC,FOXP1,THRB,RUNX1,RUNX1T1,CBFB,EPHA3
+GO: Biological Process	GO:0045655	regulation of monocyte differentiation	 	6.032E-4	1.000E0	1.758E-2	1.431E-1	2	21	MYC,FOXP1
+GO: Biological Process	GO:0071371	cellular response to gonadotropin stimulus	 	6.032E-4	1.000E0	1.758E-2	1.431E-1	2	21	WT1,EPHA3
+GO: Biological Process	GO:0043470	regulation of carbohydrate catabolic process	 	6.334E-4	1.000E0	1.819E-2	1.480E-1	3	97	NUP98,MYC,CBFA2T3
+GO: Biological Process	GO:0002902	regulation of B cell apoptotic process	 	6.628E-4	1.000E0	1.875E-2	1.526E-1	2	22	MYC,FOXP1
+GO: Biological Process	GO:2000810	regulation of bicellular tight junction assembly	 	7.251E-4	1.000E0	1.970E-2	1.604E-1	2	23	RUNX1,CBFB
+GO: Biological Process	GO:0043371	negative regulation of CD4-positive, alpha-beta T cell differentiation	 	7.251E-4	1.000E0	1.970E-2	1.604E-1	2	23	RUNX1,CBFB
+GO: Biological Process	GO:0030219	megakaryocyte differentiation	 	7.332E-4	1.000E0	1.970E-2	1.604E-1	3	102	KMT2A,RUNX1,CBFB
+GO: Biological Process	GO:0006306	DNA methylation	 	7.543E-4	1.000E0	1.970E-2	1.604E-1	3	103	MYC,WT1,KMT2A
+GO: Biological Process	GO:0006305	DNA alkylation	 	7.543E-4	1.000E0	1.970E-2	1.604E-1	3	103	MYC,WT1,KMT2A
+GO: Biological Process	GO:0002573	myeloid leukocyte differentiation	 	7.577E-4	1.000E0	1.970E-2	1.604E-1	4	239	MYC,FOXP1,RUNX1,CBFA2T3
+GO: Biological Process	GO:0046931	pore complex assembly	 	7.902E-4	1.000E0	1.974E-2	1.607E-1	2	24	NUP98,AFDN
+GO: Biological Process	GO:0072215	regulation of metanephros development	 	7.902E-4	1.000E0	1.974E-2	1.607E-1	2	24	MYC,WT1
+GO: Biological Process	GO:0042474	middle ear morphogenesis	 	7.902E-4	1.000E0	1.974E-2	1.607E-1	2	24	MYC,PRKRA
+GO: Biological Process	GO:0009755	hormone-mediated signaling pathway	 	8.311E-4	1.000E0	2.027E-2	1.650E-1	4	245	FOXP1,THRB,RUNX1,CBFB
+GO: Biological Process	GO:0051093	negative regulation of developmental process	 	8.321E-4	1.000E0	2.027E-2	1.650E-1	8	1194	MYC,WT1,FOXP1,THRB,RUNX1,RUNX1T1,CBFB,EPHA3
+GO: Biological Process	GO:0072111	cell proliferation involved in kidney development	 	8.579E-4	1.000E0	2.031E-2	1.653E-1	2	25	MYC,WT1
+GO: Biological Process	GO:1905939	regulation of gonad development	 	8.579E-4	1.000E0	2.031E-2	1.653E-1	2	25	WT1,RUNX1
+GO: Biological Process	GO:0035710	CD4-positive, alpha-beta T cell activation	 	8.656E-4	1.000E0	2.031E-2	1.653E-1	3	108	FOXP1,RUNX1,CBFB
+GO: Biological Process	GO:0036037	CD8-positive, alpha-beta T cell activation	 	1.002E-3	1.000E0	2.291E-2	1.865E-1	2	27	RUNX1,CBFB
+GO: Biological Process	GO:0046639	negative regulation of alpha-beta T cell differentiation	 	1.002E-3	1.000E0	2.291E-2	1.865E-1	2	27	RUNX1,CBFB
+GO: Biological Process	GO:1902106	negative regulation of leukocyte differentiation	 	1.012E-3	1.000E0	2.291E-2	1.865E-1	3	114	MYC,RUNX1,CBFB
+GO: Biological Process	GO:0071425	hematopoietic stem cell proliferation	 	1.077E-3	1.000E0	2.411E-2	1.962E-1	2	28	ETV6,RUNX1
+GO: Biological Process	GO:0071383	cellular response to steroid hormone stimulus	 	1.097E-3	1.000E0	2.425E-2	1.974E-1	4	264	FOXP1,THRB,RUNX1,CBFB
+GO: Biological Process	GO:0035162	embryonic hemopoiesis	 	1.156E-3	1.000E0	2.499E-2	2.034E-1	2	29	KMT2A,RUNX1
+GO: Biological Process	GO:0001783	B cell apoptotic process	 	1.156E-3	1.000E0	2.499E-2	2.034E-1	2	29	MYC,FOXP1
+GO: Biological Process	GO:0046632	alpha-beta T cell differentiation	 	1.174E-3	1.000E0	2.510E-2	2.043E-1	3	120	FOXP1,RUNX1,CBFB
+GO: Biological Process	GO:0042127	regulation of cell population proliferation	 	1.199E-3	1.000E0	2.514E-2	2.047E-1	10	1921	MYC,WT1,KMT2A,AFDN,FOXP1,CTBP2,THRB,RUNX1,CBFA2T3,PRKRA
+GO: Biological Process	GO:0044728	DNA methylation or demethylation	 	1.202E-3	1.000E0	2.514E-2	2.047E-1	3	121	MYC,WT1,KMT2A
+GO: Biological Process	GO:0014706	striated muscle tissue development	 	1.256E-3	1.000E0	2.599E-2	2.115E-1	5	472	MYC,WT1,FOXP1,MYH11,MBNL1
+GO: Biological Process	GO:2000736	regulation of stem cell differentiation	 	1.320E-3	1.000E0	2.648E-2	2.155E-1	3	125	KMT2A,RUNX1,CBFB
+GO: Biological Process	GO:0006096	glycolytic process	 	1.320E-3	1.000E0	2.648E-2	2.155E-1	3	125	NUP98,MYC,CBFA2T3
+GO: Biological Process	GO:0034698	response to gonadotropin	 	1.321E-3	1.000E0	2.648E-2	2.155E-1	2	31	WT1,EPHA3
+GO: Biological Process	GO:0006757	ATP generation from ADP	 	1.351E-3	1.000E0	2.680E-2	2.181E-1	3	126	NUP98,MYC,CBFA2T3
+GO: Biological Process	GO:0022603	regulation of anatomical structure morphogenesis	 	1.368E-3	1.000E0	2.686E-2	2.186E-1	8	1289	MYC,WT1,MLLT3,AFDN,FOXP1,THRB,RUNX1,ERG
+GO: Biological Process	GO:0050853	B cell receptor signaling pathway	 	1.445E-3	1.000E0	2.790E-2	2.271E-1	3	129	FOXP1,RUNX1,CBFB
+GO: Biological Process	GO:2000515	negative regulation of CD4-positive, alpha-beta T cell activation	 	1.497E-3	1.000E0	2.790E-2	2.271E-1	2	33	RUNX1,CBFB
+GO: Biological Process	GO:0007043	cell-cell junction assembly	 	1.511E-3	1.000E0	2.790E-2	2.271E-1	3	131	AFDN,RUNX1,CBFB
+GO: Biological Process	GO:2000027	regulation of animal organ morphogenesis	 	1.530E-3	1.000E0	2.790E-2	2.271E-1	4	289	MYC,WT1,MLLT3,THRB
+GO: Biological Process	GO:0060537	muscle tissue development	 	1.536E-3	1.000E0	2.790E-2	2.271E-1	5	494	MYC,WT1,FOXP1,MYH11,MBNL1
+GO: Biological Process	GO:1900542	regulation of purine nucleotide metabolic process	 	1.544E-3	1.000E0	2.790E-2	2.271E-1	3	132	NUP98,MYC,CBFA2T3
+GO: Biological Process	GO:2001023	regulation of response to drug	 	1.578E-3	1.000E0	2.790E-2	2.271E-1	3	133	KMT2A,FOXP1,RUNX1
+GO: Biological Process	GO:0043457	regulation of cellular respiration	 	1.589E-3	1.000E0	2.790E-2	2.271E-1	2	34	MYC,CBFA2T3
+GO: Biological Process	GO:0060487	lung epithelial cell differentiation	 	1.589E-3	1.000E0	2.790E-2	2.271E-1	2	34	FOXP1,THRB
+GO: Biological Process	GO:0030097	hemopoiesis	 	1.598E-3	1.000E0	2.790E-2	2.271E-1	7	1018	MYC,ETV6,KMT2A,FOXP1,RUNX1,CBFA2T3,CBFB
+GO: Biological Process	GO:0032870	cellular response to hormone stimulus	 	1.604E-3	1.000E0	2.790E-2	2.271E-1	6	743	WT1,FOXP1,THRB,RUNX1,CBFB,EPHA3
+GO: Biological Process	GO:0006140	regulation of nucleotide metabolic process	 	1.612E-3	1.000E0	2.790E-2	2.271E-1	3	134	NUP98,MYC,CBFA2T3
+GO: Biological Process	GO:1903578	regulation of ATP metabolic process	 	1.647E-3	1.000E0	2.790E-2	2.271E-1	3	135	NUP98,MYC,CBFA2T3
+GO: Biological Process	GO:0008045	motor neuron axon guidance	 	1.683E-3	1.000E0	2.790E-2	2.271E-1	2	35	FOXP1,EPHA3
+GO: Biological Process	GO:0060479	lung cell differentiation	 	1.683E-3	1.000E0	2.790E-2	2.271E-1	2	35	FOXP1,THRB
+GO: Biological Process	GO:0072302	negative regulation of metanephric glomerular mesangial cell proliferation	 	1.740E-3	1.000E0	2.790E-2	2.271E-1	1	1	WT1
+GO: Biological Process	GO:0044648	histone H3-K4 dimethylation	 	1.740E-3	1.000E0	2.790E-2	2.271E-1	1	1	KMT2A
+GO: Biological Process	GO:0072299	negative regulation of metanephric glomerulus development	 	1.740E-3	1.000E0	2.790E-2	2.271E-1	1	1	WT1
+GO: Biological Process	GO:0090096	positive regulation of metanephric cap mesenchymal cell proliferation	 	1.740E-3	1.000E0	2.790E-2	2.271E-1	1	1	MYC
+GO: Biological Process	GO:0090095	regulation of metanephric cap mesenchymal cell proliferation	 	1.740E-3	1.000E0	2.790E-2	2.271E-1	1	1	MYC
+GO: Biological Process	GO:0046722	lactic acid secretion	 	1.740E-3	1.000E0	2.790E-2	2.271E-1	1	1	MYC
+GO: Biological Process	GO:0006173	dADP biosynthetic process	 	1.740E-3	1.000E0	2.790E-2	2.271E-1	1	1	AK5
+GO: Biological Process	GO:0002761	regulation of myeloid leukocyte differentiation	 	1.790E-3	1.000E0	2.846E-2	2.317E-1	3	139	MYC,FOXP1,RUNX1
+GO: Biological Process	GO:0030518	intracellular steroid hormone receptor signaling pathway	 	1.827E-3	1.000E0	2.881E-2	2.345E-1	3	140	FOXP1,RUNX1,CBFB
+GO: Biological Process	GO:0051101	regulation of DNA binding	 	1.865E-3	1.000E0	2.917E-2	2.374E-1	3	141	MYC,NSD1,RUNX1T1
+GO: Biological Process	GO:0045589	regulation of regulatory T cell differentiation	 	1.880E-3	1.000E0	2.917E-2	2.374E-1	2	37	RUNX1,CBFB
+GO: Biological Process	GO:0006304	DNA modification	 	1.980E-3	1.000E0	3.019E-2	2.457E-1	3	144	MYC,WT1,KMT2A
+GO: Biological Process	GO:0002053	positive regulation of mesenchymal cell proliferation	 	1.982E-3	1.000E0	3.019E-2	2.457E-1	2	38	MYC,FOXP1
+GO: Biological Process	GO:0072089	stem cell proliferation	 	2.019E-3	1.000E0	3.019E-2	2.457E-1	3	145	ETV6,RUNX1,NDE1
+GO: Biological Process	GO:0060485	mesenchyme development	 	2.024E-3	1.000E0	3.019E-2	2.457E-1	4	312	MYC,WT1,ERG,EPHA3
+GO: Biological Process	GO:0061061	muscle structure development	 	2.052E-3	1.000E0	3.019E-2	2.457E-1	6	780	MYC,WT1,FOXP1,FLNC,MYH11,MBNL1
+GO: Biological Process	GO:0043484	regulation of RNA splicing	 	2.059E-3	1.000E0	3.019E-2	2.457E-1	3	146	NUP98,FUS,MBNL1
+GO: Biological Process	GO:0048534	hematopoietic or lymphoid organ development	 	2.069E-3	1.000E0	3.019E-2	2.457E-1	7	1065	MYC,ETV6,KMT2A,FOXP1,RUNX1,CBFA2T3,CBFB
+GO: Biological Process	GO:0030224	monocyte differentiation	 	2.087E-3	1.000E0	3.019E-2	2.457E-1	2	39	MYC,FOXP1
+GO: Biological Process	GO:1903131	mononuclear cell differentiation	 	2.087E-3	1.000E0	3.019E-2	2.457E-1	2	39	MYC,FOXP1
+GO: Biological Process	GO:0030851	granulocyte differentiation	 	2.194E-3	1.000E0	3.128E-2	2.546E-1	2	40	RUNX1,CBFA2T3
+GO: Biological Process	GO:0045066	regulatory T cell differentiation	 	2.194E-3	1.000E0	3.128E-2	2.546E-1	2	40	RUNX1,CBFB
+GO: Biological Process	GO:1903706	regulation of hemopoiesis	 	2.232E-3	1.000E0	3.158E-2	2.570E-1	5	538	MYC,KMT2A,FOXP1,RUNX1,CBFB
+GO: Biological Process	GO:0033146	regulation of intracellular estrogen receptor signaling pathway	 	2.304E-3	1.000E0	3.236E-2	2.634E-1	2	41	RUNX1,CBFB
+GO: Biological Process	GO:1902105	regulation of leukocyte differentiation	 	2.373E-3	1.000E0	3.309E-2	2.693E-1	4	326	MYC,FOXP1,RUNX1,CBFB
+GO: Biological Process	GO:0045616	regulation of keratinocyte differentiation	 	2.417E-3	1.000E0	3.346E-2	2.723E-1	2	42	RUNX1,CBFB
+GO: Biological Process	GO:0046034	ATP metabolic process	 	2.453E-3	1.000E0	3.371E-2	2.744E-1	4	329	NUP98,MYC,CBFA2T3,AK5
+GO: Biological Process	GO:0046636	negative regulation of alpha-beta T cell activation	 	2.770E-3	1.000E0	3.711E-2	3.021E-1	2	45	RUNX1,CBFB
+GO: Biological Process	GO:0002520	immune system development	 	2.849E-3	1.000E0	3.711E-2	3.021E-1	7	1127	MYC,ETV6,KMT2A,FOXP1,RUNX1,CBFA2T3,CBFB
+GO: Biological Process	GO:0006090	pyruvate metabolic process	 	2.864E-3	1.000E0	3.711E-2	3.021E-1	3	164	NUP98,MYC,CBFA2T3
+GO: Biological Process	GO:0090184	positive regulation of kidney development	 	2.893E-3	1.000E0	3.711E-2	3.021E-1	2	46	MYC,WT1
+GO: Biological Process	GO:0010464	regulation of mesenchymal cell proliferation	 	2.893E-3	1.000E0	3.711E-2	3.021E-1	2	46	MYC,FOXP1
+GO: Biological Process	GO:0046631	alpha-beta T cell activation	 	2.913E-3	1.000E0	3.711E-2	3.021E-1	3	165	FOXP1,RUNX1,CBFB
+GO: Biological Process	GO:0055007	cardiac muscle cell differentiation	 	2.963E-3	1.000E0	3.711E-2	3.021E-1	3	166	WT1,FOXP1,MYH11
+GO: Biological Process	GO:0043414	macromolecule methylation	 	3.129E-3	1.000E0	3.711E-2	3.021E-1	4	352	MYC,WT1,NSD1,KMT2A
+GO: Biological Process	GO:0001501	skeletal system development	 	3.135E-3	1.000E0	3.711E-2	3.021E-1	5	582	MYC,FOXP1,THRB,RUNX1,PRKRA
+GO: Biological Process	GO:0045216	cell-cell junction organization	 	3.169E-3	1.000E0	3.711E-2	3.021E-1	3	170	AFDN,RUNX1,CBFB
+GO: Biological Process	GO:0051146	striated muscle cell differentiation	 	3.193E-3	1.000E0	3.711E-2	3.021E-1	4	354	WT1,FOXP1,FLNC,MYH11
+GO: Biological Process	GO:1903707	negative regulation of hemopoiesis	 	3.275E-3	1.000E0	3.711E-2	3.021E-1	3	172	MYC,RUNX1,CBFB
+GO: Biological Process	GO:0060429	epithelium development	 	3.312E-3	1.000E0	3.711E-2	3.021E-1	8	1483	MYC,WT1,MLLT3,AFDN,FOXP1,THRB,RUNX1,CBFB
+GO: Biological Process	GO:0017145	stem cell division	 	3.329E-3	1.000E0	3.711E-2	3.021E-1	3	173	ETV6,RUNX1,NDE1
+GO: Biological Process	GO:0031056	regulation of histone modification	 	3.329E-3	1.000E0	3.711E-2	3.021E-1	3	173	NSD1,KMT2A,KDM5A
+GO: Biological Process	GO:0002521	leukocyte differentiation	 	3.348E-3	1.000E0	3.711E-2	3.021E-1	5	591	MYC,FOXP1,RUNX1,CBFA2T3,CBFB
+GO: Biological Process	GO:0048729	tissue morphogenesis	 	3.362E-3	1.000E0	3.711E-2	3.021E-1	6	861	MYC,WT1,NSD1,MLLT3,FOXP1,RUNX1
+GO: Biological Process	GO:0045581	negative regulation of T cell differentiation	 	3.409E-3	1.000E0	3.711E-2	3.021E-1	2	50	RUNX1,CBFB
+GO: Biological Process	GO:0043467	regulation of generation of precursor metabolites and energy	 	3.438E-3	1.000E0	3.711E-2	3.021E-1	3	175	NUP98,MYC,CBFA2T3
+GO: Biological Process	GO:0072301	regulation of metanephric glomerular mesangial cell proliferation	 	3.472E-3	1.000E0	3.711E-2	3.021E-1	1	2	WT1
+GO: Biological Process	GO:0044337	canonical Wnt signaling pathway involved in positive regulation of apoptotic process	 	3.472E-3	1.000E0	3.711E-2	3.021E-1	1	2	MYC
+GO: Biological Process	GO:0009183	purine deoxyribonucleoside diphosphate biosynthetic process	 	3.472E-3	1.000E0	3.711E-2	3.021E-1	1	2	AK5
+GO: Biological Process	GO:0090094	metanephric cap mesenchymal cell proliferation involved in metanephros development	 	3.472E-3	1.000E0	3.711E-2	3.021E-1	1	2	MYC
+GO: Biological Process	GO:0042480	negative regulation of eye photoreceptor cell development	 	3.472E-3	1.000E0	3.711E-2	3.021E-1	1	2	THRB
+GO: Biological Process	GO:0008050	female courtship behavior	 	3.472E-3	1.000E0	3.711E-2	3.021E-1	1	2	THRB
+GO: Biological Process	GO:0097156	fasciculation of motor neuron axon	 	3.472E-3	1.000E0	3.711E-2	3.021E-1	1	2	EPHA3
+GO: Biological Process	GO:0072619	interleukin-21 secretion	 	3.472E-3	1.000E0	3.711E-2	3.021E-1	1	2	FOXP1
+GO: Biological Process	GO:0097474	retinal cone cell apoptotic process	 	3.472E-3	1.000E0	3.711E-2	3.021E-1	1	2	THRB
+GO: Biological Process	GO:0032625	interleukin-21 production	 	3.472E-3	1.000E0	3.711E-2	3.021E-1	1	2	FOXP1
+GO: Biological Process	GO:0072186	metanephric cap morphogenesis	 	3.472E-3	1.000E0	3.711E-2	3.021E-1	1	2	MYC
+GO: Biological Process	GO:0071336	regulation of hair follicle cell proliferation	 	3.472E-3	1.000E0	3.711E-2	3.021E-1	1	2	RUNX1
+GO: Biological Process	GO:1901250	negative regulation of lung goblet cell differentiation	 	3.472E-3	1.000E0	3.711E-2	3.021E-1	1	2	FOXP1
+GO: Biological Process	GO:2000872	positive regulation of progesterone secretion	 	3.472E-3	1.000E0	3.711E-2	3.021E-1	1	2	RUNX1
+GO: Biological Process	GO:0072185	metanephric cap development	 	3.472E-3	1.000E0	3.711E-2	3.021E-1	1	2	MYC
+GO: Biological Process	GO:2001076	positive regulation of metanephric ureteric bud development	 	3.472E-3	1.000E0	3.711E-2	3.021E-1	1	2	WT1
+GO: Biological Process	GO:0035802	adrenal cortex formation	 	3.472E-3	1.000E0	3.711E-2	3.021E-1	1	2	WT1
+GO: Biological Process	GO:2001074	regulation of metanephric ureteric bud development	 	3.472E-3	1.000E0	3.711E-2	3.021E-1	1	2	WT1
+GO: Biological Process	GO:0035801	adrenal cortex development	 	3.472E-3	1.000E0	3.711E-2	3.021E-1	1	2	WT1
+GO: Biological Process	GO:0072166	posterior mesonephric tubule development	 	3.472E-3	1.000E0	3.711E-2	3.021E-1	1	2	WT1
+GO: Biological Process	GO:0060994	regulation of transcription from RNA polymerase II promoter involved in kidney development	 	3.472E-3	1.000E0	3.711E-2	3.021E-1	1	2	GLIS2
+GO: Biological Process	GO:0140056	organelle localization by membrane tethering	 	3.494E-3	1.000E0	3.714E-2	3.023E-1	3	176	CTBP2,NDE1,CEP89
+GO: Biological Process	GO:0003197	endocardial cushion development	 	3.544E-3	1.000E0	3.747E-2	3.050E-1	2	51	ERG,EPHA3
+GO: Biological Process	GO:0030856	regulation of epithelial cell differentiation	 	3.721E-3	1.000E0	3.913E-2	3.185E-1	3	180	FOXP1,RUNX1,CBFB
+GO: Biological Process	GO:0030855	epithelial cell differentiation	 	3.744E-3	1.000E0	3.915E-2	3.186E-1	6	880	WT1,AFDN,FOXP1,THRB,RUNX1,CBFB
+GO: Biological Process	GO:2001038	regulation of cellular response to drug	 	3.822E-3	1.000E0	3.954E-2	3.218E-1	2	53	KMT2A,FOXP1
+GO: Biological Process	GO:0060428	lung epithelium development	 	3.822E-3	1.000E0	3.954E-2	3.218E-1	2	53	FOXP1,THRB
+GO: Biological Process	GO:0072521	purine-containing compound metabolic process	 	3.941E-3	1.000E0	4.055E-2	3.300E-1	5	614	NUP98,MYC,CBFA2T3,AK5,MACROD2
+GO: Biological Process	GO:0022406	membrane docking	 	4.018E-3	1.000E0	4.112E-2	3.347E-1	3	185	CTBP2,NDE1,CEP89
+GO: Biological Process	GO:0046638	positive regulation of alpha-beta T cell differentiation	 	4.110E-3	1.000E0	4.184E-2	3.406E-1	2	55	RUNX1,CBFB
+GO: Biological Process	GO:0002762	negative regulation of myeloid leukocyte differentiation	 	4.258E-3	1.000E0	4.298E-2	3.499E-1	2	56	MYC,RUNX1
+GO: Biological Process	GO:0033044	regulation of chromosome organization	 	4.267E-3	1.000E0	4.298E-2	3.499E-1	4	384	MYC,NSD1,KMT2A,KDM5A
+GO: Biological Process	GO:0051052	regulation of DNA metabolic process	 	4.467E-3	1.000E0	4.477E-2	3.644E-1	4	389	MYC,WT1,KMT2A,FUS
+GO: Biological Process	GO:0043370	regulation of CD4-positive, alpha-beta T cell differentiation	 	4.560E-3	1.000E0	4.500E-2	3.663E-1	2	58	RUNX1,CBFB
+GO: Biological Process	GO:0010463	mesenchymal cell proliferation	 	4.560E-3	1.000E0	4.500E-2	3.663E-1	2	58	MYC,FOXP1
+GO: Biological Process	GO:0061005	cell differentiation involved in kidney development	 	4.560E-3	1.000E0	4.500E-2	3.663E-1	2	58	WT1,GLIS2
+GO: Biological Process	GO:0002009	morphogenesis of an epithelium	 	4.729E-3	1.000E0	4.571E-2	3.721E-1	5	641	MYC,WT1,MLLT3,FOXP1,RUNX1
+GO: Biological Process	GO:0002244	hematopoietic progenitor cell differentiation	 	4.788E-3	1.000E0	4.571E-2	3.721E-1	3	197	KMT2A,RUNX1,CBFB
+GO: Biological Process	GO:0007519	skeletal muscle tissue development	 	4.856E-3	1.000E0	4.571E-2	3.721E-1	3	198	MYC,FOXP1,MBNL1
+GO: Biological Process	GO:0009887	animal organ morphogenesis	 	4.859E-3	1.000E0	4.571E-2	3.721E-1	7	1241	MYC,WT1,MLLT3,AFDN,THRB,ERG,PRKRA
+GO: Biological Process	GO:0030520	intracellular estrogen receptor signaling pathway	 	4.873E-3	1.000E0	4.571E-2	3.721E-1	2	60	RUNX1,CBFB
+GO: Biological Process	GO:0045620	negative regulation of lymphocyte differentiation	 	5.032E-3	1.000E0	4.571E-2	3.721E-1	2	61	RUNX1,CBFB
+GO: Biological Process	GO:0071396	cellular response to lipid	 	5.146E-3	1.000E0	4.571E-2	3.721E-1	5	654	FOXP1,THRB,RUNX1,CBFB,EPHA3
+GO: Biological Process	GO:0048545	response to steroid hormone	 	5.195E-3	1.000E0	4.571E-2	3.721E-1	4	406	FOXP1,THRB,RUNX1,CBFB
+GO: Biological Process	GO:1905642	negative regulation of DNA methylation	 	5.203E-3	1.000E0	4.571E-2	3.721E-1	1	3	KMT2A
+GO: Biological Process	GO:0043974	histone H3-K27 acetylation	 	5.203E-3	1.000E0	4.571E-2	3.721E-1	1	3	KMT2A
+GO: Biological Process	GO:0000973	posttranscriptional tethering of RNA polymerase II gene DNA at nuclear periphery	 	5.203E-3	1.000E0	4.571E-2	3.721E-1	1	3	NUP98
+GO: Biological Process	GO:0046056	dADP metabolic process	 	5.203E-3	1.000E0	4.571E-2	3.721E-1	1	3	AK5
+GO: Biological Process	GO:1901726	negative regulation of histone deacetylase activity	 	5.203E-3	1.000E0	4.571E-2	3.721E-1	1	3	KDM5A
+GO: Biological Process	GO:0061885	positive regulation of mini excitatory postsynaptic potential	 	5.203E-3	1.000E0	4.571E-2	3.721E-1	1	3	AFDN
+GO: Biological Process	GO:0003095	pressure natriuresis	 	5.203E-3	1.000E0	4.571E-2	3.721E-1	1	3	CYP4F12
+GO: Biological Process	GO:0150066	negative regulation of deacetylase activity	 	5.203E-3	1.000E0	4.571E-2	3.721E-1	1	3	KDM5A
+GO: Biological Process	GO:0097155	fasciculation of sensory neuron axon	 	5.203E-3	1.000E0	4.571E-2	3.721E-1	1	3	EPHA3
+GO: Biological Process	GO:0098582	innate vocalization behavior	 	5.203E-3	1.000E0	4.571E-2	3.721E-1	1	3	FOXP1
+GO: Biological Process	GO:2000870	regulation of progesterone secretion	 	5.203E-3	1.000E0	4.571E-2	3.721E-1	1	3	RUNX1
+GO: Biological Process	GO:0042478	regulation of eye photoreceptor cell development	 	5.203E-3	1.000E0	4.571E-2	3.721E-1	1	3	THRB
+GO: Biological Process	GO:1901674	regulation of histone H3-K27 acetylation	 	5.203E-3	1.000E0	4.571E-2	3.721E-1	1	3	KMT2A
+GO: Biological Process	GO:0071335	hair follicle cell proliferation	 	5.203E-3	1.000E0	4.571E-2	3.721E-1	1	3	RUNX1
+GO: Biological Process	GO:1901249	regulation of lung goblet cell differentiation	 	5.203E-3	1.000E0	4.571E-2	3.721E-1	1	3	FOXP1
+GO: Biological Process	GO:0009153	purine deoxyribonucleotide biosynthetic process	 	5.203E-3	1.000E0	4.571E-2	3.721E-1	1	3	AK5
+GO: Biological Process	GO:0071407	cellular response to organic cyclic compound	 	5.347E-3	1.000E0	4.665E-2	3.797E-1	5	660	WT1,FOXP1,THRB,RUNX1,CBFB
+GO: Biological Process	GO:0090183	regulation of kidney development	 	5.359E-3	1.000E0	4.665E-2	3.797E-1	2	63	MYC,WT1
+GO: Biological Process	GO:0032259	methylation	 	5.516E-3	1.000E0	4.767E-2	3.881E-1	4	413	MYC,WT1,NSD1,KMT2A
+GO: Biological Process	GO:0045604	regulation of epidermal cell differentiation	 	5.526E-3	1.000E0	4.767E-2	3.881E-1	2	64	RUNX1,CBFB
+GO: Biological Process	GO:0016052	carbohydrate catabolic process	 	5.717E-3	1.000E0	4.911E-2	3.997E-1	3	210	NUP98,MYC,CBFA2T3
+GO: Biological Process	GO:0035051	cardiocyte differentiation	 	5.793E-3	1.000E0	4.954E-2	4.032E-1	3	211	WT1,FOXP1,MYH11
+GO: Biological Process	GO:0001658	branching involved in ureteric bud morphogenesis	 	5.867E-3	1.000E0	4.972E-2	4.047E-1	2	66	MYC,WT1
+GO: Biological Process	GO:0032922	circadian regulation of gene expression	 	5.867E-3	1.000E0	4.972E-2	4.047E-1	2	66	KMT2A,KDM5A
+GO: Cellular Component	GO:0044451	nucleoplasm part	 	2.675E-6	4.895E-4	4.895E-4	2.834E-3	11	1191	NUP98,MYC,WT1,NSD1,KMT2A,MLLT3,AFDN,THRB,KDM5A,ELL,GLIS2
+GO: Cellular Component	GO:0016513	core-binding factor complex	 	8.418E-6	1.540E-3	7.702E-4	4.459E-3	2	3	RUNX1,CBFB
+GO: Cellular Component	GO:0000790	nuclear chromatin	 	4.611E-5	8.438E-3	2.813E-3	1.628E-2	12	1923	MYC,WT1,ETV6,KMT2A,MLLT3,FOXP1,THRB,RUNX1,ERG,CBFB,KDM5A,GLIS2
+GO: Cellular Component	GO:0016604	nuclear body	 	3.361E-4	6.150E-2	1.537E-2	8.901E-2	7	799	NUP98,MYC,WT1,AFDN,THRB,ELL,GLIS2
+GO: Cellular Component	GO:0035097	histone methyltransferase complex	 	5.430E-4	9.937E-2	1.987E-2	1.151E-1	3	94	NSD1,KMT2A,KDM5A
+GO: Cellular Component	GO:0034708	methyltransferase complex	 	1.131E-3	2.069E-1	3.448E-2	1.996E-1	3	121	NSD1,KMT2A,KDM5A
+GO: Cellular Component	GO:0005815	microtubule organizing center	 	1.571E-3	2.875E-1	3.896E-2	2.256E-1	6	756	FANK1,NDE1,CEP89,AK5,PDE4DIP,MACROD2
+GO: Cellular Component	GO:0044195	nucleoplasmic reticulum	 	1.703E-3	3.117E-1	3.896E-2	2.256E-1	1	1	MYC
+Pathway	523016	Transcriptional misregulation in cancer	BioSystems: KEGG	1.764E-10	5.292E-8	5.292E-8	3.325E-7	9	180	MYC,WT1,ETV6,KMT2A,MLLT3,FUS,RUNX1,RUNX1T1,ERG
+Pathway	83117	Acute myeloid leukemia	BioSystems: KEGG	2.748E-4	8.244E-2	4.122E-2	2.590E-1	3	55	MYC,RUNX1,RUNX1T1
+Disease	C0220621	Childhood Acute Myeloid Leukemia	DisGeNET BeFree	1.225E-18	1.586E-15	1.586E-15	1.228E-14	12	101	NUP98,WT1,NSD1,KMT2A,AFDN,MYH11,RUNX1,RUNX1T1,CBFA2T3,KDM5A,CCDC26,GLIS2
+Disease	C0023462	Acute Megakaryocytic Leukemias	DisGeNET Curated	7.711E-18	9.986E-15	4.993E-15	3.867E-14	12	117	NUP98,ETV6,KMT2A,MLLT3,MYH11,MLLT10,RUNX1,RUNX1T1,ERG,CBFA2T3,KDM5A,GLIS2
+Disease	C0242596	Neoplasm, Residual	DisGeNET Curated	2.942E-16	3.809E-13	1.270E-13	9.833E-13	13	215	NUP98,MYC,WT1,ETV6,KMT2A,MLLT3,AFDN,MYH11,FUS,RUNX1,RUNX1T1,ERG,CBFB
+Disease	C0023470	Myeloid Leukemia	DisGeNET Curated	6.359E-16	8.235E-13	2.059E-13	1.594E-12	16	481	NUP98,MYC,WT1,ETV6,KMT2A,AFDN,MYH11,FUS,MLLT10,RUNX1,RUNX1T1,ERG,CBFB,CCDC26,ELL,EPHA3
+Disease	C0598766	Leukemogenesis	DisGeNET BeFree	9.426E-16	1.221E-12	2.441E-13	1.891E-12	18	729	NUP98,MYC,WT1,ETV6,KMT2A,MLLT3,AFDN,FOXP1,MYH11,FUS,MLLT10,RUNX1,RUNX1T1,ERG,CBFA2T3,CBFB,ELL,GLIS2
+Disease	C1336735	Treatment related acute myeloid leukaemia	DisGeNET BeFree	1.898E-15	2.458E-12	4.097E-13	3.172E-12	9	55	NUP98,KMT2A,MYH11,MLLT10,RUNX1,RUNX1T1,CBFA2T3,CBFB,ELL
+Disease	C0085669	Acute leukemia	DisGeNET BeFree	2.138E-14	2.769E-11	3.955E-12	3.063E-11	15	488	NUP98,MYC,WT1,ETV6,KMT2A,AFDN,MYH11,FUS,MLLT10,RUNX1,RUNX1T1,ERG,CBFB,KDM5A,ELL
+Disease	C0279650	Childhood Acute Megakaryoblastic Leukemia	DisGeNET BeFree	5.744E-14	7.439E-11	9.298E-12	7.200E-11	6	12	NUP98,KMT2A,MLLT10,CBFA2T3,KDM5A,GLIS2
+Disease	C0023467	Leukemia, Myelocytic, Acute	DisGeNET Curated	8.474E-13	1.097E-9	1.219E-10	9.442E-10	21	1670	NUP98,MYC,WT1,NSD1,ETV6,KMT2A,MLLT3,AFDN,FOXP1,MYH11,FUS,MLLT10,RUNX1,RUNX1T1,ERG,CBFA2T3,CBFB,KDM5A,CCDC26,ELL,GLIS2
+Disease	C0026998	Acute Myeloid Leukemia, M1	DisGeNET Curated	1.777E-12	2.301E-9	2.301E-10	1.782E-9	9	114	NUP98,MYC,WT1,KMT2A,MYH11,RUNX1,RUNX1T1,ERG,CBFB
+Disease	C1879321	Acute Myeloid Leukemia (AML-M2)	DisGeNET Curated	2.437E-12	3.156E-9	2.869E-10	2.222E-9	9	118	NUP98,MYC,WT1,KMT2A,MYH11,RUNX1,RUNX1T1,ERG,CBFB
+Disease	C3888194	MIXED LINEAGE LEUKEMIA	DisGeNET BeFree	3.815E-12	4.940E-9	4.050E-10	3.136E-9	10	184	NUP98,MYC,KMT2A,MLLT3,AFDN,MLLT10,RUNX1,CBFB,KDM5A,ELL
+Disease	C0023479	Acute myelomonocytic leukemia	DisGeNET Curated	4.065E-12	5.264E-9	4.050E-10	3.136E-9	8	78	NUP98,NSD1,KMT2A,MYH11,MLLT10,RUNX1,RUNX1T1,CBFB
+Disease	C0023418	leukemia	DisGeNET Curated	5.743E-12	7.437E-9	5.312E-10	4.114E-9	21	1842	NUP98,MYC,WT1,NSD1,ETV6,KMT2A,MLLT3,AFDN,CTBP2,MYH11,FUS,MLLT10,RUNX1,RUNX1T1,ERG,CBFA2T3,CBFB,KDM5A,CCDC26,ELL,GLIS2
+Disease	C0023448	Lymphoid leukemia	DisGeNET Curated	8.336E-12	1.079E-8	7.197E-10	5.573E-9	10	199	NUP98,MYC,WT1,ETV6,KMT2A,RUNX1,RUNX1T1,ERG,GLIS2,EPHA3
+Disease	C2939461	Myeloid neoplasm	DisGeNET BeFree	1.190E-9	1.542E-6	9.636E-8	7.462E-7	6	52	NUP98,WT1,ETV6,KMT2A,RUNX1,KDM5A
+Disease	OMIN:601626	LEUKEMIA, ACUTE MYELOID; AML	OMIM	1.405E-9	1.820E-6	1.071E-7	8.290E-7	5	24	NSD1,ETV6,MLLT10,RUNX1,CBFB
+Disease	C0152276	Granulocytic Sarcoma	DisGeNET BeFree	1.754E-9	2.271E-6	1.229E-7	9.521E-7	5	25	KMT2A,MYH11,MLLT10,RUNX1,CBFB
+Disease	C0023449	Acute lymphocytic leukemia	DisGeNET BeFree	1.804E-9	2.336E-6	1.229E-7	9.521E-7	14	902	MYC,WT1,ETV6,KMT2A,MLLT3,FOXP1,FUS,MLLT10,RUNX1,RUNX1T1,ERG,CBFA2T3,CBFB,KDM5A
+Disease	C3839868	Cytogenetically normal acute myeloid leukemia	DisGeNET BeFree	3.907E-9	5.059E-6	2.489E-7	1.928E-6	6	63	WT1,KMT2A,RUNX1,ERG,CBFA2T3,GLIS2
+Disease	C0008626	Congenital chromosomal disease	DisGeNET Curated	4.037E-9	5.228E-6	2.489E-7	1.928E-6	11	496	NUP98,MYC,ETV6,KMT2A,MLLT3,FOXP1,MYH11,MLLT10,RUNX1,RUNX1T1,CBFB
+Disease	C0376544	Hematopoietic Neoplasms	DisGeNET Curated	5.552E-9	7.190E-6	3.268E-7	2.531E-6	8	191	NUP98,MYC,WT1,ETV6,KMT2A,FOXP1,RUNX1,EPHA3
+Disease	C0023464	Acute biphenotypic leukemia	DisGeNET Curated	6.577E-9	8.517E-6	3.703E-7	2.868E-6	5	32	NUP98,WT1,ETV6,KMT2A,ERG
+Disease	C1961099	Precursor T-Cell Lymphoblastic Leukemia-Lymphoma	DisGeNET Curated	8.341E-9	1.080E-5	4.501E-7	3.485E-6	10	404	NUP98,MYC,WT1,ETV6,KMT2A,AFDN,MLLT10,RUNX1,ERG,GLIS2
+Disease	C1961102	Precursor Cell Lymphoblastic Leukemia Lymphoma	DisGeNET Curated	8.866E-9	1.148E-5	4.592E-7	3.556E-6	11	535	MYC,WT1,ETV6,KMT2A,MLLT3,FUS,RUNX1,RUNX1T1,ERG,CBFA2T3,CBFB
+Disease	C0023465	Acute monocytic leukemia	DisGeNET Curated	9.640E-9	1.248E-5	4.801E-7	3.718E-6	6	73	KMT2A,MLLT3,MLLT10,RUNX1,RUNX1T1,ELL
+Disease	C3839741	Core binding factor acute myeloid leukemia	DisGeNET BeFree	1.763E-8	2.282E-5	8.454E-7	6.546E-6	4	14	MYH11,RUNX1,RUNX1T1,CBFB
+Disease	C0457334	Acute monoblastic leukemia	DisGeNET BeFree	3.195E-8	4.137E-5	1.478E-6	1.144E-5	4	16	KMT2A,MLLT10,RUNX1,RUNX1T1
+Disease	C1533174	Acute myeloid leukemia, inv(16)(p13q22)	DisGeNET BeFree	3.633E-8	4.705E-5	1.622E-6	1.256E-5	3	4	MYH11,RUNX1,CBFB
+Disease	C0026985	Myelodysplasia	DisGeNET Curated	4.186E-8	5.421E-5	1.807E-6	1.399E-5	6	93	WT1,ETV6,KMT2A,FOXP1,RUNX1,RUNX1T1
+Disease	C1332977	Childhood Leukemia	DisGeNET BeFree	5.555E-8	7.193E-5	2.320E-6	1.797E-5	7	167	NUP98,ETV6,KMT2A,RUNX1,RUNX1T1,ERG,GLIS2
+Disease	C3463824	MYELODYSPLASTIC SYNDROME	DisGeNET Curated	6.867E-8	8.893E-5	2.698E-6	2.089E-5	11	653	NUP98,MYC,WT1,NSD1,ETV6,KMT2A,FOXP1,MYH11,RUNX1,RUNX1T1,ERG
+Disease	C0220615	Adult Acute Myeloblastic Leukemia	DisGeNET BeFree	6.876E-8	8.904E-5	2.698E-6	2.089E-5	6	101	NUP98,WT1,KMT2A,RUNX1,ERG,CBFB
+Disease	C1318544	M5b Acute differentiated monocytic leukemia	DisGeNET BeFree	8.194E-8	1.061E-4	3.045E-6	2.358E-5	6	104	WT1,KMT2A,MLLT3,MLLT10,RUNX1,ELL
+Disease	C0023453	Leukemia, Lymphocytic, Acute, L2	DisGeNET Curated	8.231E-8	1.066E-4	3.045E-6	2.358E-5	5	52	MYC,ETV6,KMT2A,RUNX1,ERG
+Disease	C0522631	Acute myeloid leukemia, minimal differentiation	DisGeNET Curated	1.538E-7	1.992E-4	5.532E-6	4.284E-5	4	23	ETV6,KMT2A,RUNX1,ELL
+Disease	C0751606	Adult Acute Lymphocytic Leukemia	DisGeNET BeFree	1.925E-7	2.493E-4	6.737E-6	5.217E-5	6	120	MYC,WT1,ETV6,KMT2A,RUNX1,KDM5A
+Disease	C0432412	Chromosome 8, trisomy	DisGeNET BeFree	3.467E-7	4.490E-4	1.182E-5	9.151E-5	5	69	MYC,WT1,ETV6,KMT2A,RUNX1
+Disease	C0280449	secondary acute myeloid leukemia	DisGeNET Curated	4.005E-7	5.186E-4	1.330E-5	1.030E-4	5	71	ETV6,KMT2A,FOXP1,MYH11,RUNX1
+Disease	C1292780	Therapy-related myelodysplastic syndrome	DisGeNET BeFree	7.921E-7	1.026E-3	2.564E-5	1.986E-4	4	34	NUP98,KMT2A,MYH11,RUNX1
+Disease	C0027022	Myeloproliferative disease	DisGeNET Curated	9.085E-7	1.177E-3	2.870E-5	2.222E-4	7	252	NUP98,ETV6,KMT2A,FUS,MLLT10,RUNX1,RUNX1T1
+Disease	C0162679	Leukemic Infiltration	DisGeNET BeFree	1.080E-6	1.399E-3	3.331E-5	2.579E-4	3	10	MLLT10,RUNX1,RUNX1T1
+Disease	C0023473	Myeloid Leukemia, Chronic	DisGeNET Curated	1.174E-6	1.521E-3	3.537E-5	2.739E-4	11	867	NUP98,MYC,WT1,ETV6,KMT2A,MYH11,RUNX1,RUNX1T1,ERG,CBFB,KDM5A
+Disease	C1332153	Acute Myeloid Leukemia Arising from Previous Myelodysplastic Syndrome	DisGeNET BeFree	1.394E-6	1.805E-3	4.103E-5	3.177E-4	4	39	NUP98,ETV6,KMT2A,RUNX1
+Disease	C3896960	Childhood Pre-B Acute Lymphoblastic Leukemia	DisGeNET BeFree	1.483E-6	1.921E-3	4.268E-5	3.305E-4	3	11	ETV6,RUNX1,RUNX1T1
+Disease	C0432409	Trisomy 11	DisGeNET BeFree	2.563E-6	3.320E-3	7.217E-5	5.588E-4	3	13	MYC,ETV6,KMT2A
+Disease	C0023452	Childhood Acute Lymphoblastic Leukemia	DisGeNET Curated	3.418E-6	4.426E-3	9.418E-5	7.293E-4	8	442	MYC,WT1,ETV6,KMT2A,THRB,RUNX1,ERG,CBFB
+Disease	C0085281	Addictive Behavior	DisGeNET BeFree	4.684E-6	6.065E-3	1.264E-4	9.785E-4	6	207	MYC,ETV6,KMT2A,FOXP1,RUNX1,EPHA3
+Disease	C0041107	Trisomy	DisGeNET Curated	4.815E-6	6.236E-3	1.273E-4	9.855E-4	6	208	MYC,ETV6,KMT2A,FOXP1,RUNX1,ERG
+Disease	C0023487	Acute Promyelocytic Leukemia	DisGeNET Curated	4.971E-6	6.437E-3	1.287E-4	9.970E-4	8	465	NUP98,MYC,WT1,ETV6,KMT2A,RUNX1,RUNX1T1,ERG
+Disease	C0280100	Solid Neoplasm	DisGeNET Curated	7.066E-6	9.151E-3	1.794E-4	1.389E-3	10	839	MYC,WT1,ETV6,KMT2A,FOXP1,FUS,MLLT10,RUNX1,ERG,EPHA3
+Disease	C2826025	Mixed phenotype acute leukemia	DisGeNET BeFree	7.260E-6	9.402E-3	1.808E-4	1.400E-3	3	18	WT1,KMT2A,MLLT10
+Disease	C0598894	Monocytic leukemia	DisGeNET BeFree	9.130E-6	1.182E-2	2.231E-4	1.727E-3	4	62	WT1,KMT2A,MLLT10,RUNX1
+Disease	C0221013	Mastocytosis, Systemic	DisGeNET Curated	1.103E-5	1.428E-2	2.645E-4	2.048E-3	4	65	MYH11,RUNX1,RUNX1T1,CBFB
+Disease	C1332156	Acute myelomonocytic leukemia with abnormal eosinophils	DisGeNET BeFree	1.345E-5	1.741E-2	3.150E-4	2.439E-3	2	3	MYH11,CBFB
+Disease	C0856053	Leukemia secondary	DisGeNET BeFree	1.362E-5	1.764E-2	3.150E-4	2.439E-3	3	22	KMT2A,RUNX1,CBFA2T3
+Disease	C0376545	Hematologic Neoplasms	DisGeNET Curated	1.563E-5	2.024E-2	3.551E-4	2.750E-3	8	544	NUP98,MYC,WT1,ETV6,KMT2A,RUNX1,RUNX1T1,ERG
+Disease	C0280141	Acute Undifferentiated Leukemia	DisGeNET Curated	1.950E-5	2.525E-2	4.354E-4	3.372E-3	4	75	KMT2A,RUNX1,ERG,EPHA3
+Disease	C0021294	Infant, Premature	DisGeNET BeFree	2.461E-5	3.186E-2	5.401E-4	4.182E-3	6	277	MYC,ETV6,KMT2A,RUNX1,RUNX1T1,MBNL1
+Disease	C2861596	AML M4 Eo with inv(16) or t(16;16)	DisGeNET Curated	2.686E-5	3.478E-2	5.701E-4	4.415E-3	2	4	MYH11,CBFB
+Disease	C1832388	Platelet Disorder, Familial, with Associated Myeloid Malignancy	DisGeNET Curated	2.686E-5	3.478E-2	5.701E-4	4.415E-3	2	4	ETV6,RUNX1
+Disease	C2697636	Hyperdiploid B Acute Lymphoblastic Leukemia	DisGeNET BeFree	3.549E-5	4.596E-2	7.413E-4	5.740E-3	3	30	ETV6,KMT2A,RUNX1
+Disease	C0002894	Refractory anaemia with excess blasts	DisGeNET Curated	3.923E-5	5.081E-2	8.065E-4	6.245E-3	3	31	NSD1,KMT2A,RUNX1
+Disease	C4054727	Infant Acute Lymphoblastic Leukemia	DisGeNET BeFree	4.748E-5	6.149E-2	9.608E-4	7.440E-3	3	33	ETV6,KMT2A,RUNX1T1
+Disease	C0280745	secondary myelodysplastic syndromes	DisGeNET BeFree	6.696E-5	8.671E-2	1.319E-3	1.021E-2	2	6	KMT2A,RUNX1
+Disease	C0349637	Common acute lymphoblastic leukemia	DisGeNET BeFree	6.722E-5	8.705E-2	1.319E-3	1.021E-2	3	37	ETV6,KMT2A,RUNX1
+Disease	C0005699	Blast Phase	DisGeNET Curated	7.878E-5	1.020E-1	1.523E-3	1.179E-2	5	209	NUP98,MYC,WT1,ETV6,RUNX1
+Disease	C1292769	Precursor B-cell lymphoblastic leukemia	DisGeNET Curated	1.123E-4	1.454E-1	2.139E-3	1.656E-2	6	364	MYC,WT1,ETV6,KMT2A,FOXP1,RUNX1
+Disease	C2825139	Acute Myeloid Leukemia with Myelodysplasia-Related Changes	DisGeNET BeFree	1.246E-4	1.614E-1	2.339E-3	1.812E-2	2	8	KMT2A,RUNX1
+Disease	C1762616	Meningioma, benign, no ICD-O subtype	DisGeNET BeFree	1.509E-4	1.954E-1	2.792E-3	2.162E-2	5	240	MYC,WT1,ETV6,KMT2A,MLLT10
+Disease	C0011226	Hepatitis D Infection	DisGeNET BeFree	1.566E-4	2.028E-1	2.840E-3	2.199E-2	3	49	NUP98,MYC,EPHA3
+Disease	C0524528	Pervasive Development Disorder	DisGeNET Curated	1.579E-4	2.045E-1	2.840E-3	2.199E-2	4	128	WT1,FOXP1,NDE1,MACROD2
+Disease	C0279565	Invasive Lobular Breast Carcinoma	DisGeNET BeFree	1.765E-4	2.286E-1	3.131E-3	2.425E-2	3	51	FOXP1,FUS,CBFB
+Disease	C0280803	Primary central nervous system lymphoma	DisGeNET BeFree	2.093E-4	2.710E-1	3.663E-3	2.836E-2	3	54	MYC,ETV6,FOXP1
+Disease	C0026499	Monosomy	DisGeNET BeFree	2.616E-4	3.388E-1	4.517E-3	3.498E-2	4	146	MYC,MYH11,RUNX1,CBFB
+Disease	C1834582	MYELOPROLIFERATIVE SYNDROME, TRANSIENT	DisGeNET Curated	2.862E-4	3.706E-1	4.730E-3	3.663E-2	3	60	MYC,WT1,ERG
+Disease	C1857230	DISORGANIZATION, MOUSE, HOMOLOG OF	DisGeNET BeFree	2.922E-4	3.784E-1	4.730E-3	3.663E-2	2	12	ETV6,RUNX1
+Disease	C0279584	Childhood B Acute Lymphoblastic Leukemia	DisGeNET BeFree	2.922E-4	3.784E-1	4.730E-3	3.663E-2	2	12	ETV6,RUNX1
+Disease	C1333171	Primary Cutaneous Follicle Center Lymphoma	DisGeNET BeFree	2.922E-4	3.784E-1	4.730E-3	3.663E-2	2	12	MYC,FOXP1
+Disease	C0855146	B Lymphoblastic Lymphoma	DisGeNET BeFree	2.922E-4	3.784E-1	4.730E-3	3.663E-2	2	12	MYC,KMT2A
+Disease	C1997217	Low grade glioma	DisGeNET BeFree	3.006E-4	3.892E-1	4.805E-3	3.721E-2	3	61	MYC,FLNC,CCDC26
+Disease	C1266127	Histiocytoma, Angiomatoid Fibrous	DisGeNET Curated	3.449E-4	4.466E-1	5.447E-3	4.218E-2	2	13	FUS,ERG
+Disease	C0014457	Eosinophilia	DisGeNET Curated	3.707E-4	4.801E-1	5.715E-3	4.426E-2	4	160	WT1,ETV6,FLNC,MYH11
+Disease	C1306759	Eosinophilic disorder	DisGeNET BeFree	3.707E-4	4.801E-1	5.715E-3	4.426E-2	4	160	WT1,ETV6,FLNC,MYH11
+Disease	C0795839	Chromosome 10, monosomy 10q	DisGeNET BeFree	4.018E-4	5.204E-1	6.122E-3	4.741E-2	2	14	ERG,CCDC26
+Disease	C0205825	Liposarcoma, Pleomorphic	DisGeNET Curated	5.285E-4	6.844E-1	7.866E-3	6.092E-2	2	16	MYC,FUS
+Disease	C0280451	de novo myelodysplastic syndromes	DisGeNET BeFree	5.285E-4	6.844E-1	7.866E-3	6.092E-2	2	16	KMT2A,RUNX1
+Disease	C0079731	B-Cell Lymphomas	DisGeNET Curated	5.379E-4	6.966E-1	7.916E-3	6.130E-2	7	684	MYC,ETV6,KMT2A,FOXP1,RUNX1,RUNX1T1,CBFA2T3
+Disease	C0334588	Giant Cell Glioblastoma	DisGeNET Curated	5.967E-4	7.727E-1	8.682E-3	6.723E-2	3	77	MYC,WT1,RUNX1
+Disease	C0002871	Anemia	DisGeNET Curated	6.532E-4	8.459E-1	9.399E-3	7.278E-2	5	330	NUP98,INTS4,ETV6,RUNX1,RUNX1T1
+Disease	C0278704	Malignant Childhood Neoplasm	DisGeNET BeFree	7.171E-4	9.286E-1	1.020E-2	7.903E-2	3	82	ETV6,KMT2A,RUNX1
+Disease	C0085750	Adenosis of Breast	DisGeNET BeFree	7.500E-4	9.713E-1	1.044E-2	8.088E-2	2	19	MYC,ERG
+Disease	C0920028	Leukaemia recurrent	DisGeNET BeFree	7.500E-4	9.713E-1	1.044E-2	8.088E-2	2	19	ETV6,RUNX1
+Disease	C0018923	Hemangiosarcoma	DisGeNET Curated	7.963E-4	1.000E0	1.097E-2	8.495E-2	3	85	MYC,WT1,ERG
+Disease	C0553580	Ewings sarcoma	DisGeNET Curated	8.407E-4	1.000E0	1.146E-2	8.874E-2	5	349	MYC,WT1,FUS,ERG,EPHA3
+Disease	C0019829	Hodgkin Disease	DisGeNET Curated	8.901E-4	1.000E0	1.201E-2	9.298E-2	6	536	MYC,KMT2A,FOXP1,ERG,CBFA2T3,EPHA3
+Disease	C0024299	Lymphoma	DisGeNET Curated	9.745E-4	1.000E0	1.293E-2	1.001E-1	9	1242	MYC,WT1,ETV6,KMT2A,FOXP1,MLLT10,RUNX1,CBFA2T3,GLIS2
+Disease	C0027708	Nephroblastoma	DisGeNET Curated	9.782E-4	1.000E0	1.293E-2	1.001E-1	5	361	WT1,KMT2A,MYH11,RUNX1,RUNX1T1
+Disease	C1333296	Activated B-cell type diffuse large B-cell lymphoma	DisGeNET BeFree	1.009E-3	1.000E0	1.320E-2	1.022E-1	2	22	MYC,FOXP1
+Disease	C0270972	Cornelia De Lange Syndrome	DisGeNET Curated	1.104E-3	1.000E0	1.355E-2	1.049E-1	2	23	MYC,KMT2A
+Disease	C4054726	Infant Leukemia	DisGeNET BeFree	1.104E-3	1.000E0	1.355E-2	1.049E-1	2	23	ETV6,KMT2A
+Disease	C0079744	Diffuse Large B-Cell Lymphoma	DisGeNET Curated	1.180E-3	1.000E0	1.355E-2	1.049E-1	6	566	MYC,ETV6,KMT2A,FOXP1,MLLT10,GLIS2
+Disease	C0023485	Precursor B-Cell Lymphoblastic Leukemia-Lymphoma	DisGeNET Curated	1.275E-3	1.000E0	1.355E-2	1.049E-1	3	100	ETV6,KMT2A,RUNX1
+Disease	C0025362	Mental Retardation	DisGeNET BeFree	1.288E-3	1.000E0	1.355E-2	1.049E-1	5	384	WT1,NSD1,FOXP1,FUS,RUNX1T1
+Disease	C0278519	Recurrent Childhood Acute Lymphoblastic Leukemia	DisGeNET BeFree	1.305E-3	1.000E0	1.355E-2	1.049E-1	2	25	ETV6,RUNX1
+Disease	C0023269	leiomyosarcoma	DisGeNET Curated	1.350E-3	1.000E0	1.355E-2	1.049E-1	3	102	MYC,WT1,FUS
+Disease	C2713368	Hematopoetic Myelodysplasia	DisGeNET Curated	1.412E-3	1.000E0	1.355E-2	1.049E-1	2	26	MYC,RUNX1
+Disease	C1275278	Extraskeletal Myxoid Chondrosarcoma	DisGeNET Curated	1.412E-3	1.000E0	1.355E-2	1.049E-1	2	26	MYC,FUS
+Disease	C0206687	Carcinoma, Endometrioid	DisGeNET Curated	1.428E-3	1.000E0	1.355E-2	1.049E-1	3	104	WT1,AFDN,RUNX1
+Disease	C0023480	Leukemia, Myelomonocytic, Chronic	DisGeNET Curated	1.468E-3	1.000E0	1.355E-2	1.049E-1	3	105	ETV6,KMT2A,RUNX1
+Disease	C2745900	Promyelocytic leukemia	DisGeNET BeFree	1.486E-3	1.000E0	1.355E-2	1.049E-1	4	232	MYC,KMT2A,RUNX1,RUNX1T1
+Disease	C1292778	Chronic myeloproliferative disorder	DisGeNET Curated	1.486E-3	1.000E0	1.355E-2	1.049E-1	4	232	NUP98,ETV6,RUNX1,RUNX1T1
+Disease	C0346109	Malignant Mesothelioma of Peritoneum	DisGeNET BeFree	1.523E-3	1.000E0	1.355E-2	1.049E-1	2	27	MYC,WT1
+Disease	C0279543	Philadelphia chromosome positive chronic myelogenous leukemia	DisGeNET BeFree	1.523E-3	1.000E0	1.355E-2	1.049E-1	2	27	NUP98,ETV6
+Disease	C0006413	Burkitt Lymphoma	DisGeNET Curated	1.543E-3	1.000E0	1.355E-2	1.049E-1	5	400	MYC,ETV6,KMT2A,FOXP1,RUNX1
+Disease	C2825306	Treatment related leukaemia	DisGeNET BeFree	1.638E-3	1.000E0	1.355E-2	1.049E-1	2	28	KMT2A,RUNX1
+Disease	C3831784	Acute monocytic/monoblastic leukemia	DisGeNET BeFree	1.638E-3	1.000E0	1.355E-2	1.049E-1	2	28	KMT2A,MLLT10
+Disease	C0025286	Meningioma	DisGeNET Curated	1.647E-3	1.000E0	1.355E-2	1.049E-1	5	406	MYC,WT1,ETV6,KMT2A,MLLT10
+Disease	C1261473	Sarcoma	DisGeNET Curated	1.745E-3	1.000E0	1.355E-2	1.049E-1	6	611	MYC,WT1,ETV6,FOXP1,FUS,ERG
+Disease	C0085702	Monocytosis	DisGeNET BeFree	1.757E-3	1.000E0	1.355E-2	1.049E-1	2	29	ETV6,RUNX1
+Disease	C0019562	Von Hippel-Lindau Syndrome	DisGeNET Curated	1.812E-3	1.000E0	1.355E-2	1.049E-1	3	113	MYC,THRB,ELL
+Disease	C0013080	Down Syndrome	DisGeNET Curated	1.814E-3	1.000E0	1.355E-2	1.049E-1	5	415	WT1,ETV6,RUNX1,ERG,GLIS2
+Disease	C1458155	Mammary Neoplasms	DisGeNET Curated	1.875E-3	1.000E0	1.355E-2	1.049E-1	11	1947	MYC,WT1,KMT2A,AFDN,FOXP1,CTBP2,THRB,RUNX1,CBFA2T3,NDE1,EPHA3
+Disease	C1882062	Neoplastic disease	DisGeNET BeFree	1.880E-3	1.000E0	1.355E-2	1.049E-1	2	30	CTBP2,CBFB
+Disease	C0349639	Juvenile Myelomonocytic Leukemia	DisGeNET Curated	2.001E-3	1.000E0	1.355E-2	1.049E-1	3	117	NUP98,KMT2A,RUNX1
+Disease	C0796070	MICROPHTHALMIA, SYNDROMIC 7	DisGeNET Curated	2.007E-3	1.000E0	1.355E-2	1.049E-1	2	31	FUS,ERG
+Disease	C0745091	Hypereosinophilia	DisGeNET BeFree	2.007E-3	1.000E0	1.355E-2	1.049E-1	2	31	ETV6,RUNX1
+Disease	C0206141	Idiopathic Hypereosinophilic Syndrome	DisGeNET Curated	2.007E-3	1.000E0	1.355E-2	1.049E-1	2	31	WT1,ETV6
+Disease	C0033578	Prostatic Neoplasms	DisGeNET Curated	2.042E-3	1.000E0	1.355E-2	1.049E-1	8	1110	MYC,INTS4,KMT2A,FOXP1,CTBP2,RUNX1,ERG,ELL
+Disease	OMIN:113970	BURKITT LYMPHOMA; BL	OMIM	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	MYC
+Disease	cv:CN074252	Thyroid hormone resistance, generalized, autosomal recessive	Clinical Variations	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	THRB
+Disease	cv:CN225711	Thrombocytopenia 5	Clinical Variations	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	ETV6
+Disease	C1969092	NEPHRONOPHTHISIS 7	DisGeNET Curated	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	GLIS2
+Disease	C1838656	Macrocytosis, Familial	DisGeNET Curated	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	ETV6
+Disease	C0154064	Carcinoma in situ of anus	DisGeNET BeFree	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	MYC
+Disease	cv:C3279722	Myopathy, distal, 4	Clinical Variations	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	FLNC
+Disease	cv:C1837026	Meacham syndrome	Clinical Variations	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	WT1
+Disease	OMIN:188570	THYROID HORMONE RESISTANCE, GENERALIZED, AUTOSOMAL DOMINANT; GRTH	OMIM	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	THRB
+Disease	C0862039	Precursor B-lymphoblastic lymphoma stage II	DisGeNET BeFree	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	KMT2A
+Disease	OMIN:145650	THYROID HORMONE RESISTANCE, SELECTIVE PITUITARY; PRTH	OMIM	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	THRB
+Disease	C2931786	Amyotrophic lateral sclerosis, type 6	DisGeNET BeFree	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	FUS
+Disease	C3539195	TREMOR, HEREDITARY ESSENTIAL, 4	DisGeNET Curated	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	FUS
+Disease	OMIN:612067	DYSTONIA 16; DYT16	OMIM	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	PRKRA
+Disease	C1842675	AMYOTROPHIC LATERAL SCLEROSIS 6 (disorder)	DisGeNET Curated	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	FUS
+Disease	C4024934	Cerebellar medulloblastoma	DisGeNET BeFree	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	MYC
+Disease	C1857977	MICROHYDRANENCEPHALY	DisGeNET Curated	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	NDE1
+Disease	OMIN:611498	NEPHRONOPHTHISIS 7; NPHP7	OMIM	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	GLIS2
+Disease	OMIN:132900	AORTIC ANEURYSM, FAMILIAL THORACIC 4; AAT4	OMIM	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	MYH11
+Disease	cv:C1969092	Nephronophthisis 7	Clinical Variations	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	GLIS2
+Disease	C4013764	MENTAL RETARDATION WITH LANGUAGE IMPAIRMENT AND WITH OR WITHOUT AUTISTIC FEATURES	DisGeNET Curated	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	FOXP1
+Disease	C3151568	NEPHROTIC SYNDROME, TYPE 4	DisGeNET Curated	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	WT1
+Disease	OMIN:609524	MYOPATHY, MYOFIBRILLAR, FILAMIN C-RELATED	OMIM	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	FLNC
+Disease	C4310748	CARDIOMYOPATHY, FAMILIAL RESTRICTIVE, 5	DisGeNET Curated	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	FLNC
+Disease	OMIN:608978	MEACHAM SYNDROME	OMIM	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	WT1
+Disease	C1836050	Filaminopathy, autosomal dominant	DisGeNET Curated	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	FLNC
+Disease	C3824769	Lymphomas in children	DisGeNET BeFree	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	MYC
+Disease	cv:C3151461	Lissencephaly 4	Clinical Variations	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	NDE1
+Disease	cv:C0006413	Burkitt lymphoma	Clinical Variations	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	MYC
+Disease	C0748861	Metastatic small cell carcinoma	DisGeNET BeFree	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	ERG
+Disease	cv:C1842675	Amyotrophic lateral sclerosis type 6	Clinical Variations	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	FUS
+Disease	C1851504	Aortic aneurysm, familial thoracic 4	DisGeNET Curated	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	MYH11
+Disease	C0431111	Rhabdomyosarcoma with ganglionic differentiation	DisGeNET BeFree	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	ETV6
+Disease	OMIN:608030	AMYOTROPHIC LATERAL SCLEROSIS 6	OMIM	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	FUS
+Disease	OMIN:274300	THYROID HORMONE RESISTANCE, GENERALIZED, AUTOSOMAL RECESSIVE; GRTH	OMIM	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	THRB
+Disease	C2049069	Indolent multiple myeloma	DisGeNET BeFree	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	MYC
+Disease	cv:C1832388	Familial platelet disorder with associated myeloid malignancy	Clinical Variations	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	RUNX1
+Disease	OMIN:194080	DENYS-DRASH SYNDROME; DDS	OMIM	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	WT1
+Disease	OMIN:136680	FRASIER SYNDROME	OMIM	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	WT1
+Disease	C2062501	acute myelomonoblastic leukemia	DisGeNET BeFree	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	MYH11
+Disease	OMIN:601399	PLATELET DISORDER, FAMILIAL, WITH ASSOCIATED MYELOID MALIGNANCY	OMIM	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	RUNX1
+Disease	C3164096	Sarcoma of mesentery	DisGeNET BeFree	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	CBFB
+Disease	cv:C1840364	Thyroid hormone resistance, selective pituitary	Clinical Variations	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	THRB
+Disease	cv:C1857977	Microhydranencephaly	Clinical Variations	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	NDE1
+Disease	C0856823	Undifferentiated type acute leukemia	DisGeNET Curated	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	KMT2A
+Disease	OMIN:117550	SOTOS SYNDROME	OMIM	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	NSD1
+Disease	cv:C3150923	Mental retardation with language impairment and autistic features	Clinical Variations	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	FOXP1
+Disease	C1292774	Acute myeloid leukemia, t(8;21) (q22;q22)	DisGeNET BeFree	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	RUNX1T1
+Disease	OMIN:256370	NEPHROTIC SYNDROME, TYPE 4; NPHS4	OMIM	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	WT1
+Disease	cv:C0950122	Frasier syndrome	Clinical Variations	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	WT1
+Disease	cv:CN035106	Sotos syndrome 1	Clinical Variations	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	NSD1
+Disease	C1837026	MEACHAM SYNDROME (disorder)	DisGeNET Curated	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	WT1
+Disease	cv:C1836050	Myofibrillar myopathy, filamin C-related	Clinical Variations	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	FLNC
+Disease	cv:C0950121	Drash syndrome	Clinical Variations	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	WT1
+Disease	C4086965	Woodchuck Hepatocellular Carcinoma	DisGeNET BeFree	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	MYC
+Disease	C1336007	Small Intestinal Sarcoma	DisGeNET BeFree	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	MYH11
+Disease	C4015537	THROMBOCYTOPENIA 5	DisGeNET Curated	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	ETV6
+Disease	C1292775	Acute myeloid leukemia, 11q23 abnormalities	DisGeNET Curated	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	KMT2A
+Disease	C0023439	Leukemia, Eosinophilic, Acute	DisGeNET BeFree	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	WT1
+Disease	cv:C1854630	Growth deficiency and mental retardation with facial dysmorphism	Clinical Variations	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	KMT2A
+Disease	cv:C2937288	Thyroid hormone resistance, generalized, autosomal dominant	Clinical Variations	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	THRB
+Disease	C3279722	MYOPATHY, DISTAL, 4	DisGeNET Curated	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	FLNC
+Disease	C1333063	Classical Burkitt Lymphoma	DisGeNET BeFree	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	MYC
+Disease	C1335976	Skull Base Meningioma	DisGeNET BeFree	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	WT1
+Disease	C4304526	5q35 microduplication syndrome	DisGeNET Curated	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	NSD1
+Disease	cv:C1851504	Aortic aneurysm, familial thoracic 4	Clinical Variations	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	MYH11
+Disease	C0398627	Inherited platelet disorder	DisGeNET BeFree	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	RUNX1
+Disease	C0279632	Adult Acute Megakaryoblastic Leukemia	DisGeNET BeFree	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	GLIS2
+Disease	cv:CN143717	Tremor, hereditary essential, 4	Clinical Variations	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	FUS
+Disease	C4310749	CARDIOMYOPATHY, FAMILIAL HYPERTROPHIC, 26	DisGeNET Curated	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	FLNC
+Disease	cv:C0268747	Diffuse mesangial sclerosis	Clinical Variations	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	WT1
+Disease	C2750729	Amyotrophic Lateral Sclerosis 6, Autosomal Recessive	DisGeNET Curated	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	FUS
+Disease	C4518548	Non-intestinal type adenocarcinoma	DisGeNET BeFree	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	ETV6
+Disease	C1265730	Progonoma	DisGeNET BeFree	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	MYC
+Disease	cv:C2677567	Dystonia 16	Clinical Variations	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	PRKRA
+Disease	C0341698	Atrophy of kidney	DisGeNET BeFree	2.154E-3	1.000E0	1.355E-2	1.049E-1	1	1	GLIS2
+Disease	C0424295	Hyperactive behavior	DisGeNET Curated	2.155E-3	1.000E0	1.355E-2	1.049E-1	6	637	NUP98,MYC,ETV6,KMT2A,RUNX1,EPHA3
+Disease	C0023015	Language Disorders	DisGeNET Curated	2.273E-3	1.000E0	1.422E-2	1.101E-1	2	33	ETV6,FOXP1
+Disease	C0006826	Malignant Neoplasms	DisGeNET Curated	2.318E-3	1.000E0	1.443E-2	1.118E-1	9	1405	MYC,WT1,ETV6,KMT2A,CTBP2,FUS,RUNX1,KDM5A,EPHA3
+Disease	C0206685	Acinar Cell Carcinoma	DisGeNET BeFree	2.411E-3	1.000E0	1.490E-2	1.154E-1	2	34	ETV6,ERG
+Disease	C0023827	liposarcoma	DisGeNET Curated	2.416E-3	1.000E0	1.490E-2	1.154E-1	3	125	MYC,FOXP1,FUS
+Disease	C1857276	Trichohepatoenteric Syndrome	DisGeNET Curated	2.447E-3	1.000E0	1.502E-2	1.163E-1	4	266	NSD1,FOXP1,THRB,RUNX1
+Disease	C0149925	Small cell carcinoma of lung	DisGeNET Curated	2.479E-3	1.000E0	1.514E-2	1.173E-1	6	655	MYC,KMT2A,FUS,THRB,RUNX1T1,ERG
+Disease	C0018939	Hematological Disease	DisGeNET Curated	2.700E-3	1.000E0	1.641E-2	1.271E-1	3	130	WT1,ETV6,KMT2A
+Disease	C1292754	Mediastinal (Thymic) Large B-Cell Lymphoma	DisGeNET Curated	2.851E-3	1.000E0	1.725E-2	1.336E-1	2	37	MYC,KMT2A
+Disease	C0013170	Drug habituation	DisGeNET Curated	3.131E-3	1.000E0	1.877E-2	1.454E-1	3	137	ETV6,CEP89,MACROD2
+Disease	C0025363	Mental Retardation, Psychosocial	DisGeNET Curated	3.131E-3	1.000E0	1.877E-2	1.454E-1	3	137	NSD1,KDM5A,PRKRA
+Disease	C1136085	Monoclonal Gammapathies	DisGeNET BeFree	3.164E-3	1.000E0	1.888E-2	1.462E-1	2	39	MYC,EPHA3
+Disease	C0087031	Juvenile-Onset Still Disease	DisGeNET Curated	3.196E-3	1.000E0	1.899E-2	1.470E-1	3	138	ETV6,KMT2A,FOXP1
+Disease	C1332967	Childhood Diffuse Large B-Cell Lymphoma	DisGeNET Curated	3.326E-3	1.000E0	1.949E-2	1.509E-1	2	40	MYC,FOXP1
+Disease	C0282607	Vascular Neoplasms	DisGeNET BeFree	3.326E-3	1.000E0	1.949E-2	1.509E-1	2	40	MYC,WT1
+Disease	C1332201	Adult Diffuse Large B-Cell Lymphoma	DisGeNET Curated	3.326E-3	1.000E0	1.949E-2	1.509E-1	2	40	MYC,FOXP1
+Disease	C0020796	Profound Mental Retardation	DisGeNET Curated	3.464E-3	1.000E0	2.021E-2	1.565E-1	3	142	NSD1,KDM5A,PRKRA
+Disease	C0684337	Ewings sarcoma-primitive neuroectodermal tumor (PNET)	DisGeNET Curated	3.492E-3	1.000E0	2.023E-2	1.567E-1	2	41	WT1,ERG
+Disease	C0919267	ovarian neoplasm	DisGeNET Curated	3.499E-3	1.000E0	2.023E-2	1.567E-1	6	702	MYC,WT1,FOXP1,CTBP2,THRB,RUNX1T1
+Disease	C0917816	Mental deficiency	DisGeNET Curated	3.603E-3	1.000E0	2.074E-2	1.606E-1	3	144	NSD1,KDM5A,PRKRA
+Disease	C0264490	Acute respiratory failure	DisGeNET BeFree	3.661E-3	1.000E0	2.089E-2	1.617E-1	2	42	RUNX1,RUNX1T1
+Disease	C0206634	Liposarcoma, Myxoid	DisGeNET Curated	3.661E-3	1.000E0	2.089E-2	1.617E-1	2	42	FUS,ERG
+Disease	C0545074	Myxoid/Round Cell Liposarcoma	DisGeNET BeFree	4.012E-3	1.000E0	2.198E-2	1.702E-1	2	44	FUS,ERG
+Disease	C1292776	Therapy-related acute myeloid leukemia and myelodysplastic syndrome	DisGeNET BeFree	4.294E-3	1.000E0	2.198E-2	1.702E-1	1	2	RUNX1
+Disease	C2985220	Anaplastic Medulloblastoma	DisGeNET BeFree	4.294E-3	1.000E0	2.198E-2	1.702E-1	1	2	MYC
+Disease	C0278836	Stage III Prostate Carcinoma	DisGeNET BeFree	4.294E-3	1.000E0	2.198E-2	1.702E-1	1	2	MYC
+Disease	cv:C0206115	11p partial monosomy syndrome	Clinical Variations	4.294E-3	1.000E0	2.198E-2	1.702E-1	1	2	WT1
+Disease	OMIN:131440	MYELOPROLIFERATIVE DISORDER, CHRONIC, WITH EOSINOPHILIA	OMIM	4.294E-3	1.000E0	2.198E-2	1.702E-1	1	2	ETV6
+Disease	C0855112	Diffuse large B-cell lymphoma refractory	DisGeNET BeFree	4.294E-3	1.000E0	2.198E-2	1.702E-1	1	2	MYC
+Disease	C1840364	THYROID HORMONE RESISTANCE, SELECTIVE PITUITARY	DisGeNET Curated	4.294E-3	1.000E0	2.198E-2	1.702E-1	1	2	THRB
+Disease	C2931574	Chromosome 5, monosomy 5q35	DisGeNET Curated	4.294E-3	1.000E0	2.198E-2	1.702E-1	1	2	NSD1
+Disease	C1320471	Mesoblastic nephroma, cellular	DisGeNET BeFree	4.294E-3	1.000E0	2.198E-2	1.702E-1	1	2	ETV6
+Disease	C0795816	Chromosome 6, monosomy 6q	DisGeNET BeFree	4.294E-3	1.000E0	2.198E-2	1.702E-1	1	2	KMT2A
+Disease	C0854893	Angiosarcoma non-metastatic	DisGeNET BeFree	4.294E-3	1.000E0	2.198E-2	1.702E-1	1	2	MYC
+Disease	C0029396	Heterotopic Ossification	DisGeNET Curated	4.294E-3	1.000E0	2.198E-2	1.702E-1	1	2	CBFB
+Disease	C0334513	Sarcomatoid Mesothelioma	DisGeNET BeFree	4.294E-3	1.000E0	2.198E-2	1.702E-1	1	2	WT1
+Disease	C0349680	Acute bilineal leukemia	DisGeNET Curated	4.294E-3	1.000E0	2.198E-2	1.702E-1	1	2	KMT2A
+Disease	20081125:Kiemeney	Urinary bladder cancer	GWAS	4.294E-3	1.000E0	2.198E-2	1.702E-1	1	2	MYC
+Disease	C0026773	Multiple Personality Disorder	DisGeNET BeFree	4.294E-3	1.000E0	2.198E-2	1.702E-1	1	2	MYC
+Disease	C1335661	Radiation-Related Angiosarcoma	DisGeNET BeFree	4.294E-3	1.000E0	2.198E-2	1.702E-1	1	2	MYC
+Disease	C2854122	Acute myeloblastic leukemia with t(8;21)	DisGeNET BeFree	4.294E-3	1.000E0	2.198E-2	1.702E-1	1	2	RUNX1T1
+Disease	cv:C0345967	Mesothelioma, malignant	Clinical Variations	4.294E-3	1.000E0	2.198E-2	1.702E-1	1	2	WT1
+Disease	OMIN:277590	WEAVER SYNDROME	OMIM	4.294E-3	1.000E0	2.198E-2	1.702E-1	1	2	NSD1
+Disease	C0342198	Thyrotoxicosis due to pituitary thyroid hormone resistance	DisGeNET BeFree	4.294E-3	1.000E0	2.198E-2	1.702E-1	1	2	THRB
+Disease	C1862177	Diaphyseal medullary stenosis with malignant fibrous histiocytoma	DisGeNET Curated	4.294E-3	1.000E0	2.198E-2	1.702E-1	1	2	FOXP1
+Disease	C0206094	Neuroectodermal Tumor, Melanotic	DisGeNET BeFree	4.294E-3	1.000E0	2.198E-2	1.702E-1	1	2	MYC
+Disease	C1333003	Childhood Kidney Neoplasm	DisGeNET BeFree	4.294E-3	1.000E0	2.198E-2	1.702E-1	1	2	WT1
+Disease	C0392775	Cystic medial necrosis of aorta	DisGeNET Curated	4.294E-3	1.000E0	2.198E-2	1.702E-1	1	2	MYH11
+Disease	C0001418	Adenocarcinoma	DisGeNET Curated	4.472E-3	1.000E0	2.280E-2	1.766E-1	9	1548	MYC,WT1,KMT2A,FOXP1,FUS,ERG,CBFB,EPHA3,PRKRA
+Disease	C0019284	Diaphragmatic Hernia	DisGeNET Curated	4.758E-3	1.000E0	2.416E-2	1.871E-1	2	48	WT1,THRB
+Disease	C0280280	stage, prostate cancer	DisGeNET BeFree	4.954E-3	1.000E0	2.506E-2	1.941E-1	2	49	MYC,ERG
+Disease	C0242647	Mucosa-Associated Lymphoid Tissue Lymphoma	DisGeNET Curated	5.182E-3	1.000E0	2.611E-2	2.022E-1	3	164	MYC,FOXP1,RUNX1T1
+Disease	C2931456	Prostate cancer, familial	DisGeNET Curated	5.563E-3	1.000E0	2.792E-2	2.162E-1	2	52	MYC,ERG
+Disease	C3714542	Lymphoma, Diffuse	DisGeNET Curated	5.988E-3	1.000E0	2.934E-2	2.272E-1	2	54	MYC,FLNC
+Disease	C0024301	Lymphoma, Follicular	DisGeNET Curated	6.113E-3	1.000E0	2.934E-2	2.272E-1	4	344	MYC,KMT2A,FOXP1,RUNX1T1
+Disease	C0035436	Rheumatic Fever	DisGeNET BeFree	6.426E-3	1.000E0	2.934E-2	2.272E-1	2	56	RUNX1,RUNX1T1
+Disease	C1854630	Growth Deficiency and Mental Retardation with Facial Dysmorphism	DisGeNET Curated	6.435E-3	1.000E0	2.934E-2	2.272E-1	1	3	KMT2A
+Disease	C0751359	Percussion Myotonia	DisGeNET Curated	6.435E-3	1.000E0	2.934E-2	2.272E-1	1	3	MBNL1
+Disease	C1292773	Acute myeloid leukemia with multilineage dysplasia	DisGeNET Curated	6.435E-3	1.000E0	2.934E-2	2.272E-1	1	3	RUNX1
+Disease	OMIN:194072	WILMS TUMOR, ANIRIDIA, GENITOURINARY ANOMALIES, AND MENTAL RETARDATION SYNDROME; WAGR	OMIM	6.435E-3	1.000E0	2.934E-2	2.272E-1	1	3	WT1
+Disease	cv:C0003076	Congenital aniridia	Clinical Variations	6.435E-3	1.000E0	2.934E-2	2.272E-1	1	3	WT1
+Disease	C0751358	Myotonic Phenomenon	DisGeNET Curated	6.435E-3	1.000E0	2.934E-2	2.272E-1	1	3	MBNL1
+Disease	C2677567	DYSTONIA 16 (disorder)	DisGeNET Curated	6.435E-3	1.000E0	2.934E-2	2.272E-1	1	3	PRKRA
+Disease	C0154143	Toxic multinodular goiter	DisGeNET BeFree	6.435E-3	1.000E0	2.934E-2	2.272E-1	1	3	THRB
+Disease	C2678485	LONG QT SYNDROME 9 (disorder)	DisGeNET Curated	6.435E-3	1.000E0	2.934E-2	2.272E-1	1	3	EPHA3
+Disease	C2861580	Chronic myeloid leukemia, BCR/ABL-positive	DisGeNET BeFree	6.435E-3	1.000E0	2.934E-2	2.272E-1	1	3	WT1
+Disease	C1832918	Brody myopathy	DisGeNET Curated	6.435E-3	1.000E0	2.934E-2	2.272E-1	1	3	EPHA3
+Disease	C0279627	Adult Acute Myelomonocytic Leukemia	DisGeNET BeFree	6.435E-3	1.000E0	2.934E-2	2.272E-1	1	3	KMT2A
+Disease	C2931875	Albinism with hemorrhagic diathesis and pigmented reticuloendothelial cells	DisGeNET Curated	6.435E-3	1.000E0	2.934E-2	2.272E-1	1	3	RUNX1
+Disease	C0206628	Mesoblastic Nephroma	DisGeNET BeFree	6.435E-3	1.000E0	2.934E-2	2.272E-1	1	3	ETV6
+Disease	C0027125	Myotonia	DisGeNET Curated	6.435E-3	1.000E0	2.934E-2	2.272E-1	1	3	MBNL1
+Disease	C0334385	Inflammatory carcinoma	DisGeNET BeFree	6.435E-3	1.000E0	2.934E-2	2.272E-1	1	3	MYC
+Disease	C2733623	Bone Fibrosarcoma	DisGeNET BeFree	6.435E-3	1.000E0	2.934E-2	2.272E-1	1	3	MYC
+Disease	C0279644	Childhood Acute Myelomonocytic Leukemia	DisGeNET BeFree	6.435E-3	1.000E0	2.934E-2	2.272E-1	1	3	KMT2A
+Disease	OMIN:106210	ANIRIDIA; AN	OMIM	6.435E-3	1.000E0	2.934E-2	2.272E-1	1	3	WT1
+Disease	C0340429	Familial restrictive cardiomyopathy (disorder)	DisGeNET BeFree	6.435E-3	1.000E0	2.934E-2	2.272E-1	1	3	FLNC
+Disease	C1334633	Mature B-Cell Neoplasm	DisGeNET BeFree	6.435E-3	1.000E0	2.934E-2	2.272E-1	1	3	MYC
+Disease	C1300585	Small cell carcinoma of prostate	DisGeNET BeFree	6.435E-3	1.000E0	2.934E-2	2.272E-1	1	3	ERG
+Disease	C2931803	Deletion 11p13	DisGeNET Curated	6.435E-3	1.000E0	2.934E-2	2.272E-1	1	3	WT1
+Disease	C0023492	Leukemia, T-Cell	DisGeNET Curated	6.690E-3	1.000E0	3.040E-2	2.354E-1	4	353	MYC,ETV6,KMT2A,RUNX1
+Disease	C0345904	Malignant neoplasm of liver	DisGeNET Curated	6.723E-3	1.000E0	3.044E-2	2.357E-1	6	803	NUP98,MYC,NSD1,KMT2A,EPHA3,MACROD2
+Disease	C0398791	Nijmegen Breakage Syndrome	DisGeNET Curated	7.111E-3	1.000E0	3.203E-2	2.480E-1	2	59	KMT2A,ERG
+Disease	C0242422	Parkinsonian Disorders	DisGeNET Curated	7.123E-3	1.000E0	3.203E-2	2.480E-1	3	184	FUS,RUNX1T1,PRKRA
+Disease	C0079748	Precursor cell lymphoblastic lymphoma	DisGeNET BeFree	7.585E-3	1.000E0	3.399E-2	2.632E-1	2	61	MYC,KMT2A
+Disease	C1569637	Adenocarcinoma, Endometrioid	DisGeNET Curated	8.074E-3	1.000E0	3.537E-2	2.739E-1	2	63	AFDN,RUNX1
+Disease	C1621958	Glioblastoma Multiforme	DisGeNET Curated	8.233E-3	1.000E0	3.537E-2	2.739E-1	6	838	NUP98,MYC,WT1,KMT2A,RUNX1,EPHA3
+Disease	C0038868	Progressive supranuclear palsy	DisGeNET Curated	8.323E-3	1.000E0	3.537E-2	2.739E-1	2	64	FUS,RUNX1T1
+Disease	C0750145	Occlusive vascular disease	DisGeNET BeFree	8.571E-3	1.000E0	3.537E-2	2.739E-1	1	4	MYC
+Disease	C0279821	metastatic pheochromocytoma	DisGeNET BeFree	8.571E-3	1.000E0	3.537E-2	2.739E-1	1	4	MYC
+Disease	C3468114	Juvenile amyotrophic lateral sclerosis	DisGeNET Curated	8.571E-3	1.000E0	3.537E-2	2.739E-1	1	4	FUS
+Disease	C3826066	Leukemia in children	DisGeNET BeFree	8.571E-3	1.000E0	3.537E-2	2.739E-1	1	4	KMT2A
+Disease	C2981712	Ocular Adnexal Lymphoma	DisGeNET BeFree	8.571E-3	1.000E0	3.537E-2	2.739E-1	1	4	MYC
+Disease	C0740479	Undifferentiated High Grade Pleomorphic Sarcoma of Bone	DisGeNET BeFree	8.571E-3	1.000E0	3.537E-2	2.739E-1	1	4	MYC
+Disease	C0265490	Trisomy 22	DisGeNET BeFree	8.571E-3	1.000E0	3.537E-2	2.739E-1	1	4	MYH11
+Disease	C0950122	Frasier Syndrome	DisGeNET Curated	8.571E-3	1.000E0	3.537E-2	2.739E-1	1	4	WT1
+Disease	C0020225	Hydranencephaly	DisGeNET Curated	8.571E-3	1.000E0	3.537E-2	2.739E-1	1	4	NDE1
+Disease	20081125:Thomas	Prostate cancer	GWAS	8.571E-3	1.000E0	3.537E-2	2.739E-1	1	4	CTBP2
+Disease	C0205858	General Paralysis	DisGeNET BeFree	8.571E-3	1.000E0	3.537E-2	2.739E-1	1	4	FUS
+Disease	C2751067	Parkinsonism-Dystonia, Infantile	DisGeNET Curated	8.571E-3	1.000E0	3.537E-2	2.739E-1	1	4	PRKRA
+Disease	C0456863	High grade B-cell lymphoma	DisGeNET BeFree	8.571E-3	1.000E0	3.537E-2	2.739E-1	1	4	MYC
+Disease	C1335483	Gastric Diffuse Large B-Cell Lymphoma	DisGeNET BeFree	8.571E-3	1.000E0	3.537E-2	2.739E-1	1	4	FOXP1
+Disease	C2861614	AML M5b	DisGeNET BeFree	8.571E-3	1.000E0	3.537E-2	2.739E-1	1	4	KMT2A
+Disease	C0862312	Epithelioid mesothelioma, malignant	DisGeNET BeFree	8.571E-3	1.000E0	3.537E-2	2.739E-1	1	4	WT1
+Disease	C2853919	Lymphoblastic B-cell lymphoma	DisGeNET BeFree	8.571E-3	1.000E0	3.537E-2	2.739E-1	1	4	MYC
+Disease	C1608393	Megacystis microcolon intestinal hypoperistalsis syndrome	DisGeNET Curated	8.571E-3	1.000E0	3.537E-2	2.739E-1	1	4	MYH11
+Disease	C0585216	Alpha-Thalassemia Myelodysplasia Syndrome	DisGeNET Curated	8.571E-3	1.000E0	3.537E-2	2.739E-1	1	4	RUNX1
+Disease	C0346303	Thyrotroph adenoma	DisGeNET Curated	8.571E-3	1.000E0	3.537E-2	2.739E-1	1	4	THRB
+Disease	C0406587	Wrinkly skin syndrome	DisGeNET Curated	8.571E-3	1.000E0	3.537E-2	2.739E-1	1	4	KMT2A
+Disease	C0004903	Beckwith-Wiedemann Syndrome	DisGeNET Curated	8.576E-3	1.000E0	3.537E-2	2.739E-1	2	65	WT1,NSD1
+Disease	C0032463	Polycythemia Vera	DisGeNET Curated	8.706E-3	1.000E0	3.579E-2	2.772E-1	3	198	MYC,RUNX1,RUNX1T1
+Disease	C1176475	Ductal Carcinoma	DisGeNET Curated	8.826E-3	1.000E0	3.606E-2	2.792E-1	3	199	MYC,ETV6,CBFA2T3
+Disease	C0040100	Thymoma	DisGeNET Curated	8.826E-3	1.000E0	3.606E-2	2.792E-1	3	199	MYC,RUNX1,ERG
+Disease	C0000768	Congenital Abnormality	DisGeNET Curated	8.863E-3	1.000E0	3.609E-2	2.795E-1	5	603	MYC,WT1,FUS,THRB,RUNX1
+Disease	C0002312	alpha-Thalassemia	DisGeNET Curated	9.091E-3	1.000E0	3.679E-2	2.849E-1	2	67	NSD1,RUNX1
+Disease	C1378511	Undifferentiated leukemia	DisGeNET BeFree	9.091E-3	1.000E0	3.679E-2	2.849E-1	2	67	KMT2A,RUNX1
+Disease	C0010828	Cytopenia	DisGeNET Curated	9.696E-3	1.000E0	3.912E-2	3.029E-1	3	206	WT1,KMT2A,RUNX1
+Disease	C1535926	Neurodevelopmental Disorders	DisGeNET Curated	9.824E-3	1.000E0	3.951E-2	3.060E-1	3	207	KMT2A,FOXP1,NDE1
+Disease	C0334463	Malignant Fibrous Histiocytoma	DisGeNET BeFree	9.890E-3	1.000E0	3.953E-2	3.061E-1	2	70	WT1,FOXP1
+Disease	C0023474	Leukemia, Myeloid, Chronic-Phase	DisGeNET BeFree	9.890E-3	1.000E0	3.953E-2	3.061E-1	2	70	MYC,RUNX1
+Disease	C0158995	Congenital anemia	DisGeNET Curated	9.954E-3	1.000E0	3.966E-2	3.071E-1	3	208	WT1,KMT2A,RUNX1
+Disease	C1850900	Familial primary gastric lymphoma	DisGeNET BeFree	1.016E-2	1.000E0	4.025E-2	3.117E-1	2	71	MYC,FOXP1
+Disease	C1456873	alpha^+^ Thalassemia	DisGeNET BeFree	1.016E-2	1.000E0	4.025E-2	3.117E-1	2	71	NSD1,RUNX1
+Disease	C1851841	ECTRODACTYLY, ECTODERMAL DYSPLASIA, AND CLEFT LIP/PALATE SYNDROME 1	DisGeNET Curated	1.044E-2	1.000E0	4.047E-2	3.134E-1	2	72	MYC,RUNX1
+Disease	C4048273	Chorioretinal atrophy	DisGeNET BeFree	1.070E-2	1.000E0	4.047E-2	3.134E-1	1	5	ERG
+Disease	C0334355	Serous cystadenoma, borderline malignancy	DisGeNET BeFree	1.070E-2	1.000E0	4.047E-2	3.134E-1	1	5	MYC
+Disease	C3489796	Thyroid Hormone Resistance, Generalized, Autosomal Recessive	DisGeNET Curated	1.070E-2	1.000E0	4.047E-2	3.134E-1	1	5	THRB
+Disease	C0206643	Neoplasms, Fibrous Tissue	DisGeNET BeFree	1.070E-2	1.000E0	4.047E-2	3.134E-1	1	5	FUS
+Disease	C0345960	Giant cell carcinoma of lung	DisGeNET BeFree	1.070E-2	1.000E0	4.047E-2	3.134E-1	1	5	MYC
+Disease	C0348616	Other restrictive cardiomyopathy	DisGeNET Curated	1.070E-2	1.000E0	4.047E-2	3.134E-1	1	5	FLNC
+Disease	C2937288	THYROID HORMONE RESISTANCE, GENERALIZED, AUTOSOMAL DOMINANT	DisGeNET Curated	1.070E-2	1.000E0	4.047E-2	3.134E-1	1	5	THRB
+Disease	C0023009	Speech and language disorder	DisGeNET BeFree	1.070E-2	1.000E0	4.047E-2	3.134E-1	1	5	FOXP1
+Disease	C1857800	CORNEAL DYSTROPHY, FUCHS ENDOTHELIAL, 2	DisGeNET BeFree	1.070E-2	1.000E0	4.047E-2	3.134E-1	1	5	EPHA3
+Disease	C1266128	Ossifying fibromyxoid tumor	DisGeNET BeFree	1.070E-2	1.000E0	4.047E-2	3.134E-1	1	5	FUS
+Disease	C1527344	Dysphonia	DisGeNET BeFree	1.070E-2	1.000E0	4.047E-2	3.134E-1	1	5	FLNC
+Disease	C1833429	D-2-hydroxyglutaric aciduria	DisGeNET BeFree	1.070E-2	1.000E0	4.047E-2	3.134E-1	1	5	EPHA3
+Disease	C0393524	Cerebellar Ataxia, Late Onset	DisGeNET Curated	1.070E-2	1.000E0	4.047E-2	3.134E-1	1	5	FLNC
+Disease	C0751374	Schwannomatosis, Plexiform	DisGeNET Curated	1.070E-2	1.000E0	4.047E-2	3.134E-1	1	5	WT1
+Disease	C1367654	Marginal Zone B-Cell Lymphoma	DisGeNET BeFree	1.072E-2	1.000E0	4.047E-2	3.134E-1	2	73	MYC,FOXP1
+Disease	C3536893	Ewing Sarcoma/Peripheral Primitive Neuroectodermal Tumor	DisGeNET BeFree	1.100E-2	1.000E0	4.142E-2	3.207E-1	2	74	MYC,ERG
+Disease	C0349782	Ischemic cardiomyopathy	DisGeNET BeFree	1.129E-2	1.000E0	4.237E-2	3.281E-1	2	75	FLNC,RUNX1
+Disease	C1168327	High-Grade Prostatic Intraepithelial Neoplasia	DisGeNET BeFree	1.158E-2	1.000E0	4.333E-2	3.356E-1	2	76	MYC,ERG
+Disease	C0018916	Hemangioma	DisGeNET Curated	1.187E-2	1.000E0	4.430E-2	3.431E-1	2	77	WT1,ERG
+Disease	C0271815	Postpartum Thyroiditis	DisGeNET BeFree	1.283E-2	1.000E0	4.589E-2	3.554E-1	1	6	THRB
+Disease	C0265210	Weaver syndrome	DisGeNET Curated	1.283E-2	1.000E0	4.589E-2	3.554E-1	1	6	NSD1
+Disease	C0334050	Adenosis	DisGeNET BeFree	1.283E-2	1.000E0	4.589E-2	3.554E-1	1	6	ERG
+Disease	cv:CN033288	Wilms tumor 1	Clinical Variations	1.283E-2	1.000E0	4.589E-2	3.554E-1	1	6	WT1
+Disease	C3494522	Hypergonadotropic Ovarian Failure, X-Linked	DisGeNET Curated	1.283E-2	1.000E0	4.589E-2	3.554E-1	1	6	WT1
+Disease	OMIN:194070	WILMS TUMOR 1; WT1	OMIM	1.283E-2	1.000E0	4.589E-2	3.554E-1	1	6	WT1
+Disease	C0917808	Vegetative State	DisGeNET BeFree	1.283E-2	1.000E0	4.589E-2	3.554E-1	1	6	RUNX1T1
+Disease	C1867403	Pyloric Stenosis, Infantile Hypertrophic 1	DisGeNET BeFree	1.283E-2	1.000E0	4.589E-2	3.554E-1	1	6	MBNL1
+Disease	20090712:Shete	Glioma	GWAS	1.283E-2	1.000E0	4.589E-2	3.554E-1	1	6	CCDC26
+Disease	C0162510	Caroli Disease	DisGeNET Curated	1.283E-2	1.000E0	4.589E-2	3.554E-1	1	6	GLIS2
+Disease	C0158687	Congenital malformation of genital organs	DisGeNET BeFree	1.283E-2	1.000E0	4.589E-2	3.554E-1	1	6	WT1
+Disease	C0238062	Chronic intestinal pseudo-obstruction	DisGeNET BeFree	1.283E-2	1.000E0	4.589E-2	3.554E-1	1	6	RUNX1
+Disease	C0014122	Subacute Bacterial Endocarditis	DisGeNET BeFree	1.283E-2	1.000E0	4.589E-2	3.554E-1	1	6	ERG
+Disease	C0545080	Composite Lymphoma	DisGeNET BeFree	1.283E-2	1.000E0	4.589E-2	3.554E-1	1	6	FOXP1
+Disease	C2746066	Combined D-2- and L-2-hydroxyglutaric aciduria	DisGeNET Curated	1.283E-2	1.000E0	4.589E-2	3.554E-1	1	6	EPHA3
+Disease	C0598935	Tumor Initiation	DisGeNET BeFree	1.351E-2	1.000E0	4.820E-2	3.733E-1	3	233	MYC,KMT2A,ERG
+Disease	C0030312	Pancytopenia	DisGeNET Curated	1.370E-2	1.000E0	4.859E-2	3.763E-1	2	83	ETV6,RUNX1
+Disease	C0037579	Soft Tissue Neoplasms	DisGeNET Curated	1.370E-2	1.000E0	4.859E-2	3.763E-1	2	83	FOXP1,FUS
+Disease	C0015398	Eye Diseases, Hereditary	DisGeNET Curated	1.495E-2	1.000E0	4.897E-2	3.792E-1	1	7	ERG
+Disease	C4316810	Writer's Cramp	DisGeNET Curated	1.495E-2	1.000E0	4.897E-2	3.792E-1	1	7	PRKRA
+Disease	C0795875	Chromosome 21 monosomy	DisGeNET BeFree	1.495E-2	1.000E0	4.897E-2	3.792E-1	1	7	RUNX1
+Disease	C0279980	Extraosseous Ewings sarcoma-primitive neuroepithelial tumor	DisGeNET Curated	1.495E-2	1.000E0	4.897E-2	3.792E-1	1	7	ERG
+Disease	C1867300	RETINITIS PIGMENTOSA 9	DisGeNET Curated	1.495E-2	1.000E0	4.897E-2	3.792E-1	1	7	MYC
+Disease	C0086367	Gonadotropin-Resistant Ovary Syndrome	DisGeNET Curated	1.495E-2	1.000E0	4.897E-2	3.792E-1	1	7	WT1
+Disease	C0752201	Autosomal Recessive Familial Dystonia	DisGeNET Curated	1.495E-2	1.000E0	4.897E-2	3.792E-1	1	7	PRKRA
+Disease	C0334371	Secretory breast carcinoma	DisGeNET BeFree	1.495E-2	1.000E0	4.897E-2	3.792E-1	1	7	ETV6
+Disease	C4054891	Grade III Chondrosarcoma	DisGeNET BeFree	1.495E-2	1.000E0	4.897E-2	3.792E-1	1	7	MYC
+Disease	OMIN:130650	BECKWITH-WIEDEMANN SYNDROME; BWS	OMIM	1.495E-2	1.000E0	4.897E-2	3.792E-1	1	7	NSD1
+Disease	C0752199	Adult-Onset Idiopathic Torsion Dystonias	DisGeNET Curated	1.495E-2	1.000E0	4.897E-2	3.792E-1	1	7	PRKRA
+Disease	C1333295	Diffuse Large B-Cell Lymphoma Germinal Center B-Cell Type	DisGeNET BeFree	1.495E-2	1.000E0	4.897E-2	3.792E-1	1	7	MYC
+Disease	C0887850	Polycystic Kidney, Type 1 Autosomal Dominant Disease	DisGeNET Curated	1.495E-2	1.000E0	4.897E-2	3.792E-1	1	7	MYC
+Disease	C0006160	Brenner Tumor	DisGeNET BeFree	1.495E-2	1.000E0	4.897E-2	3.792E-1	1	7	MYC
+Disease	C0152095	Patau syndrome	DisGeNET BeFree	1.495E-2	1.000E0	4.897E-2	3.792E-1	1	7	RUNX1
+Disease	cv:C0004903	Beckwith-Wiedemann syndrome	Clinical Variations	1.495E-2	1.000E0	4.897E-2	3.792E-1	1	7	NSD1
+Disease	C1319016	Nephrogenic rest, intralobar	DisGeNET BeFree	1.495E-2	1.000E0	4.897E-2	3.792E-1	1	7	WT1
+Disease	C0085662	Macrocytosis	DisGeNET BeFree	1.495E-2	1.000E0	4.897E-2	3.792E-1	1	7	ETV6
+Disease	C0740372	Gastrointestinal lymphoma	DisGeNET BeFree	1.495E-2	1.000E0	4.897E-2	3.792E-1	1	7	MYC
+Disease	C0152439	Retinoschisis	DisGeNET Curated	1.495E-2	1.000E0	4.897E-2	3.792E-1	1	7	ERG
+Disease	C0752200	Autosomal Dominant Familial Dystonia	DisGeNET Curated	1.495E-2	1.000E0	4.897E-2	3.792E-1	1	7	PRKRA
+Disease	C1266099	Thyroid Gland Spindle Cell Tumor with Thymus-Like Differentiation	DisGeNET BeFree	1.495E-2	1.000E0	4.897E-2	3.792E-1	1	7	EPHA3
+Disease	C0752198	Adult-Onset Idiopathic Focal Dystonias	DisGeNET Curated	1.495E-2	1.000E0	4.897E-2	3.792E-1	1	7	PRKRA
+Disease	C0730294	North Carolina macular dystrophy	DisGeNET Curated	1.495E-2	1.000E0	4.897E-2	3.792E-1	1	7	ERG
+Disease	C1879312	Agyria	DisGeNET Curated	1.495E-2	1.000E0	4.897E-2	3.792E-1	1	7	NDE1
+Disease	C0334459	Infantile fibrosarcoma	DisGeNET BeFree	1.495E-2	1.000E0	4.897E-2	3.792E-1	1	7	ETV6
+Disease	C0393598	Idiopathic familial dystonia	DisGeNET Curated	1.495E-2	1.000E0	4.897E-2	3.792E-1	1	7	PRKRA
+Disease	C0010631	Cystadenocarcinoma	DisGeNET BeFree	1.495E-2	1.000E0	4.897E-2	3.792E-1	1	7	ETV6
+Disease	C3489630	Somatotrophinoma, Familial	DisGeNET Curated	1.495E-2	1.000E0	4.897E-2	3.792E-1	1	7	ETV6
+Disease	C0752208	Pseudodystonia	DisGeNET Curated	1.495E-2	1.000E0	4.897E-2	3.792E-1	1	7	PRKRA
+Disease	C0020550	Hyperthyroidism	DisGeNET Curated	1.498E-2	1.000E0	4.897E-2	3.792E-1	2	87	THRB,EPHA3
+Disease	C0149782	Squamous cell carcinoma of lung	DisGeNET Curated	1.511E-2	1.000E0	4.930E-2	3.818E-1	3	243	MYC,FUS,EPHA3
+Disease	C1510586	Autism Spectrum Disorders	DisGeNET Curated	1.520E-2	1.000E0	4.945E-2	3.829E-1	4	449	WT1,FOXP1,NDE1,MACROD2

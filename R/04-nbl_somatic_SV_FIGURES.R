@@ -1,3 +1,10 @@
+## Code to generate figures for the manuscript :
+# "Somatic structural variation targets neurodevelopmental genes and identifies SHANK2 as a tumor suppressor in neuroblastoma"
+# Author: Gonzalo Lopez, PhD
+# email: gonzalo.lopezgarcia@mssm.edu
+# Date edited: Apr 16th, 2020
+
+
 rm(list = ls(all.names = TRUE))
 .rs.restartR()
 require(TxDb.Hsapiens.UCSC.hg19.knownGene)
@@ -12,29 +19,24 @@ library(vioplot)
 library(ComplexHeatmap)
 library(cgdsr)
 
-setwd("~/Box Sync/git/NB_structural_variants/")
+setwd("~/Box Sync/git/NB_structural_variants/")   # modify to local folder
 
-source('R/my_stat_functions.r')
+source('R/my_stat_functions.R')
 source('R/heatmap3.R')
-#source('~/Box Sync/My_CHOP/git/sources/vioplot2.r')
-#source('~/Box Sync/My_CHOP/git/sources/my_gsea.r')
-#source('~/Box Sync/My_CHOP/git/sources/my_survival.r')
-#load('~/Box Sync/My_CHOP/git/GSEA/msigdb5.2/msigdb5.2.rda',verbose=T)
+source('R/01-nbl_somatic_SV_FUNCTIONS.R')
 
-
-#
-source('R/sv_somatic_nbl-pantarget_functions_V2.r')
 
 # clinical combined COG + TARGET
 load("data/clinical_COG_20181129_plus_TARGET_20180331_plus_SCA_20180619_pheno.rda",verbose=T)
 hr_unknown <- intersect(names(which(risk=="high")),names(which(mycna=="unknown")))
 
 
-# load gene/exon info data
+# load gene/exon info data UCSC/refseq
 load("data/ucsc_hg19_refseq_genes_exon_df_Oct31_2018.rda",verbose=T)
 
-# load SNP data
+# load SNP segmentation data data
 load("data/cnv_segmentation_SNP_081318.rda",verbose=T)
+# define NBL subtypes within the SNP dataset
 snp_samples <- setdiff(unique(segment_snp$Sample),nonconsent)
 HR_MNA_snp <- intersect(names(which(mycna == "amp")),snp_samples)
 HR_NA_snp <- setdiff(intersect(names(which(risk == "high")),snp_samples),HR_MNA_snp)
@@ -43,15 +45,12 @@ LOW_snp <- intersect(lowrisk,snp_samples)
 LOWINT_snp <- c(INT_snp,LOW_snp)
 HR_UNK_snp <- intersect(hr_unknown,snp_samples) # no need
 
-## load SV data : filtered variants and segmentation breakpoint analyses 
+## load SJBP, RDBP and CNBP filtered variants and segmentation breakpoint analyses 
 load("data/SV_analysis_Oct31_18.rda",verbose=T)
 load("data/BP_analysis_Nov15_19.rda",verbose=T)
 
-#write.table(clinical[substr(as.character(unique(results_NBL$sv_df$TARGET.USI)),11,16),],row.names=F,quote=F,sep="\t",file="/")
-#validated_junctions <- read.delim("~/Box Sync/My_CHOP/SV_paper_V2/validation_junction_list.txt",header=F,as.is=T)$V1
-#results_NBL$sv_df[validated_junctions,]
 
-# load dbgap metadata for coverage data
+# load dbgap metadata for CGI coverage figure
 sraRunTab_wgs <- read.delim("data/SraRunTable_wgs_alltumors.txt",sep = "\t",as.is=TRUE)
 sraRunTab_cgi <- sraRunTab_wgs[which(sraRunTab_wgs$Platform_s == "COMPLETE_GENOMICS"),]
 tumor_libsize <- sraRunTab_cgi$MBases_l[grep("TARGET-30-[A-Z][A-Z][A-Z][A-Z][A-Z][A-Z]-01",sraRunTab_cgi$Sample_Name_s)]
@@ -59,10 +58,11 @@ names(tumor_libsize)<- substr(grep("TARGET-30-[A-Z][A-Z][A-Z][A-Z][A-Z][A-Z]-01"
 blood_libsize <- sraRunTab_cgi$MBases_l[grep("TARGET-30-[A-Z][A-Z][A-Z][A-Z][A-Z][A-Z]-10",sraRunTab_cgi$Sample_Name_s)]
 names(blood_libsize)<- substr(grep("TARGET-30-[A-Z][A-Z][A-Z][A-Z][A-Z][A-Z]-10",sraRunTab_cgi$Sample_Name_s,value=T),0,16)
 ll<-list(tumor=tumor_libsize/3234.83,blood=blood_libsize/3234.83)
-# supplementary Figure S1a
+
+# Supplementary Figure S1A
 vioplot(ll,las=1,border=c("black","black"),col=c("grey30","grey90"),names=c("Tumor","Blood"),ylab="Average depth")
 
-# defoine all cgi samples and groups
+# defoine NBL subtypes for WGS-CGI dataset
 cgi_samples <- setdiff(substr(intersect(names(blood_libsize),names(tumor_libsize)),11,16),nonconsent)
 HR_MNA <- intersect(names(which(mycna == "amp")),cgi_samples)
 HR_NA <- intersect(intersect(names(which(risk=="high")),names(which(mycna !="amp" ))),cgi_samples)
@@ -70,8 +70,7 @@ INT <- intersect(names(which(risk=="intermediate")),cgi_samples)
 LOW <- intersect(names(which(risk=="low")),cgi_samples)
 LOWINT <- c(INT,LOW)
 
-
-# load expression data for eQTL analysis
+# load RNA-seq expression data for eQTL analysis and splicing 
 load("data/kallisto_nbltpm_refseq_hg19_171.rda",verbose=TRUE)
 sraRunTab_rna_nbl <- sraRunTab_rna[grep("TARGET-30-[A-Z][A-Z][A-Z][A-Z][A-Z][A-Z]-01",sraRunTab_rna$Sample_Name_s),]
 srr <- sraRunTab_rna_nbl$Run_s[which(sraRunTab_rna_nbl$Center_Name_s == "NCI-KHAN")]
@@ -81,7 +80,7 @@ colnames(r_expmat) <- substr(usi,11,16)
 r_expmat<-r_expmat[,setdiff(colnames(r_expmat),nonconsent)]
 rna_samples <- colnames(r_expmat)
 
-# load human Exon array data for eQTL
+# load Human Exon array data for eQTL analysis and splicing 
 idlist <- read.delim("data/usi_2targetID.txt",header=FALSE,as.is=TRUE)
 convertid <- idlist$V1
 names(convertid) <- idlist$V2
@@ -90,7 +89,7 @@ colnames(l_expmat) <- substr(convertid[colnames(l_expmat)],11,16)
 l_expmat<-l_expmat[,setdiff(colnames(l_expmat),nonconsent)]
 huex_samples <-  unname(colnames(l_expmat))
 
-## Figure 1a clinical and copy number table
+## Figure 1 clinical and copy number table
 ## combine datasets for clinical data table 
 all_samples <- unique(c(rna_samples,huex_samples,snp_samples,cgi_samples))
 
@@ -123,7 +122,7 @@ group_col[which(group == 1)] <- "orange"
 group_col[which(group == 2)] <- "darkgreen" 
 group_col[which(group == 3)] <- "green" 
 
-#age_col_val
+# Phonotype data.frame with clinical covariates
 Pheno2 <- rbind(Pheno["gender_col",names(group_col)],age_col[names(group_col)],Pheno[c("vital_col","mycna_col","stage_col","risk_col"),names(group_col)],group_col)
 
 
@@ -138,9 +137,8 @@ final_order <- final_order[which(final_order %in% names(group))]
 
 
 # plot mock heatmaps with phenotype bars for the figure 1A composition
-fakemat <- matrix(ncol=length(final_order),nrow=5)
+fakemat <- matrix(rnorm(5*length(final_order)),ncol=length(final_order),nrow=5)
 colnames(fakemat) <- final_order
-fakemat[] <- 0
 Data_col <- rbind(meth,huex,rna,snp,wgs)
 SCA_col2 <- matrix(ncol=length(final_order),nrow=nrow(SCA_col))
 colnames(SCA_col2) <- final_order
@@ -160,32 +158,30 @@ png("Figures/Figure1/fig1a_sample/heat_clinical_10_17_18.png",height=600,width=1
 heatmap.3(fakemat[,final_order], ColSideColors = t(Pheno2[,final_order]),Colv=FALSE,Rowv=FALSE,lhei=c(0.5,1))
 dev.off()
 
+# write CGI segmentation and attributes for IGV visualization 
 order_cgi<-1:length(cgi_samples)
 names(order_cgi) <- final_order[which(final_order %in% segment_cgi$Sample)]
-write.table(segment_cgi[order(order_cgi[segment_cgi$Sample]),],row.names=F,quote=F,sep="\t",
-            file="~/Box Sync/My_CHOP/SV_paper_V2/Figures/Figure1/copyNumber/segment_cgi_igvordered.seg")
-
+#write.table(segment_cgi[order(order_cgi[segment_cgi$Sample]),],row.names=F,quote=F,sep="\t")
 cgi_attributes <- cbind(names(order_cgi),group[names(order_cgi)],mycna[names(order_cgi)],stage[names(order_cgi)],gender[names(order_cgi)],order_cgi)
 colnames(cgi_attributes) <- c("TRACK_ID","group","mycna","stage","gender","order")
-write.table(cgi_attributes,row.names=F,quote=F,sep="\t",file="~/Box Sync/My_CHOP/SV_paper_V2/Figures/Figure1//copyNumber/segment_cgi_attributes.txt")
+#write.table(cgi_attributes,row.names=F,quote=F,sep="\t")
 
+# write SNP segmentation and attributes for IGV visualization 
 order_snp<-1:length(final_order[which(final_order %in% segment_snp$Sample)])
 names(order_snp) <- final_order[which(final_order %in% segment_snp$Sample)]
-write.table(segment_snp[order(order_snp[segment_snp$Sample]),],row.names=F,quote=F,sep="\t",file="~/Box Sync/My_CHOP/SV_paper_V2/Figures/Figure1//copyNumber/segment_csnp_igvordered.seg")
-
+#write.table(segment_snp[order(order_snp[segment_snp$Sample]),],row.names=F,quote=F,sep="\t")
 snp_attributes <- cbind(names(order_snp),group[names(order_snp)],mycna[names(order_snp)],stage[names(order_snp)],gender[names(order_snp)],order_snp)
 colnames(snp_attributes) <- c("TRACK_ID","group","mycna","stage","gender","order")
-write.table(snp_attributes,row.names=F,quote=F,sep="\t",file="~/Box Sync/My_CHOP/SV_paper_V2/Figures/Figure1/copyNumber/segment_snp_attributes.txt")
+#write.table(snp_attributes,row.names=F,quote=F,sep="\t")
 
-
+# write supplementary table 2 (samples and clinical info)
 data_clinical <- cbind(group[all_samples],stage[all_samples],mycna[all_samples],risk[all_samples],age[all_samples],status[all_samples],t(Data_col[,all_samples]))
-write.table(data_clinical,file="~/Box Sync/My_CHOP/SV_paper_V2/data_sheets/Suppl_table_02.txt",sep="\t",quote=F)
+#write.table(data_clinical,file="Suppl_table_02.txt",sep="\t",quote=F)
 
 ####################################################
-##########################
 
-# compare svtype by tumor type
 
+# supplementary figure S3A
 ll_sv <- list(
   NBL=results_NBL$sv_df,
   ALL=results_ALL$sv_df,
@@ -206,7 +202,6 @@ for(i in names(ll_sv)){
 }
 
 dev.new()
-#barplot(datatab,col=svTypeCols,las =1)
 par(mfrow=c(2,1),mar=c(4,4,0,1))
 datatab <- do.call(cbind,ll_type_m)
 barplot(datatab,col=svTypeCols,las =1,beside = T,cex.axis=1.3,names=c("","","","",""))
@@ -215,9 +210,8 @@ datatab <- do.call(cbind,ll_type)
 barplot(datatab,col=svTypeCols,las =1,cex.axis=1.3,cex.names=1.3)
 
 
-# PLOT SV summaries Figure 2
+# supplementary figure S3B
 sv_df <- results_NBL$sv_df
-
 sv_df[,"TARGET.USI"] <- substr(sv_df$TARGET.USI ,11,16)
 sv_df[which(sv_df$Type == "probable-inversion"),"Type"] <- "inversion"
 sv_df[which(sv_df$Type == "distal-duplication-by-mobile-element"),"Type"] <- "distal-duplication"
@@ -259,29 +253,8 @@ j_noncod <- merge2lists(j_proximal,j_intronic)
 j_summary <- merge2lists(j_coding,j_noncod)
 
 
-## plot hitogram sizes per type (Figure S2)
-sv_df_5t <- rbind(results_ALL$sv_df,results_AML$sv_df,results_NBL$sv_df,results_OS$sv_df,results_WT$sv_df)
-
-sameChr<- which(sv_df_5t$Type %in% c("deletion","inversion","tandem-duplication","probable-inversion"))
-#sameChr<- which(unlist(lapply(apply(sv_df[,c("LeftChr","RightChr")],1,unique),length)) == 1)
-sv_df_same_chr <- sv_df_5t[sameChr,]
-sizes <- sv_df_same_chr$RightPosition[]-sv_df_same_chr$LeftPosition
-par(mfrow=c(1,3))
-h2 <- hist(log10(sizes[which(sv_df_same_chr$Type =="deletion")]+1),
-	col=rgb(0,0,1,0.5),breaks=40,border=F,xlim=c(0,8),main="Deletion",las=1)
-h3 <- hist(log10(sizes[which(sv_df_same_chr$Type == "tandem-duplication")]+1),
-	col=rgb(0.62,0.12,0.94,0.5),breaks=50,border=F,xlim=c(0,8),main="Tandem-duplication",las=1)
-h4 <- hist(log10(sizes[which(sv_df_same_chr$Type %in% c("inversion","probable-inversion"))]+1),
-	col=rgb(1,0.84,0,0.5),breaks=50,border=F,xlim=c(0,8),main="Inversion",las=1)
-
-totalnum <- table(sv_df$Type)
-totalnum <- sort(totalnum)
-totalnumv<-as.vector(totalnum)
-names(totalnumv)<- names(totalnum)
-par(mar=c(3,12,2,2))
-barplot(totalnumv,horiz=TRUE,las=1,col=svTypeCols[names(totalnumv)])
-
 # plot density of DiscordantMatePairAlignments in lieu of VAF as requested by reviewer 1
+# (Supplementary Figure S1B)
 dev.new()
 plot(density(log2(ll_sv$AML$DiscordantMatePairAlignments)),col="white",las=1,xlim=c(0,15),main="",xaxt='n',xlab="",ylab=)
 lines(density(log2(ll_sv$ALL$DiscordantMatePairAlignments)),col="salmon",lty=3,lwd=2)
@@ -292,6 +265,20 @@ lines(density(log2(ll_sv$NBL$DiscordantMatePairAlignments)),col="blue",lty=1,lwd
 legend("topright",c("ALL","AML","OS","WT","NBL"),lty=c(3,3,3,3,1),lwd=2,col=c("pink","salmon","brown","green","blue"),bty='n')
 axis(1,at=seq(0,16,2),labels=2^seq(0,16,2),las=2)
 
+## plot hitogram sizes per type (Supplementary Figure S1C-D)
+sv_df_5t <- rbind(results_ALL$sv_df,results_AML$sv_df,results_NBL$sv_df,results_OS$sv_df,results_WT$sv_df)
+sameChr<- which(sv_df_5t$Type %in% c("deletion","inversion","tandem-duplication","probable-inversion"))
+sv_df_same_chr <- sv_df_5t[sameChr,]
+sizes <- sv_df_same_chr$RightPosition[]-sv_df_same_chr$LeftPosition
+par(mfrow=c(1,3))
+h2 <- hist(log10(sizes[which(sv_df_same_chr$Type =="deletion")]+1),
+	col=rgb(0,0,1,0.5),breaks=40,border=F,xlim=c(0,8),main="Deletion",las=1)
+h3 <- hist(log10(sizes[which(sv_df_same_chr$Type == "tandem-duplication")]+1),
+	col=rgb(0.62,0.12,0.94,0.5),breaks=50,border=F,xlim=c(0,8),main="Tandem-duplication",las=1)
+h4 <- hist(log10(sizes[which(sv_df_same_chr$Type %in% c("inversion","probable-inversion"))]+1),
+	col=rgb(1,0.84,0,0.5),breaks=50,border=F,xlim=c(0,8),main="Inversion",las=1)
+
+
 
 ## Figure 2A stack barplot ##
 sample_order <- rep(0,length(unique(as.character(sv_df$TARGET.USI))))
@@ -299,7 +286,6 @@ names(sample_order) <- unique(as.character(sv_df$TARGET.USI))
 
 types <- unique(sv_df$Type)
 byType <- sapply(names(sample_order),function(i) table(sv_df[which(sv_df$TARGET.USI == i),"Type"])  )
-#names(byType) <- substr(names(byType) ,11,16)
 byType<-list()
 for(i in cgi_samples){
 	byType[[i]] <- rep(0,length(types))
@@ -315,8 +301,6 @@ sample_order <- c(sort(sample_order[HR_MNA]),sort(sample_order[HR_NA]),sort(samp
 
 svTypeCols <- c("lightgrey","blue","purple","green","yellow","red")
 names(svTypeCols)<- c("complex","deletion","distal-duplication","interchromosomal","inversion","tandem-duplication")
-#svTypeCols <- c("lightgrey","blue","orange","yellow","green","gold","#8E24AA","brown")
-#names(svTypeCols)<- c("complex","deletion","distal-duplication","inversion","interchromosomal","probable-inversion","tandem-duplication","distal-duplication-by-mobile-element")
 
 svBarPlorData <- matrix(ncol=length(sample_order),nrow=length(types))
 colnames(svBarPlorData) <- names(sample_order)
@@ -334,9 +318,9 @@ legend("topright",rev(rownames(svBarPlorData)),fill=rev(svTypeCols[rownames(svBa
 
 #################################################
 # overal overlap between segdata and SV junctions
-
 # # # # # # # # # # # # # # # # # # # # # # # # # # 
-## stack bar plot by chromosome by tyype
+
+# 
 sv_noa <- sv_df[which(sv_df$TARGET.USI %in% HR_NA),]
 sv_amp <- sv_df[which(sv_df$TARGET.USI %in% HR_MNA),]
 sv_noa_types <- sv_amp_types <- list()
@@ -403,6 +387,7 @@ for(type in types){
 write.table(do.call(cbind,results),sep="\t",file=)
 #write.table(do.call(cbind,results),sep="\t",file="~/Box Sync/My_CHOP/SV_paper_V2/Figures/Figure1/suppl_1/sv_difference_byChrbyType_pvalues.txt")
 
+# Figures 2D-G
 a<-b<-c<-d<-e<-f<-g<-h<-i<-j<-k<-l<-wtab<-wtcd<-wtef<-wtgh<-wtij<-wtkl<-list()
 for(chr in paste("chr",c(1:22,"X"),sep="")){ 
 	a[[chr]] <- mean(sort(llsv[["interchromosomal"]][[paste(chr,"MNa")]])[3:27])
@@ -447,44 +432,9 @@ a <- sv_df$LeftChr[intersect(which(sv_df$Type == "complex"),which(sv_df$TARGET.U
 b <- sv_df$RightChr[intersect(which(sv_df$Type == "complex"),which(sv_df$TARGET.USI %in% HR_NA))]
 length(intersect(which(a != "chr2"),which(b != "chr2")))/length(HR_NA)
 
-sv_df_complex <- sv_df[which(sv_df$Type == "complex"),]
-
-a <- sv_df_complex[intersect(which(sv_df_complex$LeftChr != "chr2"),which(sv_df_complex$RightChr != "chr2")),"TARGET.USI"]
-#a <- sv_df_complex[,"TARGET.USI"]
-hr_na_complex <- table(a)[HR_NA]
-hr_mna_complex <- table(a)[HR_MNA]
-hr_na_complex[which(is.na(hr_na_complex))]<-0
-hr_mna_complex[which(is.na(hr_mna_complex))]<-0
-names(hr_na_complex)<-HR_NA
-names(hr_mna_complex)<-HR_MNA
-
-ll<-list(HRNA=as.numeric(hr_na_complex),HRMNA=as.numeric(hr_mna_complex))
-boxplot(ll)
-beeswearm(ll)
-wilcox.test(ll$HRNA,ll$HRMNA)
-
-sv_df_complex_mna <- sv_df[intersect(which(sv_df$Type == "complex"),which(sv_df$TARGET.USI %in% HR_MNA)),]
-
-sv_df_complex_na <- sv_df[intersect(which(sv_df$Type == "complex"),which(sv_df$TARGET.USI %in% HR_NA)),]
-
-a <- sv_df[unique(c(which(sv_df$LeftChr == "chrM"),which(sv_df$RightChr == "chrM"))),"TARGET.USI"]
-a_na <- table(a)[HR_NA]
-a_mna <- table(a)[HR_MNA]
-a_na[which(is.na(a_na))]<-0
-a_mna[which(is.na(a_mna))]<-0
-names(a_na)<-HR_NA
-names(a_mna)<-HR_MNA
-ll<-list(HRNA=as.numeric(a_na),HRMNA=as.numeric(a_mna))
-boxplot(ll)
-wilcox.test(ll$HRNA,ll$HRMNA)
-
-chrm_sv <- sv_df[unique(c(which(sv_df$LeftChr == "chrM"),which(sv_df$RightChr == "chrM"))),]
-
 ###############
-####
-
+# Figures 2B
 breaks <- results_BP$breaks
-#breaks <- results_BP_snp$breaks
 mnabps <- rep(0,length(HR_MNA));names(mnabps) <- HR_MNA; mnabps[names(table(breaks$sample)[HR_MNA])] <- table(breaks$sample)[HR_MNA]
 nabps <- rep(0,length(HR_NA));names(nabps) <- HR_NA; nabps[names(table(breaks$sample)[HR_NA])] <- table(breaks$sample)[HR_NA]
 intbps <- rep(0,length(INT));names(intbps) <- INT; intbps[names(table(breaks$sample)[INT])] <- table(breaks$sample)[INT]
@@ -492,6 +442,7 @@ lowbps <- rep(0,length(LOW));names(lowbps) <- LOW; lowbps[names(table(breaks$sam
 bpfreq<-c(sort(mnabps),sort(nabps),sort(intbps),sort(lowbps))
 barplot(bpfreq,col=c(rep("red",length(HR_MNA)),rep("orange",length(HR_NA)),rep("darkgreen",length(INT)),rep("green",length(LOW)) ),las=1,border=NA) 
 
+# Figures 2C
 breaks <- results_BP_snp$breaks
 mnabps <- rep(0,length(HR_MNA_snp));names(mnabps) <- HR_MNA_snp; mnabps[names(table(breaks$sample)[HR_MNA_snp])] <- table(breaks$sample)[HR_MNA_snp]
 nabps <- rep(0,length(HR_NA_snp));names(nabps) <- HR_NA_snp; nabps[names(table(breaks$sample)[HR_NA_snp])] <- table(breaks$sample)[HR_NA_snp]
@@ -500,6 +451,7 @@ lowbps <- rep(0,length(LOW_snp));names(lowbps) <- LOW_snp; lowbps[names(table(br
 bpfreq<-c(sort(mnabps),sort(nabps),sort(intbps),sort(lowbps))
 barplot(bpfreq,col=c(rep("red",length(HR_MNA_snp)),rep("orange",length(HR_NA_snp)),rep("darkgreen",length(INT_snp)),rep("green",length(LOW_snp)) ),las=1,border=NA) 
 
+# Figures 2H
 a <- b <- wtab <- list()
 tempamp <- rep(0,length(HR_MNA))
 names(tempamp) <-HR_MNA
@@ -520,6 +472,7 @@ par(mfrow=c(1,1),family = "Arial")
 barplot(rbind(unlist(a),unlist(b)),beside=T,las=2,col=c("red","orange"),ylim=c(0,8),yaxt='n')
 axis(2,at=seq(0,8,0.5))
 
+# Figures 2I
 a <- b <- wtab <- list()
 tempamp <- rep(0,length(HR_MNA_snp))
 names(tempamp) <-HR_MNA_snp
@@ -541,169 +494,15 @@ axis(2,at=seq(0,8,0.5))
 
 ## Show localization of most chr2 SV
 ## repeat chr2 genomic SVs
+# Supplementary Figure S4C
 ampchr2 <- intersect(which(sv_df$TARGET.USI %in% HR_MNA),which(sv_df$LeftChr == "chr2"))
 hist(as.numeric(sv_df$LeftPosition[ampchr2]),breaks=100,col=rgb(1,0,0,0.5),border=rgb(1,0,0),las=1)
-
 noachr2 <- intersect(which(sv_df$TARGET.USI %in% HR_NA),which(sv_df$LeftChr == "chr2"))
 hist(as.numeric(sv_df$LeftPosition[noachr2]),breaks=100,col=rgb(1,0.65,0,0.5),border=rgb(1,0.65,0),add=T,las=1)
 
-### Find interchromosomal associations with complex events of MYCN
-
-chr2.24_genes <- c("RAD51AP2","NT5C1B-RDH14","LINC01804","NBAS","MYCN","FAM84A","DDX1","MYCNUT","MYCNOS","GACAT3","FAM49A","VSNL1","RDH14","NT5C1B","LINC00276")
-chr5.p15 <- c("TERT","SLC12A7","LINC01804","NBAS","MYCN","FAM84A","DDX1","MYCNUT","MYCNOS","GACAT3","FAM49A","VSNL1","RDH14","NT5C1B","LINC00276")
-mycn_sv_ids <- unique(unlist(j_summary[chr2.24_genes]))
-mycn_sv_samples <- unique(unlist(sv_summary[chr2.24_genes]))
-#tert_sv_ids <- unique(unlist(j_summary[c("LPCAT1","SLC6A3","LINC01511","CLPTM1L","TERT","SLC6A18","SLC6A19","SLC12A7")]))
-
-nonmycn_genes <- setdiff(names(j_summary),chr2.24_genes)
-res<-list()
-for(i in 1:length(chr2.24_genes)){
-	gene1<-chr2.24_genes[i]
-	message(gene1)
-	for(j in i:length(nonmycn_genes)){
-		gene2 <- nonmycn_genes[j]
-		if(genes_tab[gene1,"seqnames"] != genes_tab[gene1,"seqnames"]){
-			res[[paste(gene1,gene2,sep="_")]] <- intersect(j_summary[[gene1]],j_summary[[gene2]])
-		}else if(abs(genes_tab[gene1,"start"]- genes_tab[gene2,"start"]) > 2000000){
-			res[[paste(gene1,gene2,sep="_")]] <- intersect(j_summary[[gene1]],j_summary[[gene2]])
-
-		}
-	}
-}
-res<-res[which(unlist(lapply(res,length))>0)]
-res_6let <- lapply(res,function(x) unique(substr(x,11,16)))
- barplot(sort(unlist(lapply(res,length))),horiz=T,las=1)
-gene_pair<-do.call(rbind,strsplit(names(res),"_"))
-amplicon_translocations <- cbind(gene_pair,unlist(lapply(res_6let,paste,collapse=" ")), genes_tab[gene_pair[,2],])
-#write.table(amplicon_translocations,sep="\t",quote=F,row.names=F,file="~/Box Sync/My_CHOP/SV_paper_V2/data_sheets/amplicon_complex_and_interchromosomal.txt")
-
-res2<-list()
-for(i in setdiff(names(j_summary),chr2.24_genes)){
-	res2[[i]] <- intersect(mycn_sv_ids,j_summary[[i]])
-}
-res3 <- lapply(res2,function(x) unique(substr(x,11,16)))
-sort(unlist(lapply(res3,length)))
- a<-sort(unlist(lapply(res3,length)))
-barplot(sort(a[which(a > 0)],decreasing=T),horiz=T,las=1)
-
-
-ressamps <- lapply(res,function(x) unique(substr(x,0,6)))
-
-mycn_sv <- sv_df[mycn_sv_ids,]
-which(mycn_sv$LeftChr != "chr2")
-chrsaffected <- names(sort(table(mycn_sv[which(mycn_sv$RightChr != "chr2"),"RightChr"])))
-
-res<-list()
-for(i in chrsaffected){
-	res[[i]] <- unique(mycn_sv[which(mycn_sv$RightChr == i),"TARGET.USI"])
-	}
-
-r_expmat["TERT",intersect(setdiff(res$chr5,sv_summary$TERT),colnames(r_expmat))]
-l_expmat["TERT",intersect(setdiff(res$chr5,sv_summary$TERT),colnames(l_expmat))]
-r_expmat["TERT",intersect(intersect(res$chr5,sv_summary$TERT),colnames(r_expmat))]
-l_expmat["TERT",intersect(intersect(res$chr5,sv_summary$TERT),colnames(l_expmat))]
-
-
-### Plot and write tables with all SVs ###
-
-refseq <- read.delim("~/Box Sync/My_CHOP/reference_files/ucsc_refseq_0ct31_2018.txt",as.is=T)
-chromosomes <- paste("chr",c(1:22,"X"),sep="")
-refseq<-refseq[which(refseq$chrom %in% chromosomes),]
-refseq<-refseq[which(!duplicated(refseq$name)),]
-
-#outpath <- "~/Box Sync/My_CHOP/GWAS/somatic/SV/"
-results <- results_NBL
-#sv_df<-results_NBL$sv_df
-upstr <- 100000
-dnstr <- 25000
-
-junction_list <- j_summary
-outpath <- "~/Box Sync/My_CHOP/SV_paper_V2/geneview_summary/"
-genelist<-names(which(unlist(lapply(sv_summary,length)) >4))
-genelist<-shortlist
-genelist<-"EZH2"
-
-junction_list <- j_coding
-outpath <- "~/Box Sync/My_CHOP/SV_paper_V2/geneview_coding/"
-genelist<-names(which(unlist(lapply(sv_coding,length)) >2))
-
-
-junction_list <- j_noncod
-outpath <- "~/Box Sync/My_CHOP/SV_paper_V2/geneview_noncoding/"
-genelist<-names(which(unlist(lapply(sv_noncod,length)) >2))
-
-upstr <- 500000
-dnstr <- 500000
-
-
-for(gene in genelist ){		# alternative 2 for disrupting genes
-message(gene)
-chr  <- as.character(genes_tab[gene,"seqnames"])
-start <- as.numeric(genes_tab[gene,"start"])
-stop <- as.numeric(genes_tab[gene,"end"])
-strand <- genes_tab[gene,"strand"]
-
-	if(strand == "+"){
-	start <- start - upstr
-	stop <- stop + dnstr
-	}else if(strand == "-"){
-	start <- start - dnstr
-	stop <- stop + upstr 
-	}
-
-interval <- round((stop-start)/1000)*200
-
-sv_df_gene <-  sv_df[junction_list[[gene]],]
-leftChrMatch <- which(sv_df_gene$LeftChr == chr)
-rightChrMatch <- which(sv_df_gene$RightChr == chr)
-a<-sv_df_gene[intersect(leftChrMatch,rightChrMatch),]
-tab1 <- cbind(a$LeftChr,a$LeftPosition,a$RightPosition,a$RightChr,a$RightPosition,a$RightPosition,a$Type)
-b<-sv_df_gene[setdiff(leftChrMatch,rightChrMatch),]
-tab2 <- cbind(b$LeftChr,b$LeftPosition,b$LeftPosition+b$LeftLength,b$RightChr,b$RightPosition,b$RightPosition+b$RightLength,b$Type)
-c<-sv_df_gene[setdiff(rightChrMatch,leftChrMatch),]
-tab3 <- cbind(c$RightChr,c$RightPosition,c$RightPosition+c$RightLength,c$LeftChr,c$LeftPosition,c$LeftPosition+c$LeftLength,c$Type)
-
-tab<-data.frame(rbind(tab1,tab2,tab3))
-colnames(tab) <- c("chr","LeftPosition","RightPosition","destinationChr","destinationPos","na","Type")
-rownames(tab) <-rownames(sv_df_gene)[c(intersect(leftChrMatch,rightChrMatch),setdiff(leftChrMatch,rightChrMatch),setdiff(rightChrMatch,leftChrMatch))]
-for(i in c(2,3,5,6)) tab[,i] <-as.numeric( as.character(tab[,i]))
-
-tab <- tab[order(rownames(tab)),]
-if(nrow(tab) > 100){
-	addtext_sv <- FALSE
-	extra_height <- (nrow(tab) -10)/40
-}else if(nrow(tab) > 10){ 
-	addtext_sv <- TRUE
-	extra_height <- (nrow(tab) -10)/10
-}else{extra_height <- 0;addtext_sv <- TRUE}
-message(paste(gene,nrow(tab),extra_height,sep="\t"))
-
-cTrack <- CustomTrack(plottingFunction = function(GdObject, prepare) {grid.text(""); return(invisible(GdObject))})
-chrTrack <- IdeogramTrack(genome = "hg19", chromosome = chr)
-if(gene %in% refseq$name2 && (stop -start) < 30000000 && (stop -start) > 10000 && nrow(tab) > 0){
-	pdf(paste(outpath,"/",gsub("/","_",gene),"_genoview.pdf",sep=""),width=12,height=6.5 + extra_height)
-	layout(matrix(c(1,1,2,2,3,3), 3, 2, byrow = TRUE), heights=c(5+extra_height,1.2,0.3))
-	par(mar=c(3,2,3,2))
-	sv_model(tab, chr, start, stop, interval=interval, addgrid=TRUE,addtext=addtext_sv,cex.label=1.3)
-	gene_model(chr,start,stop,refseq,gene=gene,interval=interval,addtext=TRUE,cex.label=1)
-	plotTracks(c(cTrack,cTrack,chrTrack), from = start, to = stop, panel.only=TRUE, add=TRUE,sizes=c(5+extra_height,1.2,0.3))
-	dev.off()
-	}
-}
-
-start <- 82500000;stop <- 86000000; gene <- "DLG2"; interval <- 500000; chr <- "chr11"
-
-start <- 14000000;stop <- 33000000; gene <- NULL; interval <- 2000000; chr <- "chr2"
-	gene_model(chr,start,stop,refseq,gene=gene,interval=interval,addtext=FALSE,cex.label=1)
-
-#cTrack <- CustomTrack(plottingFunction = function(GdObject, prepare) {grid.text(""); return(invisible(GdObject))})
-cTrack <- CustomTrack(plottingFunction = function(GdObject, prepare) {grid.text(""); return(invisible(GdObject))})
-chrTrack <- IdeogramTrack(genome = "hg19", chromosome = chr)
-	plotTracks(c(chrTrack), from = start, to = stop, panel.only=TRUE, add=TRUE,sizes=c(2))
 
 #######################################
-### ONCOPRINT
-#########
+### Obtain shortlisted genes for oncoprint and eQTL analyses
 
 ### Create a table of frequently altered genes by read depth
 bp_summary <-merge2lists(results_BP$breakSamples, results_BP$proximalSamples)
@@ -774,7 +573,7 @@ colnames(bpgene_tab) <- c(colnames(genes_tab[bpgenes,c(1,2,3,5)]),
 		"total_summary")
 
 rownames(bpgene_tab) <- bpgenes
-write.table(bpgene_tab,file="~/Box Sync/My_CHOP/SV_paper_V2/data_sheets/BP_altered_genes_Oct31_18.txt",sep="\t",quote=F)
+#write.table(bpgene_tab,file="Supplemental_Table_S6_1.txt",sep="\t",quote=F)
 
 ## create table based on SV only 
 genes_copynum <- sort(unlist(lapply(sv_copynum,length)),decreasing=T)
@@ -807,12 +606,9 @@ samples_noncod <- unlist(lapply(sv_noncod,paste,collapse=" "))
 
 topGenesTab <- cbind(genes_tab[allgenes,c("seqnames","start","end","strand")],genes_exonic[allgenes],genes_copynum[allgenes],genes_coding[allgenes],genes_proximal[allgenes],genes_intronic[allgenes],genes_noncod[allgenes],genes_summary[allgenes],allType[allgenes,],samples_coding[allgenes],samples_noncod[allgenes])
 names(topGenesTab) <- c("seqnames","start","end","strand","exonic","copynumm","coding","proximal","intronic","non-coding","all",colnames(allType),"samples_coding","samples_noncod")
-write.table(topGenesTab,file="~/Box Sync/My_CHOP/SV_paper_V2/data_sheets/SV_altered_genes_Oct31_18.txt",sep="\t",quote=F)
-
-
+#write.table(topGenesTab,file="Supplemental_Table_S6_2.txt",sep="\t",quote=F)
 
 # obtaine list of genes which have overlapping varinats and coverage based breakpoints
-
 orth <- both <- sv <- bp <- all <- list()
 for(i in names(sv_summary)){
 	message(i)
@@ -829,8 +625,6 @@ for(i in names(sv_summary)){
 orthogonal <- names(which(sort(unlist(lapply(orth,length)),decreasing=F) > 0))
 sv_bp_combined <- unlist(lapply(merge2lists(merge2lists(bp_summary,sv_summary),merge2lists(ampl_WGS,ddel_WGS)),length))
 
-# >0 orth; >2 cod; > 5 noncod; >3 total
-
 all_recurrent_noncod <- names(which(unlist(lapply(merge2lists(bp_noncod,sv_noncod),length)) >5))
 all_recurrent_coding <- names(which(unlist(lapply(merge2lists(bp_coding,sv_coding),length)) >2))
 shortlist <- intersect(names(which(sv_bp_combined > 3)),unique(c(intersect(all_recurrent_noncod,orthogonal),intersect(orthogonal,all_recurrent_coding))))
@@ -842,6 +636,7 @@ a<-zrank(l_expmat[commongenes,intersect(highrisk,setdiff(colnames(l_expmat),coln
 b<-zrank(r_expmat[commongenes,intersect(highrisk,colnames(r_expmat))])
 lr_expmat <- t(apply(cbind(a,b),1,rank))
 
+## supplementary Figure S18A 
 res1 <- sv_eQTL(shortlist,merge2lists(sv_summary,bp_summary),r_expmat,highrisk) 
 #write.table(do.call(rbind,res1),sep="\t",quote=F)
 res2 <- sv_eQTL(shortlist,merge2lists(sv_summary,bp_summary),l_expmat,highrisk) 
@@ -870,7 +665,7 @@ barplot(bardata,beside=T,las=2)
 abline(h=c(-2,-1.30103,1.30103,2))
 
 heatmap.3(bardata[3:1,],col=bluered(256),Colv=F,Rowv=F)
-write.table(data.frame(genes_tab[rownames(resa),],resa,logpa,resb,logpb,resc,logpc)[colnames(bardata),],file="~/Box Sync/My_CHOP/SV_paper_V2/data_sheets/orthogonal_shortlist_eQTL_Oct31_18.txt",sep="\t",quote=F)
+#write.table(data.frame(genes_tab[rownames(resa),],resa,logpa,resb,logpb,resc,logpc)[colnames(bardata),],file="",sep="\t",quote=F)
 
 
 orth_rank <- unlist(lapply(orth,length))[shortlist]
@@ -881,32 +676,29 @@ bp_rank <- unlist(lapply(bp,length))[shortlist]
 all_rank <- unlist(lapply(all,length))[shortlist]
 freqtab <- rbind(orth_rank, both_rank-orth_rank,sv_rank-both_rank,bp_rank-both_rank,all_rank)
 
-write.table(cbind(orth_rank[shortlist],topGenesTab[shortlist,],bpgene_tab[shortlist,],sv_bp_combined[shortlist]),file="~/Box Sync/My_CHOP/SV_paper_V2/data_sheets/orthogonal_shortlist_Oct31_18.txt",sep="\t",quote=F)
-
-shortUniqList <- unique(read.delim("~/Box Sync/My_CHOP/SV_paper_V2/data_sheets/orthogonal_shortlist_Oct31_18_uniques.txt",header=F,as.is=T)$V1)
+# Supplementary table S6
+supplTabS6 <- data.frame(orth_rank[shortlist],topGenesTab[shortlist,],bpgene_tab[shortlist,],sv_bp_combined[shortlist])
+#write.table(supplTabS6,file="",sep="\t",quote=F)
+shortUniqList <- rownames(supplTabS6)
 
 # from shortlist we remove "passenger" genes
-shortUniqList <- unique(read.delim("~/Box Sync/My_CHOP/SV_paper_V2/data_sheets/orthogonal_shortlist_Oct31_18_uniques.txt",header=F,as.is=T)$V1)
 plotOrderGenes <- names(sort(orth_rank[shortUniqList[order(all_rank[shortUniqList],decreasing=T)]],decreasing=T))
-### ~~~
 
-snv_extended <- read.delim("~/Box Sync/My_CHOP/data/metaDNA/MAF/extended_cgi_Aug_1_18.maf",as.is=T,sep="\t")
+### Incorporate SNV maf data 
+snv_extended <- read.delim("data/extended_cgi_Aug_1_18.maf",as.is=T,sep="\t")
 snv_list<-list()
 for(i in plotOrderGenes){
   snv_list[[i]] <- unique(snv_extended$Sample[which(snv_extended$Hugo_Symbol == i )])
 }
 
-write.table(snv_extended[which(snv_extended$SYMBOL %in% intersect(snv_extended$SYMBOL,orthogonal)),],
-            file="~/Box Sync/My_CHOP/SV_paper_V2/data_sheets/tab08_snv_withSV.txt",sep="\t",row.names=F,quote=F)
-
-
+# plor stack barplot attached to oncoprint Figure 3G
 par(mar=c(3,7,1,6))
 bplot <- barplot(freqtab[1:4,rev(plotOrderGenes)],horiz=T,las=1,xlim=c(0,40),col=c("black","grey40","grey80","white"))
 abline(v=seq(0,40,10),lty=3,lwd=.3)
-#legend("right",c("Orthogonal","Both","SJ-BP","RD-BP"),fill=c("black","grey40","grey80","white"),bty='n',cex=1.2)
+legend("right",c("Orthogonal","Both","SJ-BP","RD-BP"),fill=c("black","grey40","grey80","white"),bty='n',cex=1.2)
 #text(11+apply(freqtab[1:4,rev(plotOrderGenes)],2,sum),bplot,labels=paste(sprintf("%.1f",100*freqtab[4,rev(plotOrderGenes)]/135),"%",sep=""),cex=.9)
 
-
+# ONCOPRINT Figure 3GFigure 3G
 bp_coding2 <-bp_coding
 bp_noncod2 <-bp_noncod
 ampl_WGS2 <-ampl_WGS
@@ -924,7 +716,6 @@ topgenes2x[seq(1,4*length(plotOrderGenes),4)] <- plotOrderGenes
 topgenes2x[seq(2,4*length(plotOrderGenes),4)] <- paste(plotOrderGenes,"_2",sep="")
 topgenes2x[seq(3,4*length(plotOrderGenes),4)] <- paste(plotOrderGenes,"_3",sep="")
 topgenes2x[seq(4,4*length(plotOrderGenes),4)] <- paste(plotOrderGenes,"_4",sep="")
-
 
 mat<-matrix(ncol=length(cgi_samples),nrow=length(topgenes2x))
 colnames(mat) <- cgi_samples
@@ -1017,13 +808,13 @@ a<-oncoPrint(mat2[topgenes2x,c(HR_MNA,HR_NA,INT,LOW)], get_type = function(x) st
     pct_gp = gpar(fontsize = 10),
     heatmap_legend_param = list(title = "Alternations", at = c("EXON","CN", "PROX","INT"), 
     labels = c("Exonic SV","Copy Number SV", "Proximal SV","Intronic SV" )))
-
 a
 
 allorder <-1:length(cgi_samples)
-names(allorder) <- c(HR_MNA,HR_NA,INT,LOW)[a@ht_list$matrix_14@column_order]
+names(allorder) <- c(HR_MNA,HR_NA,INT,LOW)[a@column_order]
 
 
+# plot MNA subtype oncoprint
 b<-oncoPrint(mat2[topgenes2x,names(sort(allorder[HR_MNA]))], get_type = function(x) strsplit(x, ";")[[1]], row_order=NULL,
     alter_fun = alter_fun, col = col, 
     column_title = "SV analysis", column_order=NULL,
@@ -1031,12 +822,10 @@ b<-oncoPrint(mat2[topgenes2x,names(sort(allorder[HR_MNA]))], get_type = function
     pct_gp = gpar(fontsize = 10),
     heatmap_legend_param = list(title = "Alternations", at = c("EXON","CN", "PROX","INT"), 
     labels = c("Exonic SV","Copy Number SV", "Proximal SV","Intronic SV" )))
-
-pdf("~/Box Sync/My_CHOP/SV_paper_V2/Figures/Figure3-oncoprint/oncoprint/oncopart_MNA_with_snv.pdf",width=5,height=12)
 b
-dev.off()
 
 
+# plot HRNA subtype oncoprint
 c<-oncoPrint(mat2[topgenes2x,names(sort(allorder[HR_NA]))], get_type = function(x) strsplit(x, ";")[[1]], row_order=NULL,
     alter_fun = alter_fun, col = col, 
     column_title = "SV analysis", column_order=NULL,
@@ -1044,10 +833,7 @@ c<-oncoPrint(mat2[topgenes2x,names(sort(allorder[HR_NA]))], get_type = function(
     pct_gp = gpar(fontsize = 10),
     heatmap_legend_param = list(title = "Alternations", at = c("EXON","CN", "PROX","INT"), 
     labels = c("Exonic SV","Copy Number SV", "Proximal SV","Intronic SV" )))
-
-pdf("~/Box Sync/My_CHOP/SV_paper_V2/Figures/Figure3-oncoprint/oncoprint/oncopart_NA_with_snv.pdf",width=7.5,height=12)
 c
-dev.off()
 
 d<-oncoPrint(mat2[topgenes2x,names(sort(allorder[INT]))], get_type = function(x) strsplit(x, ";")[[1]], row_order=NULL,
     alter_fun = alter_fun, col = col, 
@@ -1057,9 +843,8 @@ d<-oncoPrint(mat2[topgenes2x,names(sort(allorder[INT]))], get_type = function(x)
     heatmap_legend_param = list(title = "Alternations", at = c("EXON","CN", "PROX","INT"), 
     labels = c("Exonic SV","Copy Number SV", "Proximal SV","Intronic SV" )))
 
-pdf("~/Box Sync/My_CHOP/SV_paper_V2/Figures/Figure3-oncoprint/oncoprint/oncopart_INT_with_snv.pdf",width=4.6,height=12)
+# plot INT subtype oncoprint
 d
-dev.off()
 
 e<-oncoPrint(mat2[topgenes2x,names(sort(allorder[LOW]))], get_type = function(x) strsplit(x, ";")[[1]], row_order=NULL,
     alter_fun = alter_fun, col = col, 
@@ -1068,60 +853,35 @@ e<-oncoPrint(mat2[topgenes2x,names(sort(allorder[LOW]))], get_type = function(x)
     pct_gp = gpar(fontsize = 10),
     heatmap_legend_param = list(title = "Alternations", at = c("EXON","CN", "PROX","INT"), 
     labels = c("Exonic SV","Copy Number SV", "Proximal SV","Intronic SV" )))
-pdf("~/Box Sync/My_CHOP/SV_paper_V2/Figures/Figure3-oncoprint/oncoprint/oncopart_LOW_with_snv.pdf",width=4.5,height=12)
+# plot LOW subtype oncoprint
 e
-dev.off()
-
-mat3<-cbind(mat2[topgenes2x,names(sort(allorder[HR_MNA]))],mat2[topgenes2x,names(sort(allorder[HR_NA]))],
-	mat2[topgenes2x,names(sort(allorder[INT]))],mat2[topgenes2x,names(sort(allorder[LOW]))])
-f<-oncoPrint(mat3, get_type = function(x) strsplit(x, ";")[[1]], row_order=NULL,
-    alter_fun = alter_fun, col = col, 
-    column_title = "SV analysis", column_order=NULL,
-    row_names_gp = gpar(fontsize = 10),
-    pct_gp = gpar(fontsize = 10),
-    heatmap_legend_param = list(title = "Alternations", at = c("EXON","CN", "PROX","INT"), 
-    labels = c("Exonic SV","Copy Number SV", "Proximal SV","Intronic SV" )))
-pdf("~/Box Sync/My_CHOP/SV_paper_V2/Figures/Figure3-oncoprint/oncoprint/oncopart_ALL_goodorder.pdf",width=10,height=12)
-f
-dev.off()
 
 
+# generate Phenotype top bars for each subtype
 fakemat <- matrix(ncol=length(HR_MNA),nrow=5)
 fakemat[] <- 0
 colnames(fakemat) <- names(sort(allorder[HR_MNA]))
 rownames(fakemat) <- rownames(Pheno2)[2:6]
-png("~/Box Sync/My_CHOP/SV_paper_V2/Figures/Figure3-oncoprint/oncoprint/oncoprint_MNA_pheno.pdf",height=500,width=200)
 heatmap.3(fakemat, ColSideColors = t(Pheno2[2:6,colnames(fakemat)]),Colv=FALSE,Rowv=FALSE,lhei=c(0.5,1))
-dev.off()
-
 
 fakemat <- matrix(ncol=length(HR_NA),nrow=5)
 fakemat[] <- 0
 colnames(fakemat) <- names(sort(allorder[HR_NA]))
 rownames(fakemat) <- rownames(Pheno2)[2:6]
-png("~/Box Sync/My_CHOP/SV_paper_V2/Figures/Figure3-oncoprint/oncoprint/oncoprint_NA_pheno.pdf",height=500,width=300)
 heatmap.3(fakemat, ColSideColors = t(Pheno2[2:6,colnames(fakemat)]),Colv=FALSE,Rowv=FALSE,lhei=c(0.5,1))
-dev.off()
 
 fakemat <- matrix(ncol=length(INT),nrow=5)
 fakemat[] <- 0
 colnames(fakemat) <- names(sort(allorder[INT]))
 rownames(fakemat) <- rownames(Pheno2)[2:6]
-png("~/Box Sync/My_CHOP/SV_paper_V2/Figures/Figure3-oncoprint/oncoprint/oncoprint_INT_pheno.pdf",height=500,width=150)
 heatmap.3(fakemat, ColSideColors = t(Pheno2[2:6,colnames(fakemat)]),Colv=FALSE,Rowv=FALSE,lhei=c(0.5,1))
-dev.off()
 
 fakemat <- matrix(ncol=length(LOW),nrow=5)
 fakemat[] <- 0
 colnames(fakemat) <- names(sort(allorder[LOW]))
 rownames(fakemat) <- rownames(Pheno2)[2:6]
-png("~/Box Sync/My_CHOP/SV_paper_V2/Figures/Figure3-oncoprint/oncoprint/oncoprint_LOW_pheno.pdf",height=500,width=155)
 heatmap.3(fakemat, ColSideColors = t(Pheno2[2:6,colnames(fakemat)]),Colv=FALSE,Rowv=FALSE,lhei=c(0.5,1))
-dev.off()
 
-
-## obtain altered genes from segmentation data
-# CGI
 
 ## obtain altered genes from segmentation data
 # SNP
@@ -1152,6 +912,7 @@ a<-length(intersect(all_samples$SHANK2,c(HR_NA_snp, HR_NA)))
 b<-length(intersect(all_samples$DLG2,c(HR_NA_snp, HR_NA)))
 tt <- length(c(HR_NA_snp, HR_NA))
 
+# SHANK2 and DLG2 altered samples are mutually exclusive
 fisher.test(matrix(c(0,a,b,tt-a-b),2,2),alternative="less")
 
 
@@ -1159,78 +920,73 @@ a <- sort(unlist(lapply(bp_samples_snp,length)),decreasing=T)
 tab <- cbind(genes_tab[names(a),c(6,1,2,3)],a,unlist(lapply(bp_coding_snp,length))[names(a)],unlist(lapply(bp_proximal_snp,length))[names(a)])
 tab[which(is.na(tab),arr.ind=T)] <- 0
 colnames(tab) <- c( "Symbol" ,"Chr","Start","End","Combined","Coding","Proximal")
-write.table(tab,file="~/Box Sync/My_CHOP/SV_paper_V2/data_sheets/BP_SNP_altered_genes_Oct5_18.txt",sep="\t",quote=F,row.names=F)
+#write.table(tab,file="~/Box Sync/My_CHOP/SV_paper_V2/data_sheets/BP_SNP_altered_genes_Oct5_18.txt",sep="\t",quote=F,row.names=F)
 
 a <- sort(unlist(lapply(bp_samples,length)),decreasing=T)
 tab <- cbind(genes_tab[names(a),c(6,1,2,3)],a,unlist(lapply(bp_coding,length))[names(a)],unlist(lapply(bp_proximal,length))[names(a)])
 tab[which(is.na(tab),arr.ind=T)] <- 0
 colnames(tab) <- c( "Symbol" ,"Chr","Start","End","Combined","Coding","Proximal")
-write.table(tab,file="~/Box Sync/My_CHOP/SV_paper_V2/data_sheets/BP_CGI_altered_genes_Oct5_18.txt",sep="\t",quote=F,row.names=F)
+#write.table(tab,file="~/Box Sync/My_CHOP/SV_paper_V2/data_sheets/BP_CGI_altered_genes_Oct5_18.txt",sep="\t",quote=F,row.names=F)
 
+# regional gene sets associated with MYCN, TERT and other regions
 chr2p24 <- c("DDX1","FAM49A","FAM84A","GACAT3","KCNS3","LINC00276","LINC01804","LPIN1","MYCN","MYCNOS","MYCNUT","NBAS","NT5C1B","NT5C1B-RDH14","RDH14","SMC6","VSNL1")
 chr5p15 <- c("CLPTM1L","CTD-3080P12.3","LINC01511","LOC100506688","LPCAT1","SLC12A7","SLC6A18","SLC6A19","SLC6A3","TERT")
 chr17p21 <- c("LINC00854","DHX8","LINC00910","ARL4D")
 chr11q1314 <- c("PACS1", "PPFIA1", "SHANK2", "NUMA1", "GAB2", "DLG2")
 
+# Figure 3A
 par(mfrow=c(2,3),mar=c(3,4,2,1))
 b<-sort(unlist(lapply(sv_coding,length)),decreasing=T)
 plot(b,cex=.2,col="white",main="SJ-BP coding",xlab="",ylab="",las=1,cex.axis=1.2)
+points(which(!names(b) %in% c(chr2p24,chr5p15)),b[which(!names(b) %in% c(chr2p24,chr5p15))],cex=.4)
 points(which(names(b) %in% chr2p24),b[which(names(b) %in% chr2p24)],col="red",pch=3)
 points(which(names(b) %in% chr5p15),b[which(names(b) %in% chr5p15)],col="blue",cex=1,pch=4)
-#points(which(names(b) %in% chr17p21),b[which(names(b) %in% chr17p21)],col="green3",cex=1,pch=0)
-points(which(!names(b) %in% c(chr2p24,chr5p15)),b[which(!names(b) %in% c(chr2p24,chr5p15))],cex=.4)
-#legend("topright",c("2p24 locus","5p15 locus","17q21 locus","other loci"),pch=c(3,4,0,21),pt.cex=c(1,1,1,.4),col=c("red","blue","green3","black"),bty='n')
 #text(b,labels=names(b),pos=4)
 
+# Figure 3B
 a<-sort(unlist(lapply(bp_coding,length)),decreasing=T)
 plot(a,cex=.2,col="white",main="RD-BP coding (WGS)",xlab="",ylab="",las=1,cex.axis=1.2)
+points(which(!names(a) %in% c(chr2p24,chr5p15)),a[which(!names(a) %in% c(chr2p24,chr5p15))],cex=.4)
 points(which(names(a) %in% chr2p24),a[which(names(a) %in% chr2p24)],col="red",pch=3)
 points(which(names(a) %in% chr5p15),a[which(names(a) %in% chr5p15)],col="blue",cex=1,pch=4)
-#points(which(names(a) %in% chr17p21),a[which(names(a) %in% chr17p21)],col="green3",cex=1,pch=0)
-points(which(!names(a) %in% c(chr2p24,chr5p15)),a[which(!names(a) %in% c(chr2p24,chr5p15))],cex=.4)
-#legend("topright",c("2p24 locus","5p15 locus","17q21 locus","other loci"),pch=c(3,4,0,21),pt.cex=c(1,1,1,.4),col=c("red","blue","green3","black"),bty='n')
 #text(a,labels=names(a),pos=4)
 
+# Figure 3C
 b<-sort(unlist(lapply(bp_coding_snp_only,length)),decreasing=T)
 plot(b,cex=.2,col="white",main="CN-BP coding (SNP)",xlab=" ",ylab="",las=1,cex.axis=1.2)
+points(which(!names(b) %in% c(chr2p24,chr5p15)),b[which(!names(b) %in% c(chr2p24,chr5p15))],cex=.4)
 points(which(names(b) %in% chr2p24),b[which(names(b) %in% chr2p24)],col="red",pch=3)
 points(which(names(b) %in% chr5p15),b[which(names(b) %in% chr5p15)],col="blue",cex=1,pch=4)
-#points(which(names(b) %in% chr17p21),b[which(names(b) %in% chr17p21)],col="green3",cex=1,pch=0)
-points(which(!names(b) %in% c(chr2p24,chr5p15)),b[which(!names(b) %in% c(chr2p24,chr5p15))],cex=.4)
-#legend("topright",c("2p24 locus","5p15 locus","17q21 locus","other loci"),pch=c(3,4,0,21),pt.cex=c(1,1,1,.4),col=c("red","blue","green3","black"),bty='n')
 #text(b,labels=names(b),pos=4)
 
+# Figure 3D
 c<-sort(unlist(lapply(sv_noncod,length)),decreasing=T)
 plot(c,cex=.2,col="white",main="SJ-BP non-coding",xlab=" ",ylab="",las=1,cex.axis=1.2)
+points(which(!names(c) %in% c(chr2p24,chr5p15)),c[which(!names(c) %in% c(chr2p24,chr5p15))],cex=.4)
 points(which(names(c) %in% chr2p24),c[which(names(c) %in% chr2p24)],col="red",pch=3)
 points(which(names(c) %in% chr5p15),c[which(names(c) %in% chr5p15)],col="blue",cex=1,pch=4)
-#points(which(names(c) %in% chr17p21),c[which(names(c) %in% chr17p21)],col="green3",cex=1,pch=0)
-points(which(!names(c) %in% c(chr2p24,chr5p15)),c[which(!names(c) %in% c(chr2p24,chr5p15))],cex=.4)
-#legend("topright",c("2p24 locus","5p15 locus","17q21 locus","other loci"),pch=c(3,4,0,21),pt.cex=c(1,1,1,.4),col=c("red","blue","green3","black"),bty='n')
 #text(c,labels=names(c),pos=4)
 
+# Figure 3E
 c<-sort(unlist(lapply(bp_noncod,length)),decreasing=T)
 plot(c,cex=.2,col="white",main="RD-BP non-coding (WGS)",xlab="",ylab="",las=1,cex.axis=1.2)
+points(which(!names(c) %in% c(chr2p24,chr5p15)),c[which(!names(c) %in% c(chr2p24,chr5p15))],cex=.4)
 points(which(names(c) %in% chr2p24),c[which(names(c) %in% chr2p24)],col="red",pch=3)
 points(which(names(c) %in% chr5p15),c[which(names(c) %in% chr5p15)],col="blue",cex=1,pch=4)
-#points(which(names(c) %in% chr17p21),c[which(names(c) %in% chr17p21)],col="green3",cex=1,pch=0)
-points(which(!names(c) %in% c(chr2p24,chr5p15)),c[which(!names(c) %in% c(chr2p24,chr5p15))],cex=.4)
-#legend("topright",c("2p24 locus","5p15 locus","17q21 locus","other loci"),pch=c(3,4,0,21),pt.cex=c(1,1,1,.4),col=c("red","blue","green3","black"),bty='n')
 #text(c,labels=names(c),pos=4)
 
+# Figure 3F
 c<-sort(unlist(lapply(bp_proximal_snp_only,length)),decreasing=T)
 plot(c,cex=.2,col="white",main="CN-BP non-coding (SNP)",xlab="",ylab="",las=1,cex.axis=1.2)
+points(which(!names(c) %in% c(chr2p24,chr5p15)),c[which(!names(c) %in% c(chr2p24,chr5p15))],cex=.4)
 points(which(names(c) %in% chr2p24),c[which(names(c) %in% chr2p24)],col="red",pch=3)
 points(which(names(c) %in% chr5p15),c[which(names(c) %in% chr5p15)],col="blue",cex=1,pch=4)
-#points(which(names(c) %in% chr17p21),c[which(names(c) %in% chr17p21)],col="green3",cex=1,pch=0)
-points(which(!names(c) %in% c(chr2p24,chr5p15)),c[which(!names(c) %in% c(chr2p24,chr5p15))],cex=.4)
-#legend("topright",c("2p24 locus","5p15 locus","17q21 locus","other loci"),pch=c(3,4,0,21),pt.cex=c(1,1,1,.4),col=c("red","blue","green3","black"),bty='n')
 #text(c,labels=names(c),pos=4)
 
 plot(1,1,col="white")
 legend("center",c("2p24 locus","5p15 locus","other loci"),ncol=4,pch=c(3,4,0,21),pt.cex=c(1,1,1,.4),col=c("red","blue","black"))
 
-### FUNCTION ANALYSIS 
+### PATHWAY ENRICHMENT ANALYSIS , Figure A-C & supplementary S19
 
 a<-sort(unlist(lapply(sv_coding,length)),decreasing=T)
 b<-sort(unlist(lapply(bp_coding,length)),decreasing=T)
@@ -1239,7 +995,7 @@ c<-sort(unlist(lapply(bp_coding_snp_only,length)),decreasing=T)
 d<-sort(unlist(lapply(sv_noncod,length)),decreasing=T)
 e<-sort(unlist(lapply(bp_noncod,length)),decreasing=T)
 f<-sort(unlist(lapply(bp_proximal_snp_only,length)),decreasing=T)
-
+# supplementary table S5
 write.table(names(which(a>2)),row.names=FALSE,quote=F,col.names=F,file="~/Box Sync/My_CHOP/SV_paper_V2/data_sheets/Function/topgenes_sv_coding_nov6.txt")
 write.table(names(which(b>2)),row.names=FALSE,quote=F,col.names=F,file="~/Box Sync/My_CHOP/SV_paper_V2/data_sheets/Function/topgenes_bp_coding_nov6.txt")
 write.table(names(which(c>2)),row.names=FALSE,quote=F,col.names=F,file="~/Box Sync/My_CHOP/SV_paper_V2/data_sheets/Function/topgenes_bp_codingSnp_nov6.txt")
@@ -1255,22 +1011,13 @@ write.table(cbind(e,e/135),row.names=TRUE,quote=F,sep="\t",col.names=F,file="~/B
 write.table(cbind(f,f/915),row.names=TRUE,quote=F,sep="\t",col.names=F,file="~/Box Sync/My_CHOP/SV_paper_V2/data_sheets/table4/table_4_rank_bp_noncodSnp_nov6.txt")
 # other tumors...
 
-rankedSet <- rank(b)
-collection <- msigDBsymbol$c2.all.v5.2
-
-source("~/Box Sync/my_r_pkgs/rset_pathway/rset_pathway_es.R")
-out <- rankset.enrich(rankedSet-1,collection)
-
-######
-######
-
 
 topgenecats <- c("GO: Biological Process","GO: Cellular Component","GO: Molecular Function","Pathway","Disease")
 davidcats <- c("GOTERM_CC_DIRECT","GOTERM_BP_DIRECT","BIOCARTA","GOTERM_MF_DIRECT","KEGG_PATHWAY")
 
 par(mar=c(3,30,1,3),mfrow=c(3,1))
 ## coding SV
-data <- read.delim("~/Box Sync/My_CHOP/SV_paper_V2/data_sheets/Function/FUNCTION_topgenes_sv_coding_nov6.txt",sep="\t",as.is=T)
+data <- read.delim("data/FUNCTION/FUNCTION_topgenes_sv_coding_nov6.txt",sep="\t",as.is=T)
 data <- data[which(data$Category %in% topgenecats),]
 data <- data[rev(order(data$q.value.Bonferroni)[1:20]),]
 categoriesnames<-gsub(": Cellular Component","_CC",data$Category);categoriesnames<-gsub(": Molecular Function","_MF",categoriesnames);categoriesnames<-gsub(": Biological Process","_BP",categoriesnames);
@@ -1278,7 +1025,7 @@ datanames1 <- apply(cbind(categoriesnames,data$Name),1,paste,collapse=": ")
 barplot(rbind(-log10(data$q.value.Bonferroni), -log10(data$p.value) +log10(data$q.value.Bonferroni) ),names=datanames1,horiz=T,las=1)
 abline(v=seq(2,8,2),lty=3,lwd=0.5)
 ## coding BP
-data <- read.delim("~/Box Sync/My_CHOP/SV_paper_V2/data_sheets/Function/FUNCTION_topgenes_bp_coding_nov6.txt",sep="\t",as.is=T)
+data <- read.delim("data/FUNCTION/FUNCTION_topgenes_bp_coding_nov6.txt",sep="\t",as.is=T)
 data <- data[which(data$Category %in% topgenecats),]
 data <- data[rev(order(data$q.value.Bonferroni)[1:20]),]
 categoriesnames<-gsub(": Cellular Component","_CC",data$Category);categoriesnames<-gsub(": Molecular Function","_MF",categoriesnames);categoriesnames<-gsub(": Biological Process","_BP",categoriesnames);
@@ -1286,7 +1033,7 @@ datanames2 <- apply(cbind(categoriesnames,data$Name),1,paste,collapse=": ")
 barplot(rbind(-log10(data$q.value.Bonferroni), -log10(data$p.value) +log10(data$q.value.Bonferroni) ),names=datanames2,horiz=T,las=1)
 abline(v=seq(2,8,2),lty=3,lwd=0.5)
 ## coding BP SNP
-data <- read.delim("~/Box Sync/My_CHOP/SV_paper_V2/data_sheets/Function/FUNCTION_topgenes_bp_codingSnp_nov6.txt",sep="\t",as.is=T)
+data <- read.delim("data/FUNCTION/FUNCTION_topgenes_bp_codingSnp_nov6.txt",sep="\t",as.is=T)
 data <- data[which(data$Category %in% topgenecats),]
 data <- data[rev(order(data$q.value.Bonferroni)[1:20]),]
 categoriesnames<-gsub(": Cellular Component","_CC",data$Category);categoriesnames<-gsub(": Molecular Function","_MF",categoriesnames);categoriesnames<-gsub(": Biological Process","_BP",categoriesnames);
@@ -1302,7 +1049,7 @@ rev(datanames3)),row.names=F)
 par(mar=c(3,40,1,3),mfrow=c(3,1))
 
 ## non-coding SV
-data <- read.delim("~/Box Sync/My_CHOP/SV_paper_V2/data_sheets/Function/FUNCTION_topgenes_sv_noncod_nov6.txt",sep="\t",as.is=T)
+data <- read.delim("data/FUNCTION/FUNCTION_topgenes_sv_noncod_nov6.txt",sep="\t",as.is=T)
 data <- data[which(data$Category %in% topgenecats),]
 data <- data[rev(order(data$q.value.Bonferroni)[1:20]),]
 categoriesnames<-gsub(": Cellular Component","_CC",data$Category);categoriesnames<-gsub(": Molecular Function","_MF",categoriesnames);categoriesnames<-gsub(": Biological Process","_BP",categoriesnames);
@@ -1310,7 +1057,7 @@ datanames1 <- apply(cbind(categoriesnames,data$Name),1,paste,collapse=": ")
 barplot(rbind(-log10(data$q.value.Bonferroni), -log10(data$p.value) +log10(data$q.value.Bonferroni) ),names=datanames1,horiz=T,las=1)
 abline(v=seq(2,10,2),lty=3,lwd=0.5)
 ## non coding BP
-data <- read.delim("~/Box Sync/My_CHOP/SV_paper_V2/data_sheets/Function/FUNCTION_topgenes_bp_noncod_nov6.txt",sep="\t",as.is=T)
+data <- read.delim("data/FUNCTION/FUNCTION_topgenes_bp_noncod_nov6.txt",sep="\t",as.is=T)
 data <- data[which(data$Category %in% topgenecats),]
 data <- data[rev(order(data$q.value.Bonferroni)[1:20]),]
 categoriesnames<-gsub(": Cellular Component","_CC",data$Category);categoriesnames<-gsub(": Molecular Function","_MF",categoriesnames);categoriesnames<-gsub(": Biological Process","_BP",categoriesnames);
@@ -1318,14 +1065,13 @@ datanames2 <- apply(cbind(categoriesnames,data$Name),1,paste,collapse=": ")
 barplot(rbind(-log10(data$q.value.Bonferroni), -log10(data$p.value) +log10(data$q.value.Bonferroni) ),names=datanames2,horiz=T,las=1)
 abline(v=seq(2,10,2),lty=3,lwd=0.5)
 ## non coding SNP
-data <- read.delim("~/Box Sync/My_CHOP/SV_paper_V2/data_sheets/Function/FUNCTION_topgenes_bp_noncodSnp_nov6.txt",sep="\t",as.is=T)
+data <- read.delim("data/FUNCTION/FUNCTION_topgenes_bp_noncodSnp_nov6.txt",sep="\t",as.is=T)
 data <- data[which(data$Category %in% topgenecats),]
 data <- data[rev(order(data$q.value.Bonferroni)[1:20]),]
 categoriesnames<-gsub(": Cellular Component","_CC",data$Category);categoriesnames<-gsub(": Molecular Function","_MF",categoriesnames);categoriesnames<-gsub(": Biological Process","_BP",categoriesnames);
 datanames3 <- apply(cbind(categoriesnames,data$Name),1,paste,collapse=": ") 
 barplot(rbind(-log10(data$q.value.Bonferroni), -log10(data$p.value) +log10(data$q.value.Bonferroni) ),names=datanames3,horiz=T,las=1)
 abline(v=seq(2,10,2),lty=3,lwd=0.5)
-
 
 
 
@@ -1383,58 +1129,26 @@ axis(1,at=seq(0,18,3))
 abline(v=seq(0,18,3),lty=3,lwd=0.5)
 
 #
-## coding SV
-#data <- read.delim("~/Box Sync/My_CHOP/SV_paper_V2/data_sheets/Function/topgenes_sv_coding_r3_DAVID.txt",sep="\t",as.is=T)
-#data <- data[which(data$Category %in% davidcats),]
-#data <- data[rev(order(data$Benjamini)[1:20]),]
-#barplot(rbind(-log10(data$Benjamini), -log10(data$PValue) +log10(data$Benjamini) ),names=data$Term,horiz=T,las=1)
-## coding BP
-#data <- read.delim("~/Box Sync/My_CHOP/SV_paper_V2/data_sheets/Function/topgenes_bp_coding_r2_DAVID.txt",sep="\t",as.is=T)
-#data <- data[which(data$Category %in% davidcats),]
-#data <- data[rev(order(data$Benjamini)[1:20]),]
-#barplot(rbind(-log10(data$Benjamini), -log10(data$PValue) +log10(data$Benjamini) ),names=data$Term,horiz=T,las=1)
-## coding BP SNP
-#data <- read.delim("~/Box Sync/My_CHOP/SV_paper_V2/data_sheets/Function/topgenes_bp_coding_snp_r3_DAVID.txt",sep="\t",as.is=T)
-#data <- data[which(data$Category %in% davidcats),]
-#data <- data[rev(order(data$Benjamini)[1:20]),]
-#barplot(rbind(-log10(data$Benjamini), -log10(data$PValue) +log10(data$Benjamini) ),names=data$Term,horiz=T,las=1)
-
-## non-coding SV
-#data <- read.delim("~/Box Sync/My_CHOP/SV_paper_V2/data_sheets/Function/topgenes_sv_noncod_r3_DAVID.txt",sep="\t",as.is=T)
-#data <- data[which(data$Category %in% davidcats),]
-#data <- data[rev(order(data$PValue)[1:20]),]
-#barplot(rbind(-log10(data$Benjamini), -log10(data$PValue) +log10(data$Benjamini) ),names=data$Term,horiz=T,las=1)
-## non coding BP
-#data <- read.delim("~/Box Sync/My_CHOP/SV_paper_V2/data_sheets/Function/topgenes_bp_noncod_r3_DAVID.txt",sep="\t",as.is=T)
-#data <- data[which(data$Category %in% davidcats),]
-#data <- data[rev(order(data$Benjamini)[1:20]),]
-#barplot(rbind(-log10(data$Benjamini), -log10(data$PValue) +log10(data$Benjamini) ),names=data$Term,horiz=T,las=1)
-## non coding SNP
-#data <- read.delim("~/Box Sync/My_CHOP/SV_paper_V2/data_sheets/Function/topgenes_bp_noncod_snp_r5_DAVID.txt",sep="\t",as.is=T)
-#data <- data[which(data$Category %in% davidcats),]
-#data <- data[rev(order(data$Benjamini)[1:20]),]
-#barplot(rbind(-log10(data$Benjamini), -log10(data$PValue) +log10(data$Benjamini) ),names=data$Term,horiz=T,las=1)
-
 
 ###### expression and survival analysis 
 library(limma)
- library(edgeR)
+library(corto)
+library(edgeR)
+load("data/MSigDB_v6.1_human.rda",verbose=T)
 
-synapse <- msigDBsymbol$msigdb.v5.2$GO_SYNAPSE
-neurogenesys <-  msigDBsymbol$msigdb.v5.2$GO_NEUROGENESIS
-neuronal<-  msigDBsymbol$msigdb.v5.2$GO_NEURON_PART
-psd <- msigDBsymbol$msigdb.v5.2$GO_POSTSYNAPSE
+synapse <- msigDBsymbol$msigdb.v6.1.symbols.gmt$GO_SYNAPSE
+neurogenesys <-  msigDBsymbol$msigdb.v6.1.symbols.gmt$GO_NEUROGENESIS
+neuronal<-  msigDBsymbol$msigdb.v6.1.symbols.gmt$GO_NEURON_PART
+psd <- msigDBsymbol$msigdb.v6.1.symbols.gmt$GO_POSTSYNAPSE
 
-autism <- read.delim("~/Box Sync/My_CHOP/SV_paper_V2/data_sheets/autism_disorder_genes.txt",as.is=T)[,2]
-#neurob <- c("MYCN","TERT","ATRX","PTPRD","CDKN2A")
-cosmic_genes <- as.character(read.delim(paste("~/Box Sync/My_CHOP/data/metaDNA/somatic_catalogue/cancer_gene_census_v85.csv",sep=""),sep=",")$Gene.Symbol)
-
-#l_expmat.rank <- zrank(l_expmat)
-#r_expmat.rank <- zrank(r_expmat)
-
-
+# autism geneset from toppgene
+autism <- read.delim("data/autism_disorder_genes.txt",as.is=T)[,2]
+# COSMIC cancer gene census
+cosmic_genes <- as.character(read.delim(paste("data/cancer_gene_census_v85.csv",sep=""),sep=",")$Gene.Symbol)
 
 
+## humanExon array differential expression and GSEA
+# Figure 5D-F and supplementary S20
 expmat<-l_expmat
 
 hr <- intersect(highrisk,colnames(l_expmat))
@@ -1471,11 +1185,11 @@ legend("topright",c("COSMIC census","Autism disorders","Neuron/Synapse","other")
 
 ranklist <- -log10(l_fit2$p.value[,1])*sign(l_fc[,1])
 g1 <- gsea(ranklist,autism,method="pareto")
-plot_gsea(g1,vlinelwd=0.3)
+plot_gsea(g1)
 
 ranklist <- -log10(l_fit2$p.value[,1])*sign(l_fc[,1])
 g1 <- gsea(ranklist,unique(c(neuronal,synapse)),method="pareto")
-plot_gsea(g1,vlinelwd=0.3)
+plot_gsea(g1)
 
 
 
@@ -1521,16 +1235,15 @@ legend("topright",c("COSMIC genes","Autism disorders","Neuron/Synapse","other"),
 
 ranklist <- -log10(r_fit2$p.value[,1])*sign(r_fc[,1])
 g1 <- gsea(ranklist,autism,method="pareto")
-plot_gsea(g1,vlinelwd=0.3)
+plot_gsea(g1)
 
 ranklist <- -log10(r_fit2$p.value[,1])*sign(r_fc[,1])
 g1 <- gsea(ranklist,unique(c(neuronal,synapse)),method="pareto")
-plot_gsea(g1,vlinelwd=0.3)
+plot_gsea(g1)
 
 
 
-
-
+## eQTL analysis (supplementary Figure S18)
 
 expmat<-r_expmat
 expmat<-l_expmat
@@ -1576,7 +1289,6 @@ y<- -log10(a[,1])[names(x)]
 plot(x,y,type='o')
 abline(lm(y~x))
 abline(v=1)
-#locator()
 fdr_cut_a <-2.90418
 
 x <- -log10(p.adjust(b[,1]))
@@ -1587,6 +1299,7 @@ abline(lm(y~x))
 abline(v=1)
 #locator()
 fdr_cut_b <-2.997203
+
 
 plot(alog,blog[names(alog)],col="white")
 #text(alog,blog[names(alog)],labels=names(alog),cex=.6,pos=1)
@@ -1610,187 +1323,16 @@ legend("bottomright",c("COSMIC census","Autism disorders","Neuron/Synapse","othe
 text(alog,blog[names(alog)],labels=names(alog),col="black",cex=.7,pos=1)
 
 
-samplelist <- c(HR_NA_snp)
-
-cases <-  intersect(c(sv_summary$SHANK2, sv_summary$DLG2,bp_summary$SHANK2,bp_summary$DLG2, bp_summary_snp$SHANK2, bp_summary_snp$DLG2),samplelist)
-survdat <- data.frame(surv[samplelist],status[samplelist],rep(0,length(samplelist)))
-colnames(survdat) <- c("time","status","group")
-survdat[cases,"group"] <- 1
-kmfunct(survdat,c("blue","red"),c("no SV","SV+"))
-
-survdat <- data.frame(efsurv[samplelist],efstatus[samplelist],rep(0,length(samplelist)))
-colnames(survdat) <- c("time","status","group")
-survdat[cases,"group"] <- 1
-kmfunct(survdat,c("blue","red"),c("no SV","SV+"))
-
-## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## 
-## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## 
-## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## 
-## topgene plots 
-
-bp_cgi_cod_genes <- names(which(sort(unlist(lapply(bp_coding,length)))>2))
-bp_snp_cod_genes <- names(which(sort(unlist(lapply(bp_coding_snp,length)))>3))
-sv_cgi_cod_genes <- names(which(sort(unlist(lapply(sv_coding,length)))>2))
-
-write.table(bp_cgi_cod_genes,row.names=F,quote=F)
-write.table(bp_snp_cod_genes,row.names=F,quote=F)
-write.table(sv_cgi_cod_genes,row.names=F,quote=F)
 
 
-bp_cgi_non_genes <- names(which(sort(unlist(lapply(bp_noncod,length)))>3))
-bp_snp_non_genes <- names(which(sort(unlist(lapply(bp_noncod_snp,length)))>5))
-sv_cgi_non_genes <- names(which(sort(unlist(lapply(sv_noncod,length)))>3))
-
-write.table(bp_cgi_non_genes,row.names=F,quote=F)
-write.table(bp_snp_non_genes,row.names=F,quote=F)
-write.table(sv_cgi_non_genes,row.names=F,quote=F)
-
-
-
-expmat.rank <- zrank(l_expmat.rank)
-mna<- l_mna; na<- l_na; intr <-l_int;lowr <- l_low
-
-expmat.rank <- r_expmat.rank
-mna<- r_mna; na<- r_na; intr <-r_int; lowr <- r_low
-
-
-heatmap.3(expmat.rank[rownames(b),c(mna,na,intr,lowr)],col=bluered(256),Colv=F,Rowv=F,ColSideColors=t(Pheno[,c(mna,na,intr,lowr)]))
-
-samplelist <- c(r_mna,r_na,r_int,r_low)
-samplelist <- c(r_mna,r_na)
-
-res<-list()
-for(g in topgeneslist){
-survdat <- data.frame(surv[samplelist],status[samplelist],expmat.rank[g,samplelist])
-colnames(survdat) <- c("surv","status","variable")
-cph[[g]] <- summary(coxph(Surv(surv,status) ~ variable, data=survdat))
-res[[g]]<- cph[[g]][["logtest"]]
-}
-a<-do.call(rbind,res)
-a[order(a[,1]),]
-## burden plots
-
-breaks_cgi <- breakpoint_finder2(segment_cgi, cutoff=0.304 ,segsize=10000)
-breaks_cgi<- breaks_cgi[which(breaks_cgi$stop -breaks_cgi$start < 20000),]
-breaks_redund_cgi <-  unite(breaks_cgi, newcol, c(chr,start,stop), remove=FALSE,sep=":")$newcol
-breaks_cgi<-breaks_cgi[which(! breaks_redund_cgi %in% names(which(sort(table(breaks_redund_cgi)) >4))),]
-
-breaks_snp <-breakpoint_finder2(segment_snp, cutoff=0.071 ,segsize=5000)
-breaks_snp <- breaks_snp[which(breaks_snp$stop -breaks_snp$start < 100000),]
-breaks_redund_snp <-  unite(breaks_snp, newcol, c(chr,start,stop), remove=FALSE,sep=":")$newcol
-breaks_snp<-breaks_snp[which(! breaks_redund_snp %in% names(which(sort(table(breaks_redund_snp)) >5))),]
-
-cgi_bp_dat <-list(HR_MNA=sort(table(breaks_cgi$sample[breaks_cgi$sample %in% HR_MNA])),
-HR_NA=sort(table(breaks_cgi$sample[breaks_cgi$sample %in% HR_NA])),
-INTR=sort(table(breaks_cgi$sample[breaks_cgi$sample %in% INT])),
-LOWR=sort(table(breaks_cgi$sample[breaks_cgi$sample %in% LOW])))
-
-snp_bp_dat <-list(HR_MNA=sort(table(breaks_snp$sample[breaks_snp$sample %in% HR_MNA_snp])),
-HR_NA=sort(table(breaks_snp$sample[breaks_snp$sample %in% intersect(HR_NA_snp,names(which(age > 548))) ])),
-INTR=sort(table(breaks_snp$sample[breaks_snp$sample %in% INT_snp])),
-LOWR=sort(table(breaks_snp$sample[breaks_snp$sample %in% LOW_snp])))
-
-snp_bp_dat_log <- lapply(snp_bp_dat,function(x) log2(1+x))
-cgi_bp_dat_log <- lapply(cgi_bp_dat,function(x) log2(1+x))
-par(mfrow=c(1,2))
-plot(unlist(cgi_bp_dat_log))
-plot(unlist(snp_bp_dat_log))
-
-
-lapply(snp_bp_dat,mean)
-wilcox.test(snp_bp_dat$HR_MNA,snp_bp_dat$HR_NA)
-lapply(cgi_bp_dat,mean)
-wilcox.test(cgi_bp_dat$HR_MNA,cgi_bp_dat$HR_NA)
-
-
-
-########### SHANK2 vs DLG2
-
-both <- intersect(bp_summary_combined$SHANK2,bp_summary_combined$DLG2)
-dlg2_bp <- setdiff(bp_summary_combined$DLG2,both)
-shank2_bp <- setdiff(bp_summary_combined$SHANK2,both)
-
-
-
-dlg2_bp_rna <- intersect(intersect(dlg2_bp,colnames(r_expmat)),names(which(risk == "high")))
-shank2_bp_rna <-  intersect(intersect(shank2_bp,colnames(r_expmat)),names(which(risk == "high")))
-
-hr <- intersect(highrisk,colnames(r_expmat))
-low <- intersect(intersect(names(which(risk == "low")),mycn_wt),colnames(r_expmat))
-expressed <- intersect(names(which(apply(r_expmat[,hr],1,mean,na.rm=T) > 0.1)),names(which(apply(r_expmat[,low],1,mean,na.rm=T) > 0.1)))
-
-D <- calcNormFactors(r_expmat[expressed,])
-y <- voom(r_expmat[expressed,],plot=TRUE,lib.size=colSums(r_expmat[expressed,])* D)
-expmat <- y$E
-
-
-r_groups <- c(rep(1,length(shank2_bp_rna)),rep(2,length(dlg2_bp_rna)))
-names(r_groups) <-  c(shank2_bp_rna,dlg2_bp_rna)
-
-samples <- as.factor(c(r_groups)  )
-design <- model.matrix(~ -1+samples)
-colnames(design) <- c("shank2","dlg2")
-contrast.matrix <- makeContrasts(shank2-dlg2,levels=design)
-	# Fit a linear model to the data (limma)
-r_fit <- lmFit(expmat[,names(r_groups)], design)
-r_fit2 <- contrasts.fit(r_fit, contrast.matrix)
-r_fit2 <- eBayes(r_fit2)
-r_fdr <- apply(r_fit2$p.value,2,p.adjust,method="fdr")
-colnames(r_fdr) <- c("shank2_dlg2")
-r_fc <- cbind(log2(apply(r_expmat[expressed,shank2_bp_rna],1,mean,na.rm=T)/apply(r_expmat[expressed,dlg2_bp_rna],1,mean,na.rm=T)))
-colnames(r_fc)<-c("shank2_dlg2")
-
-plot(r_fc[,1],-log10(r_fit2$p.value[,1]),pch=19,col=rgb(0, 0, 0, 0.1),frame.plot=FALSE,las=1 )
-genes_tab[intersect(names(which(r_fc[,1] > 2)),names(which(-log10(r_fit2$p.value[,1]) > 3))),]
-genes_tab[intersect(names(which(r_fc[,1] < -2)),names(which(-log10(r_fit2$p.value[,1]) > 3))),]
-
-genes_diff <- intersect(names(which(r_fc[,1] < -2)),names(which(-log10(r_fit2$p.value[,1]) > 3)))
-heatmap.3(expmat[genes_diff,c(shank2_bp_rna,dlg2_bp_rna)],col=bluered(256),Colv=F,Rowv=F)
-
-
-dlg2_bp_huex <- intersect(intersect(dlg2_bp,colnames(l_expmat)),names(which(risk == "high")))
-shank2_bp_huex <-  intersect(intersect(shank2_bp,colnames(l_expmat)),names(which(risk == "high")))
-
-l_groups <- c(rep(1,length(shank2_bp_huex)),rep(2,length(dlg2_bp_huex)))
-names(l_groups) <-  c(shank2_bp_huex,dlg2_bp_huex)
-
-samples <- as.factor(c(l_groups)  )
-design <- model.matrix(~ -1+samples)
-colnames(design) <- c("shank2","dlg2")
-contrast.matrix <- makeContrasts(shank2-dlg2,levels=design)
-	# Fit a linear model to the data (limma)
-l_fit <- lmFit(l_expmat[,names(l_groups)], design)
-l_fit2 <- contrasts.fit(l_fit, contrast.matrix)
-l_fit2 <- eBayes(l_fit2)
-l_fdr <- apply(l_fit2$p.value,2,p.adjust,method="fdr")
-colnames(l_fdr) <- c("shank2_dlg2")
-l_fc <- cbind(apply(l_expmat[,shank2_bp_huex],1,mean,na.rm=T) - apply(l_expmat[,dlg2_bp_huex],1,mean,na.rm=T))
-colnames(l_fc)<-c("shank2_dlg2")
-
-
-plot(l_fc[,1],-log10(l_fit2$p.value[,1]),pch=19,col=rgb(0, 0, 0, 0.1),xlim=c(-2,2),frame.plot=FALSE,las=1  )
-
-genes_tab[intersect(names(which(l_fc[,1] > 1)),names(which(-log10(l_fit2$p.value[,1]) > 3))),]
-genes_tab[intersect(names(which(l_fc[,1] < -1)),names(which(-log10(l_fit2$p.value[,1]) > 3))),]
-
-common_genes <- intersect(rownames(l_fc),rownames(r_fc))
-
-a<- -log10(l_fit2$p.value[common_genes,1])*sign(l_fc[common_genes,1])
-
-b<- -log10(r_fit2$p.value[common_genes,1])*sign(r_fc[common_genes,1])
-
-plot(a,b,cex=.1)
-hits <- intersect(names(which(a< -3)),names(which(b< -3)))
-text(a[hits],b[hits],labels=hits)
-
-genes_tab[hits,]
-
-
-#### Km plots based on expressio
-
-seqc_survival <- read.delim("~/Box Sync/My_CHOP/rdata/SEQC/seqc_survival_clinical.txt",row.names=1,as.is=TRUE)
-s_expmat <- as.matrix(read.delim("~/Box Sync/My_CHOP/rdata/SEQC/GSE62564_SEQC_NB_RNA-Seq_log2RPM.txt",row.names=1,as.is=TRUE))
+#### Km plots based on expressio Supplementary Figure S22 DE
+source("R/my_survival.r")
+seqc_survival <- read.delim("data/seqc_survival_clinical.txt",row.names=1,as.is=TRUE)
+seqc_expmat <- fread("data/GSE62564_SEQC_NB_RNA-Seq_log2RPM.txt.gz",header = TRUE,data.table = FALSE)
+s_expmat <- as.matrix(seqc_expmat[2:ncol(seqc_expmat)])
+rownames(s_expmat) <- seqc_expmat$RefSeqID
 colnames(s_expmat) <- substr(colnames(s_expmat) ,6,12)
+
 s_surv <- seqc_survival$OS_d
 s_event <- seqc_survival$OS_bin
 s_stage <- seqc_survival$INSS
@@ -1801,16 +1343,13 @@ s_mycna[which(seqc_survival$MYCN == "MNA")] <- 1
 s_age <- seqc_survival$age
 names(s_surv) <- names(s_event) <- names(s_risk)<-names(s_stage) <-names(s_mycna)<-names(s_age)<-rownames(seqc_survival)
 s_expmat <- 2^s_expmat
-s_expmat.rank <- zrank(s_expmat)
 
-shank_long <- s_expmat.rank["NM_012309",]
-
-function(x,surv,event,varname=NULL,main=""){
-
-km_r2(s_expmat["NM_012309",names(which(s_risk != "HR" ))],s_surv,s_event,varname=NULL,main="")
-km_r2(s_expmat["NM_012309",names(which(s_risk == "HR" ))],s_surv,s_event,varname=NULL,main="")
+# S22D
 km_r2(s_expmat["NM_012309",],s_surv,s_event,varname=NULL,main="")
+# S22E
+km_r2(s_expmat["NM_012309",names(which(s_risk != "HR" ))],s_surv,s_event,varname=NULL,main="")
 
 
 
+#  #  # END
 

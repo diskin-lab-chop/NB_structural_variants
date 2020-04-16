@@ -1,0 +1,587 @@
+Category	ID	Name	Source	p-value	q-value Bonferroni	q-value FDR B&H	q-value FDR B&Y	Hit Count in Query List	Hit Count in Genome	Hit in Query List
+GO: Molecular Function	GO:0001067	regulatory region nucleic acid binding	 	5.717E-7	1.864E-4	5.391E-5	3.432E-4	15	1036	JARID2,RB1,MBNL1,DACH1,ZNF521,ETV6,ELF1,CHD2,PAX5,EBF1,RUNX1,PBX1,PBX3,JMJD1C,MEF2C
+GO: Molecular Function	GO:0000976	transcription regulatory region sequence-specific DNA binding	 	6.095E-7	1.987E-4	5.391E-5	3.432E-4	14	898	JARID2,RB1,DACH1,ZNF521,ETV6,ELF1,CHD2,PAX5,EBF1,RUNX1,PBX1,PBX3,JMJD1C,MEF2C
+GO: Molecular Function	GO:0043565	sequence-specific DNA binding	 	6.580E-7	2.145E-4	5.391E-5	3.432E-4	16	1199	JARID2,RB1,DACH1,ZNF521,ETV6,ELF1,CHD2,NR3C2,PAX5,EBF1,RUNX1,PBX1,PBX3,JMJD1C,ZEB2,MEF2C
+GO: Molecular Function	GO:0003690	double-stranded DNA binding	 	6.615E-7	2.157E-4	5.391E-5	3.432E-4	15	1048	JARID2,RB1,DACH1,ZNF521,ETV6,ELF1,CHD2,NR3C2,PAX5,EBF1,RUNX1,PBX1,PBX3,JMJD1C,MEF2C
+GO: Molecular Function	GO:1990837	sequence-specific double-stranded DNA binding	 	1.163E-6	3.790E-4	7.580E-5	4.825E-4	14	948	JARID2,RB1,DACH1,ZNF521,ETV6,ELF1,CHD2,PAX5,EBF1,RUNX1,PBX1,PBX3,JMJD1C,MEF2C
+GO: Molecular Function	GO:0001012	RNA polymerase II regulatory region DNA binding	 	2.353E-6	7.672E-4	1.279E-4	8.139E-4	13	861	JARID2,RB1,DACH1,ZNF521,ETV6,ELF1,CHD2,PAX5,EBF1,RUNX1,PBX1,PBX3,MEF2C
+GO: Molecular Function	GO:0044212	transcription regulatory region DNA binding	 	3.117E-6	1.016E-3	1.452E-4	9.241E-4	14	1031	JARID2,RB1,DACH1,ZNF521,ETV6,ELF1,CHD2,PAX5,EBF1,RUNX1,PBX1,PBX3,JMJD1C,MEF2C
+GO: Molecular Function	GO:0000977	RNA polymerase II regulatory region sequence-specific DNA binding	 	1.251E-5	4.077E-3	5.096E-4	3.244E-3	12	853	JARID2,DACH1,ZNF521,ETV6,ELF1,CHD2,PAX5,EBF1,RUNX1,PBX1,PBX3,MEF2C
+GO: Molecular Function	GO:0000987	proximal promoter sequence-specific DNA binding	 	1.591E-5	5.186E-3	5.762E-4	3.668E-3	10	594	RB1,DACH1,ETV6,ELF1,CHD2,PAX5,EBF1,RUNX1,PBX1,MEF2C
+GO: Molecular Function	GO:0001228	DNA-binding transcription activator activity, RNA polymerase II-specific	 	1.998E-5	6.514E-3	6.019E-4	3.832E-3	9	483	ETV6,ELF1,PAX5,EBF1,RUNX1,PBX1,PBX3,ZEB2,MEF2C
+GO: Molecular Function	GO:0001216	DNA-binding transcription activator activity	 	2.031E-5	6.621E-3	6.019E-4	3.832E-3	9	484	ETV6,ELF1,PAX5,EBF1,RUNX1,PBX1,PBX3,ZEB2,MEF2C
+GO: Molecular Function	GO:0000978	RNA polymerase II proximal promoter sequence-specific DNA binding	 	8.275E-5	2.698E-2	2.248E-3	1.431E-2	9	580	DACH1,ETV6,ELF1,CHD2,PAX5,EBF1,RUNX1,PBX1,MEF2C
+GO: Molecular Function	GO:0000981	DNA-binding transcription factor activity, RNA polymerase II-specific	 	1.170E-4	3.815E-2	2.934E-3	1.868E-2	15	1614	JARID2,BNC2,DACH1,ZNF521,ETV6,MLLT3,ELF1,NR3C2,PAX5,EBF1,RUNX1,PBX1,PBX3,ZEB2,MEF2C
+GO: Molecular Function	GO:0098919	structural constituent of postsynaptic density	 	3.508E-4	1.144E-1	8.169E-3	5.200E-2	2	9	MAGI2,DLG2
+GO: Molecular Function	GO:0004972	NMDA glutamate receptor activity	 	4.176E-4	1.361E-1	8.917E-3	5.676E-2	3	46	NRXN1,DLG2,MEF2C
+GO: Molecular Function	GO:0098879	structural constituent of postsynaptic specialization	 	4.376E-4	1.427E-1	8.917E-3	5.676E-2	2	10	MAGI2,DLG2
+GO: Molecular Function	GO:0004970	ionotropic glutamate receptor activity	 	1.808E-3	5.893E-1	3.467E-2	2.207E-1	3	76	NRXN1,DLG2,MEF2C
+GO: Molecular Function	GO:0008324	cation transmembrane transporter activity	 	1.973E-3	6.433E-1	3.574E-2	2.275E-1	9	898	NRXN1,HECW2,DLG2,KCNIP4,PRKG1,DMD,ATP2B1,MEF2C,SLC25A45
+GO: Molecular Function	GO:0008066	glutamate receptor activity	 	2.407E-3	7.845E-1	4.129E-2	2.628E-1	3	84	NRXN1,DLG2,MEF2C
+GO: Molecular Function	GO:0005244	voltage-gated ion channel activity	 	2.751E-3	8.967E-1	4.331E-2	2.757E-1	5	304	NRXN1,DLG2,KCNIP4,DMD,MEF2C
+GO: Molecular Function	GO:0022832	voltage-gated channel activity	 	2.790E-3	9.095E-1	4.331E-2	2.757E-1	5	305	NRXN1,DLG2,KCNIP4,DMD,MEF2C
+GO: Molecular Function	GO:0016595	glutamate binding	 	3.115E-3	1.000E0	4.507E-2	2.869E-1	3	92	NRXN1,DLG2,MEF2C
+GO: Molecular Function	GO:0017061	S-methyl-5-thioadenosine phosphorylase activity	 	3.180E-3	1.000E0	4.507E-2	2.869E-1	1	1	MTAP
+GO: Molecular Function	GO:0032452	histone demethylase activity	 	3.798E-3	1.000E0	4.729E-2	3.010E-1	2	29	JARID2,JMJD1C
+GO: Molecular Function	GO:0099094	ligand-gated cation channel activity	 	3.857E-3	1.000E0	4.729E-2	3.010E-1	4	202	NRXN1,DLG2,DMD,MEF2C
+GO: Molecular Function	GO:0022839	ion gated channel activity	 	3.986E-3	1.000E0	4.729E-2	3.010E-1	6	478	NRXN1,DLG2,KCNIP4,PRKG1,DMD,MEF2C
+GO: Molecular Function	GO:0004971	AMPA glutamate receptor activity	 	4.061E-3	1.000E0	4.729E-2	3.010E-1	2	30	NRXN1,MEF2C
+GO: Molecular Function	GO:0098918	structural constituent of synapse	 	4.061E-3	1.000E0	4.729E-2	3.010E-1	2	30	MAGI2,DLG2
+GO: Biological Process	GO:0030182	neuron differentiation	 	1.352E-8	3.318E-5	3.318E-5	2.782E-4	20	1579	MAGI2,NF1,PTPRD,NRXN1,DSCAM,RB1,HECW2,CNTNAP2,CD44,ZNF521,AUTS2,DLG2,PAX5,PRKG1,DMD,RUNX1,PBX1,PBX3,ZEB2,MEF2C
+GO: Biological Process	GO:0022008	neurogenesis	 	4.145E-8	1.017E-4	5.086E-5	4.264E-4	21	1867	MAGI2,NF1,PTPRD,NRXN1,DSCAM,RB1,HECW2,CNTNAP2,CD44,ZNF521,AUTS2,ETV6,DLG2,PAX5,PRKG1,DMD,RUNX1,PBX1,PBX3,ZEB2,MEF2C
+GO: Biological Process	GO:0048699	generation of neurons	 	7.697E-8	1.889E-4	6.296E-5	5.278E-4	20	1752	MAGI2,NF1,PTPRD,NRXN1,DSCAM,RB1,HECW2,CNTNAP2,CD44,ZNF521,AUTS2,DLG2,PAX5,PRKG1,DMD,RUNX1,PBX1,PBX3,ZEB2,MEF2C
+GO: Biological Process	GO:0007519	skeletal muscle tissue development	 	1.249E-7	3.065E-4	6.879E-5	5.767E-4	8	198	FLNB,NF1,RB1,MBNL1,RBFOX1,PAX5,DMD,MEF2C
+GO: Biological Process	GO:0048666	neuron development	 	1.402E-7	3.440E-4	6.879E-5	5.767E-4	17	1298	MAGI2,NF1,PTPRD,NRXN1,DSCAM,RB1,HECW2,CNTNAP2,CD44,AUTS2,DLG2,PRKG1,DMD,RUNX1,PBX3,ZEB2,MEF2C
+GO: Biological Process	GO:0060538	skeletal muscle organ development	 	1.891E-7	4.640E-4	7.733E-5	6.483E-4	8	209	FLNB,NF1,RB1,MBNL1,RBFOX1,PAX5,DMD,MEF2C
+GO: Biological Process	GO:0014706	striated muscle tissue development	 	1.197E-6	2.938E-3	4.198E-4	3.519E-3	10	472	JARID2,FLNB,NF1,RB1,MBNL1,RBFOX1,PAX5,PRKG1,DMD,MEF2C
+GO: Biological Process	GO:0007517	muscle organ development	 	1.393E-6	3.419E-3	4.273E-4	3.582E-3	10	480	JARID2,FLNB,NF1,RB1,MBNL1,RBFOX1,CHD2,PAX5,DMD,MEF2C
+GO: Biological Process	GO:0060537	muscle tissue development	 	1.803E-6	4.426E-3	4.917E-4	4.122E-3	10	494	JARID2,FLNB,NF1,RB1,MBNL1,RBFOX1,PAX5,PRKG1,DMD,MEF2C
+GO: Biological Process	GO:0098597	observational learning	 	2.083E-6	5.112E-3	5.112E-4	4.286E-3	3	9	NF1,NRXN1,CNTNAP2
+GO: Biological Process	GO:0031175	neuron projection development	 	5.336E-6	1.309E-2	1.190E-3	9.979E-3	14	1151	MAGI2,NF1,PTPRD,NRXN1,DSCAM,RB1,HECW2,CNTNAP2,CD44,AUTS2,PRKG1,DMD,ZEB2,MEF2C
+GO: Biological Process	GO:0097106	postsynaptic density organization	 	8.828E-6	2.166E-2	1.805E-3	1.513E-2	4	44	MAGI2,PTPRD,NRXN1,DLG2
+GO: Biological Process	GO:0099084	postsynaptic specialization organization	 	1.478E-5	3.627E-2	2.790E-3	2.339E-2	4	50	MAGI2,PTPRD,NRXN1,DLG2
+GO: Biological Process	GO:0061061	muscle structure development	 	1.653E-5	4.057E-2	2.898E-3	2.429E-2	11	780	JARID2,FLNB,NF1,RB1,MBNL1,RBFOX1,CHD2,PAX5,PRKG1,DMD,MEF2C
+GO: Biological Process	GO:0120035	regulation of plasma membrane bounded cell projection organization	 	2.684E-5	6.588E-2	4.153E-3	3.481E-2	11	822	MAGI2,NF1,PTPRD,NRXN1,DSCAM,HECW2,CD44,AUTS2,DMD,ZEB2,MEF2C
+GO: Biological Process	GO:0042551	neuron maturation	 	2.863E-5	7.025E-2	4.153E-3	3.481E-2	4	59	NRXN1,RB1,CNTNAP2,DLG2
+GO: Biological Process	GO:0031344	regulation of cell projection organization	 	3.000E-5	7.361E-2	4.153E-3	3.481E-2	11	832	MAGI2,NF1,PTPRD,NRXN1,DSCAM,HECW2,CD44,AUTS2,DMD,ZEB2,MEF2C
+GO: Biological Process	GO:0007416	synapse assembly	 	3.095E-5	7.596E-2	4.153E-3	3.481E-2	6	203	MAGI2,PTPRD,NRXN1,DSCAM,LINGO2,MEF2C
+GO: Biological Process	GO:0071625	vocalization behavior	 	3.216E-5	7.891E-2	4.153E-3	3.481E-2	3	21	NRXN1,CNTNAP2,AUTS2
+GO: Biological Process	GO:0044057	regulation of system process	 	5.187E-5	1.273E-1	6.093E-3	5.108E-2	10	727	JARID2,NRXN1,CELF2,KCNIP4,PRKG1,DMD,RUNX1,PBX3,ATP2B1,MEF2C
+GO: Biological Process	GO:0097118	neuroligin clustering involved in postsynaptic membrane assembly	 	5.214E-5	1.280E-1	6.093E-3	5.108E-2	2	4	MAGI2,NRXN1
+GO: Biological Process	GO:0007610	behavior	 	5.950E-5	1.460E-1	6.637E-3	5.564E-2	10	739	NF1,NRXN1,DSCAM,CNTNAP2,DACH1,AUTS2,PAX5,RUNX1,PBX3,MEF2C
+GO: Biological Process	GO:0050855	regulation of B cell receptor signaling pathway	 	8.686E-5	2.131E-1	9.244E-3	7.749E-2	3	29	ELF1,PAX5,RUNX1
+GO: Biological Process	GO:0031060	regulation of histone methylation	 	9.040E-5	2.219E-1	9.244E-3	7.749E-2	4	79	JARID2,AUTS2,PAX5,KMT2E
+GO: Biological Process	GO:0035914	skeletal muscle cell differentiation	 	9.966E-5	2.446E-1	9.783E-3	8.201E-2	4	81	RB1,RBFOX1,PAX5,MEF2C
+GO: Biological Process	GO:0099560	synaptic membrane adhesion	 	1.064E-4	2.611E-1	1.004E-2	8.418E-2	3	31	MAGI2,PTPRD,NRXN1
+GO: Biological Process	GO:0051962	positive regulation of nervous system development	 	1.431E-4	3.511E-1	1.300E-2	1.090E-1	9	664	MAGI2,NF1,PTPRD,NRXN1,DSCAM,LINGO2,DMD,ZEB2,MEF2C
+GO: Biological Process	GO:0000902	cell morphogenesis	 	1.563E-4	3.836E-1	1.370E-2	1.148E-1	12	1179	FLNB,PTPRD,NRXN1,DSCAM,RB1,HECW2,CNTNAP2,CD44,AUTS2,JMJD1C,ZEB2,MEF2C
+GO: Biological Process	GO:1904062	regulation of cation transmembrane transport	 	1.642E-4	4.030E-1	1.390E-2	1.165E-1	7	394	NRXN1,HECW2,DLG2,KCNIP4,PRKG1,DMD,MEF2C
+GO: Biological Process	GO:0042297	vocal learning	 	1.814E-4	4.453E-1	1.436E-2	1.204E-1	2	7	NRXN1,CNTNAP2
+GO: Biological Process	GO:0098596	imitative learning	 	1.814E-4	4.453E-1	1.436E-2	1.204E-1	2	7	NRXN1,CNTNAP2
+GO: Biological Process	GO:0048863	stem cell differentiation	 	1.895E-4	4.650E-1	1.453E-2	1.218E-1	6	282	JARID2,CHD2,LTBP3,RUNX1,ZEB2,MEF2C
+GO: Biological Process	GO:0099068	postsynapse assembly	 	2.294E-4	5.631E-1	1.685E-2	1.413E-1	3	40	MAGI2,PTPRD,NRXN1
+GO: Biological Process	GO:0000904	cell morphogenesis involved in differentiation	 	2.335E-4	5.731E-1	1.685E-2	1.413E-1	10	873	FLNB,PTPRD,NRXN1,DSCAM,RB1,HECW2,AUTS2,JMJD1C,ZEB2,MEF2C
+GO: Biological Process	GO:0032412	regulation of ion transmembrane transporter activity	 	2.460E-4	6.037E-1	1.725E-2	1.446E-1	6	296	NRXN1,HECW2,DLG2,PRKG1,DMD,MEF2C
+GO: Biological Process	GO:0022898	regulation of transmembrane transporter activity	 	2.838E-4	6.965E-1	1.889E-2	1.583E-1	6	304	NRXN1,HECW2,DLG2,PRKG1,DMD,MEF2C
+GO: Biological Process	GO:2000310	regulation of NMDA receptor activity	 	2.848E-4	6.988E-1	1.889E-2	1.583E-1	3	43	NRXN1,DLG2,MEF2C
+GO: Biological Process	GO:0033034	positive regulation of myeloid cell apoptotic process	 	3.099E-4	7.604E-1	2.001E-2	1.677E-1	2	9	CD44,MEF2C
+GO: Biological Process	GO:0051960	regulation of nervous system development	 	3.241E-4	7.953E-1	2.020E-2	1.693E-1	11	1088	MAGI2,NF1,PTPRD,NRXN1,DSCAM,HECW2,LINGO2,DMD,PBX1,ZEB2,MEF2C
+GO: Biological Process	GO:0071695	anatomical structure maturation	 	3.292E-4	8.078E-1	2.020E-2	1.693E-1	5	201	NF1,NRXN1,RB1,CNTNAP2,DLG2
+GO: Biological Process	GO:2001257	regulation of cation channel activity	 	3.445E-4	8.454E-1	2.034E-2	1.705E-1	5	203	NRXN1,DLG2,PRKG1,DMD,MEF2C
+GO: Biological Process	GO:0031062	positive regulation of histone methylation	 	3.481E-4	8.542E-1	2.034E-2	1.705E-1	3	46	JARID2,AUTS2,KMT2E
+GO: Biological Process	GO:0032409	regulation of transporter activity	 	3.731E-4	9.157E-1	2.102E-2	1.762E-1	6	320	NRXN1,HECW2,DLG2,PRKG1,DMD,MEF2C
+GO: Biological Process	GO:0032989	cellular component morphogenesis	 	3.769E-4	9.248E-1	2.102E-2	1.762E-1	12	1297	FLNB,PTPRD,NRXN1,DSCAM,RB1,HECW2,CNTNAP2,CD44,AUTS2,JMJD1C,ZEB2,MEF2C
+GO: Biological Process	GO:0048469	cell maturation	 	3.937E-4	9.661E-1	2.106E-2	1.765E-1	5	209	NRXN1,RB1,CNTNAP2,DLG2,RUNX1
+GO: Biological Process	GO:0002520	immune system development	 	4.373E-4	1.000E0	2.106E-2	1.765E-1	11	1127	PMS2P5,JARID2,NF1,RB1,CD44,ETV6,CHD2,RUNX1,PBX1,KMT2E,MEF2C
+GO: Biological Process	GO:0007417	central nervous system development	 	4.439E-4	1.000E0	2.106E-2	1.765E-1	11	1129	JARID2,NF1,NRXN1,CNTNAP2,MACROD2,PAX5,PRKG1,RUNX1,PBX3,ATP2B1,ZEB2
+GO: Biological Process	GO:0010975	regulation of neuron projection development	 	4.504E-4	1.000E0	2.106E-2	1.765E-1	8	614	MAGI2,NF1,PTPRD,DSCAM,HECW2,DMD,ZEB2,MEF2C
+GO: Biological Process	GO:0021700	developmental maturation	 	4.608E-4	1.000E0	2.106E-2	1.765E-1	6	333	NF1,NRXN1,RB1,CNTNAP2,DLG2,RUNX1
+GO: Biological Process	GO:1903508	positive regulation of nucleic acid-templated transcription	 	4.647E-4	1.000E0	2.106E-2	1.765E-1	14	1736	NRBF2,RB1,AUTS2,ETV6,MLLT3,ELF1,PAX5,EBF1,RUNX1,PBX1,KMT2E,PBX3,ZEB2,MEF2C
+GO: Biological Process	GO:1902680	positive regulation of RNA biosynthetic process	 	4.675E-4	1.000E0	2.106E-2	1.765E-1	14	1737	NRBF2,RB1,AUTS2,ETV6,MLLT3,ELF1,PAX5,EBF1,RUNX1,PBX1,KMT2E,PBX3,ZEB2,MEF2C
+GO: Biological Process	GO:0098598	learned vocalization behavior or vocal learning	 	4.716E-4	1.000E0	2.106E-2	1.765E-1	2	11	NRXN1,CNTNAP2
+GO: Biological Process	GO:0097105	presynaptic membrane assembly	 	4.716E-4	1.000E0	2.106E-2	1.765E-1	2	11	PTPRD,NRXN1
+GO: Biological Process	GO:0099562	maintenance of postsynaptic density structure	 	4.716E-4	1.000E0	2.106E-2	1.765E-1	2	11	MAGI2,DLG2
+GO: Biological Process	GO:0072009	nephron epithelium development	 	4.805E-4	1.000E0	2.106E-2	1.765E-1	4	122	MAGI2,CD44,PBX1,MEF2C
+GO: Biological Process	GO:0051963	regulation of synapse assembly	 	4.805E-4	1.000E0	2.106E-2	1.765E-1	4	122	PTPRD,NRXN1,LINGO2,MEF2C
+GO: Biological Process	GO:0045666	positive regulation of neuron differentiation	 	5.089E-4	1.000E0	2.190E-2	1.836E-1	7	475	MAGI2,NF1,PTPRD,DSCAM,DMD,ZEB2,MEF2C
+GO: Biological Process	GO:0045664	regulation of neuron differentiation	 	5.247E-4	1.000E0	2.190E-2	1.836E-1	9	792	MAGI2,NF1,PTPRD,DSCAM,HECW2,DMD,PBX1,ZEB2,MEF2C
+GO: Biological Process	GO:0034968	histone lysine methylation	 	5.266E-4	1.000E0	2.190E-2	1.836E-1	4	125	JARID2,AUTS2,PAX5,KMT2E
+GO: Biological Process	GO:0031346	positive regulation of cell projection organization	 	5.415E-4	1.000E0	2.190E-2	1.836E-1	7	480	MAGI2,NF1,PTPRD,DSCAM,AUTS2,DMD,ZEB2
+GO: Biological Process	GO:0051130	positive regulation of cellular component organization	 	5.444E-4	1.000E0	2.190E-2	1.836E-1	12	1351	MAGI2,JARID2,NF1,PTPRD,NRXN1,DSCAM,RB1,AUTS2,LINGO2,DMD,KMT2E,ZEB2
+GO: Biological Process	GO:0097104	postsynaptic membrane assembly	 	5.648E-4	1.000E0	2.236E-2	1.874E-1	2	12	MAGI2,NRXN1
+GO: Biological Process	GO:0050853	B cell receptor signaling pathway	 	5.930E-4	1.000E0	2.310E-2	1.936E-1	4	129	ELF1,PAX5,RUNX1,MEF2C
+GO: Biological Process	GO:0120036	plasma membrane bounded cell projection organization	 	6.324E-4	1.000E0	2.425E-2	2.033E-1	14	1790	MAGI2,NF1,PTPRD,NRXN1,DSCAM,RB1,HECW2,CNTNAP2,CD44,AUTS2,PRKG1,DMD,ZEB2,MEF2C
+GO: Biological Process	GO:0040007	growth	 	6.522E-4	1.000E0	2.462E-2	2.064E-1	11	1182	MAGI2,JARID2,BNC2,DSCAM,RB1,CD44,AUTS2,PRKG1,SIK3,ZEB2,MEF2C
+GO: Biological Process	GO:0050808	synapse organization	 	6.733E-4	1.000E0	2.503E-2	2.099E-1	7	498	MAGI2,PTPRD,NRXN1,DSCAM,DLG2,LINGO2,MEF2C
+GO: Biological Process	GO:0048589	developmental growth	 	6.852E-4	1.000E0	2.510E-2	2.104E-1	9	822	MAGI2,JARID2,BNC2,DSCAM,AUTS2,PRKG1,SIK3,ZEB2,MEF2C
+GO: Biological Process	GO:0099151	regulation of postsynaptic density assembly	 	7.758E-4	1.000E0	2.671E-2	2.239E-1	2	14	PTPRD,NRXN1
+GO: Biological Process	GO:0097090	presynaptic membrane organization	 	7.758E-4	1.000E0	2.671E-2	2.239E-1	2	14	PTPRD,NRXN1
+GO: Biological Process	GO:0031223	auditory behavior	 	7.758E-4	1.000E0	2.671E-2	2.239E-1	2	14	NRXN1,CNTNAP2
+GO: Biological Process	GO:0030030	cell projection organization	 	7.793E-4	1.000E0	2.671E-2	2.239E-1	14	1828	MAGI2,NF1,PTPRD,NRXN1,DSCAM,RB1,HECW2,CNTNAP2,CD44,AUTS2,PRKG1,DMD,ZEB2,MEF2C
+GO: Biological Process	GO:0051254	positive regulation of RNA metabolic process	 	7.835E-4	1.000E0	2.671E-2	2.239E-1	14	1829	NRBF2,RB1,AUTS2,ETV6,MLLT3,ELF1,PAX5,EBF1,RUNX1,PBX1,KMT2E,PBX3,ZEB2,MEF2C
+GO: Biological Process	GO:0018022	peptidyl-lysine methylation	 	8.059E-4	1.000E0	2.691E-2	2.256E-1	4	140	JARID2,AUTS2,PAX5,KMT2E
+GO: Biological Process	GO:0010976	positive regulation of neuron projection development	 	8.114E-4	1.000E0	2.691E-2	2.256E-1	6	371	MAGI2,NF1,PTPRD,DSCAM,DMD,ZEB2
+GO: Biological Process	GO:0051094	positive regulation of developmental process	 	8.711E-4	1.000E0	2.850E-2	2.389E-1	13	1633	MAGI2,NF1,PTPRD,NRXN1,DSCAM,RB1,LINGO2,LTBP3,DMD,RUNX1,ATP2B1,ZEB2,MEF2C
+GO: Biological Process	GO:0045161	neuronal ion channel clustering	 	8.934E-4	1.000E0	2.885E-2	2.418E-1	2	15	CNTNAP2,DLG2
+GO: Biological Process	GO:0072089	stem cell proliferation	 	9.185E-4	1.000E0	2.893E-2	2.425E-1	4	145	NF1,ETV6,LTBP3,RUNX1
+GO: Biological Process	GO:0010720	positive regulation of cell development	 	9.302E-4	1.000E0	2.893E-2	2.425E-1	8	686	MAGI2,NF1,PTPRD,DSCAM,DMD,RUNX1,ZEB2,MEF2C
+GO: Biological Process	GO:0008285	negative regulation of cell population proliferation	 	9.365E-4	1.000E0	2.893E-2	2.425E-1	9	859	MAGI2,JARID2,NF1,RB1,CD44,DACH1,PRKG1,RUNX1,MEF2C
+GO: Biological Process	GO:0045893	positive regulation of transcription, DNA-templated	 	9.431E-4	1.000E0	2.893E-2	2.425E-1	13	1647	RB1,AUTS2,ETV6,MLLT3,ELF1,PAX5,EBF1,RUNX1,PBX1,KMT2E,PBX3,ZEB2,MEF2C
+GO: Biological Process	GO:0048667	cell morphogenesis involved in neuron differentiation	 	9.567E-4	1.000E0	2.898E-2	2.430E-1	8	689	PTPRD,NRXN1,DSCAM,RB1,HECW2,AUTS2,ZEB2,MEF2C
+GO: Biological Process	GO:0033044	regulation of chromosome organization	 	9.697E-4	1.000E0	2.902E-2	2.433E-1	6	384	JARID2,RB1,HECW2,AUTS2,PAX5,KMT2E
+GO: Biological Process	GO:0098880	maintenance of postsynaptic specialization structure	 	1.019E-3	1.000E0	3.013E-2	2.526E-1	2	16	MAGI2,DLG2
+GO: Biological Process	GO:0000381	regulation of alternative mRNA splicing, via spliceosome	 	1.051E-3	1.000E0	3.070E-2	2.573E-1	3	67	CELF2,MBNL1,RBFOX1
+GO: Biological Process	GO:0034765	regulation of ion transmembrane transport	 	1.069E-3	1.000E0	3.087E-2	2.587E-1	7	539	NRXN1,HECW2,DLG2,KCNIP4,PRKG1,DMD,MEF2C
+GO: Biological Process	GO:0048534	hematopoietic or lymphoid organ development	 	1.105E-3	1.000E0	3.109E-2	2.606E-1	10	1065	JARID2,NF1,RB1,CD44,ETV6,CHD2,RUNX1,PBX1,KMT2E,MEF2C
+GO: Biological Process	GO:0043113	receptor clustering	 	1.144E-3	1.000E0	3.109E-2	2.606E-1	3	69	MAGI2,NRXN1,DLG2
+GO: Biological Process	GO:0016571	histone methylation	 	1.148E-3	1.000E0	3.109E-2	2.606E-1	4	154	JARID2,AUTS2,PAX5,KMT2E
+GO: Biological Process	GO:0051571	positive regulation of histone H3-K4 methylation	 	1.153E-3	1.000E0	3.109E-2	2.606E-1	2	17	AUTS2,KMT2E
+GO: Biological Process	GO:0007638	mechanosensory behavior	 	1.153E-3	1.000E0	3.109E-2	2.606E-1	2	17	NRXN1,CNTNAP2
+GO: Biological Process	GO:1904889	regulation of excitatory synapse assembly	 	1.153E-3	1.000E0	3.109E-2	2.606E-1	2	17	PTPRD,NRXN1
+GO: Biological Process	GO:0050854	regulation of antigen receptor-mediated signaling pathway	 	1.193E-3	1.000E0	3.148E-2	2.639E-1	3	70	ELF1,PAX5,RUNX1
+GO: Biological Process	GO:0042278	purine nucleoside metabolic process	 	1.193E-3	1.000E0	3.148E-2	2.639E-1	3	70	MTAP,MACROD2,DLG2
+GO: Biological Process	GO:0072073	kidney epithelium development	 	1.233E-3	1.000E0	3.178E-2	2.664E-1	4	157	MAGI2,CD44,PBX1,MEF2C
+GO: Biological Process	GO:0097120	receptor localization to synapse	 	1.243E-3	1.000E0	3.178E-2	2.664E-1	3	71	MAGI2,NRXN1,DLG2
+GO: Biological Process	GO:1900449	regulation of glutamate receptor signaling pathway	 	1.243E-3	1.000E0	3.178E-2	2.664E-1	3	71	NRXN1,DLG2,MEF2C
+GO: Biological Process	GO:0050807	regulation of synapse organization	 	1.268E-3	1.000E0	3.208E-2	2.689E-1	5	271	MAGI2,PTPRD,NRXN1,LINGO2,MEF2C
+GO: Biological Process	GO:0150052	regulation of postsynapse assembly	 	1.294E-3	1.000E0	3.208E-2	2.690E-1	2	18	PTPRD,NRXN1
+GO: Biological Process	GO:0099150	regulation of postsynaptic specialization assembly	 	1.294E-3	1.000E0	3.208E-2	2.690E-1	2	18	PTPRD,NRXN1
+GO: Biological Process	GO:0072006	nephron development	 	1.384E-3	1.000E0	3.394E-2	2.845E-1	4	162	MAGI2,CD44,PBX1,MEF2C
+GO: Biological Process	GO:0008016	regulation of heart contraction	 	1.397E-3	1.000E0	3.394E-2	2.845E-1	5	277	CELF2,KCNIP4,PRKG1,DMD,ATP2B1
+GO: Biological Process	GO:0035020	regulation of Rac protein signal transduction	 	1.444E-3	1.000E0	3.474E-2	2.912E-1	2	19	NF1,AUTS2
+GO: Biological Process	GO:0050803	regulation of synapse structure or activity	 	1.511E-3	1.000E0	3.601E-2	3.019E-1	5	282	MAGI2,PTPRD,NRXN1,LINGO2,MEF2C
+GO: Biological Process	GO:0045637	regulation of myeloid cell differentiation	 	1.535E-3	1.000E0	3.622E-2	3.036E-1	5	283	NF1,RB1,RUNX1,KMT2E,MEF2C
+GO: Biological Process	GO:0045944	positive regulation of transcription by RNA polymerase II	 	1.558E-3	1.000E0	3.637E-2	3.049E-1	11	1315	RB1,AUTS2,ETV6,ELF1,PAX5,EBF1,RUNX1,PBX1,PBX3,ZEB2,MEF2C
+GO: Biological Process	GO:0051965	positive regulation of synapse assembly	 	1.571E-3	1.000E0	3.637E-2	3.049E-1	3	77	PTPRD,NRXN1,LINGO2
+GO: Biological Process	GO:0097091	synaptic vesicle clustering	 	1.601E-3	1.000E0	3.638E-2	3.050E-1	2	20	MAGI2,NRXN1
+GO: Biological Process	GO:1905874	regulation of postsynaptic density organization	 	1.601E-3	1.000E0	3.638E-2	3.050E-1	2	20	PTPRD,NRXN1
+GO: Biological Process	GO:0051705	multi-organism behavior	 	1.630E-3	1.000E0	3.671E-2	3.077E-1	3	78	NRXN1,CNTNAP2,DACH1
+GO: Biological Process	GO:0001501	skeletal system development	 	1.662E-3	1.000E0	3.707E-2	3.108E-1	7	582	CD44,LTBP3,PAX5,SIK3,RUNX1,PBX1,MEF2C
+GO: Biological Process	GO:0000380	alternative mRNA splicing, via spliceosome	 	1.691E-3	1.000E0	3.737E-2	3.133E-1	3	79	CELF2,MBNL1,RBFOX1
+GO: Biological Process	GO:0120039	plasma membrane bounded cell projection morphogenesis	 	1.756E-3	1.000E0	3.737E-2	3.133E-1	8	758	PTPRD,NRXN1,DSCAM,HECW2,CNTNAP2,CD44,AUTS2,ZEB2
+GO: Biological Process	GO:0060284	regulation of cell development	 	1.757E-3	1.000E0	3.737E-2	3.133E-1	10	1133	MAGI2,NF1,PTPRD,DSCAM,HECW2,DMD,RUNX1,PBX1,ZEB2,MEF2C
+GO: Biological Process	GO:0031056	regulation of histone modification	 	1.762E-3	1.000E0	3.737E-2	3.133E-1	4	173	JARID2,AUTS2,PAX5,KMT2E
+GO: Biological Process	GO:0017145	stem cell division	 	1.762E-3	1.000E0	3.737E-2	3.133E-1	4	173	NF1,ETV6,LTBP3,RUNX1
+GO: Biological Process	GO:0097107	postsynaptic density assembly	 	1.766E-3	1.000E0	3.737E-2	3.133E-1	2	21	PTPRD,NRXN1
+GO: Biological Process	GO:0016358	dendrite development	 	1.814E-3	1.000E0	3.743E-2	3.138E-1	5	294	PTPRD,DSCAM,HECW2,PRKG1,MEF2C
+GO: Biological Process	GO:0045652	regulation of megakaryocyte differentiation	 	1.817E-3	1.000E0	3.743E-2	3.138E-1	3	81	RUNX1,KMT2E,MEF2C
+GO: Biological Process	GO:0048858	cell projection morphogenesis	 	1.830E-3	1.000E0	3.743E-2	3.138E-1	8	763	PTPRD,NRXN1,DSCAM,HECW2,CNTNAP2,CD44,AUTS2,ZEB2
+GO: Biological Process	GO:0050769	positive regulation of neurogenesis	 	1.831E-3	1.000E0	3.743E-2	3.138E-1	7	592	MAGI2,NF1,PTPRD,DSCAM,DMD,ZEB2,MEF2C
+GO: Biological Process	GO:1904753	negative regulation of vascular associated smooth muscle cell migration	 	1.939E-3	1.000E0	3.933E-2	3.297E-1	2	22	PRKG1,MEF2C
+GO: Biological Process	GO:0035235	ionotropic glutamate receptor signaling pathway	 	2.016E-3	1.000E0	4.051E-2	3.396E-1	3	84	NRXN1,DLG2,MEF2C
+GO: Biological Process	GO:0001503	ossification	 	2.030E-3	1.000E0	4.051E-2	3.396E-1	6	444	NF1,LTBP3,SIK3,PBX1,ATP2B1,MEF2C
+GO: Biological Process	GO:0090257	regulation of muscle system process	 	2.069E-3	1.000E0	4.095E-2	3.433E-1	5	303	JARID2,PRKG1,DMD,ATP2B1,MEF2C
+GO: Biological Process	GO:0030500	regulation of bone mineralization	 	2.086E-3	1.000E0	4.095E-2	3.433E-1	3	85	LTBP3,ATP2B1,MEF2C
+GO: Biological Process	GO:2001014	regulation of skeletal muscle cell differentiation	 	2.120E-3	1.000E0	4.129E-2	3.461E-1	2	23	RBFOX1,MEF2C
+GO: Biological Process	GO:0032990	cell part morphogenesis	 	2.152E-3	1.000E0	4.135E-2	3.466E-1	8	783	PTPRD,NRXN1,DSCAM,HECW2,CNTNAP2,CD44,AUTS2,ZEB2
+GO: Biological Process	GO:0007422	peripheral nervous system development	 	2.157E-3	1.000E0	4.135E-2	3.466E-1	3	86	NF1,DMD,RUNX1
+GO: Biological Process	GO:0050767	regulation of neurogenesis	 	2.203E-3	1.000E0	4.191E-2	3.513E-1	9	972	MAGI2,NF1,PTPRD,DSCAM,HECW2,DMD,PBX1,ZEB2,MEF2C
+GO: Biological Process	GO:0030534	adult behavior	 	2.293E-3	1.000E0	4.292E-2	3.598E-1	4	186	NRXN1,CNTNAP2,PAX5,PBX3
+GO: Biological Process	GO:0061333	renal tubule morphogenesis	 	2.303E-3	1.000E0	4.292E-2	3.598E-1	3	88	CD44,PBX1,MEF2C
+GO: Biological Process	GO:0060047	heart contraction	 	2.317E-3	1.000E0	4.292E-2	3.598E-1	5	311	CELF2,KCNIP4,PRKG1,DMD,ATP2B1
+GO: Biological Process	GO:0045597	positive regulation of cell differentiation	 	2.326E-3	1.000E0	4.292E-2	3.598E-1	10	1177	MAGI2,NF1,PTPRD,DSCAM,RB1,LTBP3,DMD,RUNX1,ZEB2,MEF2C
+GO: Biological Process	GO:0001822	kidney development	 	2.415E-3	1.000E0	4.423E-2	3.708E-1	5	314	MAGI2,NF1,CD44,PBX1,MEF2C
+GO: Biological Process	GO:0099601	regulation of neurotransmitter receptor activity	 	2.455E-3	1.000E0	4.463E-2	3.741E-1	3	90	NRXN1,DLG2,MEF2C
+GO: Biological Process	GO:0031061	negative regulation of histone methylation	 	2.504E-3	1.000E0	4.497E-2	3.770E-1	2	25	JARID2,PAX5
+GO: Biological Process	GO:2001252	positive regulation of chromosome organization	 	2.620E-3	1.000E0	4.497E-2	3.770E-1	4	193	JARID2,RB1,AUTS2,KMT2E
+GO: Biological Process	GO:0003015	heart process	 	2.621E-3	1.000E0	4.497E-2	3.770E-1	5	320	CELF2,KCNIP4,PRKG1,DMD,ATP2B1
+GO: Biological Process	GO:0043269	regulation of ion transport	 	2.695E-3	1.000E0	4.497E-2	3.770E-1	8	812	NRXN1,HECW2,DLG2,KCNIP4,PRKG1,DMD,ATP2B1,MEF2C
+GO: Biological Process	GO:2000311	regulation of AMPA receptor activity	 	2.708E-3	1.000E0	4.497E-2	3.770E-1	2	26	NRXN1,MEF2C
+GO: Biological Process	GO:0007162	negative regulation of cell adhesion	 	2.765E-3	1.000E0	4.497E-2	3.770E-1	5	324	NF1,DSCAM,CD44,PRKG1,RUNX1
+GO: Biological Process	GO:0008213	protein alkylation	 	2.821E-3	1.000E0	4.497E-2	3.770E-1	4	197	JARID2,AUTS2,PAX5,KMT2E
+GO: Biological Process	GO:0006479	protein methylation	 	2.821E-3	1.000E0	4.497E-2	3.770E-1	4	197	JARID2,AUTS2,PAX5,KMT2E
+GO: Biological Process	GO:0002009	morphogenesis of an epithelium	 	2.860E-3	1.000E0	4.497E-2	3.770E-1	7	641	MAGI2,CD44,MLLT3,RUNX1,PBX1,ZEB2,MEF2C
+GO: Biological Process	GO:0034762	regulation of transmembrane transport	 	2.860E-3	1.000E0	4.497E-2	3.770E-1	7	641	NRXN1,HECW2,DLG2,KCNIP4,PRKG1,DMD,MEF2C
+GO: Biological Process	GO:0021543	pallium development	 	2.873E-3	1.000E0	4.497E-2	3.770E-1	4	198	NF1,CNTNAP2,PAX5,ZEB2
+GO: Biological Process	GO:0006925	inflammatory cell apoptotic process	 	2.919E-3	1.000E0	4.497E-2	3.770E-1	2	27	CD44,MEF2C
+GO: Biological Process	GO:0045445	myoblast differentiation	 	2.948E-3	1.000E0	4.497E-2	3.770E-1	3	96	RB1,MBNL1,MEF2C
+GO: Biological Process	GO:0090126	protein-containing complex assembly involved in synapse maturation	 	2.987E-3	1.000E0	4.497E-2	3.770E-1	1	1	NRXN1
+GO: Biological Process	GO:0003138	primary heart field specification	 	2.987E-3	1.000E0	4.497E-2	3.770E-1	1	1	MEF2C
+GO: Biological Process	GO:1905435	regulation of histone H3-K4 trimethylation	 	2.987E-3	1.000E0	4.497E-2	3.770E-1	1	1	KMT2E
+GO: Biological Process	GO:0036098	male germ-line stem cell population maintenance	 	2.987E-3	1.000E0	4.497E-2	3.770E-1	1	1	JMJD1C
+GO: Biological Process	GO:0015962	diadenosine triphosphate metabolic process	 	2.987E-3	1.000E0	4.497E-2	3.770E-1	1	1	FHIT
+GO: Biological Process	GO:0003172	sinoatrial valve development	 	2.987E-3	1.000E0	4.497E-2	3.770E-1	1	1	MEF2C
+GO: Biological Process	GO:0007388	posterior compartment specification	 	2.987E-3	1.000E0	4.497E-2	3.770E-1	1	1	PBX3
+GO: Biological Process	GO:0007387	anterior compartment pattern formation	 	2.987E-3	1.000E0	4.497E-2	3.770E-1	1	1	PBX3
+GO: Biological Process	GO:0021627	olfactory nerve morphogenesis	 	2.987E-3	1.000E0	4.497E-2	3.770E-1	1	1	DMD
+GO: Biological Process	GO:1905437	positive regulation of histone H3-K4 trimethylation	 	2.987E-3	1.000E0	4.497E-2	3.770E-1	1	1	KMT2E
+GO: Biological Process	GO:0003185	sinoatrial valve morphogenesis	 	2.987E-3	1.000E0	4.497E-2	3.770E-1	1	1	MEF2C
+GO: Biological Process	GO:1990636	reproductive senescence	 	2.987E-3	1.000E0	4.497E-2	3.770E-1	1	1	JMJD1C
+GO: Biological Process	GO:0015964	diadenosine triphosphate catabolic process	 	2.987E-3	1.000E0	4.497E-2	3.770E-1	1	1	FHIT
+GO: Biological Process	GO:1902748	positive regulation of lens fiber cell differentiation	 	2.987E-3	1.000E0	4.497E-2	3.770E-1	1	1	ZEB2
+GO: Biological Process	GO:0021629	olfactory nerve structural organization	 	2.987E-3	1.000E0	4.497E-2	3.770E-1	1	1	DMD
+GO: Biological Process	GO:0030097	hemopoiesis	 	3.007E-3	1.000E0	4.500E-2	3.772E-1	9	1018	NF1,RB1,CD44,ETV6,CHD2,RUNX1,PBX1,KMT2E,MEF2C
+GO: Biological Process	GO:0007420	brain development	 	3.083E-3	1.000E0	4.529E-2	3.796E-1	8	830	NF1,NRXN1,CNTNAP2,MACROD2,PAX5,PRKG1,ATP2B1,ZEB2
+GO: Biological Process	GO:0072001	renal system development	 	3.110E-3	1.000E0	4.529E-2	3.796E-1	5	333	MAGI2,NF1,CD44,PBX1,MEF2C
+GO: Biological Process	GO:0099558	maintenance of synapse structure	 	3.137E-3	1.000E0	4.529E-2	3.796E-1	2	28	MAGI2,DLG2
+GO: Biological Process	GO:0051570	regulation of histone H3-K9 methylation	 	3.137E-3	1.000E0	4.529E-2	3.796E-1	2	28	JARID2,PAX5
+GO: Biological Process	GO:0098698	postsynaptic specialization assembly	 	3.137E-3	1.000E0	4.529E-2	3.796E-1	2	28	PTPRD,NRXN1
+GO: Biological Process	GO:0071425	hematopoietic stem cell proliferation	 	3.137E-3	1.000E0	4.529E-2	3.796E-1	2	28	ETV6,RUNX1
+GO: Biological Process	GO:1901992	positive regulation of mitotic cell cycle phase transition	 	3.309E-3	1.000E0	4.743E-2	3.976E-1	3	100	RB1,PBX1,KMT2E
+GO: Biological Process	GO:0010996	response to auditory stimulus	 	3.363E-3	1.000E0	4.743E-2	3.976E-1	2	29	NRXN1,CNTNAP2
+GO: Biological Process	GO:0035162	embryonic hemopoiesis	 	3.363E-3	1.000E0	4.743E-2	3.976E-1	2	29	RUNX1,PBX1
+GO: Biological Process	GO:1904861	excitatory synapse assembly	 	3.363E-3	1.000E0	4.743E-2	3.976E-1	2	29	PTPRD,NRXN1
+GO: Biological Process	GO:0009887	animal organ morphogenesis	 	3.412E-3	1.000E0	4.759E-2	3.989E-1	10	1241	MAGI2,NF1,DSCAM,CD44,MLLT3,LTBP3,PAX5,SIK3,PBX1,MEF2C
+GO: Biological Process	GO:0060249	anatomical structure homeostasis	 	3.413E-3	1.000E0	4.759E-2	3.989E-1	6	493	NF1,RB1,PRIM2,LTBP3,DMD,ATP2B1
+GO: Biological Process	GO:0030219	megakaryocyte differentiation	 	3.499E-3	1.000E0	4.849E-2	4.065E-1	3	102	RUNX1,KMT2E,MEF2C
+GO: Biological Process	GO:0099173	postsynapse organization	 	3.547E-3	1.000E0	4.849E-2	4.065E-1	4	210	MAGI2,PTPRD,NRXN1,DLG2
+GO: Biological Process	GO:1903522	regulation of blood circulation	 	3.572E-3	1.000E0	4.849E-2	4.065E-1	5	344	CELF2,KCNIP4,PRKG1,DMD,ATP2B1
+GO: Biological Process	GO:0035418	protein localization to synapse	 	3.596E-3	1.000E0	4.849E-2	4.065E-1	3	103	MAGI2,NRXN1,DLG2
+GO: Biological Process	GO:0030325	adrenal gland development	 	3.596E-3	1.000E0	4.849E-2	4.065E-1	2	30	NF1,PBX1
+GO: Biological Process	GO:0030318	melanocyte differentiation	 	3.596E-3	1.000E0	4.849E-2	4.065E-1	2	30	ZEB2,MEF2C
+GO: Biological Process	GO:0072080	nephron tubule development	 	3.695E-3	1.000E0	4.955E-2	4.154E-1	3	104	CD44,PBX1,MEF2C
+GO: Cellular Component	GO:0000790	nuclear chromatin	 	1.349E-4	4.007E-2	2.073E-2	1.300E-1	16	1923	JARID2,BNC2,RB1,DACH1,ZNF521,ETV6,MLLT3,ELF1,NR3C2,PAX5,EBF1,RUNX1,PBX1,PBX3,ZEB2,MEF2C
+GO: Cellular Component	GO:0098982	GABA-ergic synapse	 	2.946E-4	8.750E-2	2.073E-2	1.300E-1	4	106	MAGI2,NRXN1,NR3C2,ATP2B1
+GO: Cellular Component	GO:0044224	juxtaparanode region of axon	 	3.955E-4	1.175E-1	2.073E-2	1.300E-1	2	10	CNTNAP2,DLG2
+GO: Cellular Component	GO:0036057	slit diaphragm	 	3.955E-4	1.175E-1	2.073E-2	1.300E-1	2	10	MAGI2,NRXN1
+GO: Cellular Component	GO:0036056	filtration diaphragm	 	3.955E-4	1.175E-1	2.073E-2	1.300E-1	2	10	MAGI2,NRXN1
+GO: Cellular Component	GO:0005667	transcription factor complex	 	4.188E-4	1.244E-1	2.073E-2	1.300E-1	7	454	NRBF2,RB1,DACH1,PAX5,RUNX1,PBX1,PBX3
+Pathway	523016	Transcriptional misregulation in cancer	BioSystems: KEGG	1.857E-7	6.982E-5	6.982E-5	4.544E-4	8	180	ETV6,MLLT3,PAX5,RUNX1,PBX1,PBX3,JMJD1C,MEF2C
+Disease	C0432072	Dysmorphic features	DisGeNET BeFree	6.858E-10	1.172E-6	1.172E-6	9.400E-6	7	54	JARID2,NF1,NRXN1,AUTS2,PAX5,RUNX1,MEF2C
+Disease	C1961102	Precursor Cell Lymphoblastic Leukemia Lymphoma	DisGeNET Curated	3.026E-9	5.171E-6	2.585E-6	2.074E-5	14	535	MTAP,RB1,CD44,AUTS2,ETV6,MLLT3,PAX5,EBF1,RUNX1,PBX1,FHIT,JMJD1C,ZEB2,MEF2C
+Disease	C0751606	Adult Acute Lymphocytic Leukemia	DisGeNET BeFree	1.928E-7	3.295E-4	9.227E-5	7.401E-4	7	120	NF1,CD44,ETV6,PAX5,RUNX1,PBX1,FHIT
+Disease	C0027126	Myotonic Dystrophy	DisGeNET Curated	2.160E-7	3.691E-4	9.227E-5	7.401E-4	7	122	NF1,CELF2,MBNL1,RBFOX1,DMD,ATP2B1,MEF2C
+Disease	C0023449	Acute lymphocytic leukemia	DisGeNET BeFree	3.117E-7	5.326E-4	1.065E-4	8.544E-4	15	902	MTAP,RB1,CD44,ZNF521,AUTS2,ETV6,MLLT3,PAX5,EBF1,RUNX1,PBX1,FHIT,JMJD1C,ZEB2,MEF2C
+Disease	C0023467	Leukemia, Myelocytic, Acute	DisGeNET Curated	4.278E-7	7.311E-4	1.087E-4	8.723E-4	20	1670	JARID2,MTAP,NF1,RB1,CD44,ZNF521,ETV6,ANKRD28,MLLT3,ELF1,PAX5,RUNX1,PBX1,FHIT,KMT2E,PBX3,CCDC26,ZEB2,MEF2C,ABCC6
+Disease	C0023418	leukemia	DisGeNET Curated	4.454E-7	7.612E-4	1.087E-4	8.723E-4	21	1842	NF1,RB1,CD44,SCYL1,DACH1,ZNF521,ETV6,MLLT3,PAX5,EBF1,PRKG1,RUNX1,PBX1,FHIT,KMT2E,PBX3,JMJD1C,CCDC26,ZEB2,MEF2C,ABCC6
+Disease	C1535926	Neurodevelopmental Disorders	DisGeNET Curated	5.768E-7	9.857E-4	1.232E-4	9.883E-4	8	207	NRXN1,DSCAM,RBFOX1,CNTNAP2,DLG2,PAX5,KMT2E,MEF2C
+Disease	C0023470	Myeloid Leukemia	DisGeNET Curated	7.201E-7	1.231E-3	1.367E-4	1.097E-3	11	481	FLNB,CD44,SCYL1,ETV6,PAX5,RUNX1,PBX1,FHIT,KMT2E,CCDC26,MEF2C
+Disease	C0023452	Childhood Acute Lymphoblastic Leukemia	DisGeNET Curated	2.703E-6	4.619E-3	4.287E-4	3.438E-3	10	442	MTAP,RB1,CD44,AUTS2,ETV6,PAX5,EBF1,RUNX1,PBX1,FHIT
+Disease	C1263846	Attention deficit hyperactivity disorder	DisGeNET Curated	2.759E-6	4.715E-3	4.287E-4	3.438E-3	8	255	NF1,PTPRD,CNTNAP2,AUTS2,KCNIP4,NR3C2,PRKG1,DMD
+Disease	C0039685	Tetralogy of Fallot	DisGeNET Curated	3.870E-6	6.614E-3	5.512E-4	4.421E-3	5	68	JARID2,MBNL1,DMD,PBX1,PBX3
+Disease	C0524528	Pervasive Development Disorder	DisGeNET Curated	5.480E-6	9.365E-3	7.204E-4	5.778E-3	6	128	NRXN1,RBFOX1,CNTNAP2,MACROD2,CHD2,NR3C2
+Disease	C0004352	Autistic Disorder	DisGeNET Curated	6.218E-6	1.063E-2	7.494E-4	6.011E-3	11	601	NF1,NRXN1,DSCAM,RBFOX1,CNTNAP2,MACROD2,AUTS2,DMD,REEP3,JMJD1C,MEF2C
+Disease	C3896960	Childhood Pre-B Acute Lymphoblastic Leukemia	DisGeNET BeFree	6.577E-6	1.124E-2	7.494E-4	6.011E-3	3	11	ETV6,RUNX1,PBX1
+Disease	C0008626	Congenital chromosomal disease	DisGeNET Curated	7.495E-6	1.281E-2	8.005E-4	6.421E-3	10	496	PTPRD,NRXN1,RB1,ETV6,MLLT3,PAX5,RUNX1,PBX1,FHIT,KMT2E
+Disease	C0279584	Childhood B Acute Lymphoblastic Leukemia	DisGeNET BeFree	8.748E-6	1.495E-2	8.794E-4	7.054E-3	3	12	ETV6,PAX5,RUNX1
+Disease	C0038586	Substance Use Disorders	DisGeNET Curated	9.956E-6	1.701E-2	9.188E-4	7.370E-3	6	142	DSCAM,CNTNAP2,MACROD2,ETV6,PBX1,FHIT
+Disease	C1961099	Precursor T-Cell Lymphoblastic Leukemia-Lymphoma	DisGeNET Curated	1.022E-5	1.746E-2	9.188E-4	7.370E-3	9	404	MTAP,NF1,CD44,ETV6,PAX5,RUNX1,FHIT,ZEB2,MEF2C
+Disease	C0424295	Hyperactive behavior	DisGeNET Curated	1.077E-5	1.841E-2	9.206E-4	7.384E-3	11	637	FLNB,NF1,NRXN1,CNTNAP2,CD44,ETV6,PAX5,DMD,RUNX1,PBX1,MEF2C
+Disease	C0036857	Severe mental retardation (I.Q. 20-34)	DisGeNET BeFree	1.379E-5	2.357E-2	1.122E-3	9.002E-3	5	88	NRXN1,CNTNAP2,DMD,ZEB2,MEF2C
+Disease	C1510586	Autism Spectrum Disorders	DisGeNET Curated	2.363E-5	4.038E-2	1.836E-3	1.472E-2	9	449	JARID2,NRXN1,RBFOX1,CNTNAP2,MACROD2,CHD2,NR3C2,JMJD1C,MEF2C
+Disease	C1332977	Childhood Leukemia	DisGeNET BeFree	2.503E-5	4.278E-2	1.860E-3	1.492E-2	6	167	CD44,ETV6,RUNX1,PBX1,PBX3,ZEB2
+Disease	C0014544	Epilepsy	DisGeNET Curated	2.816E-5	4.813E-2	1.974E-3	1.584E-2	10	578	MAGI2,NRXN1,RBFOX1,CNTNAP2,AUTS2,MLLT3,CHD2,DMD,ZEB2,MEF2C
+Disease	C0025500	Mesothelioma	DisGeNET Curated	2.888E-5	4.936E-2	1.974E-3	1.584E-2	8	352	FLNB,MTAP,NF1,CD44,LTBP3,PAX5,FHIT,ZEB2
+Disease	C0023453	Leukemia, Lymphocytic, Acute, L2	DisGeNET Curated	3.222E-5	5.507E-2	2.118E-3	1.699E-2	4	52	RB1,ETV6,PAX5,RUNX1
+Disease	C3888194	MIXED LINEAGE LEUKEMIA	DisGeNET BeFree	4.315E-5	7.374E-2	2.714E-3	2.177E-2	6	184	CD44,MLLT3,RUNX1,KMT2E,PBX3,MEF2C
+Disease	C0424605	Developmental delay (disorder)	DisGeNET BeFree	4.447E-5	7.601E-2	2.714E-3	2.177E-2	6	185	NF1,NRXN1,CD44,MLLT3,DMD,MEF2C
+Disease	C4316881	Prescription Drug Abuse	DisGeNET Curated	5.029E-5	8.594E-2	2.828E-3	2.268E-2	5	115	DSCAM,MACROD2,ETV6,PBX1,FHIT
+Disease	C0029231	Organic Mental Disorders, Substance-Induced	DisGeNET Curated	5.029E-5	8.594E-2	2.828E-3	2.268E-2	5	115	DSCAM,MACROD2,ETV6,PBX1,FHIT
+Disease	C0236018	Aura	DisGeNET Curated	5.320E-5	9.091E-2	2.828E-3	2.268E-2	4	59	CNTNAP2,AUTS2,CHD2,MEF2C
+Disease	C0751111	Awakening Epilepsy	DisGeNET Curated	5.320E-5	9.091E-2	2.828E-3	2.268E-2	4	59	CNTNAP2,AUTS2,CHD2,MEF2C
+Disease	C0236969	Substance-Related Disorders	DisGeNET Curated	5.461E-5	9.332E-2	2.828E-3	2.268E-2	5	117	DSCAM,MACROD2,ETV6,PBX1,FHIT
+Disease	C0013222	Drug Use Disorders	DisGeNET Curated	5.687E-5	9.719E-2	2.859E-3	2.293E-2	5	118	DSCAM,MACROD2,ETV6,PBX1,FHIT
+Disease	C0086237	Epilepsy, Cryptogenic	DisGeNET Curated	6.068E-5	1.037E-1	2.963E-3	2.377E-2	4	61	CNTNAP2,AUTS2,CHD2,MEF2C
+Disease	C0006413	Burkitt Lymphoma	DisGeNET Curated	7.125E-5	1.218E-1	3.234E-3	2.594E-2	8	400	PIK3AP1,CD44,AUTS2,ETV6,PAX5,RUNX1,PBX1,FHIT
+Disease	C1970431	PITT-HOPKINS SYNDROME	DisGeNET Curated	7.191E-5	1.229E-1	3.234E-3	2.594E-2	2	4	NRXN1,CNTNAP2
+Disease	C1832388	Platelet Disorder, Familial, with Associated Myeloid Malignancy	DisGeNET Curated	7.191E-5	1.229E-1	3.234E-3	2.594E-2	2	4	ETV6,RUNX1
+Disease	C0376545	Hematologic Neoplasms	DisGeNET Curated	1.044E-4	1.784E-1	4.576E-3	3.670E-2	9	544	NF1,RB1,CD44,ETV6,PAX5,PRKG1,RUNX1,PBX1,FHIT
+Disease	C0013170	Drug habituation	DisGeNET Curated	1.154E-4	1.973E-1	4.932E-3	3.956E-2	5	137	DSCAM,MACROD2,ETV6,PBX1,FHIT
+Disease	C0023465	Acute monocytic leukemia	DisGeNET Curated	1.227E-4	2.096E-1	5.029E-3	4.034E-2	4	73	CD44,MLLT3,PAX5,RUNX1
+Disease	C0038580	Substance Dependence	DisGeNET Curated	1.236E-4	2.112E-1	5.029E-3	4.034E-2	5	139	DSCAM,MACROD2,ETV6,PBX1,FHIT
+Disease	C2697636	Hyperdiploid B Acute Lymphoblastic Leukemia	DisGeNET BeFree	1.544E-4	2.638E-1	6.136E-3	4.922E-2	3	30	ETV6,RUNX1,PBX1
+Disease	C1512433	Cervical high grade squamous intraepithelial lesion	DisGeNET BeFree	1.705E-4	2.914E-1	6.622E-3	5.312E-2	3	31	FLNB,CD44,FHIT
+Disease	C0036341	Schizophrenia	DisGeNET Curated	1.904E-4	3.253E-1	7.226E-3	5.796E-2	15	1537	MAGI2,JARID2,FLNB,NRXN1,CELF2,MBNL1,RBFOX1,CNTNAP2,AUTS2,DLG2,MLLT3,DMD,RUNX1,FHIT,ZEB2
+Disease	C0598766	Leukemogenesis	DisGeNET BeFree	1.945E-4	3.324E-1	7.226E-3	5.796E-2	10	729	RB1,CD44,ETV6,MLLT3,PAX5,EBF1,RUNX1,PBX1,FHIT,PBX3
+Disease	C0740858	Substance abuse problem	DisGeNET Curated	1.997E-4	3.413E-1	7.261E-3	5.824E-2	5	154	DSCAM,MACROD2,ETV6,PBX1,FHIT
+Disease	C1275122	Familial multiple trichoepitheliomata	DisGeNET Curated	2.385E-4	4.076E-1	8.492E-3	6.812E-2	5	160	BNC2,DMD,RUNX1,FHIT,JMJD1C
+Disease	C1856113	Mowat-Wilson syndrome	DisGeNET Curated	2.500E-4	4.272E-1	8.718E-3	6.993E-2	2	7	ZEB2,MEF2C
+Disease	C1861305	TARSAL-CARPAL COALITION SYNDROME	DisGeNET Curated	2.674E-4	4.570E-1	9.140E-3	7.332E-2	5	164	NF1,RB1,CD44,PAX5,FHIT
+Disease	C0085669	Acute leukemia	DisGeNET BeFree	2.793E-4	4.773E-1	9.358E-3	7.506E-2	8	488	NF1,RB1,ETV6,PAX5,EBF1,RUNX1,PBX1,FHIT
+Disease	C0024299	Lymphoma	DisGeNET Curated	2.861E-4	4.890E-1	9.363E-3	7.510E-2	13	1242	FLNB,MTAP,NF1,RB1,CD44,SCYL1,ETV6,PAX5,EBF1,PRKG1,RUNX1,PBX1,FHIT
+Disease	C0349637	Common acute lymphoblastic leukemia	DisGeNET BeFree	2.904E-4	4.962E-1	9.363E-3	7.510E-2	3	37	ETV6,RUNX1,PBX1
+Disease	C0700208	Acquired scoliosis	DisGeNET BeFree	3.145E-4	5.374E-1	9.724E-3	7.800E-2	3	38	NF1,NRXN1,RUNX1
+Disease	C1510472	Drug Dependence	DisGeNET Curated	3.157E-4	5.395E-1	9.724E-3	7.800E-2	5	170	DSCAM,MACROD2,ETV6,PBX1,FHIT
+Disease	C0557874	Global developmental delay	DisGeNET BeFree	3.242E-4	5.541E-1	9.724E-3	7.800E-2	6	266	NF1,NRXN1,RB1,CD44,DMD,MEF2C
+Disease	C0015230	Exanthema	DisGeNET Curated	3.243E-4	5.543E-1	9.724E-3	7.800E-2	5	171	NF1,DLG2,DMD,RUNX1,FHIT
+Disease	C0035412	Rhabdomyosarcoma	DisGeNET Curated	3.508E-4	5.995E-1	1.034E-2	8.291E-2	7	381	JARID2,NF1,RB1,PAX5,DMD,ATP2B1,MEF2C
+Disease	C0014547	Epilepsies, Partial	DisGeNET Curated	3.665E-4	6.263E-1	1.047E-2	8.402E-2	3	40	RBFOX1,CNTNAP2,NR3C2
+Disease	C0025362	Mental Retardation	DisGeNET BeFree	3.677E-4	6.285E-1	1.047E-2	8.402E-2	7	384	NF1,NRXN1,DSCAM,CNTNAP2,AUTS2,DMD,ZEB2
+Disease	C0023485	Precursor B-Cell Lymphoblastic Leukemia-Lymphoma	DisGeNET Curated	4.120E-4	7.042E-1	1.154E-2	9.260E-2	4	100	ETV6,PAX5,RUNX1,PBX1
+Disease	C0376544	Hematopoietic Neoplasms	DisGeNET Curated	5.381E-4	9.196E-1	1.483E-2	1.190E-1	5	191	ETV6,PAX5,RUNX1,PBX1,FHIT
+Disease	C0238198	Gastrointestinal Stromal Tumors	DisGeNET Curated	6.347E-4	1.000E0	1.620E-2	1.300E-1	6	302	MTAP,NF1,RB1,CD44,ETV6,DMD
+Disease	C0023448	Lymphoid leukemia	DisGeNET Curated	6.481E-4	1.000E0	1.620E-2	1.300E-1	5	199	CD44,ETV6,PAX5,RUNX1,PBX1
+Disease	C3826044	Lymphoblastic leukemia in children	DisGeNET BeFree	6.488E-4	1.000E0	1.620E-2	1.300E-1	2	11	RUNX1,PBX1
+Disease	C0751257	Auditory Processing Disorder, Central	DisGeNET Curated	6.488E-4	1.000E0	1.620E-2	1.300E-1	2	11	NRXN1,CNTNAP2
+Disease	C0454655	Semantic-Pragmatic Disorder	DisGeNET Curated	6.488E-4	1.000E0	1.620E-2	1.300E-1	2	11	NRXN1,CNTNAP2
+Disease	C0023012	Language Delay	DisGeNET Curated	6.488E-4	1.000E0	1.620E-2	1.300E-1	2	11	NRXN1,CNTNAP2
+Disease	C0262584	Carcinoma, Small Cell	DisGeNET Curated	6.542E-4	1.000E0	1.620E-2	1.300E-1	4	113	RB1,CD44,PAX5,FHIT
+Disease	C0036572	Seizures	DisGeNET Curated	6.804E-4	1.000E0	1.661E-2	1.332E-1	8	558	MAGI2,NRXN1,RBFOX1,CNTNAP2,AUTS2,CHD2,PAX5,MEF2C
+Disease	C0018798	Congenital Heart Defects	DisGeNET Curated	7.250E-4	1.000E0	1.745E-2	1.400E-1	5	204	NF1,DSCAM,CELF2,ZEB2,MEF2C
+Disease	C0206727	Nerve Sheath Tumors	DisGeNET Curated	7.517E-4	1.000E0	1.770E-2	1.420E-1	3	51	NF1,CD44,RUNX1
+Disease	C0023014	Language Development Disorders	DisGeNET Curated	7.768E-4	1.000E0	1.770E-2	1.420E-1	2	12	NRXN1,CNTNAP2
+Disease	C0022821	Kyphosis deformity of spine	DisGeNET Curated	7.768E-4	1.000E0	1.770E-2	1.420E-1	2	12	LTBP3,DMD
+Disease	C1857230	DISORGANIZATION, MOUSE, HOMOLOG OF	DisGeNET BeFree	7.768E-4	1.000E0	1.770E-2	1.420E-1	2	12	ETV6,RUNX1
+Disease	C0020595	Hypoaldosteronism	DisGeNET Curated	9.160E-4	1.000E0	2.060E-2	1.652E-1	2	13	DACH1,NR3C2
+Disease	C0206650	Fibroadenoma	DisGeNET Curated	9.882E-4	1.000E0	2.193E-2	1.759E-1	3	56	NF1,RB1,PRKG1
+Disease	C0543888	Epileptic encephalopathy	DisGeNET Curated	1.057E-3	1.000E0	2.307E-2	1.850E-1	7	459	MAGI2,NRXN1,HECW2,CNTNAP2,CHD2,ZEB2,MEF2C
+Disease	C3542021	Duchenne and Becker Muscular Dystrophy	DisGeNET Curated	1.066E-3	1.000E0	2.307E-2	1.850E-1	2	14	NF1,DMD
+Disease	C1384514	Conn Syndrome	DisGeNET Curated	1.095E-3	1.000E0	2.338E-2	1.876E-1	3	58	FLNB,CD44,NR3C2
+Disease	C0000768	Congenital Abnormality	DisGeNET Curated	1.125E-3	1.000E0	2.373E-2	1.903E-1	8	603	FLNB,NF1,NRXN1,RUNX1,PBX1,PBX3,ZEB2,MEF2C
+Disease	C0010701	Phyllodes Tumor	DisGeNET Curated	1.150E-3	1.000E0	2.398E-2	1.923E-1	3	59	PRKG1,FHIT,ZEB2
+Disease	C0013146	Drug abuse	DisGeNET Curated	1.193E-3	1.000E0	2.456E-2	1.970E-1	5	228	DSCAM,MACROD2,ETV6,PBX1,FHIT
+Disease	C1261473	Sarcoma	DisGeNET Curated	1.224E-3	1.000E0	2.468E-2	1.980E-1	8	611	MTAP,NF1,RB1,CD44,SCYL1,ETV6,PAX5,DMD
+Disease	C0027070	Myoepithelioma	DisGeNET BeFree	1.228E-3	1.000E0	2.468E-2	1.980E-1	2	15	PBX1,PBX3
+Disease	C0279680	Transitional cell carcinoma of bladder	DisGeNET Curated	1.341E-3	1.000E0	2.544E-2	2.040E-1	4	137	RB1,CD44,PAX5,FHIT
+Disease	C0457334	Acute monoblastic leukemia	DisGeNET BeFree	1.400E-3	1.000E0	2.544E-2	2.040E-1	2	16	CD44,RUNX1
+Disease	C3713420	Familial Hyperaldosteronism	DisGeNET BeFree	1.400E-3	1.000E0	2.544E-2	2.040E-1	2	16	FLNB,CD44
+Disease	C0023492	Leukemia, T-Cell	DisGeNET Curated	1.422E-3	1.000E0	2.544E-2	2.040E-1	6	353	JARID2,MTAP,CD44,ETV6,RUNX1,MEF2C
+Disease	C0019202	Hepatolenticular Degeneration	DisGeNET Curated	1.523E-3	1.000E0	2.544E-2	2.040E-1	3	65	NF1,RB1,DMD
+Disease	C0856975	Autistic behavior	DisGeNET BeFree	1.583E-3	1.000E0	2.544E-2	2.040E-1	2	17	NRXN1,CNTNAP2
+Disease	C0027830	neurofibroma	DisGeNET Curated	1.592E-3	1.000E0	2.544E-2	2.040E-1	3	66	NF1,CD44,RUNX1
+Disease	C0917816	Mental deficiency	DisGeNET Curated	1.611E-3	1.000E0	2.544E-2	2.040E-1	4	144	NF1,NRXN1,CHD2,MEF2C
+Disease	C0850572	Adenomatous polyp of colon	DisGeNET BeFree	1.662E-3	1.000E0	2.544E-2	2.040E-1	3	67	CD44,RUNX1,FHIT
+Disease	C1292769	Precursor B-cell lymphoblastic leukemia	DisGeNET Curated	1.662E-3	1.000E0	2.544E-2	2.040E-1	6	364	AUTS2,ETV6,PAX5,RUNX1,PBX1,FHIT
+Disease	C0162678	Neurofibromatoses	DisGeNET Curated	1.734E-3	1.000E0	2.544E-2	2.040E-1	3	68	NF1,CD44,RUNX1
+Disease	C0432412	Chromosome 8, trisomy	DisGeNET BeFree	1.809E-3	1.000E0	2.544E-2	2.040E-1	3	69	ETV6,RUNX1,PBX1
+Disease	C0027022	Myeloproliferative disease	DisGeNET Curated	1.854E-3	1.000E0	2.544E-2	2.040E-1	5	252	NF1,CD44,ETV6,PRKG1,RUNX1
+Disease	C0149925	Small cell carcinoma of lung	DisGeNET Curated	1.901E-3	1.000E0	2.544E-2	2.040E-1	8	655	NF1,PTPRD,RB1,CNTNAP2,CD44,PAX5,FHIT,ZEB2
+Disease	20081201:Yuan	Plasma levels of liver enzymes	GWAS	1.981E-3	1.000E0	2.544E-2	2.040E-1	2	19	REEP3,JMJD1C
+Disease	C0920028	Leukaemia recurrent	DisGeNET BeFree	1.981E-3	1.000E0	2.544E-2	2.040E-1	2	19	ETV6,RUNX1
+Disease	C3250443	MYOTONIC DYSTROPHY 1	DisGeNET Curated	2.126E-3	1.000E0	2.544E-2	2.040E-1	3	73	MBNL1,RBFOX1,DMD
+Disease	C0678236	Rare Diseases	DisGeNET BeFree	2.197E-3	1.000E0	2.544E-2	2.040E-1	2	20	NBAS,ABCC6
+Disease	C0454651	Specific language impairment	DisGeNET BeFree	2.197E-3	1.000E0	2.544E-2	2.040E-1	2	20	NRXN1,CNTNAP2
+Disease	C0236733	Amphetamine-Related Disorders	DisGeNET Curated	2.297E-3	1.000E0	2.544E-2	2.040E-1	3	75	LINGO2,PRKG1,FHIT
+Disease	C0039585	Androgen-Insensitivity Syndrome	DisGeNET Curated	2.297E-3	1.000E0	2.544E-2	2.040E-1	3	75	BNC2,CNTNAP2,PBX1
+Disease	C0236807	Amphetamine Abuse	DisGeNET Curated	2.297E-3	1.000E0	2.544E-2	2.040E-1	3	75	LINGO2,PRKG1,FHIT
+Disease	C0236804	Amphetamine Addiction	DisGeNET Curated	2.385E-3	1.000E0	2.544E-2	2.040E-1	3	76	LINGO2,PRKG1,FHIT
+Disease	C3549742	Breast cancer, lobular	DisGeNET Curated	2.422E-3	1.000E0	2.544E-2	2.040E-1	2	21	DACH1,FHIT
+Disease	C0021171	Bloch Sulzberger syndrome	DisGeNET Curated	2.422E-3	1.000E0	2.544E-2	2.040E-1	2	21	NF1,PRKG1
+Disease	C0338656	Impaired cognition	DisGeNET Curated	2.506E-3	1.000E0	2.544E-2	2.040E-1	7	534	MAGI2,JARID2,NF1,CNTNAP2,PAX5,DMD,MEF2C
+Disease	C1333064	Classical Hodgkin's Lymphoma	DisGeNET BeFree	2.644E-3	1.000E0	2.544E-2	2.040E-1	4	165	CD44,PAX5,EBF1,FHIT
+Disease	C0241210	Speech Delay	DisGeNET Curated	2.659E-3	1.000E0	2.544E-2	2.040E-1	2	22	NRXN1,CNTNAP2
+Disease	C0349636	Pre B-cell acute lymphoblastic leukemia	DisGeNET BeFree	2.659E-3	1.000E0	2.544E-2	2.040E-1	2	22	PAX5,PBX1
+Disease	C0030779	Pelger-Huet Anomaly	DisGeNET Curated	2.659E-3	1.000E0	2.544E-2	2.040E-1	2	22	NBAS,NR3C2
+Disease	C0334438	Superficial spreading malignant melanoma of skin	DisGeNET BeFree	2.659E-3	1.000E0	2.544E-2	2.040E-1	2	22	MTAP,NF1
+Disease	C0008073	Developmental Disabilities	DisGeNET Curated	2.883E-3	1.000E0	2.544E-2	2.040E-1	4	169	NF1,NRXN1,DLG2,ZEB2
+Disease	C0522631	Acute myeloid leukemia, minimal differentiation	DisGeNET Curated	2.905E-3	1.000E0	2.544E-2	2.040E-1	2	23	ETV6,RUNX1
+Disease	C0278704	Malignant Childhood Neoplasm	DisGeNET BeFree	2.961E-3	1.000E0	2.544E-2	2.040E-1	3	82	RB1,ETV6,RUNX1
+Disease	C1332271	Perianal Squamous Intraepithelial Neoplasia	DisGeNET BeFree	3.162E-3	1.000E0	2.544E-2	2.040E-1	2	24	CD44,FHIT
+Disease	OMIN:601626	LEUKEMIA, ACUTE MYELOID; AML	OMIM	3.162E-3	1.000E0	2.544E-2	2.040E-1	2	24	ETV6,RUNX1
+Disease	C0001624	Adrenal Gland Neoplasms	DisGeNET Curated	3.170E-3	1.000E0	2.544E-2	2.040E-1	3	84	NF1,RB1,CD44
+Disease	C0029464	Osteosclerosis	DisGeNET Curated	3.429E-3	1.000E0	2.544E-2	2.040E-1	2	25	LTBP3,DMD
+Disease	C0278519	Recurrent Childhood Acute Lymphoblastic Leukemia	DisGeNET BeFree	3.429E-3	1.000E0	2.544E-2	2.040E-1	2	25	ETV6,RUNX1
+Disease	cv:C2677504	Autism 15	Clinical Variations	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	CNTNAP2
+Disease	OMIN:193520	WATSON SYNDROME	OMIM	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	NF1
+Disease	C3668942	Atelosteogenesis Type 3	DisGeNET Curated	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	FLNB
+Disease	C4024217	Spinal neurofibromas	DisGeNET BeFree	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	NF1
+Disease	OMIN:162210	NEUROFIBROMATOSIS, FAMILIAL SPINAL	OMIM	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	NF1
+Disease	C4225236	SPINOCEREBELLAR ATAXIA, AUTOSOMAL RECESSIVE 21	DisGeNET Curated	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	SCYL1
+Disease	C1300202	Diaphyseal medullary stenosis with bone malignancy	DisGeNET Curated	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	MTAP
+Disease	cv:C1867450	Pseudoxanthoma elasticum, forme fruste	Clinical Variations	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	ABCC6
+Disease	C0410165	X-linked muscular dystrophy with abnormal dystrophin	DisGeNET BeFree	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	DMD
+Disease	C3809651	INFANTILE LIVER FAILURE SYNDROME 2	DisGeNET Curated	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	NBAS
+Disease	OMIN:601321	NEUROFIBROMATOSIS-NOONAN SYNDROME; NFNS	OMIM	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	NF1
+Disease	C0432201	Boomerang dysplasia	DisGeNET Curated	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	FLNB
+Disease	C0236818	Selective Mutism	DisGeNET BeFree	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	CNTNAP2
+Disease	C0454542	Stuttering, Acquired	DisGeNET Curated	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	CNTNAP2
+Disease	C1456326	Selective mutism specific to childhood and adolescence	DisGeNET BeFree	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	CNTNAP2
+Disease	cv:C1835564	Larsen syndrome, dominant type	Clinical Variations	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	FLNB
+Disease	cv:C3280524	Schizophrenia 17	Clinical Variations	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	NRXN1
+Disease	C0346056	Neuromuscular hamartoma	DisGeNET BeFree	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	NF1
+Disease	OMIN:302045	CARDIOMYOPATHY, DILATED, 3B; CMD3B	OMIM	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	DMD
+Disease	cv:CN178848	Epileptic encephalopathy, childhood-onset	Clinical Variations	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	CHD2
+Disease	C0265979	Fibrous Hamartoma of Infancy	DisGeNET BeFree	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	NF1
+Disease	C3809513	AORTIC ANEURYSM, FAMILIAL THORACIC 8	DisGeNET Curated	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	PRKG1
+Disease	C0796548	Metastatic tumors of the Ewing's family	DisGeNET BeFree	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	PTPRD
+Disease	C4304529	5q14.3 microdeletion syndrome	DisGeNET Curated	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	MEF2C
+Disease	20081125:Schormair	Restless legs syndrome	GWAS	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	PTPRD
+Disease	cv:C1832388	Familial platelet disorder with associated myeloid malignancy	Clinical Variations	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	RUNX1
+Disease	OMIN:112310	BOOMERANG DYSPLASIA	OMIM	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	FLNB
+Disease	C0751528	Stuttering, Childhood	DisGeNET Curated	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	CNTNAP2
+Disease	C1834235	NEUROFIBROMATOSIS, FAMILIAL SPINAL	DisGeNET Curated	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	NF1
+Disease	cv:C3280479	Pitt-Hopkins-like syndrome 2	Clinical Variations	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	NRXN1
+Disease	C3808494	CHROMOSOME 2p16.3 DELETION SYNDROME	DisGeNET Curated	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	NRXN1
+Disease	cv:CN225711	Thrombocytopenia 5	Clinical Variations	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	ETV6
+Disease	OMIN:601399	PLATELET DISORDER, FAMILIAL, WITH ASSOCIATED MYELOID MALIGNANCY	OMIM	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	RUNX1
+Disease	OMIN:605115	HYPERTENSION, EARLY-ONSET, AUTOSOMAL DOMINANT, WITH SEVERE EXACERBATION IN PREGNANCY	OMIM	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	NR3C2
+Disease	C1334266	Intraurothelial Neoplasia	DisGeNET BeFree	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	RB1
+Disease	C0588007	Moderate depression	DisGeNET BeFree	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	NR3C2
+Disease	OMIN:180200	RETINOBLASTOMA; RB1	OMIM	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	RB1
+Disease	C0278577	Cervix carcinoma stage III	DisGeNET BeFree	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	CD44
+Disease	C0751527	Stuttering, Adult	DisGeNET Curated	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	CNTNAP2
+Disease	cv:C3150700	Mental retardation, stereotypic movements, epilepsy, and/or cerebral malformations	Clinical Variations	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	MEF2C
+Disease	OMIN:610042	CORTICAL DYSPLASIA-FOCAL EPILEPSY SYNDROME	OMIM	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	CNTNAP2
+Disease	C0398627	Inherited platelet disorder	DisGeNET BeFree	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	RUNX1
+Disease	C4014435	MENTAL RETARDATION, AUTOSOMAL DOMINANT 26	DisGeNET Curated	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	AUTS2
+Disease	cv:C2751297	Tooth agenesis, selective, 6	Clinical Variations	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	LTBP3
+Disease	C0442871	Microinvasive carcinoma	DisGeNET BeFree	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	FHIT
+Disease	C3150700	MENTAL RETARDATION, AUTOSOMAL DOMINANT 20	DisGeNET Curated	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	MEF2C
+Disease	C0038131	Stammering	DisGeNET Curated	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	CNTNAP2
+Disease	cv:C0013264	Duchenne muscular dystrophy	Clinical Variations	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	DMD
+Disease	C2751297	Tooth Agenesis, Selective, 6	DisGeNET Curated	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	LTBP3
+Disease	cv:CN180164	Aortic aneurysm, familial thoracic 8	Clinical Variations	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	PRKG1
+Disease	C1333813	Central Nervous System Germinoma	DisGeNET Curated	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	JMJD1C
+Disease	C0432360	Neurofibromatosis type 5	DisGeNET BeFree	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	NF1
+Disease	cv:CN128796	Dilated cardiomyopathy 3B	Clinical Variations	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	DMD
+Disease	C1842083	Abnormality of the ribs	DisGeNET BeFree	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	FLNB
+Disease	cv:C1856113	Mowat-Wilson syndrome	Clinical Variations	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	ZEB2
+Disease	C3280524	SCHIZOPHRENIA 17	DisGeNET Curated	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	NRXN1
+Disease	OMIN:613443	MENTAL RETARDATION, STEREOTYPIC MOVEMENTS, EPILEPSY, AND/OR CEREBRAL MALFORMATIONS	OMIM	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	MEF2C
+Disease	C3151302	Chromosome 13q14 deletion syndrome	DisGeNET Curated	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	RB1
+Disease	C1855472	Acute lymphoblastic leukemia with lymphomatous features	DisGeNET BeFree	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	MTAP
+Disease	C0334467	Fibrolipoma	DisGeNET BeFree	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	NF1
+Disease	C1854631	Hypertension, Early-Onset, Autosomal Dominant, with Severe Exacerbation in Pregnancy	DisGeNET Curated	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	NR3C2
+Disease	cv:C1854631	Hypertension, early-onset, autosomal dominant, with severe exacerbation in pregnancy	Clinical Variations	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	NR3C2
+Disease	C0265669	Congenital dislocation of knee	DisGeNET BeFree	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	FLNB
+Disease	C4015537	THROMBOCYTOPENIA 5	DisGeNET Curated	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	ETV6
+Disease	C0265283	Atelosteogenesis, type 1	DisGeNET Curated	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	FLNB
+Disease	C0278779	Osteosarcoma recurrent	DisGeNET BeFree	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	CD44
+Disease	C1838656	Macrocytosis, Familial	DisGeNET Curated	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	ETV6
+Disease	C2750246	Pitt-Hopkins-Like Syndrome 1	DisGeNET Curated	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	CNTNAP2
+Disease	cv:C1864887	Cortical dysplasia-focal epilepsy syndrome	Clinical Variations	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	CNTNAP2
+Disease	OMIN:609027	INDIAN BLOOD GROUP SYSTEM; IN	OMIM	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	CD44
+Disease	cv:C0432201	Boomerang dysplasia	Clinical Variations	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	FLNB
+Disease	OMIN:177850	PSEUDOXANTHOMA ELASTICUM, FORME FRUSTE	OMIM	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	ABCC6
+Disease	cv:CN188274	Mental retardation, autosomal dominant 26	Clinical Variations	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	AUTS2
+Disease	OMIN:235730	MOWAT-WILSON SYNDROME	OMIM	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	ZEB2
+Disease	C1275836	D - transposition of the great vessels	DisGeNET BeFree	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	MEF2C
+Disease	cv:C2931482	Neurofibromatosis-Noonan syndrome	Clinical Variations	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	NF1
+Disease	C1709220	Desmoplastic Neurotropic Melanoma	DisGeNET BeFree	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	NF1
+Disease	C0431111	Rhabdomyosarcoma with ganglionic differentiation	DisGeNET BeFree	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	ETV6
+Disease	cv:CN121653	Generalized arterial calcification of infancy 2	Clinical Variations	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	ABCC6
+Disease	cv:C1862414	Atelosteogenesis type 3	Clinical Variations	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	FLNB
+Disease	C1832594	Verloes Bourguignon syndrome	DisGeNET Curated	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	LTBP3
+Disease	C1540600	Cerebral seizure	DisGeNET BeFree	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	DMD
+Disease	C4024216	Tibial pseudoarthrosis	DisGeNET BeFree	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	NF1
+Disease	cv:C0265283	Atelosteogenesis type 1	Clinical Variations	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	FLNB
+Disease	cv:C0149925	Small cell cancer of the lung	Clinical Variations	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	RB1
+Disease	cv:CN143710	Short stature, optic nerve atrophy, and pelger-huet anomaly	Clinical Variations	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	NBAS
+Disease	OMIN:613097	TOOTH AGENESIS, SELECTIVE, 6; STHAG6	OMIM	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	LTBP3
+Disease	C0278586	Metastatic Ewing's Sarcoma	DisGeNET BeFree	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	PTPRD
+Disease	C3276161	ARTERIAL CALCIFICATION, GENERALIZED, OF INFANCY, 2	DisGeNET Curated	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	ABCC6
+Disease	OMIN:108721	ATELOSTEOGENESIS, TYPE III; AOIII	OMIM	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	FLNB
+Disease	cv:C1834235	Neurofibromatosis, familial spinal	Clinical Variations	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	NF1
+Disease	C4518548	Non-intestinal type adenocarcinoma	DisGeNET BeFree	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	ETV6
+Disease	cv:C1848934	Spondylocarpotarsal synostosis syndrome	Clinical Variations	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	FLNB
+Disease	OMIN:150250	LARSEN SYNDROME, AUTOSOMAL DOMINANT; LRS	OMIM	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	FLNB
+Disease	C2875313	Severe [Duchenne] muscular dystrophy	DisGeNET BeFree	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	DMD
+Disease	cv:C0553586	Café-au-lait macules with pulmonary stenosis	Clinical Variations	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	NF1
+Disease	C3809278	EPILEPTIC ENCEPHALOPATHY, CHILDHOOD-ONSET	DisGeNET Curated	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	CHD2
+Disease	OMIN:108720	ATELOSTEOGENESIS, TYPE I; AOI	OMIM	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	FLNB
+Disease	cv:CN030626	INDIAN BLOOD GROUP SYSTEM	Clinical Variations	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	CD44
+Disease	cv:C0035335	Retinoblastoma	Clinical Variations	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	RB1
+Disease	cv:C0917713	Becker muscular dystrophy	Clinical Variations	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	DMD
+Disease	C3541319	SHORT STATURE, OPTIC NERVE ATROPHY, AND PELGER-HUET ANOMALY	DisGeNET Curated	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	NBAS
+Disease	C4225434	CHROMOSOME 5q14.3 DELETION SYNDROME, PROXIMAL	DisGeNET Curated	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	MEF2C
+Disease	OMIN:272460	SPONDYLOCARPOTARSAL SYNOSTOSIS SYNDROME; SCT	OMIM	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	FLNB
+Disease	cv:CN181776	Leukemia, acute lymphoblastic, susceptibility to, 3	Clinical Variations	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	PAX5
+Disease	C0039223	Tabes Dorsalis	DisGeNET BeFree	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	DMD
+Disease	C3280479	PITT-HOPKINS-LIKE SYNDROME 2	DisGeNET Curated	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	NRXN1
+Disease	OMIN:612100	AUTISM, SUSCEPTIBILITY TO, 15; AUTS15	OMIM	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	CNTNAP2
+Disease	C0519095	tuberculosis chronic pulmonary	DisGeNET BeFree	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	FHIT
+Disease	cv:C0027831	Neurofibromatosis, type 1	Clinical Variations	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	NF1
+Disease	C4310643	NEURODEVELOPMENTAL DISORDER WITH HYPOTONIA, SEIZURES, AND ABSENT LANGUAGE	DisGeNET Curated	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	HECW2
+Disease	cv:C1449842	Pseudohypoaldosteronism type 1 autosomal dominant	Clinical Variations	3.512E-3	1.000E0	2.544E-2	2.040E-1	1	1	NR3C2
+Disease	C0032227	Pleural effusion disorder	DisGeNET Curated	3.615E-3	1.000E0	2.607E-2	2.091E-1	3	88	MTAP,CD44,FHIT
+Disease	C0683322	Mental impairment	DisGeNET BeFree	3.707E-3	1.000E0	2.651E-2	2.126E-1	2	26	DMD,MEF2C
+Disease	C0006079	Bowen's Disease	DisGeNET Curated	3.707E-3	1.000E0	2.651E-2	2.126E-1	2	26	CD44,FHIT
+Disease	C0004763	Barrett Esophagus	DisGeNET Curated	4.043E-3	1.000E0	2.879E-2	2.309E-1	5	302	BNC2,MTAP,CD44,FHIT,JMJD1C
+Disease	C0751690	Malignant Peripheral Nerve Sheath Tumor	DisGeNET Curated	4.062E-3	1.000E0	2.880E-2	2.310E-1	4	186	NF1,RB1,CD44,DACH1
+Disease	C0016667	Fragile X Syndrome	DisGeNET Curated	4.222E-3	1.000E0	2.982E-2	2.392E-1	3	93	NF1,DSCAM,DMD
+Disease	C2825306	Treatment related leukaemia	DisGeNET BeFree	4.292E-3	1.000E0	3.019E-2	2.421E-1	2	28	RUNX1,FHIT
+Disease	C0032927	Precancerous Conditions	DisGeNET Curated	4.404E-3	1.000E0	3.085E-2	2.474E-1	6	443	RB1,CD44,ETV6,PRKG1,RUNX1,FHIT
+Disease	C0085702	Monocytosis	DisGeNET BeFree	4.600E-3	1.000E0	3.180E-2	2.551E-1	2	29	ETV6,RUNX1
+Disease	C3658301	Mycoplasma-Induced Stevens-Johnson Syndrome	DisGeNET Curated	4.600E-3	1.000E0	3.180E-2	2.551E-1	2	29	CELF2,RB1
+Disease	C1274933	Drug-Induced Stevens Johnson Syndrome	DisGeNET Curated	4.600E-3	1.000E0	3.180E-2	2.551E-1	2	29	CELF2,RB1
+Disease	C0238288	Muscular Dystrophy, Facioscapulohumeral	DisGeNET Curated	4.615E-3	1.000E0	3.180E-2	2.551E-1	3	96	RBFOX1,CD44,DMD
+Disease	20081209:Anney	Attention deficit hyperactivity disorder and conduct disorder	GWAS	4.917E-3	1.000E0	3.375E-2	2.707E-1	2	30	PTPRD,RBFOX1
+Disease	C3658302	Stevens-Johnson Syndrome Toxic Epidermal Necrolysis Spectrum	DisGeNET Curated	5.245E-3	1.000E0	3.571E-2	2.864E-1	2	31	CELF2,RB1
+Disease	C0745091	Hypereosinophilia	DisGeNET BeFree	5.245E-3	1.000E0	3.571E-2	2.864E-1	2	31	ETV6,RUNX1
+Disease	C0220621	Childhood Acute Myeloid Leukemia	DisGeNET BeFree	5.317E-3	1.000E0	3.606E-2	2.892E-1	3	101	RUNX1,CCDC26,MEF2C
+Disease	C0029434	Osteogenesis Imperfecta	DisGeNET Curated	5.342E-3	1.000E0	3.609E-2	2.895E-1	4	201	NBAS,FLNB,CD44,DMD
+Disease	C0023269	leiomyosarcoma	DisGeNET Curated	5.464E-3	1.000E0	3.677E-2	2.949E-1	3	102	RB1,DMD,ZEB2
+Disease	C0279583	Childhood T Acute Lymphoblastic Leukemia	DisGeNET BeFree	5.582E-3	1.000E0	3.741E-2	3.001E-1	2	32	MTAP,ETV6
+Disease	C0027831	Neurofibromatosis 1	DisGeNET Curated	5.725E-3	1.000E0	3.822E-2	3.065E-1	4	205	NF1,MBNL1,DACH1,RUNX1
+Disease	C1318544	M5b Acute differentiated monocytic leukemia	DisGeNET BeFree	5.767E-3	1.000E0	3.835E-2	3.076E-1	3	104	NF1,MLLT3,RUNX1
+Disease	C0023480	Leukemia, Myelomonocytic, Chronic	DisGeNET Curated	5.922E-3	1.000E0	3.867E-2	3.102E-1	3	105	NF1,ETV6,RUNX1
+Disease	C0810364	Cleft Lip with or without Cleft Palate	DisGeNET BeFree	5.929E-3	1.000E0	3.867E-2	3.102E-1	2	33	JARID2,CD44
+Disease	C0205945	Sarcoma, Spindle Cell	DisGeNET Curated	5.929E-3	1.000E0	3.867E-2	3.102E-1	2	33	NF1,ETV6
+Disease	C4054727	Infant Acute Lymphoblastic Leukemia	DisGeNET BeFree	5.929E-3	1.000E0	3.867E-2	3.102E-1	2	33	ETV6,FHIT
+Disease	C0023015	Language Disorders	DisGeNET Curated	5.929E-3	1.000E0	3.867E-2	3.102E-1	2	33	CNTNAP2,ETV6
+Disease	C0007129	Merkel cell carcinoma	DisGeNET Curated	6.080E-3	1.000E0	3.874E-2	3.107E-1	3	106	RB1,PAX5,FHIT
+Disease	C1847319	PARAGANGLIOMA AND GASTRIC STROMAL SARCOMA	DisGeNET Curated	6.285E-3	1.000E0	3.874E-2	3.107E-1	2	34	CD44,ETV6
+Disease	C1314694	Astrocytoma, low grade	DisGeNET BeFree	6.651E-3	1.000E0	3.874E-2	3.107E-1	2	35	NF1,CD44
+Disease	C0206728	Plexiform Neurofibroma	DisGeNET Curated	6.651E-3	1.000E0	3.874E-2	3.107E-1	2	35	NF1,RUNX1
+Disease	C0036439	Scoliosis, unspecified	DisGeNET Curated	6.651E-3	1.000E0	3.874E-2	3.107E-1	2	35	NF1,RUNX1
+Disease	C0242596	Neoplasm, Residual	DisGeNET Curated	6.760E-3	1.000E0	3.874E-2	3.107E-1	4	215	ETV6,MLLT3,RUNX1,PBX1
+Disease	C0264955	Idiopathic arterial calcification of infancy	DisGeNET Curated	6.989E-3	1.000E0	3.874E-2	3.107E-1	1	2	ABCC6
+Disease	C0024622	Malignant neoplasm of retina	DisGeNET BeFree	6.989E-3	1.000E0	3.874E-2	3.107E-1	1	2	RB1
+Disease	C0431692	Bilateral renal hypoplasia	DisGeNET Curated	6.989E-3	1.000E0	3.874E-2	3.107E-1	1	2	PBX1
+Disease	C1689817	Cardiomyopathy associated with another disorder	DisGeNET BeFree	6.989E-3	1.000E0	3.874E-2	3.107E-1	1	2	DMD
+Disease	C0556374	Drunk driving	DisGeNET BeFree	6.989E-3	1.000E0	3.874E-2	3.107E-1	1	2	NR3C2
+Disease	C2930900	Beta-sarcoglycanopathy	DisGeNET Curated	6.989E-3	1.000E0	3.874E-2	3.107E-1	1	2	DMD
+Disease	C2751594	LEUKEMIA, ACUTE LYMPHOBLASTIC, SUSCEPTIBILITY TO, 1	DisGeNET Curated	6.989E-3	1.000E0	3.874E-2	3.107E-1	1	2	PAX5
+Disease	C1320471	Mesoblastic nephroma, cellular	DisGeNET BeFree	6.989E-3	1.000E0	3.874E-2	3.107E-1	1	2	ETV6
+Disease	C3668940	Dmd-Associated Dilated Cardiomyopathy	DisGeNET Curated	6.989E-3	1.000E0	3.874E-2	3.107E-1	1	2	DMD
+Disease	C1862177	Diaphyseal medullary stenosis with malignant fibrous histiocytoma	DisGeNET Curated	6.989E-3	1.000E0	3.874E-2	3.107E-1	1	2	MTAP
+Disease	C0751901	Tic, Vocal	DisGeNET Curated	6.989E-3	1.000E0	3.874E-2	3.107E-1	1	2	CNTNAP2
+Disease	OMIN:162200	NEUROFIBROMATOSIS, TYPE I; NF1	OMIM	6.989E-3	1.000E0	3.874E-2	3.107E-1	1	2	NF1
+Disease	C0795836	Chromosome 10, monosomy 10p	DisGeNET BeFree	6.989E-3	1.000E0	3.874E-2	3.107E-1	1	2	CELF2
+Disease	C1562061	Microspherophakia	DisGeNET BeFree	6.989E-3	1.000E0	3.874E-2	3.107E-1	1	2	LTBP3
+Disease	C0016024	Fibroadenosis	DisGeNET BeFree	6.989E-3	1.000E0	3.874E-2	3.107E-1	1	2	FHIT
+Disease	C0596270	Cardiovascular Infections	DisGeNET BeFree	6.989E-3	1.000E0	3.874E-2	3.107E-1	1	2	DMD
+Disease	C0876993	Cardiac ventricular thrombosis	DisGeNET BeFree	6.989E-3	1.000E0	3.874E-2	3.107E-1	1	2	DMD
+Disease	C1850318	Omodysplasia type 1	DisGeNET Curated	6.989E-3	1.000E0	3.874E-2	3.107E-1	1	2	CD44
+Disease	C1336012	Small Lymphocytic Lymphoma with Plasmacytoid Differentiation	DisGeNET BeFree	6.989E-3	1.000E0	3.874E-2	3.107E-1	1	2	PAX5
+Disease	20090713:Falchi	Cutaneous nevi	GWAS	6.989E-3	1.000E0	3.874E-2	3.107E-1	1	2	MTAP
+Disease	20081125:Fung	Parkinson's disease	GWAS	6.989E-3	1.000E0	3.874E-2	3.107E-1	1	2	DLG2
+Disease	C0026851	Muscular Dystrophy, Animal	DisGeNET Curated	6.989E-3	1.000E0	3.874E-2	3.107E-1	1	2	DMD
+Disease	C0278582	Cervical carcinoma stage IB	DisGeNET BeFree	6.989E-3	1.000E0	3.874E-2	3.107E-1	1	2	CD44
+Disease	C0206713	Papilloma, Intraductal	DisGeNET BeFree	6.989E-3	1.000E0	3.874E-2	3.107E-1	1	2	PRKG1
+Disease	C0271388	Pendular Nystagmus	DisGeNET Curated	6.989E-3	1.000E0	3.874E-2	3.107E-1	1	2	PAX5
+Disease	C2751595	LEUKEMIA, ACUTE LYMPHOCYTIC, SUSCEPTIBILITY TO, 1	DisGeNET Curated	6.989E-3	1.000E0	3.874E-2	3.107E-1	1	2	PAX5
+Disease	C2931648	Larsen syndrome, dominant type	DisGeNET Curated	6.989E-3	1.000E0	3.874E-2	3.107E-1	1	2	FLNB
+Disease	C0334309	Adenocarcinoma in tubulovillous adenoma	DisGeNET BeFree	6.989E-3	1.000E0	3.874E-2	3.107E-1	1	2	PAX5
+Disease	C0854248	Pneumonia due to Gram negative bacteria	DisGeNET BeFree	6.989E-3	1.000E0	3.874E-2	3.107E-1	1	2	CD44
+Disease	20090121:Burgner	Kawasaki disease	GWAS	6.989E-3	1.000E0	3.874E-2	3.107E-1	1	2	NAALADL2
+Disease	C0432185	Aplasia of muscle	DisGeNET BeFree	6.989E-3	1.000E0	3.874E-2	3.107E-1	1	2	DMD
+Disease	C3489627	Stuttering, Familial Persistent 1	DisGeNET Curated	6.989E-3	1.000E0	3.874E-2	3.107E-1	1	2	CNTNAP2
+Disease	C1292776	Therapy-related acute myeloid leukemia and myelodysplastic syndrome	DisGeNET BeFree	6.989E-3	1.000E0	3.874E-2	3.107E-1	1	2	RUNX1
+Disease	C1858593	Limb-girdle muscular dystrophy, type 2E	DisGeNET Curated	6.989E-3	1.000E0	3.874E-2	3.107E-1	1	2	DMD
+Disease	OMIN:131440	MYELOPROLIFERATIVE DISORDER, CHRONIC, WITH EOSINOPHILIA	OMIM	6.989E-3	1.000E0	3.874E-2	3.107E-1	1	2	ETV6
+Disease	C2751597	LEUKEMIA, T-CELL ACUTE LYMPHOBLASTIC, SUSCEPTIBILITY TO	DisGeNET Curated	6.989E-3	1.000E0	3.874E-2	3.107E-1	1	2	PAX5
+Disease	C2751598	LEUKEMIA, ACUTE LYMPHOBLASTIC, B-HYPERDIPLOID, SUSCEPTIBILITY TO	DisGeNET Curated	6.989E-3	1.000E0	3.874E-2	3.107E-1	1	2	PAX5
+Disease	OMIN:310200	MUSCULAR DYSTROPHY, DUCHENNE TYPE; DMD	OMIM	6.989E-3	1.000E0	3.874E-2	3.107E-1	1	2	DMD
+Disease	OMIN:300376	MUSCULAR DYSTROPHY, BECKER TYPE; BMD	OMIM	6.989E-3	1.000E0	3.874E-2	3.107E-1	1	2	DMD
+Disease	C2751596	LEUKEMIA, B-CELL ACUTE LYMPHOBLASTIC, SUSCEPTIBILITY TO	DisGeNET Curated	6.989E-3	1.000E0	3.874E-2	3.107E-1	1	2	PAX5
+Disease	C0280783	Juvenile Pilocytic Astrocytoma	DisGeNET Curated	7.027E-3	1.000E0	3.874E-2	3.107E-1	2	36	NF1,CD44
+Disease	C0041207	Truncus Arteriosus, Persistent	DisGeNET Curated	7.027E-3	1.000E0	3.874E-2	3.107E-1	2	36	PAX5,PBX1
+Disease	C0027092	Myopia	DisGeNET Curated	7.253E-3	1.000E0	3.985E-2	3.197E-1	3	113	RBFOX1,PAX5,ZEB2
+Disease	C0553580	Ewings sarcoma	DisGeNET Curated	7.394E-3	1.000E0	4.044E-2	3.244E-1	5	349	NF1,PTPRD,RB1,CD44,ABCC6
+Disease	C1860787	DOWN SYNDROME CRITICAL REGION	DisGeNET BeFree	7.412E-3	1.000E0	4.044E-2	3.244E-1	2	37	DSCAM,RUNX1
+Disease	C0026998	Acute Myeloid Leukemia, M1	DisGeNET Curated	7.430E-3	1.000E0	4.044E-2	3.244E-1	3	114	NF1,CD44,RUNX1
+Disease	C0349788	Arrhythmogenic Right Ventricular Dysplasia	DisGeNET Curated	7.806E-3	1.000E0	4.235E-2	3.397E-1	2	38	PRKG1,MEF2C
+Disease	C0014474	Ependymoma	DisGeNET Curated	7.979E-3	1.000E0	4.302E-2	3.450E-1	3	117	NF1,PAX5,RUNX1
+Disease	C0023462	Acute Megakaryocytic Leukemias	DisGeNET Curated	7.979E-3	1.000E0	4.302E-2	3.450E-1	3	117	ETV6,MLLT3,RUNX1
+Disease	C0013336	Dwarfism	DisGeNET Curated	8.034E-3	1.000E0	4.318E-2	3.463E-1	4	226	NBAS,NF1,DMD,RUNX1
+Disease	C1879321	Acute Myeloid Leukemia (AML-M2)	DisGeNET Curated	8.167E-3	1.000E0	4.375E-2	3.510E-1	3	118	NF1,CD44,RUNX1
+Disease	C1332153	Acute Myeloid Leukemia Arising from Previous Myelodysplastic Syndrome	DisGeNET BeFree	8.209E-3	1.000E0	4.384E-2	3.517E-1	2	39	ETV6,RUNX1
+Disease	C0079774	Peripheral T-Cell Lymphoma	DisGeNET Curated	8.358E-3	1.000E0	4.450E-2	3.569E-1	3	119	CD44,ETV6,PAX5
+Disease	C0034013	Precocious Puberty	DisGeNET Curated	8.622E-3	1.000E0	4.562E-2	3.659E-1	2	40	CD44,DMD
+Disease	C0014548	Epilepsy, Generalized	DisGeNET Curated	8.622E-3	1.000E0	4.562E-2	3.659E-1	2	40	RBFOX1,CHD2
+Disease	C0027809	Neurilemmoma	DisGeNET Curated	8.747E-3	1.000E0	4.600E-2	3.689E-1	3	121	NF1,CD44,DMD
+Disease	C0017154	Gastritis, Atrophic	DisGeNET Curated	8.747E-3	1.000E0	4.600E-2	3.689E-1	3	121	NBAS,CD44,FHIT
+Disease	C0278701	Gastric Adenocarcinoma	DisGeNET Curated	8.782E-3	1.000E0	4.604E-2	3.693E-1	5	364	NBAS,MTAP,PTPRD,CD44,ZEB2
+Disease	C0020538	Hypertensive disease	DisGeNET Curated	9.388E-3	1.000E0	4.900E-2	3.930E-1	9	1036	PTPRD,RB1,CNTNAP2,NR3C2,PAX5,PRKG1,DMD,ATP2B1,ABCC6
+Disease	C0038325	Stevens-Johnson Syndrome	DisGeNET Curated	9.475E-3	1.000E0	4.900E-2	3.930E-1	2	42	CELF2,RB1
+Disease	C0677055	CARCINOMA OF VULVA	DisGeNET BeFree	9.915E-3	1.000E0	4.900E-2	3.930E-1	2	43	RB1,CD44
+Disease	C0035335	Retinoblastoma	DisGeNET Curated	1.029E-2	1.000E0	4.900E-2	3.930E-1	6	530	MTAP,NF1,RB1,CD44,SCYL1,ELF1
+Disease	C0205824	Liposarcoma, Dedifferentiated	DisGeNET Curated	1.036E-2	1.000E0	4.900E-2	3.930E-1	2	44	NF1,RB1
+Disease	C0265886	Overriding aorta	DisGeNET BeFree	1.047E-2	1.000E0	4.900E-2	3.930E-1	1	3	MEF2C
+Disease	C3279393	PXE, MODIFIER OF SEVERITY OF	DisGeNET Curated	1.047E-2	1.000E0	4.900E-2	3.930E-1	1	3	ABCC6
+Disease	C0456702	Severe childhood autosomal recessive muscular dystrophy	DisGeNET BeFree	1.047E-2	1.000E0	4.900E-2	3.930E-1	1	3	DMD
+Disease	C0206628	Mesoblastic Nephroma	DisGeNET BeFree	1.047E-2	1.000E0	4.900E-2	3.930E-1	1	3	ETV6
+Disease	C3150928	NF1 Microdeletion Syndrome	DisGeNET Curated	1.047E-2	1.000E0	4.900E-2	3.930E-1	1	3	NF1
+Disease	C0014818	Erythroplasia	DisGeNET BeFree	1.047E-2	1.000E0	4.900E-2	3.930E-1	1	3	FHIT
+Disease	C0393720	Reflex Epilepsy, Photosensitive	DisGeNET BeFree	1.047E-2	1.000E0	4.900E-2	3.930E-1	1	3	CHD2
+Disease	C0027125	Myotonia	DisGeNET Curated	1.047E-2	1.000E0	4.900E-2	3.930E-1	1	3	MBNL1
+Disease	C0685891	Congenital hypoplasia of thymus	DisGeNET BeFree	1.047E-2	1.000E0	4.900E-2	3.930E-1	1	3	CELF2
+Disease	C0432228	Brachyolmia	DisGeNET Curated	1.047E-2	1.000E0	4.900E-2	3.930E-1	1	3	LTBP3
+Disease	C0268505	Ocular albinism, type II	DisGeNET Curated	1.047E-2	1.000E0	4.900E-2	3.930E-1	1	3	DMD
+Disease	C0747078	Generalized osteopenia	DisGeNET BeFree	1.047E-2	1.000E0	4.900E-2	3.930E-1	1	3	CD44
+Disease	C0221287	Combined Hepatocellular Carcinoma and Cholangiocarcinoma	DisGeNET BeFree	1.047E-2	1.000E0	4.900E-2	3.930E-1	1	3	CD44
+Disease	C0018672	Head Banging	DisGeNET Curated	1.047E-2	1.000E0	4.900E-2	3.930E-1	1	3	MEF2C
+Disease	C2931875	Albinism with hemorrhagic diathesis and pigmented reticuloendothelial cells	DisGeNET Curated	1.047E-2	1.000E0	4.900E-2	3.930E-1	1	3	RUNX1
+Disease	cv:C0349639	Juvenile myelomonocytic leukemia	Clinical Variations	1.047E-2	1.000E0	4.900E-2	3.930E-1	1	3	NF1
+Disease	C1859727	Arterial calcification of infancy	DisGeNET Curated	1.047E-2	1.000E0	4.900E-2	3.930E-1	1	3	ABCC6
+Disease	C1867450	Pseudoxanthoma Elasticum, Incomplete	DisGeNET Curated	1.047E-2	1.000E0	4.900E-2	3.930E-1	1	3	ABCC6
+Disease	C3279392	PSEUDOXANTHOMA ELASTICUM, MODIFIER OF SEVERITY OF	DisGeNET Curated	1.047E-2	1.000E0	4.900E-2	3.930E-1	1	3	ABCC6
+Disease	C1859372	Calcification of Joints and Arteries	DisGeNET Curated	1.047E-2	1.000E0	4.900E-2	3.930E-1	1	3	ABCC6
+Disease	C0751359	Percussion Myotonia	DisGeNET Curated	1.047E-2	1.000E0	4.900E-2	3.930E-1	1	3	MBNL1
+Disease	C1833691	Otofaciocervical Syndrome	DisGeNET Curated	1.047E-2	1.000E0	4.900E-2	3.930E-1	1	3	DACH1
+Disease	C0005899	Body Rocking	DisGeNET Curated	1.047E-2	1.000E0	4.900E-2	3.930E-1	1	3	MEF2C
+Disease	C0751358	Myotonic Phenomenon	DisGeNET Curated	1.047E-2	1.000E0	4.900E-2	3.930E-1	1	3	MBNL1
+Disease	C0376359	Gronblad-Strandberg Syndrome	DisGeNET Curated	1.047E-2	1.000E0	4.900E-2	3.930E-1	1	3	ABCC6
+Disease	C1292773	Acute myeloid leukemia with multilineage dysplasia	DisGeNET Curated	1.047E-2	1.000E0	4.900E-2	3.930E-1	1	3	RUNX1
+Disease	C0349571	Pleomorphic adenoma of parotid gland	DisGeNET BeFree	1.047E-2	1.000E0	4.900E-2	3.930E-1	1	3	FHIT
+Disease	C0268418	Deficiency of glycerol kinase	DisGeNET Curated	1.047E-2	1.000E0	4.900E-2	3.930E-1	1	3	DMD
+Disease	C0877104	Retinal toxicity	DisGeNET BeFree	1.047E-2	1.000E0	4.900E-2	3.930E-1	1	3	ABCC6
+Disease	cv:C0033847	Pseudoxanthoma elasticum	Clinical Variations	1.047E-2	1.000E0	4.900E-2	3.930E-1	1	3	ABCC6
+Disease	C0553586	Cafe-au-lait macules with pulmonary stenosis	DisGeNET Curated	1.047E-2	1.000E0	4.900E-2	3.930E-1	1	3	NF1
+Disease	C0349391	Apraxia, Verbal	DisGeNET Curated	1.047E-2	1.000E0	4.900E-2	3.930E-1	1	3	CNTNAP2
+Disease	C0851265	Learning problems	DisGeNET BeFree	1.047E-2	1.000E0	4.900E-2	3.930E-1	1	3	NF1
+Disease	cv:C0029463	Osteosarcoma	Clinical Variations	1.047E-2	1.000E0	4.900E-2	3.930E-1	1	3	RB1
+Disease	C0032580	Adenomatous Polyposis Coli	DisGeNET Curated	1.068E-2	1.000E0	4.985E-2	3.999E-1	5	382	FOCAD,NF1,CD44,NR3C2,FHIT
+Disease	C0006111	Brain Diseases	DisGeNET Curated	1.074E-2	1.000E0	4.986E-2	4.000E-1	4	246	NRXN1,DSCAM,CNTNAP2,CHD2
+Disease	C0155626	Acute myocardial infarction	DisGeNET BeFree	1.074E-2	1.000E0	4.986E-2	4.000E-1	4	246	RB1,NR3C2,DMD,ABCC6

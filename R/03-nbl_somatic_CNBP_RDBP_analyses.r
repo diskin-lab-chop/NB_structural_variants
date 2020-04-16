@@ -1,3 +1,10 @@
+## Code Analysis of CNV data:
+# "Somatic structural variation targets neurodevelopmental genes and identifies SHANK2 as a tumor suppressor in neuroblastoma"
+# Author: Gonzalo Lopez, PhD
+# email: gonzalo.lopezgarcia@mssm.edu
+# Date edited: Apr 16th, 2020
+
+
 rm(list = ls(all.names = TRUE))
 ### look at the density of SV events in specific chromosomic regions
 library(devtools)  # not sure if needed to load https
@@ -11,7 +18,8 @@ library(data.table)
 library(tidyr)
 require(taRifx)  # contains remove.factors
 
-source('R/my_stat_functions.r')
+setwd("~/Box Sync/git/NB_structural_variants/")   # modify to local folder
+source('R/my_stat_functions.R')
 source('R/01-nbl_somatic_SV_FUNCTIONS.R')
 
 
@@ -33,7 +41,7 @@ low_cov_GR = with(low_cov, GRanges(chr, IRanges(start=start, end=stop)))
 overlap_gr <- GenomicAlignments::findOverlaps(features_tab_GR,low_cov_GR,ignore.strand=TRUE)
 mapped_genes <- rownames(genes_tab[setdiff(1:nrow(genes_tab),queryHits(overlap_gr)),])
 
-## obtain amplifications and deep deletions from segmentation datasets 
+## obtain amplifications and deep-deletions from segmentation datasets 
 # reformat segmentation data
 segment_cgi2<-segment_cgi
 segment_snp2<-segment_snp
@@ -43,7 +51,6 @@ segment_cgi2[,"Chromosome"] <- paste("chr",segment_cgi2[,"Chromosome"],sep="")
 segment_4tum2[,"Chromosome"] <- paste("chr",segment_4tum2[,"Chromosome"],sep="")
 colnames(segment_4tum2) <- colnames(segment_cgi2)
 
-# run analysis (FUNCTION=readDepthCopynum)
 results_CN <- readDepthCopynum(segment_cgi2, genes_tab[mapped_genes,], ampl_cut = 2, ddel_cut = -1.9)
 results_CN_snp<- readDepthCopynum(segment_snp2, genes_tab[mapped_genes,], ampl_cut = 1.2, ddel_cut = -1.2)
 results_CN_4tum<- readDepthCopynum(segment_4tum2, genes_tab[mapped_genes,], ampl_cut = 1.2, ddel_cut = -1.2)
@@ -51,7 +58,7 @@ results_CN_4tum<- readDepthCopynum(segment_4tum2, genes_tab[mapped_genes,], ampl
 ### Identification of recurrently altered altered genes using CNV breakpoint localization 
 # a graphic description of this analysis is represented in Supplementary Figure S11B
 
-
+# define parametres for RD-BP breakpoint annotation (WGS dataset, NBL samples)
 upstr=100000 
 dnstr=25000
 promoter=1000
@@ -60,23 +67,27 @@ copynumsize = 2000000
 feature_tab<- genes_tab
 exons_tab <- exons_tab
 segdat <- segment_cgi
+
+# Identify breakpoint coordinates
 breaks_cgi <- readDepthBreaks(segdat, cutoff=0.304 ,segsize=10000,lowcov=low_cov)
 breaks<- breaks_cgi[which(breaks_cgi$stop -breaks_cgi$start < 20000),]
-
-
 breaks_redund_left <-  unite(breaks, newcol, c(chr,start), remove=FALSE,sep=":")$newcol
 breaks_redund_right <-  unite(breaks, newcol, c(chr,stop), remove=FALSE,sep=":")$newcol
 breaks_redund <- intersect(which(! breaks_redund_left %in% names(which(sort(table(breaks_redund_left)) > 3))),
 	which(! breaks_redund_right %in% names(which(sort(table(breaks_redund_right)) > 3))))
 breaks <- breaks[breaks_redund,]
-
 rownames(breaks) <- unite(breaks, newcol, c(sample, chr,start,stop), remove=FALSE,sep=":")$newcol
+
+# run mapping of breakpoints 
 results_BP <- enrichBP(breaks,feature_tab, upstr=upstr, dnstr=dnstr, promoter=1000, offset=100)
 
+# Top ranked genes (proximal)
 sort(unlist(lapply(results_BP$proximalSamples,length)),decreasing=T)[1:20]
+# Top ranked genes (disrupting)
 sort(unlist(lapply(results_BP$breakSamples,length)),decreasing=T)[1:20]
-sort(unlist(lapply(merge2lists(results_BP$breakSamples,results_BP$proximalSamples),length)),decreasing=T)[1:20]
 
+
+# define parametres for RD-BP breakpoint annotation (WGS dataset non-NBL samples)
 upstr=100000 
 dnstr=25000
 promoter=1000
@@ -85,6 +96,8 @@ copynumsize = 2000000
 feature_tab<- genes_tab
 exons_tab <- exons_tab
 segdat <- segment_4tum2
+
+# Identify breakpoint coordinates
 breaks_cgi <- readDepthBreaks(segdat, cutoff=0.304 ,segsize=10000,lowcov=low_cov)
 breaks<- breaks_cgi[which(breaks_cgi$stop -breaks_cgi$start < 20000),]
 
@@ -93,15 +106,18 @@ breaks_redund_right <-  unite(breaks, newcol, c(chr,stop), remove=FALSE,sep=":")
 breaks_redund <- intersect(which(! breaks_redund_left %in% names(which(sort(table(breaks_redund_left)) > 3))),
                            which(! breaks_redund_right %in% names(which(sort(table(breaks_redund_right)) > 3))))
 breaks <- breaks[breaks_redund,]
-
 rownames(breaks) <- unite(breaks, newcol, c(sample, chr,start,stop), remove=FALSE,sep=":")$newcol
+
+# run mapping of breakpoints 
 results_BP_4tum  <- enrichBP(breaks,feature_tab, upstr=upstr, dnstr=dnstr, promoter=1000, offset=100)
 
+# Top ranked genes (proximal)
 sort(unlist(lapply(results_BP_4tum$proximalSamples,length)),decreasing=T)[1:20]
+# Top ranked genes (disrupting)
 sort(unlist(lapply(results_BP_4tum$breakSamples,length)),decreasing=T)[1:20]
-sort(unlist(lapply(merge2lists(results_BP_4tum$breakSamples,results_BP_4tum$proximalSamples),length)),decreasing=T)[1:20]
 
 
+# define parametres for CN-BP breakpoint annotation (SNP array dataset)
 upstr=100000 
 dnstr=25000
 promoter=1000
@@ -120,8 +136,10 @@ breaks <- breaks[breaks_redund,]
 rownames(breaks) <- unite(breaks, newcol, c(sample, chr,start,stop), remove=FALSE,sep=":")$newcol
 results_BP_snp <- enrichBP(breaks,feature_tab, upstr=upstr, dnstr=dnstr, promoter=1000, offset=100)
 
-sort(unlist(lapply(results_BP_snp$breakSamples,length)),decreasing=T)[1:20]
+# Top ranked genes (proximal)
 sort(unlist(lapply(results_BP_snp$proximalSamples,length)),decreasing=T)[1:20]
+# Top ranked genes (disrupting)
+sort(unlist(lapply(results_BP_snp$breakSamples,length)),decreasing=T)[1:20]
 
 ## save results for 
 save(results_BP, results_BP_snp,results_BP_4tum, genes_tab, exons_tab, results_CN,results_CN_4tum, results_CN_snp, low_cov_GR,

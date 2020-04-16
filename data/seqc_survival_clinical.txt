@@ -1,0 +1,499 @@
+RNAseq_ID	country	stage	INSS	age	high_risk	MYCN	SEQC_NB_TrainingValidation	Sex	EFS_d	EFS_bin	OS_d	OS_bin
+NB001	Germany	4	4	987	HR	nonMNA	SEQC_Training	M	593	1	1362	1
+NB002	Germany	4	4	1808	HR	nonMNA	SEQC_Validation	M	2016	1	2836	1
+NB003	Germany	4	4	625	HR	MNA	SEQC_Training	F	840	1	1191	1
+NB004	Germany	2b	2	335	HR	MNA	SEQC_Validation	F	2046	0	2046	0
+NB005	Germany	4	4	536	HR	MNA	SEQC_Training	F	212	1	220	1
+NB006	Germany	4S	4S	147		nonMNA	SEQC_Validation	M	2217	0	2217	0
+NB007	Germany	4	4	942	HR	nonMNA	SEQC_Training	M	562	1	3152	0
+NB008	Germany	3	3	1652	HR	MNA	SEQC_Validation	M	3526	0	3526	0
+NB009	Germany	4S	4S	217	HR	MNA	SEQC_Training	F	2306	0	2306	0
+NB010	Germany	3	3	379	HR	MNA	SEQC_Validation	M	620	1	1081	1
+NB011	Germany	2a	2	414		nonMNA	SEQC_Training	M	2094	0	2094	0
+NB012	Germany	1	1	380		nonMNA	SEQC_Validation	M	1799	0	1799	0
+NB013	Germany	4	4	3394	HR	nonMNA	SEQC_Training	M	357	1	479	1
+NB014	Germany	2b	2	515		nonMNA	SEQC_Validation	F	3064	0	3064	0
+NB015	Germany	4	4	4785	HR	nonMNA	SEQC_Training	M	414	1	1327	0
+NB016	Germany	4S	4S	0		nonMNA	SEQC_Validation	F	2717	0	2717	0
+NB017	Germany	2b	2	765		nonMNA	SEQC_Training	M	2863	0	2863	0
+NB018	Germany	2b	2	507		nonMNA	SEQC_Validation	M	3508	0	3508	0
+NB019	Germany	1	1	303		nonMNA	SEQC_Training	F	2499	0	2499	0
+NB020	Germany	1	1	497		nonMNA	SEQC_Validation	M	3468	0	3468	0
+NB021	Germany	1	1	564		nonMNA	SEQC_Training	F	3149	0	3149	0
+NB022	Germany	1	1	401		nonMNA	SEQC_Validation	M	5263	0	5263	0
+NB023	Germany	1	1	420		nonMNA	SEQC_Training	M	4492	0	4492	0
+NB024	Germany	1	1	499		nonMNA	SEQC_Validation	F	4051	0	4051	0
+NB025	Germany	1	1	496		nonMNA	SEQC_Training	M	2101	0	2101	0
+NB026	Germany	1	1	488		nonMNA	SEQC_Validation	F	707	0	707	0
+NB027	Germany	1	1	440		nonMNA	SEQC_Training	F	3753	0	3753	0
+NB028	Germany	1	1	468		nonMNA	SEQC_Validation	F	3268	0	3268	0
+NB029	Germany	1	1	463		nonMNA	SEQC_Training	M	1372	0	1372	0
+NB030	Germany	1	1	450		nonMNA	SEQC_Validation	M	4353	0	4353	0
+NB031	Germany	1	1	494		nonMNA	SEQC_Training	F	4823	0	4823	0
+NB032	Germany	1	1	398		nonMNA	SEQC_Validation	F	3675	0	3675	0
+NB033	Germany	1	1	479		nonMNA	SEQC_Training	F	4877	0	4877	0
+NB034	Germany	1	1	467		nonMNA	SEQC_Validation	F	4240	0	4240	0
+NB035	Germany	1	1	173		nonMNA	SEQC_Training	M	3807	0	3807	0
+NB036	Germany	1	1	744		nonMNA	SEQC_Validation	M	4972	0	4972	0
+NB037	Germany	1	1	446		nonMNA	SEQC_Training	F	4662	0	4662	0
+NB038	Germany	1	1	466		nonMNA	SEQC_Validation	F	4521	0	4521	0
+NB039	Germany	2a	2	705		nonMNA	SEQC_Training	F	3750	0	3750	0
+NB040	Germany	2a	2	971		nonMNA	SEQC_Validation	M	3753	0	3753	0
+NB041	Germany	2b	2	472		nonMNA	SEQC_Training	F	3312	0	3312	0
+NB042	Germany	2a	2	975		nonMNA	SEQC_Validation	F	4365	0	4365	0
+NB043	Germany	2b	2	458		nonMNA	SEQC_Training	M	1589	0	1589	0
+NB044	Germany	2a	2	528		nonMNA	SEQC_Validation	F	2591	0	2591	0
+NB045	Germany	2a	2	867		nonMNA	SEQC_Training	F	3452	0	3452	0
+NB046	Germany	2a	2	480		nonMNA	SEQC_Validation	F	3984	0	3984	0
+NB047	Germany	2b	2	381		nonMNA	SEQC_Training	F	3428	0	3428	0
+NB048	Germany	2b	2	715		nonMNA	SEQC_Validation	M	1924	0	1924	0
+NB049	Germany	2b	2	638		nonMNA	SEQC_Training	F	3941	0	3941	0
+NB050	Germany	1	1	546		nonMNA	SEQC_Validation	F	3456	0	3456	0
+NB051	Germany	4S	4S	46		nonMNA	SEQC_Training	M	2753	0	2753	0
+NB052	Germany	1	1	1016		nonMNA	SEQC_Validation	F	5435	0	5435	0
+NB053	Germany	1	1	10		nonMNA	SEQC_Training	M	2055	0	2055	0
+NB054	Germany	1	1	824		nonMNA	SEQC_Validation	F	2723	0	2723	0
+NB055	Germany	1	1	94		nonMNA	SEQC_Training	F	2504	0	2504	0
+NB056	Germany	1	1	405		nonMNA	SEQC_Validation	M	4556	0	4556	0
+NB057	Germany	1	1	449		nonMNA	SEQC_Training	M	3352	0	3352	0
+NB058	Germany	1	1	743		nonMNA	SEQC_Validation	F	3301	0	3301	0
+NB059	Germany	1	1	546		nonMNA	SEQC_Training	F	3990	0	3990	0
+NB060	Germany	1	1	470		nonMNA	SEQC_Validation	M	4061	0	4061	0
+NB061	Germany	2b	2	442		nonMNA	SEQC_Training	M	3575	0	3575	0
+NB062	Germany	2b	2	408		nonMNA	SEQC_Validation	F	4997	0	4997	0
+NB063	Germany	2b	2	472		nonMNA	SEQC_Training	F	485	1	3635	0
+NB064	Germany	2b	2	91		nonMNA	SEQC_Validation	M	3675	0	3675	0
+NB065	Germany	2a	2	417		nonMNA	SEQC_Training	M	1211	0	1211	0
+NB066	Germany	2a	2	453		nonMNA	SEQC_Validation	F	651	1	2773	0
+NB067	Germany	3	3	243		nonMNA	SEQC_Training	M	4494	0	4494	0
+NB068	Germany	3	3	541		nonMNA	SEQC_Validation	F	5131	0	5131	0
+NB069	Germany	3	3	1585		nonMNA	SEQC_Training	F	483	1	846	1
+NB070	Germany	3	3	379		nonMNA	SEQC_Validation	F	3691	0	3691	0
+NB071	Germany	3	3	0		nonMNA	SEQC_Training	F	3832	0	3832	0
+NB072	Germany	3	3	202		nonMNA	SEQC_Validation	M	6482	0	6482	0
+NB073	Germany	3	3	344		nonMNA	SEQC_Training	F	3566	0	3566	0
+NB074	Germany	3	3	1126		nonMNA	SEQC_Validation	M	1246	1	3555	0
+NB075	Germany	3	3	461		nonMNA	SEQC_Training	F	994	0	994	0
+NB076	Germany	3	3	451		nonMNA	SEQC_Validation	M	4440	0	4440	0
+NB077	Germany	3	3	66		nonMNA	SEQC_Training	M	4600	0	4600	0
+NB078	Germany	3	3	1381		nonMNA	SEQC_Validation	M	3111	0	3111	0
+NB079	Germany	3	3	452		nonMNA	SEQC_Training	M	5147	0	5147	0
+NB080	Germany	3	3	1000	HR	MNA	SEQC_Validation	F	402	1	416	1
+NB081	Germany	3	3	2737	HR	MNA	SEQC_Training	M	2828	0	2828	0
+NB082	Germany	4	4	1012	HR	nonMNA	SEQC_Validation	M	3631	0	3631	0
+NB083	Germany	4	4	1262	HR	nonMNA	SEQC_Training	M	3208	0	3208	0
+NB084	Germany	4	4	495		nonMNA	SEQC_Validation	F	5234	0	5234	0
+NB085	Germany	4	4	321		nonMNA	SEQC_Training	F	5133	0	5133	0
+NB086	Germany	4	4	359		nonMNA	SEQC_Validation	F	1752	1	3817	0
+NB087	Germany	4	4	1602	HR	nonMNA	SEQC_Training	M	1890	1	2884	0
+NB088	Germany	4	4	400		nonMNA	SEQC_Validation	F	5318	0	5318	0
+NB089	Germany	4	4	395		nonMNA	SEQC_Training	M	3576	0	3576	0
+NB090	Germany	4	4	5465	HR	nonMNA	SEQC_Validation	F	555	1	763	1
+NB091	Germany	4	4	2429	HR	nonMNA	SEQC_Training	M	1480	1	3804	0
+NB092	Germany	4	4	933	HR	nonMNA	SEQC_Validation	M	497	1	1445	1
+NB093	Germany	4	4	366		nonMNA	SEQC_Training	M	3935	0	3935	0
+NB094	Germany	4	4	4394	HR	nonMNA	SEQC_Validation	M	486	1	1293	1
+NB095	Germany	1	1	460		nonMNA	SEQC_Training	M	3883	0	3883	0
+NB096	Germany	1	1	465		nonMNA	SEQC_Validation	F	3977	0	3977	0
+NB097	Germany	1	1	529		nonMNA	SEQC_Training	F	3641	0	3641	0
+NB098	Germany	1	1	545		nonMNA	SEQC_Validation	M	4042	0	4042	0
+NB099	Germany	1	1	0		nonMNA	SEQC_Training	M	2167	0	2167	0
+NB100	Germany	1	1	218		nonMNA	SEQC_Validation	M	3013	0	3013	0
+NB101	Germany	1	1	425		nonMNA	SEQC_Training	M	2355	0	2355	0
+NB102	Germany	1	1	544		nonMNA	SEQC_Validation	M	2432	0	2432	0
+NB103	Germany	1	1	758		nonMNA	SEQC_Training	F	363	1	2694	0
+NB104	Germany	1	1	272		nonMNA	SEQC_Validation	M	2549	0	2549	0
+NB105	Germany	1	1	887		nonMNA	SEQC_Training	F	3703	0	3703	0
+NB106	Germany	1	1	262		nonMNA	SEQC_Validation	M	33	1	3898	0
+NB107	Germany	1	1	427		nonMNA	SEQC_Training	F	883	0	883	0
+NB108	Germany	4	4	371		nonMNA	SEQC_Validation	M	2808	0	2808	0
+NB109	Germany	1	1	101		nonMNA	SEQC_Training	M	168	1	2941	0
+NB110	Germany	1	1	92		nonMNA	SEQC_Validation	M	4480	0	4480	0
+NB111	Germany	1	1	41		nonMNA	SEQC_Training	F	3957	0	3957	0
+NB112	Germany	1	1	734	n.e.	n.e.	SEQC_Validation	F	2832	0	2832	0
+NB113	Germany	1	1	451	HR	MNA	SEQC_Training	M	112	1	3283	0
+NB114	Germany	1	1	465		nonMNA	SEQC_Validation	M	2673	0	2673	0
+NB115	Germany	2b	2	417		nonMNA	SEQC_Training	M	3707	0	3707	0
+NB116	Germany	2a	2	301		nonMNA	SEQC_Validation	F	2458	0	2458	0
+NB117	Germany	2a	2	206		nonMNA	SEQC_Training	F	132	1	3217	0
+NB118	Germany	2a	2	256		nonMNA	SEQC_Validation	M	1016	0	1016	0
+NB119	Germany	2b	2	207		nonMNA	SEQC_Training	F	674	1	1820	1
+NB120	Germany	2b	2	228		nonMNA	SEQC_Validation	M	3201	0	3201	0
+NB121	Germany	2a	2	121		nonMNA	SEQC_Training	M	2500	0	2500	0
+NB122	Germany	2b	2	4562		nonMNA	SEQC_Validation	F	759	1	1773	1
+NB123	Germany	2b	2	151		nonMNA	SEQC_Training	M	3324	0	3324	0
+NB124	Germany	2a	2	240		nonMNA	SEQC_Validation	M	54	1	2965	0
+NB125	Germany	2	2	9		nonMNA	SEQC_Training	F	3221	0	3221	0
+NB126	Germany	2a	2	0		nonMNA	SEQC_Validation	F	2405	0	2405	0
+NB127	Germany	3	3	144		nonMNA	SEQC_Training	F	5813	0	5813	0
+NB128	Germany	3	3	222		nonMNA	SEQC_Validation	M	2552	0	2552	0
+NB129	Germany	3	3	1701		nonMNA	SEQC_Training	M	2365	0	2365	0
+NB130	Germany	3	3	47		nonMNA	SEQC_Validation	M	1128	1	3561	0
+NB131	Germany	3	3	2		nonMNA	SEQC_Training	M	1001	0	1001	0
+NB132	Germany	3	3	1071		nonMNA	SEQC_Validation	M	4522	0	4522	0
+NB133	Germany	4	4	521		nonMNA	SEQC_Training	F	206	1	3604	0
+NB134	Germany	3	3	0		nonMNA	SEQC_Validation	M	3869	0	3869	0
+NB135	Germany	3	3	526		nonMNA	SEQC_Training	M	5117	0	5117	0
+NB136	Germany	3	3	1679	HR	MNA	SEQC_Validation	M	522	1	1655	1
+NB137	Germany	3	3	1017	HR	MNA	SEQC_Training	M	250	1	364	1
+NB138	Germany	3	3	823	HR	MNA	SEQC_Validation	M	3488	0	3488	0
+NB139	Germany	1	1	181		nonMNA	SEQC_Training	M	4195	0	4195	0
+NB140	Germany	4	4	8983	HR	nonMNA	SEQC_Validation	F	645	1	899	1
+NB141	Germany	3	3	228		nonMNA	SEQC_Training	M	3660	0	3660	0
+NB142	Germany	3	3	426		nonMNA	SEQC_Validation	F	3405	0	3405	0
+NB143	Germany	4	4	1085	HR	nonMNA	SEQC_Training	F	4096	0	4096	0
+NB144	Germany	4	4	1141	HR	nonMNA	SEQC_Validation	M	2484	0	2484	0
+NB145	Germany	2b	2	356		nonMNA	SEQC_Training	M	2835	0	2835	0
+NB146	Germany	2a	2	108		nonMNA	SEQC_Validation	M	2680	0	2680	0
+NB147	Germany	2a	2	134		nonMNA	SEQC_Training	M	2029	0	2029	0
+NB148	Germany	3	3	13		nonMNA	SEQC_Validation	M	2375	0	2375	0
+NB149	Germany	2a	2	666		nonMNA	SEQC_Training	F	56	1	522	1
+NB150	Germany	3	3	181		nonMNA	SEQC_Validation	F	3250	0	3250	0
+NB151	Germany	2b	2	1099		nonMNA	SEQC_Training	F	1758	0	1758	0
+NB152	Germany	1	1	37		nonMNA	SEQC_Validation	M	4378	0	4378	0
+NB153	Germany	1	1	2041		nonMNA	SEQC_Training	F	2651	0	2651	0
+NB154	Germany	1	1	82		nonMNA	SEQC_Validation	M	3584	0	3584	0
+NB155	Germany	1	1	63		nonMNA	SEQC_Training	M	3578	0	3578	0
+NB156	Germany	1	1	49		nonMNA	SEQC_Validation	M	2774	0	2774	0
+NB157	Germany	1	1	460		nonMNA	SEQC_Training	M	1440	0	1440	0
+NB158	Germany	1	1	23		nonMNA	SEQC_Validation	F	1926	0	1926	0
+NB159	Germany	1	1	933		nonMNA	SEQC_Training	F	2534	0	2534	0
+NB160	Germany	1	1	356		nonMNA	SEQC_Validation	M	1211	0	1211	0
+NB161	Germany	1	1	56		nonMNA	SEQC_Training	F	1463	0	1463	0
+NB162	Germany	1	1	700		nonMNA	SEQC_Validation	F	2337	0	2337	0
+NB163	Germany	1	1	20		nonMNA	SEQC_Training	M	2283	0	2283	0
+NB164	Germany	1	1	267		nonMNA	SEQC_Validation	M	2175	0	2175	0
+NB165	Germany	1	1	262		nonMNA	SEQC_Training	F	1818	0	1818	0
+NB166	Germany	1	1	103		nonMNA	SEQC_Validation	M	2114	0	2114	0
+NB167	Germany	1	1	315		nonMNA	SEQC_Training	M	1663	0	1663	0
+NB168	Germany	1	1	90		nonMNA	SEQC_Validation	F	1483	0	1483	0
+NB169	Germany	1	1	4131	HR	MNA	SEQC_Training	M	524	1	592	1
+NB170	Germany	2a	2	6		nonMNA	SEQC_Validation	M	192	1	3436	0
+NB171	Germany	2b	2	7		nonMNA	SEQC_Training	M	2310	0	2310	0
+NB172	Germany	1	1	502		nonMNA	SEQC_Validation	M	1406	0	1406	0
+NB173	Germany	2a	2	374		nonMNA	SEQC_Training	F	134	1	3385	0
+NB174	Germany	2a	2	429		nonMNA	SEQC_Validation	M	3411	0	3411	0
+NB175	Germany	4S	4S	134	HR	MNA	SEQC_Training	F	1595	0	1595	0
+NB176	Germany	2a	2	363		nonMNA	SEQC_Validation	M	1514	0	1514	0
+NB177	Germany	2a	2	0		nonMNA	SEQC_Training	F	70	1	2359	0
+NB178	Germany	2b	2	0		nonMNA	SEQC_Validation	M	2099	0	2099	0
+NB179	Germany	2a	2	42		nonMNA	SEQC_Training	M	83	1	1930	0
+NB180	Germany	2a	2	890		nonMNA	SEQC_Validation	F	2092	0	2092	0
+NB181	Germany	2a	2	3		nonMNA	SEQC_Training	M	390	1	1674	0
+NB182	Germany	2b	2	217		nonMNA	SEQC_Validation	M	1726	0	1726	0
+NB183	Germany	2b	2	1676		nonMNA	SEQC_Training	M	1995	0	1995	0
+NB184	Germany	2b	2	370		nonMNA	SEQC_Validation	M	1597	0	1597	0
+NB185	Germany	2a	2	300		nonMNA	SEQC_Training	F	2140	0	2140	0
+NB186	Germany	3	3	121		nonMNA	SEQC_Validation	F	74	1	1445	0
+NB187	Germany	3	3	1683		nonMNA	SEQC_Training	M	2462	0	2462	0
+NB188	Germany	3	3	1057		nonMNA	SEQC_Validation	F	349	1	1123	1
+NB189	Germany	3	3	448	n.e.	n.e.	SEQC_Training	M	295	1	1514	0
+NB190	Germany	3	3	1408		nonMNA	SEQC_Validation	M	540	1	1120	1
+NB191	Germany	3	3	227		nonMNA	SEQC_Training	F	321	1	2133	0
+NB192	Germany	3	3	1004		nonMNA	SEQC_Validation	M	866	1	1540	1
+NB193	Germany	3	3	385		nonMNA	SEQC_Training	F	2276	0	2276	0
+NB194	Germany	3	3	767	HR	MNA	SEQC_Validation	F	330	1	404	1
+NB195	Germany	3	3	1081	HR	MNA	SEQC_Training	F	347	1	360	1
+NB196	Germany	3	3	571	HR	MNA	SEQC_Validation	M	2797	0	2797	0
+NB197	Germany	3	3	310	HR	MNA	SEQC_Training	F	98	1	103	1
+NB198	Germany	3	3	423	HR	MNA	SEQC_Validation	F	417	1	526	1
+NB199	Germany	1	1	186		nonMNA	SEQC_Training	M	1513	0	1513	0
+NB200	Germany	1	1	75		nonMNA	SEQC_Validation	M	2140	0	2140	0
+NB201	Germany	1	1	98		nonMNA	SEQC_Training	M	776	0	776	0
+NB202	Germany	1	1	23		nonMNA	SEQC_Validation	M	1441	0	1441	0
+NB203	Germany	1	1	101		nonMNA	SEQC_Training	M	1953	0	1953	0
+NB204	Germany	1	1	18		nonMNA	SEQC_Validation	F	1810	0	1810	0
+NB205	Germany	1	1	165		nonMNA	SEQC_Training	M	1086	0	1086	0
+NB206	Germany	1	1	35		nonMNA	SEQC_Validation	M	2812	0	2812	0
+NB207	Germany	1	1	118		nonMNA	SEQC_Training	F	1546	0	1546	0
+NB208	Germany	1	1	29		nonMNA	SEQC_Validation	F	1866	0	1866	0
+NB209	Germany	1	1	226		nonMNA	SEQC_Training	F	2008	0	2008	0
+NB210	Germany	1	1	204		nonMNA	SEQC_Validation	M	2263	0	2263	0
+NB211	Germany	1	1	11		nonMNA	SEQC_Training	M	1294	0	1294	0
+NB212	Germany	2b	2	0		nonMNA	SEQC_Validation	M	68	1	1919	0
+NB213	Germany	1	1	560		nonMNA	SEQC_Training	M	1645	0	1645	0
+NB214	Germany	1	1	437		nonMNA	SEQC_Validation	F	1493	0	1493	0
+NB215	Germany	1	1	98		nonMNA	SEQC_Training	M	1994	0	1994	0
+NB216	Germany	1	1	262		nonMNA	SEQC_Validation	M	2656	0	2656	0
+NB217	Germany	2b	2	129		nonMNA	SEQC_Training	M	1306	0	1306	0
+NB218	Germany	2a	2	8		nonMNA	SEQC_Validation	M	1757	0	1757	0
+NB219	Germany	2a	2	2		nonMNA	SEQC_Training	M	1518	0	1518	0
+NB220	Germany	2a	2	0		nonMNA	SEQC_Validation	F	1818	0	1818	0
+NB221	Germany	2a	2	1841		nonMNA	SEQC_Training	M	4373	0	4373	0
+NB222	Germany	2b	2	2225		nonMNA	SEQC_Validation	F	928	1	1008	0
+NB223	Germany	3	3	28		nonMNA	SEQC_Training	F	188	1	1694	0
+NB224	Germany	1	1	8926		nonMNA	SEQC_Validation	F	1576	1	5860	0
+NB225	Germany	2a	2	84		nonMNA	SEQC_Training	M	1683	0	1683	0
+NB226	Germany	2b	2	680		nonMNA	SEQC_Validation	M	1783	0	1783	0
+NB227	Germany	2a	2	87		nonMNA	SEQC_Training	M	155	1	2556	0
+NB228	Germany	2a	2	170		nonMNA	SEQC_Validation	F	1553	0	1553	0
+NB229	Germany	3	3	218		nonMNA	SEQC_Training	F	1690	0	1690	0
+NB230	Germany	3	3	9		nonMNA	SEQC_Validation	M	390	0	390	0
+NB231	Germany	3	3	279		nonMNA	SEQC_Training	M	738	1	1624	0
+NB232	Germany	3	3	49		nonMNA	SEQC_Validation	F	59	1	1705	0
+NB233	Germany	3	3	152		nonMNA	SEQC_Training	M	75	1	1847	0
+NB234	Germany	3	3	0		nonMNA	SEQC_Validation	F	186	1	1323	0
+NB235	Germany	4	4	352		nonMNA	SEQC_Training	F	493	1	4922	0
+NB236	Germany	3	3	1742	HR	MNA	SEQC_Validation	M	1260	0	1260	0
+NB237	Germany	1	1	1798		nonMNA	SEQC_Training	F	2197	0	2197	0
+NB238	Germany	4	4	386		nonMNA	SEQC_Validation	M	2807	0	2807	0
+NB239	Germany	4	4	1909	HR	nonMNA	SEQC_Training	M	2100	0	2100	0
+NB240	Germany	4	4	215		nonMNA	SEQC_Validation	F	1399	1	3568	0
+NB241	Germany	4	4	1101	HR	nonMNA	SEQC_Training	M	1401	0	1401	0
+NB242	Germany	4	4	1841	HR	nonMNA	SEQC_Validation	F	532	1	626	1
+NB243	Germany	4	4	1640	HR	nonMNA	SEQC_Training	M	2790	0	2790	0
+NB244	Germany	4	4	724	HR	nonMNA	SEQC_Validation	M	475	1	601	1
+NB245	Germany	4	4	1319	HR	nonMNA	SEQC_Training	M	753	1	2808	1
+NB246	Germany	4	4	2324	HR	nonMNA	SEQC_Validation	M	1863	1	1925	0
+NB247	Germany	4	4	1267	HR	nonMNA	SEQC_Training	M	886	1	1560	0
+NB248	Germany	4	4	1273	HR	nonMNA	SEQC_Validation	M	1624	0	1624	0
+NB249	Germany	4	4	1590	HR	nonMNA	SEQC_Training	M	2208	0	2208	0
+NB250	Germany	4	4	1529	HR	nonMNA	SEQC_Validation	F	532	1	1118	1
+NB251	Germany	4	4	1486	HR	nonMNA	SEQC_Training	M	4508	0	4508	0
+NB252	Germany	4	4	658	HR	nonMNA	SEQC_Validation	F	780	1	843	1
+NB253	Germany	4	4	247		nonMNA	SEQC_Training	F	1647	0	1647	0
+NB254	Germany	4	4	219	HR	MNA	SEQC_Validation	M	2149	0	2149	0
+NB255	Germany	4	4	982	HR	n.e.	SEQC_Training	F	518	1	602	1
+NB256	Germany	4	4	279	HR	MNA	SEQC_Validation	F	482	1	889	1
+NB257	Germany	4	4	1964	HR	MNA	SEQC_Training	F	441	1	478	1
+NB258	Germany	4	4	3749	HR	MNA	SEQC_Validation	F	2092	0	2092	0
+NB259	Germany	4	4	517	HR	MNA	SEQC_Training	F	433	1	711	1
+NB260	Germany	4	4	710	HR	MNA	SEQC_Validation	F	1792	0	1792	0
+NB261	Germany	4	4	1029	HR	MNA	SEQC_Training	M	3570	0	3570	0
+NB262	Germany	4	4	633	HR	MNA	SEQC_Validation	F	431	1	454	1
+NB263	Germany	4	4	8278	HR	MNA	SEQC_Training	F	214	1	360	1
+NB264	Germany	4	4	2105	HR	MNA	SEQC_Validation	F	443	1	784	1
+NB265	Germany	4	4	769	HR	MNA	SEQC_Training	M	2275	0	2275	0
+NB266	Germany	4	4	880	HR	MNA	SEQC_Validation	F	2086	0	2086	0
+NB267	Germany	4	4	978	HR	MNA	SEQC_Training	F	1197	1	1695	1
+NB268	Germany	4	4	3842	HR	MNA	SEQC_Validation	M	363	1	499	1
+NB269	Germany	4	4	583	HR	MNA	SEQC_Training	F	946	1	1375	1
+NB270	Germany	4	4	121	HR	MNA	SEQC_Validation	M	326	1	391	1
+NB271	Germany	4	4	589	HR	MNA	SEQC_Training	M	305	1	375	1
+NB272	Germany	4	4	1174	HR	MNA	SEQC_Validation	M	468	1	1699	0
+NB273	Germany	4S	4S	165		nonMNA	SEQC_Training	M	318	1	2907	0
+NB274	Germany	4S	4S	35		nonMNA	SEQC_Validation	F	1047	0	1047	0
+NB275	Germany	4S	4S	52		nonMNA	SEQC_Training	F	3571	0	3571	0
+NB276	Germany	4S	4S	12		nonMNA	SEQC_Validation	M	3163	0	3163	0
+NB277	Germany	4S	4S	194		nonMNA	SEQC_Training	F	4844	0	4844	0
+NB278	Germany	4S	4S	121		nonMNA	SEQC_Validation	M	3328	0	3328	0
+NB279	Germany	4S	4S	66		nonMNA	SEQC_Training	M	3245	0	3245	0
+NB280	Germany	4S	4S	193		nonMNA	SEQC_Validation	F	3493	0	3493	0
+NB281	Germany	4S	4S	0		nonMNA	SEQC_Training	M	5060	0	5060	0
+NB282	Germany	4S	4S	202		nonMNA	SEQC_Validation	M	286	1	2280	0
+NB283	Germany	4S	4S	118		nonMNA	SEQC_Training	M	3340	0	3340	0
+NB284	Germany	4S	4S	10		nonMNA	SEQC_Validation	M	296	1	2785	0
+NB285	Germany	4S	4S	79		nonMNA	SEQC_Training	M	3901	0	3901	0
+NB286	Germany	4S	4S	3		nonMNA	SEQC_Validation	M	3451	0	3451	0
+NB287	Germany	4S	4S	50		nonMNA	SEQC_Training	F	1262	1	2410	1
+NB288	Germany	4S	4S	93		nonMNA	SEQC_Validation	F	2641	0	2641	0
+NB289	Germany	4S	4S	144		nonMNA	SEQC_Training	F	399	1	419	1
+NB290	Germany	4S	4S	139		nonMNA	SEQC_Validation	M	2631	0	2631	0
+NB291	Germany	4S	4S	128		nonMNA	SEQC_Training	F	2588	0	2588	0
+NB292	Germany	4S	4S	75		nonMNA	SEQC_Validation	M	1579	0	1579	0
+NB293	Germany	4S	4S	21		nonMNA	SEQC_Training	M	2425	0	2425	0
+NB294	Germany	4S	4S	121		nonMNA	SEQC_Validation	F	2249	0	2249	0
+NB295	Germany	4S	4S	146		nonMNA	SEQC_Training	F	17	1	1647	0
+NB296	Germany	4S	4S	69		nonMNA	SEQC_Validation	M	2245	0	2245	0
+NB297	Germany	4S	4S	305		nonMNA	SEQC_Training	M	301	1	2169	0
+NB298	Germany	4S	4S	180		nonMNA	SEQC_Validation	F	998	0	998	0
+NB299	Germany	4S	4S	263		nonMNA	SEQC_Training	M	2113	0	2113	0
+NB300	Germany	4S	4S	11		nonMNA	SEQC_Validation	M	1567	1	3303	0
+NB301	Germany	4S	4S	313		nonMNA	SEQC_Training	M	1393	0	1393	0
+NB302	Germany	4	4	105		nonMNA	SEQC_Validation	F	86	1	1689	0
+NB303	Germany	1	1	443		nonMNA	SEQC_Training	M	1323	0	1323	0
+NB304	Germany	4S	4S	3		nonMNA	SEQC_Validation	M	2005	0	2005	0
+NB305	Germany	4S	4S	12		nonMNA	SEQC_Training	F	66	1	66	1
+NB306	Germany	4S	4S	16		nonMNA	SEQC_Validation	F	2482	0	2482	0
+NB307	Germany	4S	4S	121		nonMNA	SEQC_Training	F	1439	0	1439	0
+NB308	Germany	4S	4S	143		nonMNA	SEQC_Validation	F	1998	0	1998	0
+NB309	Germany	4S	4S	3		nonMNA	SEQC_Training	M	164	1	1907	0
+NB310	Germany	4S	4S	116		nonMNA	SEQC_Validation	M	2103	0	2103	0
+NB311	Germany	4S	4S	0		nonMNA	SEQC_Training	F	207	1	2798	0
+NB312	Germany	4S	4S	97	n.e.	n.e.	SEQC_Validation	M	2724	0	2724	0
+NB313	Germany	4S	4S	92	HR	MNA	SEQC_Training	M	2101	0	2101	0
+NB314	Germany	4	4	196	HR	MNA	SEQC_Validation	M	351	1	539	1
+NB315	Germany	2a	2	14		nonMNA	SEQC_Training	M	1870	0	1870	0
+NB316	Germany	4S	4S	85	HR	MNA	SEQC_Validation	M	161	1	209	1
+NB317	Germany	multilok. (2)	2	732		nonMNA	SEQC_Training	F	1069	0	1069	0
+NB318	Spain	1	1	300		nonMNA	SEQC_Validation	n.a.	1140	0	1140	0
+NB319	Belgium	4	4	357	HR	MNA	SEQC_Training	M	286	1	412	1
+NB320	UK	4	4	1113	HR	nonMNA	SEQC_Validation	M	375	1	735	1
+NB321	UK	4	4	870	HR	MNA	SEQC_Training	M	181	1	846	1
+NB322	UK	4	4	1611	HR	MNA	SEQC_Validation	M	323	1	487	1
+NB323	UK	4	4	450		nonMNA	SEQC_Training	M	302	1	510	1
+NB324	Spain	1	1	120		nonMNA	SEQC_Validation	n.a.	1740	0	1740	0
+NB325	Spain	1	1	360		nonMNA	SEQC_Training	n.a.	1110	0	1110	0
+NB326	Spain	4	4	3240	HR	MNA	SEQC_Validation	n.a.	90	1	90	1
+NB327	Spain	2	2	690	HR	MNA	SEQC_Training	n.a.	570	1	720	1
+NB328	Spain	4	4	1560	HR	MNA	SEQC_Validation	n.a.	300	1	330	1
+NB329	USA	4	4	387		nonMNA	SEQC_Training	M	4669	0	4669	0
+NB330	USA	4	4	516		nonMNA	SEQC_Validation	M	2947	0	2947	0
+NB331	USA	4	4	1676	HR	MNA	SEQC_Training	M	576	1	1049	1
+NB332	USA	4	4	549	HR	nonMNA	SEQC_Validation	M	2871	0	2871	0
+NB333	USA	4	4	1545	HR	nonMNA	SEQC_Training	M	602	1	1229	1
+NB334	USA	4	4	432		nonMNA	SEQC_Validation	F	2135	0	2135	0
+NB335	USA	4	4	1764	HR	nonMNA	SEQC_Training	F	349	1	1341	1
+NB336	USA	4	4	1067	HR	MNA	SEQC_Validation	M	837	1	2051	0
+NB337	USA	4	4	1968	HR	nonMNA	SEQC_Training	M	112	1	239	1
+NB338	USA	4	4	1413	HR	MNA	SEQC_Validation	F	2432	0	2432	0
+NB339	USA	4	4	714.6	HR	MNA	SEQC_Training	F	269	1	269	1
+NB340	Spain	1	1	300		nonMNA	SEQC_Validation	n.a.	810	0	810	0
+NB341	Spain	4	4	750	HR	nonMNA	SEQC_Training	n.a.	120	1	1440	0
+NB342	Spain	1	1	210		nonMNA	SEQC_Validation	n.a.	1410	0	1410	0
+NB343	Spain	1	1	300		nonMNA	SEQC_Training	n.a.	150	0	150	0
+NB344	Spain	1	1	300		nonMNA	SEQC_Validation	n.a.	720	0	720	0
+NB345	Spain	1	1	240		nonMNA	SEQC_Training	n.a.	1470	0	1470	0
+NB346	Spain	1	1	310		nonMNA	SEQC_Validation	n.a.	1590	0	1590	0
+NB347	Spain	1	1	60		nonMNA	SEQC_Training	n.a.	1080	0	1080	0
+NB348	Italy	1	1	47		nonMNA	SEQC_Validation	M	1984	0	1984	0
+NB349	Israel	3	3	270		nonMNA	SEQC_Training	F	5040	0	5040	0
+NB350	Israel	3	3	271		nonMNA	SEQC_Validation	F	4890	0	4890	0
+NB351	Israel	4	4	1290	HR	nonMNA	SEQC_Training	M	6600	0	6600	0
+NB352	Israel	4	4	1050	HR	nonMNA	SEQC_Validation	M	2280	0	2280	0
+NB353	Israel	3	3	1200		nonMNA	SEQC_Training	M	1170	1	2010	1
+NB354	UK	4	4	267		nonMNA	SEQC_Validation	F	354	1	441	1
+NB355	Germany	1	1	0		nonMNA	SEQC_Training	M	2804	0	2804	0
+NB356	Germany	2a	2	1074		nonMNA	SEQC_Validation	M	4602	0	4602	0
+NB357	Germany	3	3	364		nonMNA	SEQC_Training	F	74	1	3903	0
+NB358	Germany	3	3	304		nonMNA	SEQC_Validation	F	98	1	4410	0
+NB359	Germany	4	4	1570	HR	nonMNA	SEQC_Training	M	708	1	1152	1
+NB360	Germany	4	4	2135	HR	nonMNA	SEQC_Validation	M	454	1	1063	1
+NB361	Germany	4	4	416	n.e.	n.e.	SEQC_Training	M	418	1	1628	0
+NB362	Germany	4	4	641	HR	MNA	SEQC_Validation	M	563	1	1073	1
+NB363	Germany	4S	4S	49		nonMNA	SEQC_Training	M	1330	0	1330	0
+NB364	Germany	4S	4S	8		nonMNA	SEQC_Validation	M	1890	0	1890	0
+NB365	Germany	4S	4S	80		nonMNA	SEQC_Training	M	1567	0	1567	0
+NB366	Germany	4S	4S	0		nonMNA	SEQC_Validation	M	3625	0	3625	0
+NB367	Italy	1	1	56		nonMNA	SEQC_Training	F	3131	0	3131	0
+NB368	Italy	1	1	58		nonMNA	SEQC_Validation	F	2852	0	2852	0
+NB369	Italy	4	4	1132	HR	nonMNA	SEQC_Training	M	634	1	727	1
+NB370	Italy	1	1	216		nonMNA	SEQC_Validation	M	2015	0	2015	0
+NB371	USA	4	4	1488	HR	nonMNA	SEQC_Training	F	262	1	541	1
+NB372	USA	4	4	1890	HR	nonMNA	SEQC_Validation	M	164	1	2174	0
+NB373	USA	4	4	489	HR	MNA	SEQC_Training	F	187	1	209	1
+NB374	USA	4	4	1024	HR	nonMNA	SEQC_Validation	M	147	1	3234	0
+NB375	USA	4	4	924	HR	nonMNA	SEQC_Training	M	218	1	364	1
+NB376	USA	4	4	1071	HR	nonMNA	SEQC_Validation	M	227	1	498	1
+NB377	USA	4	4	1437	HR	nonMNA	SEQC_Training	M	1455	1	2324	1
+NB378	USA	4	4	3072	HR	MNA	SEQC_Validation	F	245	1	415	1
+NB379	USA	4	4	810	HR	nonMNA	SEQC_Training	M	2054	0	2054	0
+NB380	USA	4	4	21		nonMNA	SEQC_Validation	F	2771	0	2771	0
+NB381	USA	4	4	633	HR	MNA	SEQC_Training	F	314	1	345	1
+NB382	Israel	2	2	660		nonMNA	SEQC_Validation	F	5070	0	5070	0
+NB383	Germany	4	4	1904	HR	MNA	SEQC_Training	M	201	1	207	1
+NB384	Germany	4	4	1424	HR	nonMNA	SEQC_Validation	F	705	1	3809	1
+NB385	Germany	4	4	2544	HR	nonMNA	SEQC_Training	F	812	1	1454	1
+NB386	Germany	4	4	2264	HR	nonMNA	SEQC_Validation	F	622	1	2132	1
+NB387	Germany	4	4	431		nonMNA	SEQC_Training	M	3011	0	3011	0
+NB388	Germany	4	4	1363	HR	nonMNA	SEQC_Validation	M	196	1	1014	1
+NB389	Germany	4	4	660	HR	MNA	SEQC_Training	M	4090	0	4090	0
+NB390	USA	4	4	822	HR	nonMNA	SEQC_Validation	F	377	1	467	1
+NB391	Germany	4	4	1644	HR	nonMNA	SEQC_Training	M	2818	0	2818	0
+NB392	Germany	4	4	1282	HR	nonMNA	SEQC_Validation	M	593	1	766	1
+NB393	Germany	4	4	1537	HR	nonMNA	SEQC_Training	M	615	1	1235	1
+NB394	Germany	4	4	1524	HR	nonMNA	SEQC_Validation	M	828	1	2269	0
+NB395	Germany	2a	2	2111		nonMNA	SEQC_Training	F	2442	0	2442	0
+NB396	Germany	4	4	1221	HR	nonMNA	SEQC_Validation	F	970	1	1401	1
+NB397	Germany	4S	4S	107		nonMNA	SEQC_Training	M	3571	0	3571	0
+NB398	Germany	4S	4S	227		nonMNA	SEQC_Validation	M	293	1	2807	0
+NB399	Germany	4	4	1215	HR	nonMNA	SEQC_Training	M	978	0	978	0
+NB400	Germany	4	4	1812	HR	nonMNA	SEQC_Validation	M	499	1	834	0
+NB401	Germany	4	4	1875	HR	nonMNA	SEQC_Training	M	1002	1	1382	0
+NB402	Germany	4	4	1325	HR	nonMNA	SEQC_Validation	F	833	1	1242	0
+NB403	Germany	4	4	447	HR	MNA	SEQC_Training	M	55	1	203	1
+NB404	Germany	4	4	529	HR	MNA	SEQC_Validation	F	407	1	425	1
+NB405	Germany	4	4	2338	HR	MNA	SEQC_Training	M	608	0	608	0
+NB406	Germany	4	4	1053	HR	MNA	SEQC_Validation	F	336	1	380	1
+NB407	Germany	3	3	1272	HR	MNA	SEQC_Training	M	382	1	463	1
+NB408	Germany	4	4	907	HR	MNA	SEQC_Validation	M	454	1	555	1
+NB409	Germany	4	4	827	HR	nonMNA	SEQC_Training	M	588	0	588	0
+NB410	Germany	4	4	2621	HR	nonMNA	SEQC_Validation	F	259	0	259	0
+NB411	Germany	4	4	2186	HR	nonMNA	SEQC_Training	F	834	1	1266	0
+NB412	Germany	4	4	1553	HR	nonMNA	SEQC_Validation	M	874	1	2141	0
+NB413	Germany	4	4	1431	HR	MNA	SEQC_Training	F	232	0	232	0
+NB414	Germany	4	4	989	HR	MNA	SEQC_Validation	M	287	1	663	1
+NB415	Germany	4	4	849	HR	MNA	SEQC_Training	F	623	1	785	0
+NB416	Germany	2b	2	5225		nonMNA	SEQC_Validation	M	337	1	966	0
+NB417	Germany	4S	4S	235		nonMNA	SEQC_Training	M	1176	0	1176	0
+NB418	Germany	4	4	1383	HR	nonMNA	SEQC_Validation	M	1035	0	1035	0
+NB419	Germany	2b	2	133		nonMNA	SEQC_Training	F	264	0	264	0
+NB420	Germany	1	1	3488		nonMNA	SEQC_Validation	F	1862	0	1862	0
+NB421	Germany	4S	4S	87		nonMNA	SEQC_Training	F	1916	0	1916	0
+NB422	Germany	4	4	1708	HR	nonMNA	SEQC_Validation	M	668	1	1174	0
+NB423	Germany	4	4	207		nonMNA	SEQC_Training	M	1122	1	1423	0
+NB424	Germany	4	4	533	HR	MNA	SEQC_Validation	F	1239	0	1239	0
+NB425	Germany	4	4	227		nonMNA	SEQC_Training	M	1813	0	1813	0
+NB426	Germany	4	4	1010	HR	nonMNA	SEQC_Validation	M	2669	0	2669	0
+NB427	Germany	4	4	214		nonMNA	SEQC_Training	M	1598	0	1598	0
+NB428	Germany	4	4	441	HR	MNA	SEQC_Validation	M	1053	0	1053	0
+NB429	Germany	4	4	236		nonMNA	SEQC_Training	F	2977	0	2977	0
+NB430	Germany	4	4	837	HR	MNA	SEQC_Validation	M	566	1	1379	0
+NB431	Germany	4	4	448	HR	MNA	SEQC_Training	F	280	0	280	0
+NB432	Germany	4	4	582	HR	MNA	SEQC_Validation	F	3238	0	3238	0
+NB433	Germany	4	4	343		nonMNA	SEQC_Training	F	1242	0	1242	0
+NB434	USA	4	4	309		nonMNA	SEQC_Validation	M	3045	0	3045	0
+NB435	USA	4	4	282		nonMNA	SEQC_Training	F	1705	0	1705	0
+NB436	USA	4	4	972	HR	nonMNA	SEQC_Validation	M	3846	0	3846	0
+NB437	USA	4	4	792	HR	MNA	SEQC_Training	F	8	1	12	1
+NB438	USA	4	4	936	HR	MNA	SEQC_Validation	M	438	1	454	1
+NB439	USA	4	4	3636	HR	nonMNA	SEQC_Training	M	814	1	928	1
+NB440	USA	4	4	3189	HR	nonMNA	SEQC_Validation	M	475	1	798	1
+NB441	USA	4	4	435		nonMNA	SEQC_Training	M	2989	0	2989	0
+NB442	USA	4	4	1026	HR	nonMNA	SEQC_Validation	F	45	1	1174	1
+NB443	USA	4	4	935.4	HR	MNA	SEQC_Training	F	453	1	476	1
+NB444	USA	4	4	1547	HR	MNA	SEQC_Validation	M	322	1	593	1
+NB445	USA	4	4	1113	HR	nonMNA	SEQC_Training	M	147	1	218	1
+NB446	USA	4	4	1404	HR	nonMNA	SEQC_Validation	M	83	1	1187	1
+NB447	USA	4	4	1275	HR	nonMNA	SEQC_Training	M	424	1	1058	1
+NB448	USA	4	4	1573	HR	nonMNA	SEQC_Validation	F	123	1	600	0
+NB449	USA	4	4	521	HR	MNA	SEQC_Training	F	2739	0	2739	0
+NB450	Israel	2	2	360		nonMNA	SEQC_Validation	F	4890	0	4890	0
+NB451	Israel	2	2	330		nonMNA	SEQC_Training	F	4110	0	4110	0
+NB452	Israel	1	1	240		nonMNA	SEQC_Validation	M	1560	0	1560	0
+NB453	Israel	2	2	30		nonMNA	SEQC_Training	M	1290	0	1290	0
+NB454	USA	4	4	711	HR	nonMNA	SEQC_Validation	M	47	1	200	1
+NB455	USA	4	4	519		nonMNA	SEQC_Training	M	2222	0	2222	0
+NB456	USA	4	4	410	HR	MNA	SEQC_Validation	M	317	1	495	1
+NB457	Israel	4	4	960	HR	MNA	SEQC_Training	n.a.	870	1	870	1
+NB458	Germany	4	4	1931	HR	nonMNA	SEQC_Validation	F	631	1	1397	1
+NB459	Germany	1	1	34	HR	MNA	SEQC_Training	M	1195	0	1195	0
+NB460	Germany	2a	2	112	HR	MNA	SEQC_Validation	F	657	1	1391	0
+NB461	Germany	4	4	267	HR	MNA	SEQC_Training	M	577	0	577	0
+NB462	Germany	4	4	166		nonMNA	SEQC_Validation	F	652	0	652	0
+NB463	Germany	1	1	0		nonMNA	SEQC_Training	F	239	1	629	0
+NB464	Germany	4	4	1289	HR	nonMNA	SEQC_Validation	M	101	1	167	1
+NB465	Germany	4	4	137	HR	MNA	SEQC_Training	F	404	0	404	0
+NB466	Germany	4	4	1443	HR	nonMNA	SEQC_Validation	F	647	1	651	0
+NB467	Germany	4	4	2786	HR	nonMNA	SEQC_Training	M	268	0	268	0
+NB468	Germany	4	4	456		nonMNA	SEQC_Validation	M	121	1	176	0
+NB469	Germany	4	4	1022	HR	MNA	SEQC_Training	M	636	1	648	0
+NB470	Germany	1	1	225		nonMNA	SEQC_Validation	M	2886	0	2886	0
+NB471	Germany	1	1	25		nonMNA	SEQC_Training	F	2591	0	2591	0
+NB472	Germany	1	1	245		nonMNA	SEQC_Validation	F	1235	0	1235	0
+NB473	Germany	1	1	146		nonMNA	SEQC_Training	F	1788	0	1788	0
+NB474	Germany	3	3	17		nonMNA	SEQC_Validation	F	33	1	1903	0
+NB475	Germany	4	4	1575	HR	MNA	SEQC_Training	M	250	1	262	1
+NB476	Germany	3	3	860		nonMNA	SEQC_Validation	F	1059	0	1059	0
+NB477	Germany	3	3	323		nonMNA	SEQC_Training	M	981	0	981	0
+NB478	Germany	4	4	1468	HR	nonMNA	SEQC_Validation	M	3567	0	3567	0
+NB479	Germany	1	1	1516		nonMNA	SEQC_Training	F	1531	0	1531	0
+NB480	Germany	4	4	1897	HR	nonMNA	SEQC_Validation	M	229	0	229	0
+NB481	Germany	4	4	2045	HR	MNA	SEQC_Training	M	383	0	383	0
+NB482	Germany	4	4	465		nonMNA	SEQC_Validation	M	152	0	152	0
+NB483	Germany	1	1	259		nonMNA	SEQC_Training	F	715	1	1854	0
+NB484	Germany	2a	2	1546	HR	MNA	SEQC_Validation	F	187	0	187	0
+NB485	Germany	3	3	712	HR	MNA	SEQC_Training	F	92	0	92	0
+NB486	Germany	2a	2	478	HR	MNA	SEQC_Validation	M	394	1	413	0
+NB487	Germany	4	4	162	HR	MNA	SEQC_Training	M	1117	0	1117	0
+NB488	Germany	4	4	212		nonMNA	SEQC_Validation	F	995	0	995	0
+NB489	Germany	4	4	865	HR	MNA	SEQC_Training	F	877	0	877	0
+NB490	Germany	4	4	1759	HR	MNA	SEQC_Validation	F	1094	1	1098	0
+NB491	Germany	4	4	2326	HR	nonMNA	SEQC_Training	M	691	1	987	0
+NB492	Germany	4	4	947	HR	MNA	SEQC_Validation	M	738	1	892	1
+NB493	Germany	1	1	190		nonMNA	SEQC_Training	M	4487	0	4487	0
+NB494	Germany	1	1	56		nonMNA	SEQC_Validation	M	4828	0	4828	0
+NB495	Germany	1	1	163		nonMNA	SEQC_Training	F	2467	0	2467	0
+NB496	Germany	1	1	132		nonMNA	SEQC_Validation	M	105	1	5780	0
+NB497	Germany	1	1	379		nonMNA	SEQC_Training	F	4883	0	4883	0
+NB498	Germany	1	1	530		nonMNA	SEQC_Validation	F	2772	0	2772	0

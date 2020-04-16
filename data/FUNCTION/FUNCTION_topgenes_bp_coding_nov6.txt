@@ -1,0 +1,187 @@
+Category	ID	Name	Source	p-value	q-value Bonferroni	q-value FDR B&H	q-value FDR B&Y	Hit Count in Query List	Hit Count in Genome	Hit in Query List
+GO: Molecular Function	GO:0008143	poly(A) binding	 	3.347E-4	7.163E-2	3.393E-2	2.017E-1	2	17	DDX1,KHDRBS2
+GO: Molecular Function	GO:0005328	neurotransmitter:sodium symporter activity	 	4.200E-4	8.989E-2	3.393E-2	2.017E-1	2	19	SLC6A18,SLC6A19
+GO: Molecular Function	GO:0005326	neurotransmitter transporter activity	 	7.325E-4	1.568E-1	3.393E-2	2.017E-1	2	25	SLC6A18,SLC6A19
+GO: Molecular Function	GO:0070717	poly-purine tract binding	 	7.325E-4	1.568E-1	3.393E-2	2.017E-1	2	25	DDX1,KHDRBS2
+GO: Molecular Function	GO:0035255	ionotropic glutamate receptor binding	 	7.927E-4	1.696E-1	3.393E-2	2.017E-1	2	26	DLG2,SHANK2
+GO: Molecular Function	GO:0015081	sodium ion transmembrane transporter activity	 	1.331E-3	2.848E-1	4.747E-2	2.822E-1	3	136	SLC6A18,ASIC2,SLC6A19
+GO: Biological Process	GO:0035418	protein localization to synapse	 	1.090E-7	1.095E-4	1.095E-4	8.199E-4	4	28	ANKS1B,DLG2,NRXN1,ASIC2
+GO: Biological Process	GO:0097120	receptor localization to synapse	 	8.218E-7	8.251E-4	4.125E-4	3.090E-3	3	12	ANKS1B,DLG2,NRXN1
+GO: Biological Process	GO:0071625	vocalization behavior	 	1.357E-6	1.362E-3	4.541E-4	3.401E-3	3	14	AUTS2,SHANK2,NRXN1
+GO: Biological Process	GO:0050808	synapse organization	 	2.996E-6	3.008E-3	7.222E-4	5.409E-3	6	258	LINGO2,PTPRD,SHANK2,CTNND2,NRXN1,ASIC2
+GO: Biological Process	GO:0007416	synapse assembly	 	3.597E-6	3.611E-3	7.222E-4	5.409E-3	5	148	LINGO2,PTPRD,SHANK2,NRXN1,ASIC2
+GO: Biological Process	GO:0050803	regulation of synapse structure or activity	 	6.769E-5	6.797E-2	1.133E-2	8.484E-2	5	272	LINGO2,SHANK2,CTNND2,NRXN1,ASIC2
+GO: Biological Process	GO:0097105	presynaptic membrane assembly	 	8.968E-5	9.004E-2	1.286E-2	9.633E-2	2	9	PTPRD,NRXN1
+GO: Biological Process	GO:0051965	positive regulation of synapse assembly	 	1.840E-4	1.847E-1	2.309E-2	1.729E-1	3	69	LINGO2,NRXN1,ASIC2
+GO: Biological Process	GO:0097090	presynaptic membrane organization	 	2.600E-4	2.610E-1	2.900E-2	2.172E-1	2	15	PTPRD,NRXN1
+GO: Biological Process	GO:0051963	regulation of synapse assembly	 	3.774E-4	3.789E-1	3.789E-2	2.838E-1	3	88	LINGO2,NRXN1,ASIC2
+GO: Biological Process	GO:0098916	anterograde trans-synaptic signaling	 	6.402E-4	6.428E-1	4.440E-2	3.325E-1	6	678	DLG2,PTPRD,SHANK2,CTNND2,NRXN1,ASIC2
+GO: Biological Process	GO:0099537	trans-synaptic signaling	 	6.402E-4	6.428E-1	4.440E-2	3.325E-1	6	678	DLG2,PTPRD,SHANK2,CTNND2,NRXN1,ASIC2
+GO: Biological Process	GO:0007268	chemical synaptic transmission	 	6.402E-4	6.428E-1	4.440E-2	3.325E-1	6	678	DLG2,PTPRD,SHANK2,CTNND2,NRXN1,ASIC2
+GO: Biological Process	GO:0051968	positive regulation of synaptic transmission, glutamatergic	 	6.773E-4	6.800E-1	4.440E-2	3.325E-1	2	24	SHANK2,NRXN1
+GO: Biological Process	GO:0099536	synaptic signaling	 	6.862E-4	6.889E-1	4.440E-2	3.325E-1	6	687	DLG2,PTPRD,SHANK2,CTNND2,NRXN1,ASIC2
+GO: Biological Process	GO:1905039	carboxylic acid transmembrane transport	 	7.248E-4	7.277E-1	4.440E-2	3.325E-1	3	110	SLC6A18,ACACA,SLC6A19
+GO: Biological Process	GO:1903825	organic acid transmembrane transport	 	7.837E-4	7.869E-1	4.440E-2	3.325E-1	3	113	SLC6A18,ACACA,SLC6A19
+GO: Biological Process	GO:0071709	membrane assembly	 	7.959E-4	7.991E-1	4.440E-2	3.325E-1	2	26	PTPRD,NRXN1
+GO: Biological Process	GO:0035640	exploration behavior	 	9.913E-4	9.953E-1	4.628E-2	3.466E-1	2	29	LSAMP,SHANK2
+GO: Biological Process	GO:0050807	regulation of synapse organization	 	1.074E-3	1.000E0	4.628E-2	3.466E-1	3	126	LINGO2,NRXN1,ASIC2
+GO: Biological Process	GO:0044091	membrane biogenesis	 	1.207E-3	1.000E0	4.628E-2	3.466E-1	2	32	PTPRD,NRXN1
+GO: Biological Process	GO:0035128	post-embryonic forelimb morphogenesis	 	1.613E-3	1.000E0	4.628E-2	3.466E-1	1	1	ATRX
+GO: Biological Process	GO:0072414	response to mitotic cell cycle checkpoint signaling	 	1.613E-3	1.000E0	4.628E-2	3.466E-1	1	1	APAF1
+GO: Biological Process	GO:1901581	negative regulation of telomeric RNA transcription from RNA pol II promoter	 	1.613E-3	1.000E0	4.628E-2	3.466E-1	1	1	ATRX
+GO: Biological Process	GO:0003026	regulation of systemic arterial blood pressure by aortic arch baroreceptor feedback	 	1.613E-3	1.000E0	4.628E-2	3.466E-1	1	1	ASIC2
+GO: Biological Process	GO:0098582	innate vocalization behavior	 	1.613E-3	1.000E0	4.628E-2	3.466E-1	1	1	AUTS2
+GO: Biological Process	GO:0072432	response to G1 DNA damage checkpoint signaling	 	1.613E-3	1.000E0	4.628E-2	3.466E-1	1	1	APAF1
+GO: Biological Process	GO:0097393	telomeric repeat-containing RNA transcription	 	1.613E-3	1.000E0	4.628E-2	3.466E-1	1	1	ATRX
+GO: Biological Process	GO:0035127	post-embryonic limb morphogenesis	 	1.613E-3	1.000E0	4.628E-2	3.466E-1	1	1	ATRX
+GO: Biological Process	GO:1900383	regulation of synaptic plasticity by receptor localization to synapse	 	1.613E-3	1.000E0	4.628E-2	3.466E-1	1	1	ANKS1B
+GO: Biological Process	GO:1901582	positive regulation of telomeric RNA transcription from RNA pol II promoter	 	1.613E-3	1.000E0	4.628E-2	3.466E-1	1	1	ATRX
+GO: Biological Process	GO:1901580	regulation of telomeric RNA transcription from RNA pol II promoter	 	1.613E-3	1.000E0	4.628E-2	3.466E-1	1	1	ATRX
+GO: Biological Process	GO:0097394	telomeric repeat-containing RNA transcription by RNA polymerase II	 	1.613E-3	1.000E0	4.628E-2	3.466E-1	1	1	ATRX
+GO: Biological Process	GO:0035120	post-embryonic appendage morphogenesis	 	1.613E-3	1.000E0	4.628E-2	3.466E-1	1	1	ATRX
+GO: Biological Process	GO:0090126	protein-containing complex assembly involved in synapse maturation	 	1.613E-3	1.000E0	4.628E-2	3.466E-1	1	1	NRXN1
+GO: Cellular Component	GO:0031526	brush border membrane	 	1.439E-4	2.043E-2	8.054E-3	4.459E-2	3	65	SLC6A18,SHANK2,SLC6A19
+GO: Cellular Component	GO:0016604	nuclear body	 	2.376E-4	3.375E-2	8.054E-3	4.459E-2	5	364	ANKS1B,ATRX,MAML3,DDX1,EFTUD2
+GO: Cellular Component	GO:0030425	dendrite	 	2.700E-4	3.834E-2	8.054E-3	4.459E-2	6	590	ANKS1B,DLG2,SHANK2,CTNND2,ASIC2,NUMA1
+GO: Cellular Component	GO:0044463	cell projection part	 	2.846E-4	4.042E-2	8.054E-3	4.459E-2	8	1139	SLC6A18,ANKS1B,AGBL4,DLG2,SHANK2,NRXN1,ASIC2,SLC6A19
+GO: Cellular Component	GO:0036477	somatodendritic compartment	 	3.193E-4	4.534E-2	8.054E-3	4.459E-2	7	867	ANKS1B,DLG2,SHANK2,CTNND2,NRXN1,ASIC2,NUMA1
+GO: Cellular Component	GO:0043025	neuronal cell body	 	3.403E-4	4.832E-2	8.054E-3	4.459E-2	6	616	DLG2,SHANK2,CTNND2,NRXN1,ASIC2,NUMA1
+GO: Cellular Component	GO:0014069	postsynaptic density	 	4.570E-4	6.490E-2	8.084E-3	4.476E-2	4	232	ANKS1B,DLG2,SHANK2,CTNND2
+GO: Cellular Component	GO:0099572	postsynaptic specialization	 	4.570E-4	6.490E-2	8.084E-3	4.476E-2	4	232	ANKS1B,DLG2,SHANK2,CTNND2
+GO: Cellular Component	GO:0098794	postsynapse	 	6.214E-4	8.824E-2	8.084E-3	4.476E-2	5	449	ANKS1B,DLG2,SHANK2,CTNND2,ASIC2
+GO: Cellular Component	GO:0060076	excitatory synapse	 	6.238E-4	8.858E-2	8.084E-3	4.476E-2	4	252	ANKS1B,DLG2,SHANK2,CTNND2
+GO: Cellular Component	GO:0044297	cell body	 	6.263E-4	8.893E-2	8.084E-3	4.476E-2	6	691	DLG2,SHANK2,CTNND2,NRXN1,ASIC2,NUMA1
+GO: Cellular Component	GO:0044456	synapse part	 	7.116E-4	1.010E-1	8.420E-3	4.662E-2	6	708	ANKS1B,DLG2,SHANK2,CTNND2,NRXN1,ASIC2
+GO: Cellular Component	GO:0005903	brush border	 	1.076E-3	1.528E-1	1.175E-2	6.505E-2	3	129	SLC6A18,SHANK2,SLC6A19
+GO: Cellular Component	GO:0097060	synaptic membrane	 	1.164E-3	1.653E-1	1.181E-2	6.539E-2	4	298	ANKS1B,DLG2,SHANK2,NRXN1
+GO: Cellular Component	GO:1990421	subtelomeric heterochromatin	 	1.576E-3	2.238E-1	1.385E-2	7.671E-2	1	1	ATRX
+GO: Cellular Component	GO:1990707	nuclear subtelomeric heterochromatin	 	1.576E-3	2.238E-1	1.385E-2	7.671E-2	1	1	ATRX
+GO: Cellular Component	GO:0043197	dendritic spine	 	1.691E-3	2.402E-1	1.385E-2	7.671E-2	3	151	ANKS1B,SHANK2,ASIC2
+GO: Cellular Component	GO:0044309	neuron spine	 	1.756E-3	2.494E-1	1.385E-2	7.671E-2	3	153	ANKS1B,SHANK2,ASIC2
+GO: Cellular Component	GO:0045202	synapse	 	2.059E-3	2.924E-1	1.503E-2	8.320E-2	6	870	ANKS1B,DLG2,SHANK2,CTNND2,NRXN1,ASIC2
+GO: Cellular Component	GO:0043005	neuron projection	 	2.116E-3	3.005E-1	1.503E-2	8.320E-2	7	1194	ANKS1B,DLG2,SHANK2,CTNND2,NRXN1,ASIC2,NUMA1
+GO: Cellular Component	GO:0098862	cluster of actin-based cell projections	 	2.574E-3	3.655E-1	1.740E-2	9.636E-2	3	175	SLC6A18,SHANK2,SLC6A19
+GO: Cellular Component	GO:0008328	ionotropic glutamate receptor complex	 	2.799E-3	3.975E-1	1.807E-2	1.000E-1	2	50	DLG2,SHANK2
+GO: Cellular Component	GO:0071920	cleavage body	 	3.145E-3	4.466E-1	1.850E-2	1.024E-1	1	2	DDX1
+GO: Cellular Component	GO:0061673	mitotic spindle astral microtubule	 	3.145E-3	4.466E-1	1.850E-2	1.024E-1	1	2	NUMA1
+GO: Cellular Component	GO:0015030	Cajal body	 	3.257E-3	4.625E-1	1.850E-2	1.024E-1	2	54	ANKS1B,EFTUD2
+GO: Cellular Component	GO:0070939	Dsl1/NZR complex	 	4.715E-3	6.695E-1	2.479E-2	1.373E-1	1	3	NBAS
+GO: Cellular Component	GO:0043293	apoptosome	 	4.715E-3	6.695E-1	2.479E-2	1.373E-1	1	3	APAF1
+GO: Cellular Component	GO:0098590	plasma membrane region	 	5.020E-3	7.128E-1	2.502E-2	1.385E-1	6	1041	SLC6A18,ANKS1B,DLG2,SHANK2,NRXN1,SLC6A19
+GO: Cellular Component	GO:0045211	postsynaptic membrane	 	5.209E-3	7.397E-1	2.502E-2	1.385E-1	3	225	ANKS1B,DLG2,SHANK2
+GO: Cellular Component	GO:0044451	nucleoplasm part	 	5.287E-3	7.507E-1	2.502E-2	1.385E-1	5	732	ANKS1B,ATRX,MAML3,DDX1,EFTUD2
+GO: Cellular Component	GO:0031933	telomeric heterochromatin	 	6.281E-3	8.919E-1	2.877E-2	1.593E-1	1	4	ATRX
+GO: Cellular Component	GO:0000235	astral microtubule	 	7.846E-3	1.000E0	3.481E-2	1.928E-1	1	5	NUMA1
+GO: Cellular Component	GO:0097458	neuron part	 	8.786E-3	1.000E0	3.781E-2	2.093E-1	7	1545	ANKS1B,DLG2,SHANK2,CTNND2,NRXN1,ASIC2,NUMA1
+GO: Cellular Component	GO:0005818	aster	 	9.408E-3	1.000E0	3.929E-2	2.175E-1	1	6	NUMA1
+GO: Cellular Component	GO:0034702	ion channel complex	 	1.054E-2	1.000E0	4.278E-2	2.368E-1	3	291	DLG2,SHANK2,CACNA2D3
+GO: Cellular Component	GO:0005887	integral component of plasma membrane	 	1.245E-2	1.000E0	4.764E-2	2.637E-1	7	1651	SLC6A18,DLG2,PTPRD,SHANK2,NRXN1,ASIC2,SLC6A19
+GO: Cellular Component	GO:0072669	tRNA-splicing ligase complex	 	1.252E-2	1.000E0	4.764E-2	2.637E-1	1	8	DDX1
+GO: Cellular Component	GO:0098589	membrane region	 	1.275E-2	1.000E0	4.764E-2	2.637E-1	6	1267	SLC6A18,ANKS1B,DLG2,SHANK2,NRXN1,SLC6A19
+Pathway	1427849	Protein-protein interactions at synapses	BioSystems: REACTOME	6.037E-6	1.189E-3	1.189E-3	6.973E-3	4	73	DLG2,PTPRD,SHANK2,NRXN1
+Pathway	1427850	Interactions of neurexins and neuroligins at synapses	BioSystems: REACTOME	1.265E-4	2.493E-2	1.246E-2	7.308E-2	3	59	DLG2,SHANK2,NRXN1
+Pathway	1268763	Neuronal System	BioSystems: REACTOME	2.427E-4	4.781E-2	1.594E-2	9.343E-2	5	351	DLG2,PTPRD,SHANK2,NRXN1,CACNA2D3
+Pathway	1269934	Na+/Cl- dependent neurotransmitter transporters	BioSystems: REACTOME	4.554E-4	8.972E-2	2.243E-2	1.315E-1	2	19	SLC6A18,SLC6A19
+Pathway	P00001	Adrenaline and noradrenaline biosynthesis	PantherDB	9.976E-4	1.965E-1	3.930E-2	2.304E-1	2	28	SLC6A18,SLC6A19
+Pathway	1269916	Amino acid transport across the plasma membrane	BioSystems: REACTOME	1.223E-3	2.410E-1	4.017E-2	2.355E-1	2	31	SLC6A18,SLC6A19
+Pathway	PW:0000029	fatty acid biosynthetic	Pathway Ontology	1.689E-3	3.328E-1	4.755E-2	2.788E-1	1	1	ACACA
+Transcription Factor Binding Site	TGGAAA_V$NFAT_Q4_01	TGGAAA_V$NFAT_Q4_01	 	4.628E-5	1.509E-2	1.509E-2	9.605E-2	11	1497	AUTS2,DLG2,LSAMP,SHANK2,CTNND2,ACACA,ASIC2,MAML3,CACNA2D3,SLIT3,KHDRBS2
+Transcription Factor Binding Site	V$LXR_Q3	V$LXR_Q3	 	2.217E-4	7.227E-2	3.614E-2	2.300E-1	3	59	TMPO,ACACA,ASIC2
+Transcription Factor Binding Site	AACTTT_UNKNOWN	AACTTT_UNKNOWN	 	3.528E-4	1.150E-1	3.834E-2	2.441E-1	10	1531	AUTS2,DLG2,LSAMP,FCHSD2,SHANK2,CTNND2,NRXN1,MAML3,CACNA2D3,SLIT3
+Transcription Factor Binding Site	V$MEF2_Q6_01	V$MEF2_Q6_01	 	7.398E-4	2.412E-1	4.793E-2	3.051E-1	4	208	DLG2,CTNND2,ASIC2,CACNA2D3
+Transcription Factor Binding Site	V$PAX_Q6	V$PAX_Q6	 	8.230E-4	2.683E-1	4.793E-2	3.051E-1	4	214	DLG2,ASIC2,CACNA2D3,SLIT3
+Transcription Factor Binding Site	V$TST1_01	V$TST1_01	 	8.821E-4	2.876E-1	4.793E-2	3.051E-1	4	218	DLG2,ACACA,ATRX,CACNA2D3
+Disease	C0004352	Autistic Disorder	DisGeNET Curated	2.087E-5	1.457E-2	8.211E-3	5.851E-2	8	644	AUTS2,SHANK2,CTNND2,ACACA,ATRX,NRXN1,ASIC2,MACROD2
+Disease	C0268654	Iminoglycinuria	DisGeNET Curated	3.529E-5	2.463E-2	8.211E-3	5.851E-2	2	5	SLC6A18,SLC6A19
+Disease	C1857482	Slender fingers	DisGeNET Curated	3.529E-5	2.463E-2	8.211E-3	5.851E-2	2	5	ATRX,EFTUD2
+Disease	C0524528	Pervasive Development Disorder	DisGeNET BeFree	6.755E-5	4.715E-2	1.179E-2	8.401E-2	4	116	SHANK2,CTNND2,NRXN1,MACROD2
+Disease	C0241442	Protrusion of tongue	DisGeNET Curated	1.927E-4	1.345E-1	2.657E-2	1.893E-1	2	11	ATRX,NRXN1
+Disease	C0036857	Severe mental retardation (I.Q. 20-34)	DisGeNET Curated	2.284E-4	1.594E-1	2.657E-2	1.893E-1	4	159	SHANK2,CTNND2,ATRX,NRXN1
+Disease	C0543541	HYPERGLYCINURIA (disorder)	DisGeNET Curated	3.177E-4	2.218E-1	2.846E-2	2.028E-1	2	14	SLC6A18,SLC6A19
+Disease	C0678230	Congenital Epicanthus	DisGeNET Curated	3.664E-4	2.558E-1	2.846E-2	2.028E-1	4	180	NBAS,CTNND2,ATRX,EFTUD2
+Disease	C0280216	stage, neuroblastoma	DisGeNET BeFree	9.522E-4	6.646E-1	2.846E-2	2.028E-1	2	24	ATRX,DDX1
+Disease	C0041696	Unipolar Depression	DisGeNET Curated	1.089E-3	7.601E-1	2.846E-2	2.028E-1	5	418	DLG2,LSAMP,CTNND2,SLIT3,APAF1
+Disease	C0013132	Drooling	DisGeNET Curated	1.207E-3	8.422E-1	2.846E-2	2.028E-1	2	27	ATRX,NRXN1
+Disease	C0026106	Mild Mental Retardation	DisGeNET Curated	1.388E-3	9.689E-1	2.846E-2	2.028E-1	3	116	SHANK2,CTNND2,ATRX
+Disease	C0037036	Sialorrhea	DisGeNET Curated	1.392E-3	9.719E-1	2.846E-2	2.028E-1	2	29	ATRX,NRXN1
+Disease	C0236969	Substance-Related Disorders	DisGeNET Curated	1.423E-3	9.931E-1	2.846E-2	2.028E-1	3	117	AGBL4,DDX1,MACROD2
+Disease	C0232466	Feeding difficulties	DisGeNET Curated	1.800E-3	1.000E0	2.846E-2	2.028E-1	3	127	AUTS2,NRXN1,EFTUD2
+Disease	C4020755	Abnormality of fontanelles	DisGeNET Curated	1.917E-3	1.000E0	2.846E-2	2.028E-1	1	1	ATRX
+Disease	OMIN:602772	RETINITIS PIGMENTOSA 25; RP25	OMIM	1.917E-3	1.000E0	2.846E-2	2.028E-1	1	1	EYS
+Disease	C0796159	Mental retardation Smith Fineman Myers type	DisGeNET Curated	1.917E-3	1.000E0	2.846E-2	2.028E-1	1	1	ATRX
+Disease	cv:CN188274	Mental retardation, autosomal dominant 26	Clinical Variations	1.917E-3	1.000E0	2.846E-2	2.028E-1	1	1	AUTS2
+Disease	C4014435	MENTAL RETARDATION, AUTOSOMAL DOMINANT 26	DisGeNET Curated	1.917E-3	1.000E0	2.846E-2	2.028E-1	1	1	AUTS2
+Disease	OMIN:234500	HARTNUP DISORDER	OMIM	1.917E-3	1.000E0	2.846E-2	2.028E-1	1	1	SLC6A19
+Disease	cv:C1864652	Growth and mental retardation, mandibulofacial dysostosis, microcephaly, and cleft palate	Clinical Variations	1.917E-3	1.000E0	2.846E-2	2.028E-1	1	1	EFTUD2
+Disease	cv:C3150693	Autism 17	Clinical Variations	1.917E-3	1.000E0	2.846E-2	2.028E-1	1	1	SHANK2
+Disease	cv:C0796003	Mental retardation-hypotonic facies syndrome X-linked, 1	Clinical Variations	1.917E-3	1.000E0	2.846E-2	2.028E-1	1	1	ATRX
+Disease	cv:C3280524	Schizophrenia 17	Clinical Variations	1.917E-3	1.000E0	2.846E-2	2.028E-1	1	1	NRXN1
+Disease	C0796548	Metastatic tumors of the Ewing's family	DisGeNET BeFree	1.917E-3	1.000E0	2.846E-2	2.028E-1	1	1	PTPRD
+Disease	OMIN:301040	ALPHA-THALASSEMIA/MENTAL RETARDATION SYNDROME, NONDELETION TYPE, X-LINKED; ATRX	OMIM	1.917E-3	1.000E0	2.846E-2	2.028E-1	1	1	ATRX
+Disease	C3553696	Decreased visual acuity, nonprogressive	DisGeNET Curated	1.917E-3	1.000E0	2.846E-2	2.028E-1	1	1	NBAS
+Disease	C3151039	Cardiomyopathy, Dilated, 1t	DisGeNET Curated	1.917E-3	1.000E0	2.846E-2	2.028E-1	1	1	TMPO
+Disease	cv:C3280479	Pitt-Hopkins-like syndrome 2	Clinical Variations	1.917E-3	1.000E0	2.846E-2	2.028E-1	1	1	NRXN1
+Disease	C0679465	Psychomotor Impairment	DisGeNET BeFree	1.917E-3	1.000E0	2.846E-2	2.028E-1	1	1	ATRX
+Disease	C4021893	Nonprogressive visual loss	DisGeNET Curated	1.917E-3	1.000E0	2.846E-2	2.028E-1	1	1	NBAS
+Disease	cv:C0268603	Acetyl-CoA: carboxylase deficiency	Clinical Variations	1.917E-3	1.000E0	2.846E-2	2.028E-1	1	1	ACACA
+Disease	cv:C3151039	Dilated cardiomyopathy 1T	Clinical Variations	1.917E-3	1.000E0	2.846E-2	2.028E-1	1	1	TMPO
+Disease	cv:C0018609	Neutral 1 amino acid transport defect	Clinical Variations	1.917E-3	1.000E0	2.846E-2	2.028E-1	1	1	SLC6A19
+Disease	cv:C1845055	ATR-X syndrome	Clinical Variations	1.917E-3	1.000E0	2.846E-2	2.028E-1	1	1	ATRX
+Disease	C1839765	Triangular nasal tip	DisGeNET Curated	1.917E-3	1.000E0	2.846E-2	2.028E-1	1	1	ATRX
+Disease	20081125:Schormair	Restless legs syndrome	GWAS	1.917E-3	1.000E0	2.846E-2	2.028E-1	1	1	PTPRD
+Disease	C0278586	Metastatic Ewing's Sarcoma	DisGeNET BeFree	1.917E-3	1.000E0	2.846E-2	2.028E-1	1	1	PTPRD
+Disease	C3541319	SHORT STATURE, OPTIC NERVE ATROPHY, AND PELGER-HUET ANOMALY	DisGeNET Curated	1.917E-3	1.000E0	2.846E-2	2.028E-1	1	1	NBAS
+Disease	OMIN:309580	MENTAL RETARDATION-HYPOTONIC FACIES SYNDROME, X-LINKED, 1; MRXHF1	OMIM	1.917E-3	1.000E0	2.846E-2	2.028E-1	1	1	ATRX
+Disease	cv:C0585216	Acquired hemoglobin H disease	Clinical Variations	1.917E-3	1.000E0	2.846E-2	2.028E-1	1	1	ATRX
+Disease	C4023439	Absent tragus	DisGeNET Curated	1.917E-3	1.000E0	2.846E-2	2.028E-1	1	1	EFTUD2
+Disease	OMIN:613436	AUTISM, SUSCEPTIBILITY TO, 17; AUTS17	OMIM	1.917E-3	1.000E0	2.846E-2	2.028E-1	1	1	SHANK2
+Disease	cv:CN143710	Short stature, optic nerve atrophy, and pelger-huet anomaly	Clinical Variations	1.917E-3	1.000E0	2.846E-2	2.028E-1	1	1	NBAS
+Disease	C3809651	INFANTILE LIVER FAILURE SYNDROME 2	DisGeNET Curated	1.917E-3	1.000E0	2.846E-2	2.028E-1	1	1	NBAS
+Disease	cv:C1864446	Retinitis pigmentosa 25	Clinical Variations	1.917E-3	1.000E0	2.846E-2	2.028E-1	1	1	EYS
+Disease	C1535926	Neurodevelopmental Disorders	DisGeNET Curated	2.010E-3	1.000E0	2.923E-2	2.083E-1	3	132	DLG2,SHANK2,NRXN1
+Disease	C1839758	Narrow forehead	DisGeNET Curated	2.262E-3	1.000E0	3.223E-2	2.297E-1	2	37	NBAS,ATRX
+Disease	C0521525	Short neck	DisGeNET Curated	2.474E-3	1.000E0	3.427E-2	2.442E-1	3	142	NBAS,CTNND2,ATRX
+Disease	C1269683	Major Depressive Disorder	DisGeNET Curated	2.504E-3	1.000E0	3.427E-2	2.442E-1	5	505	DLG2,LSAMP,CTNND2,SLIT3,APAF1
+Disease	C0432072	Dysmorphic features	DisGeNET BeFree	3.331E-3	1.000E0	4.043E-2	2.881E-1	2	45	AUTS2,NRXN1
+Disease	C0349588	Short stature	DisGeNET Curated	3.478E-3	1.000E0	4.043E-2	2.881E-1	5	545	AUTS2,NBAS,CTNND2,ATRX,EFTUD2
+Disease	C1864652	Growth and mental retardation, mandibulofacial dysostosis, microcephaly, and cleft palate	DisGeNET Curated	3.822E-3	1.000E0	4.043E-2	2.881E-1	1	2	EFTUD2
+Disease	C2931860	Monosomy 5p	DisGeNET Curated	3.822E-3	1.000E0	4.043E-2	2.881E-1	1	2	CTNND2
+Disease	20081125:Fung	Parkinson's disease	GWAS	3.822E-3	1.000E0	4.043E-2	2.881E-1	1	2	DLG2
+Disease	C1857483	Decreased palmar creases	DisGeNET Curated	3.822E-3	1.000E0	4.043E-2	2.881E-1	1	2	AUTS2
+Disease	C1839749	Paroxysmal bursts of laughter	DisGeNET Curated	3.822E-3	1.000E0	4.043E-2	2.881E-1	1	2	ATRX
+Disease	C1845245	Lower limb hypertonia	DisGeNET Curated	3.822E-3	1.000E0	4.043E-2	2.881E-1	1	2	ATRX
+Disease	OMIN:612376	ACUTE PROMYELOCYTIC LEUKEMIA; APL	OMIM	3.822E-3	1.000E0	4.043E-2	2.881E-1	1	2	NUMA1
+Disease	C1856202	U-Shaped upper lip vermilion	DisGeNET Curated	3.822E-3	1.000E0	4.043E-2	2.881E-1	1	2	ATRX
+Disease	C4013429	Hypoplastic tragus	DisGeNET Curated	3.822E-3	1.000E0	4.043E-2	2.881E-1	1	2	EFTUD2
+Disease	C4023031	Abnormality of cells of the granulocytic lineage	DisGeNET Curated	3.822E-3	1.000E0	4.043E-2	2.881E-1	1	2	NUMA1
+Disease	OMIN:123450	CRI-DU-CHAT SYNDROME	OMIM	3.822E-3	1.000E0	4.043E-2	2.881E-1	1	2	CTNND2
+Disease	C1864446	Retinitis Pigmentosa 25	DisGeNET Curated	3.822E-3	1.000E0	4.043E-2	2.881E-1	1	2	EYS
+Disease	C1864887	Cortical Dysplasia-Focal Epilepsy Syndrome	DisGeNET Curated	3.822E-3	1.000E0	4.043E-2	2.881E-1	1	2	NRXN1
+Disease	20081125:Melzer	Protein quantitative trait loci	GWAS	3.938E-3	1.000E0	4.103E-2	2.924E-1	2	49	DLG2,KHDRBS2
+Disease	C0026827	Muscle hypotonia	DisGeNET Curated	4.371E-3	1.000E0	4.346E-2	3.097E-1	5	575	NBAS,CTNND2,ACACA,ATRX,NRXN1
+Disease	C0152423	Congenital small ears	DisGeNET Curated	4.938E-3	1.000E0	4.346E-2	3.097E-1	2	55	ATRX,EFTUD2
+Disease	C0376634	Craniofacial Abnormalities	DisGeNET Curated	5.047E-3	1.000E0	4.346E-2	3.097E-1	3	183	ATRX,NRXN1,APAF1
+Disease	C1859778	Postnatal growth retardation	DisGeNET Curated	5.294E-3	1.000E0	4.346E-2	3.097E-1	2	57	NBAS,ATRX
+Disease	C0424688	Small head	DisGeNET Curated	5.419E-3	1.000E0	4.346E-2	3.097E-1	4	375	AUTS2,CTNND2,ATRX,EFTUD2
+Disease	C4280252	Diastema between maxillary central incisors	DisGeNET Curated	5.728E-3	1.000E0	4.346E-2	3.097E-1	1	3	ATRX
+Disease	cv:C0268654	Iminoglycinuria	Clinical Variations	5.728E-3	1.000E0	4.346E-2	3.097E-1	1	3	SLC6A19
+Disease	C0234861	Cri du chat	DisGeNET Curated	5.728E-3	1.000E0	4.346E-2	3.097E-1	1	3	CTNND2
+Disease	C1856118	Prominent nasal tip	DisGeNET Curated	5.728E-3	1.000E0	4.346E-2	3.097E-1	1	3	AUTS2
+Disease	C4280500	Bulbous tip of nose	DisGeNET Curated	5.728E-3	1.000E0	4.346E-2	3.097E-1	1	3	AUTS2
+Disease	C0475858	Generalized pruritus	DisGeNET BeFree	5.728E-3	1.000E0	4.346E-2	3.097E-1	1	3	ATRX
+Disease	cv:C0543541	Hyperglycinuria	Clinical Variations	5.728E-3	1.000E0	4.346E-2	3.097E-1	1	3	SLC6A19
+Disease	C4280499	Hyperplasia of nasal tip	DisGeNET Curated	5.728E-3	1.000E0	4.346E-2	3.097E-1	1	3	AUTS2
+Disease	C0344925	Perimembranous ventricular septal defect	DisGeNET Curated	5.728E-3	1.000E0	4.346E-2	3.097E-1	1	3	ATRX
+Disease	20081125:Wang	Lung cancer	GWAS	5.728E-3	1.000E0	4.346E-2	3.097E-1	1	3	CLPTM1L
+Disease	C1332183	adult astrocytic tumors	DisGeNET BeFree	5.728E-3	1.000E0	4.346E-2	3.097E-1	1	3	ATRX
+Disease	cv:C1510586	Autism spectrum disorders	Clinical Variations	5.728E-3	1.000E0	4.346E-2	3.097E-1	1	3	SHANK2
+Disease	OMIN:138500	HYPERGLYCINURIA	OMIM	5.728E-3	1.000E0	4.346E-2	3.097E-1	1	3	SLC6A19
+Disease	OMIN:242600	IMINOGLYCINURIA	OMIM	5.728E-3	1.000E0	4.346E-2	3.097E-1	1	3	SLC6A19
+Disease	C1845110	Central incisor gap	DisGeNET Curated	5.728E-3	1.000E0	4.346E-2	3.097E-1	1	3	ATRX
+Disease	C1835762	Wide upper central incisors	DisGeNET Curated	5.728E-3	1.000E0	4.346E-2	3.097E-1	1	3	ATRX
+Disease	C4280498	Hypertrophy of nasal tip	DisGeNET Curated	5.728E-3	1.000E0	4.346E-2	3.097E-1	1	3	AUTS2
+Disease	C0796003	Juberg-Marsidi syndrome	DisGeNET Curated	5.728E-3	1.000E0	4.346E-2	3.097E-1	1	3	ATRX
+Disease	C4021814	Accessory oral frenulum	DisGeNET Curated	5.728E-3	1.000E0	4.346E-2	3.097E-1	1	3	EFTUD2
+Disease	C0795950	Corpus callosum agenesis neuronopathy	DisGeNET Curated	5.728E-3	1.000E0	4.346E-2	3.097E-1	1	3	ACACA
+Disease	C0025362	Mental Retardation	DisGeNET Curated	5.934E-3	1.000E0	4.453E-2	3.174E-1	6	885	AUTS2,SHANK2,CTNND2,ATRX,NRXN1,EFTUD2
+Disease	C0423113	Telecanthus	DisGeNET Curated	6.236E-3	1.000E0	4.630E-2	3.300E-1	2	62	ATRX,EFTUD2

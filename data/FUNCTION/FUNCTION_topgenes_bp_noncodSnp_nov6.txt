@@ -1,0 +1,42 @@
+Category	ID	Name	Source	p-value	q-value Bonferroni	q-value FDR B&H	q-value FDR B&Y	Hit Count in Query List	Hit Count in Genome	Hit in Query List
+GO: Molecular Function	GO:0061714	folic acid receptor activity	 	1.199E-5	3.105E-3	2.832E-3	1.738E-2	2	2	FOLR1,FOLR2
+GO: Molecular Function	GO:0005542	folic acid binding	 	2.187E-5	5.664E-3	2.832E-3	1.738E-2	3	16	FOLR1,FOLR2,FOLR3
+GO: Molecular Function	GO:0051870	methotrexate binding	 	7.136E-5	1.848E-2	6.161E-3	3.780E-2	2	4	FOLR1,FOLR2
+GO: Molecular Function	GO:0008517	folic acid transmembrane transporter activity	 	3.300E-4	8.547E-2	2.137E-2	1.311E-1	2	8	FOLR1,FOLR2
+GO: Molecular Function	GO:0016597	amino acid binding	 	9.195E-4	2.381E-1	4.763E-2	2.923E-1	4	124	FOLR1,FOLR2,FOLR3,NAGS
+GO: Biological Process	GO:0015884	folic acid transport	 	3.681E-6	7.444E-3	6.468E-3	5.297E-2	3	9	FOLR1,FOLR2,FOLR3
+GO: Biological Process	GO:0042635	positive regulation of hair cycle	 	7.194E-6	1.455E-2	6.468E-3	5.297E-2	3	11	KRT17,TNF,TERT
+GO: Biological Process	GO:0002876	positive regulation of chronic inflammatory response to antigenic stimulus	 	1.280E-5	2.587E-2	6.468E-3	5.297E-2	2	2	LTA,TNF
+GO: Biological Process	GO:0071231	cellular response to folic acid	 	1.280E-5	2.587E-2	6.468E-3	5.297E-2	2	2	FOLR1,FOLR2
+GO: Biological Process	GO:0006835	dicarboxylic acid transport	 	3.294E-5	6.661E-2	1.286E-2	1.053E-1	5	102	FOLR1,FOLR2,FOLR3,PPFIA1,TNF
+GO: Biological Process	GO:0002874	regulation of chronic inflammatory response to antigenic stimulus	 	3.816E-5	7.717E-2	1.286E-2	1.053E-1	2	3	LTA,TNF
+GO: Biological Process	GO:0071230	cellular response to amino acid stimulus	 	8.782E-5	1.776E-1	2.328E-2	1.906E-1	4	65	FOLR1,FOLR2,TNF,LAMTOR1
+GO: Biological Process	GO:0042634	regulation of hair cycle	 	9.673E-5	1.956E-1	2.328E-2	1.906E-1	3	25	KRT17,TNF,TERT
+GO: Biological Process	GO:0051181	cofactor transport	 	1.224E-4	2.475E-1	2.328E-2	1.906E-1	3	27	FOLR1,FOLR2,FOLR3
+GO: Biological Process	GO:0002439	chronic inflammatory response to antigenic stimulus	 	1.266E-4	2.560E-1	2.328E-2	1.906E-1	2	5	LTA,TNF
+GO: Biological Process	GO:0002678	positive regulation of chronic inflammatory response	 	1.266E-4	2.560E-1	2.328E-2	1.906E-1	2	5	LTA,TNF
+GO: Biological Process	GO:0072337	modified amino acid transport	 	1.861E-4	3.764E-1	2.947E-2	2.414E-1	3	31	FOLR1,FOLR2,FOLR3
+GO: Biological Process	GO:0002925	positive regulation of humoral immune response mediated by circulating immunoglobulin	 	1.895E-4	3.832E-1	2.947E-2	2.414E-1	2	6	LTA,TNF
+GO: Biological Process	GO:0008544	epidermis development	 	2.160E-4	4.368E-1	3.120E-2	2.555E-1	7	340	MYCN,KRTAP5-9,KRT16,KRT17,LRTOMT,FOSL2,TNF
+GO: Biological Process	GO:0051180	vitamin transport	 	2.459E-4	4.972E-1	3.315E-2	2.715E-1	3	34	FOLR1,FOLR2,FOLR3
+GO: Biological Process	GO:0006620	posttranslational protein targeting to endoplasmic reticulum membrane	 	2.647E-4	5.352E-1	3.345E-2	2.739E-1	2	7	FOLR1,FOLR2
+GO: Biological Process	GO:0006865	amino acid transport	 	3.367E-4	6.808E-1	4.005E-2	3.280E-1	5	167	FOLR1,FOLR2,FOLR3,PPFIA1,TNF
+GO: Cellular Component	GO:0045111	intermediate filament cytoskeleton	 	3.119E-5	6.707E-3	4.105E-3	2.443E-2	7	244	KRTAP5-9,KRT16,KRT17,NFKBIL1,KRTAP5-10,KRTAP5-8,KRTAP5-7
+GO: Cellular Component	GO:0099513	polymeric cytoskeletal fiber	 	5.308E-5	1.141E-2	4.105E-3	2.443E-2	11	712	KRTAP5-9,KRT16,KRT17,NUMA1,KRTAP5-10,KIF5A,CTTN,KRTAP5-8,CNP,KRTAP5-7,KIF25
+GO: Cellular Component	GO:0099512	supramolecular fiber	 	5.943E-5	1.278E-2	4.105E-3	2.443E-2	11	721	KRTAP5-9,KRT16,KRT17,NUMA1,KRTAP5-10,KIF5A,CTTN,KRTAP5-8,CNP,KRTAP5-7,KIF25
+GO: Cellular Component	GO:0031362	anchored component of external side of plasma membrane	 	7.969E-5	1.713E-2	4.105E-3	2.443E-2	3	23	FOLR1,FOLR2,MICB
+GO: Cellular Component	GO:0005882	intermediate filament	 	9.546E-5	2.052E-2	4.105E-3	2.443E-2	6	201	KRTAP5-9,KRT16,KRT17,KRTAP5-10,KRTAP5-8,KRTAP5-7
+GO: Cellular Component	GO:0031233	intrinsic component of external side of plasma membrane	 	1.618E-4	3.480E-2	5.799E-3	3.451E-2	3	29	FOLR1,FOLR2,MICB
+GO: Cellular Component	GO:0045095	keratin filament	 	3.965E-4	8.524E-2	1.218E-2	7.246E-2	4	94	KRTAP5-9,KRTAP5-10,KRTAP5-8,KRTAP5-7
+GO: Cellular Component	GO:0046658	anchored component of plasma membrane	 	6.850E-4	1.473E-1	1.841E-2	1.095E-1	3	47	FOLR1,FOLR2,MICB
+Pathway	1440526	Antifolate resistance	BioSystems: KEGG	5.669E-6	2.721E-3	2.721E-3	1.837E-2	4	31	FOLR1,FOLR2,FOLR3,TNF
+Pathway	1457790	Keratinization	BioSystems: REACTOME	1.615E-4	7.754E-2	3.877E-2	2.618E-1	6	214	KRTAP5-9,KRT16,KRT17,KRTAP5-10,KRTAP5-8,KRTAP5-7
+Disease	20090116:Limou	AIDS progression	GWAS	3.990E-6	8.746E-3	8.746E-3	7.233E-2	3	9	MICB,TNF,MCCD1
+Disease	C0015634	Farmer's Lung	DisGeNET BeFree	1.353E-5	2.966E-2	1.483E-2	1.226E-1	2	2	LTA,TNF
+Disease	C0007117	Basal cell carcinoma	DisGeNET Curated	4.025E-5	8.823E-2	2.882E-2	2.384E-1	4	52	MYCN,CLPTM1L,KRT17,TERT
+Disease	C1704317	Leukokeratosis	DisGeNET Curated	5.260E-5	1.153E-1	2.882E-2	2.384E-1	3	20	KRT16,KRT17,TERT
+Disease	C0221725	Obstruction of bronchus	DisGeNET BeFree	8.050E-5	1.765E-1	3.260E-2	2.696E-1	2	4	CLPTM1L,TERT
+Disease	C0280216	stage, neuroblastoma	DisGeNET BeFree	9.241E-5	2.026E-1	3.260E-2	2.696E-1	3	24	MYCN,TERT,DDX1
+Disease	C0023532	Leukoplakia, Oral	DisGeNET Curated	1.093E-4	2.397E-1	3.260E-2	2.696E-1	4	67	KRT16,KRT17,TNF,TERT
+Disease	C4020960	Abnormality of nail color	DisGeNET Curated	1.339E-4	2.934E-1	3.260E-2	2.696E-1	2	5	KRT16,KRT17
+Disease	C0033893	Tension Headache	DisGeNET BeFree	1.339E-4	2.934E-1	3.260E-2	2.696E-1	2	5	LTA,TNF

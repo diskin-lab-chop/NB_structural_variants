@@ -1,3 +1,10 @@
+# "Somatic structural variation targets neurodevelopmental genes and identifies SHANK2 as a tumor suppressor in neuroblastoma"
+# Author: Gonzalo Lopez, PhD
+# email: gonzalo.lopezgarcia@mssm.edu
+# Date edited: Apr 16th, 2020
+
+
+# required libraries
 require(TxDb.Hsapiens.UCSC.hg19.knownGene)
 txdb <- TxDb.Hsapiens.UCSC.hg19.knownGene
 require(devtools)
@@ -5,20 +12,14 @@ require(GenomicFeatures)
 library(data.table)
 require(taRifx)  # contains remove.factors
 
-setwd("~/Box Sync/git/NB_structural_variants/")
+setwd("~/Box Sync/git/NB_structural_variants/")   # modify to local folder
 
-source('R/my_stat_functions.r')
+source('R/my_stat_functions.R')
 source('R/01-nbl_somatic_SV_FUNCTIONS.R')
-
-## load all collapsed data by type of SVs
-#setwd("~/Box Sync/My_CHOP/SV_paper_V2/rdata/")
 
 
 # database of genomic variants
 DGV <- read.delim("data/GRCh37_hg19_variants_2016-05-15-small.txt",as.is=TRUE)
-
-# table for cosmic genes
-#cosmic_genes <- read.delim(paste(init,"/diskin_lab/Gonzalo/SV_nbl/Census_allSun Mar 12 20-20-26 2017.csv",sep=""),sep=",")
 
 
 # Load all CGI SV calls
@@ -222,21 +223,24 @@ somatic_junctions_all_f2<-somatic_junctions_all_f1[setdiff(non_repeat_seq,c(high
 
 # remove common variants found in DGV and split the data into the diferent TARGET tumors
 
-
-all_somatic_junctions_all_f0 <- somatic_junctions_all_f2[grep("TARGET-10-[A-Z][A-Z][A-Z][A-Z][A-Z][A-Z]-0[4|9]",rownames(somatic_junctions_all_f2),perl=TRUE),]
-aml_somatic_junctions_all_f0 <- somatic_junctions_all_f2[grep("TARGET-20-[A-Z][A-Z][A-Z][A-Z][A-Z][A-Z]-0[4|9]",rownames(somatic_junctions_all_f2),perl=TRUE),]
+# Neuroblastoma (NBL) SJBP variant junction info
 nbl_somatic_junctions_all_f0 <- somatic_junctions_all_f2[grep("TARGET-30-[A-Z][A-Z][A-Z][A-Z][A-Z][A-Z]-01",rownames(somatic_junctions_all_f2),perl=TRUE),]
+# Acute Lymphoblastic Leukemia (ALL) SJBP variant junction info
+all_somatic_junctions_all_f0 <- somatic_junctions_all_f2[grep("TARGET-10-[A-Z][A-Z][A-Z][A-Z][A-Z][A-Z]-0[4|9]",rownames(somatic_junctions_all_f2),perl=TRUE),]
+# Acute Myeloid Leukemia (AML) SJBP variant junction info
+aml_somatic_junctions_all_f0 <- somatic_junctions_all_f2[grep("TARGET-20-[A-Z][A-Z][A-Z][A-Z][A-Z][A-Z]-0[4|9]",rownames(somatic_junctions_all_f2),perl=TRUE),]
+# Osteosarcoma (OS) SJBP variant junction info
 os_somatic_junctions_all_f0 <- somatic_junctions_all_f2[grep("TARGET-40-[A-Z][A-Z][A-Z][A-Z][A-Z][A-Z]-01",rownames(somatic_junctions_all_f2),perl=TRUE),]
+# Wilms Tumors (WT) SJBP variant junction info
 wt_somatic_junctions_all_f0 <- somatic_junctions_all_f2[grep("TARGET-50-[A-Z][A-Z][A-Z][A-Z][A-Z][A-Z]-01",rownames(somatic_junctions_all_f2),perl=TRUE),]
+# Clear cell sarcoma of the kidney (CCSK) SJBP variant junction info
 ccsk_somatic_junctions_all_f0 <- somatic_junctions_all_f2[grep("TARGET-51-[A-Z][A-Z][A-Z][A-Z][A-Z][A-Z]-01",rownames(somatic_junctions_all_f2),perl=TRUE),]
 
 # Supplementary Table S3: nbl_somatic_junctions_all_f0
 
 
 ###################################
-###################################
-## Gene level enrichment analysis of SVs
-# we are running enrichment analysis on each tumor and then focusing on NBL hits
+# Annotation of recurrently altered genes by SJBP discordantly aligned sequence junction breakpoints
 
 feature_tab<- genes_tab
 exons_tab <- exons_tab
