@@ -215,6 +215,7 @@ highDensfilter <- unique(c(A,B))
 
 relatedJunctions <- filterRelated(highDensfilter,somatic_junctions_all_f1)
 
+# remove SVs in low complexity/ repetitive sequences
 non_repeat_seq <- rownames(somatic_junctions_all_f1)[intersect(intersect(grep("Simple_repeat",somatic_junctions_all_f1$LeftRepeatClassification,invert=T),grep("Low_complexity",somatic_junctions_all_f1$LeftRepeatClassification,invert=T)),
 	intersect(grep("Simple_repeat",somatic_junctions_all_f1$RightRepeatClassification,invert=T),grep("Low_complexity",somatic_junctions_all_f1$RightRepeatClassification,invert=T)))]
 

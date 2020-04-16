@@ -18,7 +18,12 @@ Zalman Vaksman<sup>1,3,4</sup>, Lance M. Farra<sup>1,3</sup>, Eric Hyson<sup>1,3
 12.	Abramson Family Cancer Research Institute, Perelman School of Medicine at the University of Pennsylvania, Philadelphia, PA, USA.
 
 
-This repository contains all code and processed data necessary to reproduce analysis and figures in the above cited manuscript.
+This repository contains all code and processed data necessary to reproduce the main and supplementaru figures as well as supplementary tables of the above cited manuscript.
+
+## Download using Git
+
+`git clone https://github.com/diskin-lab-chop/NB_structural_variants`
+
 
 ## R code :
 ### R/01-nbl_somatic_SV_FUNCTIONS.R
