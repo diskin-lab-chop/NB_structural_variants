@@ -8,7 +8,7 @@ require(taRifx)  # contains remove.factors
 setwd("~/Box Sync/git/NB_structural_variants/")
 
 source('R/my_stat_functions.r')
-source('R/sv_somatic_nbl-pantarget_functions_V2.r')
+source('R/01-nbl_somatic_SV_FUNCTIONS.R')
 
 ## load all collapsed data by type of SVs
 #setwd("~/Box Sync/My_CHOP/SV_paper_V2/rdata/")
@@ -29,7 +29,7 @@ junall <- junctions_all[which(!duplicated(substr(names(junctions_all),0,16)))]
 somatic_junctions_all_df <-  as.data.frame(rbindlist(junall))
 rownames(somatic_junctions_all_df) <- unlist(sapply(names(junall),function(i) paste(i,rownames(junall[[i]]),sep=".") ))
 
-# Obtain genomic features (genes and exons) derived from UCSC known genes
+# Obtain genomic features (genes and exons) derived from UCSC known genes (no need to run; just load the result file below)
 #########################################
 # refseq <- read.delim("~/Box Sync/My_CHOP/reference_files/ucsc_refseq_0ct31_2018.txt",as.is=T)
 # chromosomes <- paste("chr",c(1:22,"X"),sep="")
@@ -261,8 +261,7 @@ sv_disrupt <- merge2lists(results_NBL$disruptExonSamples,results_NBL$copynumSamp
 sv_proximal <- merge2lists(results_NBL$bothProximalSamples,results_NBL$disruptIntronSamples)
 sv_summary_num <- sort(unlist(lapply(merge2lists(sv_disrupt,sv_proximal),length)))
 
-
+# save filtered variants and additional annotation files
 save(results_NBL,results_ALL,results_AML,results_OS,results_WT,results_CCSK,genes_tab,exons_tab,file="data/SV_analysis_Oct31_18.rda")
 
-#load("data/SV_analysis_Oct31_18.rda",verbose=T)
 

@@ -12,34 +12,29 @@ library(tidyr)
 require(taRifx)  # contains remove.factors
 
 source('R/my_stat_functions.r')
-#source('~/Box Sync/My_CHOP/git/sources/my_gsea.r')
-#source('~/Box Sync/My_CHOP/git/fancyPlots/legend_color_bar.r')
-#source('~/Box Sync/My_CHOP/git/sources/cnv_segmentation_functions.r')
-source('R/sv_somatic_nbl-pantarget_functions_V2.r')
+source('R/01-nbl_somatic_SV_FUNCTIONS.R')
 
 
-#load("~/Box Sync/My_CHOP/rdata/ucsc_hg19_refseq_genes_exon_df.rda",verbose=T)
+# load gene/exon annotations and generate Ranges objects
 load("data/ucsc_hg19_refseq_genes_exon_df_Oct31_2018.rda",verbose=T)
-
 features_tab_GR = with(genes_tab[,c("seqnames","start","end","strand")], GRanges(seqnames, IRanges(start=start, end=end),Rle(strand)))
 mcols(features_tab_GR)$name2 <-rownames(genes_tab)
 
-#exons_tab_GR = with(exons_tab[,c("seqnames","start","end")], GRanges(seqnames, IRanges(start=start, end=end)))
-#mcols(exons_tab_GR)$name2 <-rownames(exons_tab)
 
 # load segmentation data for 914 samples from the NBL SNP array dataset
 load("data/cnv_segmentation_SNP_081318.rda",verbose=T)
+# load segmentation data for 135 CGI WGS samples + 884 tumors from ALL, AML, OS and WT
 load("data/cnv_segmentation_CGI_081318.rda",verbose=T)
 
-#### 
+# load low coverage regions (subtelomeric and pericentromeric defined regions)
 low_cov <- read.delim("data/CGI_low_coverage_regions.txt",as.is=T,header=F)
 colnames(low_cov) <- c("chr","start","stop")
 low_cov_GR = with(low_cov, GRanges(chr, IRanges(start=start, end=stop)))
 overlap_gr <- GenomicAlignments::findOverlaps(features_tab_GR,low_cov_GR,ignore.strand=TRUE)
 mapped_genes <- rownames(genes_tab[setdiff(1:nrow(genes_tab),queryHits(overlap_gr)),])
-## obtain amplifications and deep deletiojns
 
-## obtain amplifications and deep deletiojns
+## obtain amplifications and deep deletions from segmentation datasets 
+# reformat segmentation data
 segment_cgi2<-segment_cgi
 segment_snp2<-segment_snp
 segment_4tum2 <- segment_4tum
@@ -48,13 +43,13 @@ segment_cgi2[,"Chromosome"] <- paste("chr",segment_cgi2[,"Chromosome"],sep="")
 segment_4tum2[,"Chromosome"] <- paste("chr",segment_4tum2[,"Chromosome"],sep="")
 colnames(segment_4tum2) <- colnames(segment_cgi2)
 
-
+# run analysis (FUNCTION=readDepthCopynum)
 results_CN <- readDepthCopynum(segment_cgi2, genes_tab[mapped_genes,], ampl_cut = 2, ddel_cut = -1.9)
 results_CN_snp<- readDepthCopynum(segment_snp2, genes_tab[mapped_genes,], ampl_cut = 1.2, ddel_cut = -1.2)
 results_CN_4tum<- readDepthCopynum(segment_4tum2, genes_tab[mapped_genes,], ampl_cut = 1.2, ddel_cut = -1.2)
 
-#########
-######### Frequentluy altered genes
+### Identification of recurrently altered altered genes using CNV breakpoint localization 
+# a graphic description of this analysis is represented in Supplementary Figure S11B
 
 
 upstr=100000 
@@ -128,7 +123,7 @@ results_BP_snp <- enrichBP(breaks,feature_tab, upstr=upstr, dnstr=dnstr, promote
 sort(unlist(lapply(results_BP_snp$breakSamples,length)),decreasing=T)[1:20]
 sort(unlist(lapply(results_BP_snp$proximalSamples,length)),decreasing=T)[1:20]
 
-
+## save results for 
 save(results_BP, results_BP_snp,results_BP_4tum, genes_tab, exons_tab, results_CN,results_CN_4tum, results_CN_snp, low_cov_GR,
 	file="data/BP_analysis_Nov15_19.rda")
 
