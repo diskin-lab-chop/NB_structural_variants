@@ -23,7 +23,7 @@ DGV <- read.delim("data/GRCh37_hg19_variants_2016-05-15-small.txt",as.is=TRUE)
 
 # Load all CGI SV calls
 load("data/allSomatic_cgi_SV_data_V2.rda",verbose=TRUE)
-
+save(junctions_all,file="data/allSomatic_cgi_SV_data_V2.rda",compress=TRUE)
 
 junall <- junctions_all[which(!duplicated(substr(names(junctions_all),0,16)))]
 somatic_junctions_all_df <-  as.data.frame(rbindlist(junall))

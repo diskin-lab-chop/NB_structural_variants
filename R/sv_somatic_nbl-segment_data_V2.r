@@ -141,9 +141,11 @@ load("data/clinical_COG_20181129_plus_TARGET_20180331_plus_SCA_20180619_pheno.rd
 ## segmentation for HR-NA
 seg_noa <- segment_snp[which(segment_snp$Sample %in% intersect(hr_noa,segment_snp$Sample)),]
 write.table(seg_noa,file="GISTIC_SNP_GROUPS/SNP_singleTumor_422_HR_NA.txt",sep="\t",quote=F,row.names=F)
+
 ## segmentation for MNA
 seg_amp <- segment_snp[which(segment_snp$Sample %in% intersect(hr_amp,segment_snp$Sample)),]
 write.table(seg_amp,file="GISTIC_SNP_GROUPS/SNP_singleTumor_422_HR_MNA.txt",sep="\t",quote=F,row.names=F)
+
 ## segmentation for LOWINT
 seg_lint <- segment_snp[which(segment_snp$Sample %in% intersect(c(lowrisk,intrisk) ,segment_snp$Sample)),]
 write.table(seg_lint,file="GISTIC_SNP_GROUPS/SNP_singleTumor_422_HR_LOWINT.txt",sep="\t",quote=F,row.names=F)
