@@ -74,9 +74,10 @@ The database of genomic variants
 SEQC expression data matrix
 ### seqc_survival_clinical.txt
 SEQC clinical info
-### autism_disorder_genes.txt                                              
+### autism_disorder_genes.txt     
+The list of genes involved in autism spectrum disorder from the ToppGene Disease collection
 ### cancer_gene_census_v85.csv                                             
-                         
+The COSMIC cancer gene census
 ### ucsc_hg19_refseq_genes_exon_df_Oct31_2018.rda
 Genes and gene exon annotations
 ### MSigDB_v6.1_human.rda                                                  
