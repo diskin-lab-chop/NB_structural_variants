@@ -86,8 +86,11 @@ The Broad Institute MSigDB pathway and gene set collection
 
 ## Contact information:
 Gonzalo Lopez: gonzalo.lopezgarcia at mssm dot edu
+
 Karina L. Conkrite: ConkriteK at email dot chop dot edu
+
 Sharon J. Diskin: diskin at email dot chop dot edu
+
 
 ## Technical assistance
 Gonzalo Lopez: gonzalo.lopezgarcia at mssm dot edu
