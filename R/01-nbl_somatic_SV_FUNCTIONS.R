@@ -196,7 +196,6 @@ return(results)
 #dnstr <- 25000
 #copynumsize <- 2000000
 
-
 enrichSV <- function(sv_df,feature_tab,exons_tab, upstr=upstr, dnstr=dnstr, promoter=1000, offset=100,copynumsize = 2000000){
 
 # sv_df: 	A data.frame with junctions from CGI fomr multiple samples
@@ -390,7 +389,7 @@ bothProximalJunctions <- sapply(intersect(names(bothProximalJunctions),c(names(d
 bothProximalJunctions <- bothProximalJunctions[names(which(lapply(bothProximalJunctions,length) > 0))]
 bothProximalJunctions <- lapply(bothProximalJunctions,unique)
 bothProximalSamples <- sapply(names(bothProximalJunctions),function(i) unique(substr(bothProximalJunctions[[i]],0,24)) ,simplify=FALSE)
-bothProximalTypes<-sapply(names(bothProximalJunctions),function(i) table(sv_df[bothProximalJunctions[[i]],"Type"]),simplify=FALSE)
+bothProximalTypes<-sapply(names(bothProximalJunctions),function(i) sv_df[bothProximalJunctions[[i]],"Type"],simplify=FALSE)
 message("# For every SV group create a matrix genes vs. SV type")
 
 

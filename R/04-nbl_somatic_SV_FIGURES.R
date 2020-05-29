@@ -5,8 +5,8 @@
 # Date edited: Apr 16th, 2020
 
 
-rm(list = ls(all.names = TRUE))
-.rs.restartR()
+#rm(list = ls(all.names = TRUE))
+#.rs.restartR()
 require(TxDb.Hsapiens.UCSC.hg19.knownGene)
 txdb <- TxDb.Hsapiens.UCSC.hg19.knownGene
 require(devtools)
@@ -59,8 +59,8 @@ blood_libsize <- sraRunTab_cgi$MBases_l[grep("TARGET-30-[A-Z][A-Z][A-Z][A-Z][A-Z
 names(blood_libsize)<- substr(grep("TARGET-30-[A-Z][A-Z][A-Z][A-Z][A-Z][A-Z]-10",sraRunTab_cgi$Sample_Name_s,value=T),0,16)
 ll<-list(tumor=tumor_libsize/3234.83,blood=blood_libsize/3234.83)
 
-# Supplementary Figure S1A
-vioplot(ll,las=1,border=c("black","black"),col=c("grey30","grey90"),names=c("Tumor","Blood"),ylab="Average depth")
+
+#vioplot(ll,las=1,border=c("black","black"),col=c("grey30","grey90"),names=c("Tumor","Blood"),ylab="Average depth")
 
 # defoine NBL subtypes for WGS-CGI dataset
 cgi_samples <- setdiff(substr(intersect(names(blood_libsize),names(tumor_libsize)),11,16),nonconsent)
@@ -254,7 +254,7 @@ j_summary <- merge2lists(j_coding,j_noncod)
 
 
 # plot density of DiscordantMatePairAlignments in lieu of VAF as requested by reviewer 1
-# (Supplementary Figure S1B)
+# (Supplementary Figure S2A)
 dev.new()
 plot(density(log2(ll_sv$AML$DiscordantMatePairAlignments)),col="white",las=1,xlim=c(0,15),main="",xaxt='n',xlab="",ylab=)
 lines(density(log2(ll_sv$ALL$DiscordantMatePairAlignments)),col="salmon",lty=3,lwd=2)
@@ -265,7 +265,7 @@ lines(density(log2(ll_sv$NBL$DiscordantMatePairAlignments)),col="blue",lty=1,lwd
 legend("topright",c("ALL","AML","OS","WT","NBL"),lty=c(3,3,3,3,1),lwd=2,col=c("pink","salmon","brown","green","blue"),bty='n')
 axis(1,at=seq(0,16,2),labels=2^seq(0,16,2),las=2)
 
-## plot hitogram sizes per type (Supplementary Figure S1C-D)
+## plot hitogram sizes per type (Supplementary Figure S2B-D)
 sv_df_5t <- rbind(results_ALL$sv_df,results_AML$sv_df,results_NBL$sv_df,results_OS$sv_df,results_WT$sv_df)
 sameChr<- which(sv_df_5t$Type %in% c("deletion","inversion","tandem-duplication","probable-inversion"))
 sv_df_same_chr <- sv_df_5t[sameChr,]
@@ -584,8 +584,9 @@ genes_coding <- sort(unlist(lapply(sv_coding,length)),decreasing=T)
 genes_noncod <- sort(unlist(lapply(sv_noncod,length)),decreasing=T) 
 genes_summary <- unlist(lapply(sv_summary,length))
 
-a<-results_NBL$bothProximalTypesMat 
+a<-results_NBL$bothProximalTypesMat
 b<-results_NBL$copynumTypesMat
+
 c<-results_NBL$disruptExonTypesMat
 d<-results_NBL$disruptIntronTypesMat
 genes <- unique(c(rownames(a),rownames(b),rownames(c),rownames(d)))
@@ -630,6 +631,7 @@ all_recurrent_coding <- names(which(unlist(lapply(merge2lists(bp_coding,sv_codin
 shortlist <- intersect(names(which(sv_bp_combined > 3)),unique(c(intersect(all_recurrent_noncod,orthogonal),intersect(orthogonal,all_recurrent_coding))))
 shortlist <- sort(grep("LOC|orf|-",shortlist,invert=T,value=T))
 
+
 ## cis-eQTL analysis
 commongenes <- intersect(rownames(l_expmat),rownames(r_expmat))
 a<-zrank(l_expmat[commongenes,intersect(highrisk,setdiff(colnames(l_expmat),colnames(r_expmat)))])
@@ -668,21 +670,26 @@ heatmap.3(bardata[3:1,],col=bluered(256),Colv=F,Rowv=F)
 #write.table(data.frame(genes_tab[rownames(resa),],resa,logpa,resb,logpb,resc,logpc)[colnames(bardata),],file="",sep="\t",quote=F)
 
 
+
+
+# Supplementary table S6
+library(taRifx)
 orth_rank <- unlist(lapply(orth,length))[shortlist]
+supplTabS6 <- remove.factors(data.frame(orth_rank[shortlist],topGenesTab[shortlist,],bpgene_tab[shortlist,],sv_bp_combined[shortlist]))
+supplTabS6[which(is.na(supplTabS6),arr.ind=TRUE)] <- 0
+write.table(supplTabS6,sep="\t",quote=F)
+
+shortUniqList <- rownames(supplTabS6)
+
+# from shortlist we remove "passenger" genes
+plotOrderGenes <- names(sort(orth_rank[shortUniqList[order(all_rank[shortUniqList],decreasing=T)]],decreasing=T))
+
 snv_rank <- unlist(lapply(snv_list,length))[shortlist]
 both_rank <- unlist(lapply(both,length))[shortlist]
 sv_rank <- unlist(lapply(sv,length))[shortlist]
 bp_rank <- unlist(lapply(bp,length))[shortlist]
 all_rank <- unlist(lapply(all,length))[shortlist]
 freqtab <- rbind(orth_rank, both_rank-orth_rank,sv_rank-both_rank,bp_rank-both_rank,all_rank)
-
-# Supplementary table S6
-supplTabS6 <- data.frame(orth_rank[shortlist],topGenesTab[shortlist,],bpgene_tab[shortlist,],sv_bp_combined[shortlist])
-#write.table(supplTabS6,file="",sep="\t",quote=F)
-shortUniqList <- rownames(supplTabS6)
-
-# from shortlist we remove "passenger" genes
-plotOrderGenes <- names(sort(orth_rank[shortUniqList[order(all_rank[shortUniqList],decreasing=T)]],decreasing=T))
 
 ### Incorporate SNV maf data 
 snv_extended <- read.delim("data/extended_cgi_Aug_1_18.maf",as.is=T,sep="\t")

@@ -24,7 +24,7 @@ DGV <- read.delim("data/GRCh37_hg19_variants_2016-05-15-small.txt",as.is=TRUE)
 
 # Load all CGI SV calls
 load("data/allSomatic_cgi_SV_data_V2.rda",verbose=TRUE)
-save(junctions_all,file="data/allSomatic_cgi_SV_data_V2.rda",compress=TRUE)
+#save(junctions_all,file="data/allSomatic_cgi_SV_data_V2.rda",compress=TRUE)
 
 junall <- junctions_all[which(!duplicated(substr(names(junctions_all),0,16)))]
 somatic_junctions_all_df <-  as.data.frame(rbindlist(junall))
@@ -93,6 +93,9 @@ somatic_junctions_all_f0 <- somatic_junctions_all_f0[which(!somatic_junctions_al
 somatic_junctions_all_f0 <- somatic_junctions_all_f0[which(somatic_junctions_all_f0$FrequencyInBaselineGenomeSet == "0" ),]
 savesvs <- c(intersect(which(somatic_junctions_all_f0$Type %in% c("complex","interchromosomal","probable-inversion") ),which(somatic_junctions_all_f0$DiscordantMatePairAlignments >4)),which(!somatic_junctions_all_f0$Type %in% c("complex","interchromosomal","probable-inversion") ))
 somatic_junctions_all_f0 <- somatic_junctions_all_f0[savesvs,]
+
+write.table(somatic_junctions_all_f0[grep("TARGET-30",rownames(somatic_junctions_all_f0)),],
+            file="~/Box Sync/shares/somatic_junctions_all_NBL.tsv",row.names = FALSE,sep="\t",quote=FALSE)
 
 ##################################################################################
 # FILTERING COMMON VARIANTS FROM THE SOMATIC DATASET
